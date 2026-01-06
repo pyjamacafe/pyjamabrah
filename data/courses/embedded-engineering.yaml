@@ -32,14 +32,14 @@ enroll:
     link: "https://courses.pyjamabrah.com/web/checkout/680ae32052b5ed6c029e8e6b?utm_source=landingpage&utm_medium=web"
     disabled: true
   - plan: "Yearly (One Time)"
-    link: "https://courses.pyjamabrah.com/web/checkout/68200b15f391a0bf84933bc7?purchaseNow=true&couponcode=HAPPY2026"
+    link: "https://courses.pyjamabrah.com/web/checkout/68200b15f391a0bf84933bc7?purchaseNow=true&couponcode=JOINTHECAFE"
   # - plan: "Free Trail"
   #   link: "https://courses.pyjamabrah.com/web/checkout/68711a098d0069794920894d?utm_source=landingpage&utm_medium=web"
 
 
 discount:
-  code: "HAPPY2026"
-  percentage: "70%"
+  code: "JOINTHECAFE"
+  percentage: "65%"
   time: "24"
 
 #
