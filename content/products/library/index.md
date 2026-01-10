@@ -19,7 +19,7 @@ product: "embedded-engineering"
 
 define:
   enrolled: &enrolled 3000+
-  lastupdated: &lastupdated "28 December 2025"
+  lastupdated: &lastupdated "10 Jan 2026"
 
 param:
   image: "/library/cover.png"
@@ -397,6 +397,22 @@ param:
           - chapter: "Logical Operators"
             type: "video"
           - chapter: "Logical Operator - Assembly decomposition"
+            type: "video"
+          - chapter: "Bitwise Operators"
+            type: "title"
+          - chapter: "What are bitwise operations and the types"
+            type: "video"
+          - chapter: "Shift Operations - Left, Logical and Arithmetic Right"
+            type: "video"
+          - chapter: "The Bitwise NOT operation"
+            type: "video"
+          - chapter: "Understanding using printf"
+            type: "video"
+          - chapter: "Understanding the Assembly View"
+            type: "video"
+          - chapter: "Exploring the Shift operations"
+            type: "video"
+          - chapter: "Assembly view of Shift operation"
             type: "video"
           - chapter: "more being uploaded..."
             type: ""

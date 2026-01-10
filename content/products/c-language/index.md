@@ -19,7 +19,7 @@ product: "1-c"
 
 define:
   enrolled: &enrolled 2000+
-  lastupdated: &lastupdated "11 October 2025"
+  lastupdated: &lastupdated "10 Jan 2026"
 
 param:
   image: "/c/c-course.png"
@@ -32,8 +32,8 @@ param:
       bestSeller: "yes"
       beginner: "yes"
       intermediate: "yes"
-      rating: 5
-      ratingCount: 6
+      rating: 4.9
+      ratingCount: 44
       studentsCount: *enrolled
       message: "c"
       courseCount:
@@ -44,13 +44,13 @@ param:
       creators: ["piyush"]
       lastUpdated: *lastupdated
       language: "English"
-      lessons: 73
-      length: "~ >20 hr"
+      lessons: 91
+      length: "~ >26 hr"
       files: 12
       quizzes:
       certificate: "/c/certificate.png"
       validity: 365 days
-      projects: 2
+      projects: 3
       learning:
         - Mental models to use when coding in C.
         - What is machine code.
@@ -312,8 +312,27 @@ param:
             type: "video"
           - chapter: "Logical Operator - Assembly decomposition"
             type: "video"
+        - section: "Bitwise Operators"
+          id: "bitwise"
+          description: ""
+          open: "open"
+          chapters:
+          - chapter: "What are bitwise operations and the types"
+            type: "video"
+          - chapter: "Shift Operations - Left, Logical and Arithmetic Right"
+            type: "video"
+          - chapter: "The Bitwise NOT operation"
+            type: "video"
+          - chapter: "Understanding using printf"
+            type: "video"
+          - chapter: "Understanding the Assembly View"
+            type: "video"
+          - chapter: "Exploring the Shift operations"
+            type: "video"
+          - chapter: "Assembly view of Shift operation"
+            type: "video"
         - section: "more lectures being recorded"
-          id: "assembly-101"
+          id: ""
           description: ""
           open: "open"
           chapters:
