@@ -1,0 +1,72 @@
+{{ define "main" }}
+<div class="showcase-container">
+  {{/*  Left side content  */}}
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+    <div class="equal" class="3d-model" style="height: 500px;">
+      <model-viewer style="height: 100%; width: 100%" alt="" src="/models/sp.glb" ar environment-image="" poster="" shadow-intensity="1" camera-controls touch-action="pan-y" camera-orbit="calc(env(window-scroll-y) * 4rad) calc(0deg + env(window-scroll-y) * 180deg) calc(5m - env(window-scroll-y) * 10m)"></model-viewer>
+    </div>
+
+  {{/*  Right side content  */}}
+    <div class="product-pitch">
+      <h1 class="product-title">The <span class="highlight-title">SOAN PAPDI</span> FPGA</h1>
+      <h3 class="product-subsection-title">*No MCU. Pure FPGA!</h3>
+      <p>Soan Papdi is a learning-focused FPGA board built around the Lattice iCE40UP5K, making FPGA development simple and approachable for learners.</p>
+      <p>
+        The design is intentional - Just <b>the FPGA</b>, <b>Flash memory</b>, a <b>USB-C port</b> for power and loading circuits, and Basics Input/Output.
+      </p>
+      <a class="btn" href="https://pages.razorpay.com/pl_S5TIBZBqV4mteF/view" target="_blank">
+        <button>
+          Pre-Order Now!
+        </button>
+      </a>
+    </div>
+</div>
+<hr/>
+<h1 class="product-title">Specification</h1>
+<div class="showcase-container">
+  {{/*  Left side content  */}}
+  <div class="equal">
+    <figure>
+    <iframe width="100%" height="380px" src="https://www.youtube.com/embed/_XBXZJRrtPg?si=ZDl_YTQOVf7_EZFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <figcaption>
+      <div>A Walkthrough of how to use the board!</div>
+      <a class="btn" href="https://pages.razorpay.com/pl_S5TIBZBqV4mteF/view" target="_blank">
+        <button>
+          Pre-Order Now!
+        </button>
+      </a></figcaption>
+    </figure>
+  </div>
+  {{/*  Right side content  */}}
+  <div class="equal" style="text-align: left;">
+    <ol>
+      <li>FPGA: Lattice iCE40UP5K FPGA</li>
+      <li>Logic Resources: 5,280 LUTs</li>
+      <li>Embedded Memory: 120 Kbit Embedded Block RAM</li>
+      <li>SPRAM: 1 Mbit (128 KB) Single-Port SPRAM</li>
+      <li>Clocking: On-chip PLL</li>
+      <li>Hard IP: 2 × SPI, 2 × I²C</li>
+      <li>Internal Oscillators: 10 kHz and 48 MHz</li>
+      <li>DSP Resources: 8 DSP multiplier blocks.</li>
+      <li>CPU: Capable of hosting RISC-V soft-core CPUs.</li>
+      <li>Onboard Storage: 128 Mbit onboard Flash memory.</li>
+      <li>User Interface:</li>
+      <ol type="a">
+        <li>8 × 3.0 mm LEDs (through-hole)</li>
+        <li>4 × SMD LEDs</li>
+        <li>8 x  DIP switches</li>
+        <li>2 push buttons (Programming & Reset)</li>
+        <li>10 x I/O pins for ext. sensors & peripherals.</li>
+      </ol>
+      <li>USB: USB-C fully controlled by FPGA (no ext. MCU)</li>
+      <li>Programming: ⁠Programmable via preloaded DFU bootloader.</li>
+      <li>Toolchain Support: Open-source toolchains including Yosys, nextpnr, IceStorm, Icarus Verilog, and Amaranth HDL.</li>
+    </ol>
+  </div>
+</div>
+<div>
+<pre>
+</pre>
+</div>
+{{ end }}
