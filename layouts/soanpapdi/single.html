@@ -51,4 +51,128 @@
 
   </div>
 </section>
+<hr/>
+<section>
+    <style>
+        .main-container {
+            display: flex;
+            width: 90%;
+            margin: 0 5% 0 5%;
+            background: #2a2a2a;
+        }
+
+        /* Sidebar Tabs */
+        .playlist-sidebar {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            /* gap: 10px; */
+            max-height: 500px;
+            overflow-y: auto;
+            /* padding-right: 10px; */
+        }
+
+        .video-tab {
+            background: #333;
+            border: none;
+            color: white;
+            padding: 15px;
+            margin: 0px;
+            text-align: left;
+            cursor: pointer;
+            /* border-radius: 6px; */
+            transition: background 0.3s;
+            font-size: 14px;
+        }
+
+        .video-tab:hover {
+            background: #444;
+        }
+
+        .video-tab.active {
+            background: #ff0000;
+            font-weight: bold;
+        }
+
+        /* Video Player Area */
+        .video-display {
+            flex: 2.5;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            /* border-radius: 8px; */
+            overflow: hidden;
+            background: #000;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Custom Scrollbar for Sidebar */
+        .playlist-sidebar::-webkit-scrollbar { width: 6px; }
+        .playlist-sidebar::-webkit-scrollbar-thumb { background: #555; border-radius: 10px; }
+
+        @media (max-width: 768px) {
+            .main-container { flex-direction: column-reverse; }
+            .playlist-sidebar { max-height: 200px; }
+        }
+    </style>
+
+    <h1 class="product-title">Learn Digital Electronics</h1>
+    <p style="text-align: center;">
+      This playlist will guide you on how to use the board. How to go about designing the circuits and putting them on the Soan Papdi FPGA!
+    </p>
+    <div class="main-container">
+        <div class="playlist-sidebar" id="playlist">
+            <button class="video-tab active" onclick="loadVideo(this, '_XBXZJRrtPg')">Soanpapdi FPGA Board</button>
+            <button class="video-tab" onclick="loadVideo(this, 'vo9w4ybxnvg')">Transistor as a Switch</button>
+            <button class="video-tab" onclick="loadVideo(this, '4x95liMJepA')">Logical Gates using Switches</button>
+        </div>
+        <div class="video-display">
+            <div class="video-container">
+                <iframe
+                    id="main-player"
+                    src="https://www.youtube.com/embed/_XBXZJRrtPg"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <p style="text-align: center;">
+      This playlist is ever evolving and new content will continue to be added for free.
+    </p>
+    <div style="text-align: center;">
+    {{ if .Params.cta }}
+      <a class="btn" href="{{.Params.cta.link}}" target="_blank">
+        <button>
+          {{.Params.cta.text}}
+        </button>
+      </a>
+    {{ end }}
+    </div>
+    <script>
+        function loadVideo(element, videoId) {
+            // Update the iframe source
+            const player = document.getElementById('main-player');
+            player.src = "https://www.youtube.com/embed/" + videoId + "?autoplay=1";
+
+            // Update active tab styling
+            const tabs = document.getElementsByClassName('video-tab');
+            for (let tab of tabs) {
+                tab.classList.remove('active');
+            }
+            element.classList.add('active');
+        }
+    </script>
+</section>
 {{ end }}
