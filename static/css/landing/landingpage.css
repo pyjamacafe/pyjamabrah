@@ -11,14 +11,12 @@
   grid-column: span 6;
   margin: 0px;
   padding: 0px;
-  /* border: 1px solid black; */
 }
 
 .product-pitch {
   grid-column: span 4;
   margin: 0px;
   padding: 10px;
-  /* border: 1px solid black; */
 }
 
 .youtube-video {
@@ -86,6 +84,10 @@ video {
   }
 }
 
-section {
+section > hr {
   margin: 50px 0px 50px 0px;
+}
+
+.def-term {
+  font-weight: bold;
 }

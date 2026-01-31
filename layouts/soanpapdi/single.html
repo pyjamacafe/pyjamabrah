@@ -22,10 +22,10 @@
       </div>
     </div>
   </div>
-</section>
 <hr/>
+</section>
+
 <section>
-  <h1 class="product-title">{{.Params.spec.title | markdownify}}</h1>
   <div class="showcase-container">
     {{/*  Right side content  */}}
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
@@ -34,6 +34,7 @@
     </div>
     {{/*  Left side content  */}}
     <div class="equal">
+      <h1 class="product-title">{{.Params.spec.title | markdownify}}</h1>
       <p>{{.Params.spec.text}}</p>
       <ul style="text-align: left;">
       {{range .Params.spec.features}}
@@ -48,131 +49,202 @@
         </a>
       {{ end }}
     </div>
+  </div>
+  <hr/>
+</section>
+<section>
+  <div class="showcase-container">
+    <!-- Left -->
+    <div class="equal">
+      <h1 class="product-title">Easy to Setup and Program!</h1>
+      <div>
+        <p>Four steps to going from zero-to-hero!</p>
+        <ol style="text-align: left; margin-left: 25%">
+          <li><code>Draw the circuit using building blocks.</code></li>
+          <li><code>Map the inputs and output to FPGA pins.</code></li>
+          <li><code>Verify and Build.</code></li>
+          <li><code>Upload to the board!</code></li>
+        </ol>
+      </div>
+      <p>No complicated installation flow. No bullshit driver installation. Download the IDE, double click, get started!</p>
+      <p>Program it using the opensource iCEStudio IDE or use RAW HDL!</p>
+      {{ if .Params.cta }}
+        <a class="btn" href="{{.Params.cta.link}}" target="_blank">
+          <button>
+            {{.Params.cta.text}}
+          </button>
+        </a>
+      {{ end }}
+    </div>
+    <!-- Right -->
+    <div class="equal">
+      <div class="main-container" style="box-shadow: grey 0px 0px 20px 2px;">
+      {{partial "webvideoAutoplay.html" "soanpapdi/icestudio.webm" }}
+      </div>
+    </div>
 
   </div>
-</section>
 <hr/>
-<section>
-    <style>
-        .main-container {
-            display: flex;
-            width: 90%;
-            margin: 0 5% 0 5%;
-            background: #2a2a2a;
-        }
-
-        /* Sidebar Tabs */
-        .playlist-sidebar {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            /* gap: 10px; */
-            max-height: 500px;
-            overflow-y: auto;
-            /* padding-right: 10px; */
-        }
-
-        .video-tab {
-            background: #333;
-            border: none;
-            color: white;
-            padding: 15px;
-            margin: 0px;
-            text-align: left;
-            cursor: pointer;
-            /* border-radius: 6px; */
-            transition: background 0.3s;
-            font-size: 14px;
-        }
-
-        .video-tab:hover {
-            background: #444;
-        }
-
-        .video-tab.active {
-            background: #ff0000;
-            font-weight: bold;
-        }
-
-        /* Video Player Area */
-        .video-display {
-            flex: 2.5;
-        }
-
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 */
-            height: 0;
-            /* border-radius: 8px; */
-            overflow: hidden;
-            background: #000;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        /* Custom Scrollbar for Sidebar */
-        .playlist-sidebar::-webkit-scrollbar { width: 6px; }
-        .playlist-sidebar::-webkit-scrollbar-thumb { background: #555; border-radius: 10px; }
-
-        @media (max-width: 768px) {
-            .main-container { flex-direction: column-reverse; }
-            .playlist-sidebar { max-height: 200px; }
-        }
-    </style>
-
-    <h1 class="product-title">Learn Digital Electronics</h1>
-    <p style="text-align: center;">
-      This playlist will guide you on how to use the board. How to go about designing the circuits and putting them on the Soan Papdi FPGA!
-    </p>
-    <div class="main-container">
-        <div class="playlist-sidebar" id="playlist">
-            <button class="video-tab active" onclick="loadVideo(this, '_XBXZJRrtPg')">Soanpapdi FPGA Board</button>
-            <button class="video-tab" onclick="loadVideo(this, 'vo9w4ybxnvg')">Transistor as a Switch</button>
-            <button class="video-tab" onclick="loadVideo(this, '4x95liMJepA')">Logical Gates using Switches</button>
-        </div>
-        <div class="video-display">
-            <div class="video-container">
-                <iframe
-                    id="main-player"
-                    src="https://www.youtube.com/embed/_XBXZJRrtPg"
-                    frameborder="0"
-                    allow="autoplay; encrypted-media"
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </div>
-    </div>
-    <p style="text-align: center;">
-      This playlist is ever evolving and new content will continue to be added for free.
-    </p>
-    <div style="text-align: center;">
-    {{ if .Params.cta }}
-      <a class="btn" href="{{.Params.cta.link}}" target="_blank">
-        <button>
-          {{.Params.cta.text}}
-        </button>
-      </a>
-    {{ end }}
-    </div>
-    <script>
-        function loadVideo(element, videoId) {
-            // Update the iframe source
-            const player = document.getElementById('main-player');
-            player.src = "https://www.youtube.com/embed/" + videoId + "?autoplay=1";
-
-            // Update active tab styling
-            const tabs = document.getElementsByClassName('video-tab');
-            for (let tab of tabs) {
-                tab.classList.remove('active');
-            }
-            element.classList.add('active');
-        }
-    </script>
 </section>
+
+<section>
+  <div class="showcase-container">
+    <div class="equal">
+      <img src="/images/soanpapdi/soanpapdi-pins.png"/>
+    </div>
+    <div class="equal" style="text-align: left">
+      <h1 class="product-title">Minimal == Focus</h1>
+      <dl>
+        <dt class="def-term">iCE40UP5k</dt>
+        <dd>The soul of Soan Papdi board is the FPGA by Lattice Semiconductor - the iCE40UP5k. We picked this FPGA becuase the opensource community loves it. It is very easy to program using open-source tools and utilities. Besides all of this, it has enough LUTs(logical units) to realise the RISC-V CPU.</dd>
+        <dt class="def-term">SRAM</dt>
+        <dd>The circuit configuration are held in SRAM. When the board is powered on, the FPGA pulls the configuration and realises the circuit.</dd>
+        <dt class="def-term">PROG and RESET</dt>
+        <dd>RESET is to reboot the board. When PROG is pressed and RESET is toggled, the board is ready to accept the new configuration.</dd>
+        <dt class="def-term">A3-A0, B3-B0</dt>
+        <dd>These are two sets of switches specifically to serve as user inputs for circuits that we develop.</dd>
+        <dt class="def-term">D7-D0</dt>
+        <dd>These are Yello LED to serve as the outputs for our circuits and show the output value.</dd>
+        <dt class="def-term">S3-S0</dt>
+        <dd>Status LEDs for our circuits.</dd>
+        <dt class="def-term">I0-I9</dt>
+        <dd>General purpose I/O pins to connect to external circuits.</dd>
+      </dl>
+    </div>
+  </div>
+  <div style="display: flex; justify-content: center;">
+    <a class="btn" href="{{.Params.cta.link}}" target="_blank">
+      <button>
+        {{.Params.cta.text}}
+      </button>
+    </a>
+  </div>
+<hr/>
+</section>
+
+<section>
+  <style>
+      .main-container {
+          display: flex;
+          width: 90%;
+          margin: 0 5% 0 5%;
+          background: #2a2a2a;
+      }
+
+      /* Sidebar Tabs */
+      .playlist-sidebar {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          /* gap: 10px; */
+          max-height: 500px;
+          overflow-y: auto;
+          /* padding-right: 10px; */
+      }
+
+      .video-tab {
+          background: #333;
+          border: none;
+          color: white;
+          padding: 15px;
+          margin: 0px;
+          text-align: left;
+          cursor: pointer;
+          /* border-radius: 6px; */
+          transition: background 0.3s;
+          font-size: 14px;
+      }
+
+      .video-tab:hover {
+          background: #444;
+      }
+
+      .video-tab.active {
+          background: #ff0000;
+          font-weight: bold;
+      }
+
+      /* Video Player Area */
+      .video-display {
+          flex: 2.5;
+      }
+
+      .video-container {
+          position: relative;
+          padding-bottom: 56.25%; /* 16:9 */
+          height: 0;
+          /* border-radius: 8px; */
+          overflow: hidden;
+          background: #000;
+      }
+
+      .video-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+      }
+
+      /* Custom Scrollbar for Sidebar */
+      .playlist-sidebar::-webkit-scrollbar { width: 6px; }
+      .playlist-sidebar::-webkit-scrollbar-thumb { background: #555; border-radius: 10px; }
+
+      @media (max-width: 768px) {
+          .main-container { flex-direction: column-reverse; }
+          .playlist-sidebar { max-height: 200px; }
+      }
+  </style>
+
+  <h1 class="product-title">Walkthrough videos</h1>
+  <p style="text-align: center;">
+    This playlist will guide you on how to use the board. How to go about designing the circuits and putting them on the Soan Papdi FPGA!
+  </p>
+  <div class="main-container">
+      <div class="playlist-sidebar" id="playlist">
+          <button class="video-tab active" onclick="loadVideo(this, '_XBXZJRrtPg')">Soanpapdi FPGA Board</button>
+          <button class="video-tab" onclick="loadVideo(this, 'vo9w4ybxnvg')">Transistor as a Switch</button>
+          <button class="video-tab" onclick="loadVideo(this, '4x95liMJepA')">Logical Gates using Switches</button>
+      </div>
+      <div class="video-display">
+          <div class="video-container">
+              <iframe
+                  id="main-player"
+                  src="https://www.youtube.com/embed/_XBXZJRrtPg"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen>
+              </iframe>
+          </div>
+      </div>
+  </div>
+  <p style="text-align: center;">
+    This playlist is ever evolving and new content will continue to be added for free.
+  </p>
+  <div style="text-align: center;">
+  {{ if .Params.cta }}
+    <a class="btn" href="{{.Params.cta.link}}" target="_blank">
+      <button>
+        {{.Params.cta.text}}
+      </button>
+    </a>
+  {{ end }}
+  </div>
+  <script>
+    function loadVideo(element, videoId) {
+        // Update the iframe source
+        const player = document.getElementById('main-player');
+        player.src = "https://www.youtube.com/embed/" + videoId + "?autoplay=1";
+
+        // Update active tab styling
+        const tabs = document.getElementsByClassName('video-tab');
+        for (let tab of tabs) {
+            tab.classList.remove('active');
+        }
+        element.classList.add('active');
+    }
+  </script>
+  <hr/>
+</section>
+
 {{ end }}
