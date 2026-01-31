@@ -21,6 +21,11 @@
   /* border: 1px solid black; */
 }
 
+.youtube-video {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
 .product-title {
   text-align: center;
   font-size: 32px;
@@ -79,4 +84,8 @@ video {
   .short, .long, .equal, .product-showcase, .product-pitch {
     grid-column: span 10;
   }
+}
+
+section {
+  margin: 50px 0px 50px 0px;
 }
