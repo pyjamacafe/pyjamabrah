@@ -1,0 +1,32 @@
+{{ with . }}
+<div class="pitch-half">
+  {{/*  print the tile is there is one  */}}
+  {{ if .title }}
+    <div class="pitch-half-title"> {{.title | markdownify }} </div>
+  {{ end}}
+
+  {{ if .subtitle }}
+    <h4> {{.subtitle | markdownify }} </h4>
+  {{ end}}
+
+  {{/*  print text if there is one  */}}
+  {{ if .text }}
+    <p> {{.text | markdownify }} </p>
+  {{ end }}
+
+  {{/*  print text if there is one  */}}
+  {{ if .img }}
+    <img src="{{.img}}"/>
+  {{ end }}
+
+  {{ if .ctas }}
+    <div class="pitch-ctas">
+    {{ range .ctas }}
+      <a href="{{ .link }}">
+        <button>{{ .text }}</button>
+      </a>
+    {{ end }}
+    </div>
+  {{ end }}
+</div>
+{{ end }}

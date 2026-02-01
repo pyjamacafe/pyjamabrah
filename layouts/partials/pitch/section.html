@@ -1,0 +1,12 @@
+{{ with . }}
+<section class="ptich-section">
+  {{ range . }}
+    {{ if eq .details.type "half" }}
+      {{ partial "pitch/half.html" .details }}
+    {{ end }}
+    {{ if eq .details.type "full" }}
+      {{ partial "pitch/full.html" .details }}
+    {{ end }}
+  {{ end }}
+</section>
+{{ end }}

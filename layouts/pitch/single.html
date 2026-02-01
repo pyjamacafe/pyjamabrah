@@ -1,0 +1,10 @@
+{{ define "main" }}
+<link rel="stylesheet" href="{{ "css/pitch/pitch.css" | relURL}}">
+<div class="pitch-container">
+  {{ range .Params.sections }}
+    {{ range . }}
+      {{ partial "pitch/section.html" . }}
+    {{ end }}
+  {{end}}
+</div>
+{{ end }}

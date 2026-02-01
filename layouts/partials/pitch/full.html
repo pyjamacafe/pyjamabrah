@@ -1,0 +1,10 @@
+{{ with . }}
+<div class="pitch-full">
+  {{ if .title }}
+    <h1> {{.title}} </h1>
+  {{ end}}
+  {{ if .text }}
+    <p> {{.text}} </p>
+  {{ end}}
+</div>
+{{ end }}

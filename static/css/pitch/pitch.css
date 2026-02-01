@@ -1,0 +1,88 @@
+.pitch-container {
+  /* background-color: rgb(255, 251, 147); */
+  margin: 0px;
+  padding: 0px;
+  hr {
+    margin: 32px 0 32px 0;
+  }
+}
+
+.ptich-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* background-color:rgb(255, 183, 138); */
+  /* border: black 1px dotted; */
+  margin: 0 0 160px 0;
+}
+
+.pitch-half {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  flex: 1 1 auto;
+
+  align-self: center;
+  align-items: center;
+
+  /* background-color: rgb(195, 195, 195); */
+  max-width: 50%;
+
+  .pitch-half-title {
+    flex: 1 1 100%;
+
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+
+    font-size: xx-large;
+    font-weight: bold;
+  }
+
+  h4 {
+    flex: 1 1 100%;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  p {
+    flex: 1 1 100%;
+    margin: 0px;
+    padding: 4px 24px;
+    text-align: center;
+  }
+
+  img {
+    align-self: center;
+    margin: auto;
+    flex: 1 1 100%;
+    height: auto;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .pitch-ctas {
+    align-items: center;
+    margin: auto;
+  }
+}
+
+.pitch-full {
+  flex: 1 1 auto;
+  align-self: center;
+
+  /* background-color: rgb(194, 255, 255); */
+  min-width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .pitch-half {
+    max-width: 100%;
+    margin: 10px 0px;
+  }
+}
