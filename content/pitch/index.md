@@ -2,6 +2,7 @@
 type: pitch
 title: "Learning Embedded Systems!"
 description: "Serious Skills. Comfy Setting."
+thumbnail: "/images/pitch/model.jpeg"
 
 sections:
   - section:
