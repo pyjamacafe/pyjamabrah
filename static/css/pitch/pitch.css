@@ -85,29 +85,36 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 8px;
+  margin: 16px;
   /* align-items: center; */
 
-  max-width: 40%;
-  /* border: 1px black solid; */
-  /* background-color: rgb(239, 239, 239); */
+  max-width: 45%;
+
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 rgb(124, 124, 124);
+  background-color: rgb(239, 239, 239);
 }
 
-.pitch-people-pic, .pitch-people-intro {
+.pitch-people-pic {
   flex: 1 1 auto;
-  max-width: 45%;
+  max-width: 30%;
   text-align: left;
   padding: 2%;
-}
 
-.pitch-people-pic > img {
-  border-radius: 10px;
-  box-shadow: 0 0 10px 0 black;
+  img {
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px 0 rgb(124, 124, 124); */
+  }
 }
 
 .pitch-people-intro {
+  display: flex;
+  flex-wrap: wrap;
   text-align: left;
-  /* border: 1px black solid; */
+
+  flex: 1 1 auto;
+  max-width: 60%;
+  padding: 2%;
 }
 
 .pitch-people-name {
@@ -117,19 +124,26 @@
 }
 
 .pitch-people-designation {
+  flex: 1 1 100%;
   font-size: 14px;
   font-weight: bold;
   color: hsl(0 0 20%);
 }
 
 .pitch-people-orgs {
+  flex: 1 1 100%;
   font-size: 14px;
   font-weight: bold;
   color: hsl(0 0 20%);
   margin-bottom: 16px;
 }
 
+.pitch-people-links {
+  margin-right: 4px;
+}
+
 .pitch-people-text {
+  flex: 1 1 100%;
   margin: 8px 0;
   text-align: justify;
   font-size: 12px;
@@ -201,5 +215,7 @@
 
   .pitch-people, .pitch-people-pic, .pitch-people-intro  {
     min-width: 100%;
+    padding: 16px;
+    box-shadow: none;
   }
 }

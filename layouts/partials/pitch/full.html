@@ -39,13 +39,13 @@
         <div class="pitch-people-orgs">{{.orgs}}</div>
         {{ if .links }}
             {{if .links.linkedin}}
-              <a href="{{.links.linkedin}}" target="_blank">linkedin</a>
+              <a class="pitch-people-links" href="{{.links.linkedin}}" target="_blank">linkedin</a>
             {{end}}
             {{if .links.x}}
-              <a href="{{.links.x}}" target="_blank">x.com</a>
+              <a class="pitch-people-links" href="{{.links.x}}" target="_blank">x.com</a>
             {{end}}
             {{if .links.youtube}}
-              <a href="{{.links.youtube}}" target="_blank">YouTube</a>
+              <a class="pitch-people-links" href="{{.links.youtube}}" target="_blank">YouTube</a>
             {{end}}
         {{ end }}
         {{range .texts}}
