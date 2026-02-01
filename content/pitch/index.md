@@ -9,72 +9,72 @@ sections:
         type: "half"
         title: ""
         subtitle: ""
-        img: "/images/courses/cortex-m-102.jpg"
+        img: "/images/pitch/model.jpeg"
     - details:
         type: "half"
         title: "Embedded Systems!"
         subtitle: "insights and resoning from first principles"
         texts:
-        - text: "We are on a mission to lowering the barrier to learning Embedded systems Software and Hardware."
-        - text: "Historically, it has been very difficult and time consuming to learn Embedded Systems!"
+        - text: "Historically, it has been very difficult and time consuming to learn low level details of how Computers really work. We are on a mission `to lowering the barrier to learning Embedded systems Software and Hardware`."
+        - text: "We have organised the basics as organised courses in the **Embedded Systems Library**."
         img: ""
         video: ""
         ctas:
           - cta:
             primary: true
             link: ""
-            text: "Primary Button"
+            text: "Join the Library!"
           - cta:
             primary: ""
-            link: "/blog"
-            text: "Secondary Button"
+            link: "mailto:support@pyjamacafe.com"
+            text: "Contact Us"
   - section:
     - details:
         type: "half"
-        title: "Title"
-        subtitle: "This is a subtitle"
+        title: "The Virtuous Circle"
+        subtitle: "Learn a little bit of everything. Repeat!"
         texts:
-          - text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+          - text: "We figured, these are the topics that enables one to contribute the fastest..."
+          - text: "Our claim is, any bit of electronics around you will almost always leverage any three of these five topics - **C**, **CPU**, **OS**, **FPGA** and **Build Tools**."
+          - text: "The **Library** of courses we created is based on this philosophy of learning in a round-robin fashion!"
         img: ""
         video: ""
         ctas:
           - cta:
             primary: true
-            link: ""
-            text: "Primary Button"
+            link: "/library"
+            text: "Explore the Library"
           - cta:
             primary: ""
-            link: "/blog"
-            text: "Secondary Button"
+            link: "mailto:support@pyjamacafe.com"
+            text: "Contact Us"
     - details:
         type: "half"
         title: ""
         subtitle: ""
-        img: ""
-        video: "https://raw.githubusercontent.com/pyjamacafe/cache/master/soanpapdi/icestudio.webm"
+        img: "/images/pitch/plan.jpg"
+        video: ""
 
   - section:
     - details:
         type: "full"
-        title: "This is a section title"
-        subtitle: "This is a subtitle"
-        texts:
-          - text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+        title: "Learning Tracks"
+        subtitle: "all included in the **Library**"
         cards:
           - card:
             title: "C Language"
-            img: "/images/courses/cortex-m-102.jpg"
-            text: "Learn C from scratch"
+            img: "/images/courses/c.png"
+            text: "Learning to write code by investigating the RISC-V assembly instructions."
             more: "/c"
           - card:
-            title: "C Language"
-            img: "/images/courses/cortex-m-102.jpg"
-            text: "Learn C from scratch"
-            more: "/c"
+            title: "C Pointer"
+            img: "/images/courses/pointers.png"
+            text: "Learn to visualise, reason about and use pointers like a Ninja!"
+            more: "/c-pointer"
           - card:
-            title: "C Language"
-            img: "/images/courses/cortex-m-102.jpg"
-            text: "Learn C from scratch"
+            title: "Data Structures using C"
+            img: "/images/courses/dsa.png"
+            text: "Learn how to orgranise and manipulate data using the C Language."
             more: "/c"
           - card:
             title: "C Language"

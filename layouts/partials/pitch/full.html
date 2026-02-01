@@ -10,8 +10,10 @@
   {{ end}}
 
   {{/*  print text if there is one  */}}
-  {{ if .text }}
+  {{ if .texts }}
+    {{ range .texts }}
     <div class="pitch-text"> {{.text | markdownify }} </div>
+    {{ end }}
   {{ end }}
 
   {{ if .cards }}
