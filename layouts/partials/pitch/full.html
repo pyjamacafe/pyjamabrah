@@ -1,10 +1,65 @@
 {{ with . }}
 <div class="pitch-full">
+  {{/*  print the tile is there is one  */}}
   {{ if .title }}
-    <h1> {{.title}} </h1>
+    <div class="pitch-title"> {{.title | markdownify }} </div>
   {{ end}}
+
+  {{ if .subtitle }}
+    <div class="pitch-subtitle"> {{.subtitle | markdownify }} </div>
+  {{ end}}
+
+  {{/*  print text if there is one  */}}
   {{ if .text }}
-    <p> {{.text}} </p>
-  {{ end}}
+    <div class="pitch-text"> {{.text | markdownify }} </div>
+  {{ end }}
+
+  {{ if .cards }}
+    <div class="pitch-card-container">
+    {{ range .cards }}
+      <div class="pitch-card">
+        <img class="pitch-card-img" src="{{ .img }}"/>
+        <div class="pitch-card-title">{{.title}}</div>
+        <div class="pitch-card-text">{{.text}}</div>
+        {{/*  <a class="pitch-card-more">{{.more}}</a>  */}}
+      </div>
+    {{ end }}
+    </div>
+  {{ end }}
+
+  {{ if .people }}
+    {{ range .people}}
+    <div class="pitch-people">
+      <div class="pitch-people-pic">
+        <img src="{{.img}}"/>
+      </div>
+      <div class="pitch-people-intro">
+        <div class="pitch-people-name">{{.name}}</div>
+        <div class="pitch-people-designation">{{.designation}}</div>
+        <div class="pitch-people-orgs">{{.orgs}}</div>
+        {{ if .links }}
+            {{if .links.linkedin}}
+              <a href="{{.links.linkedin}}" target="_blank">linkedin</a>
+            {{end}}
+            {{if .links.x}}
+              <a href="{{.links.x}}" target="_blank">x.com</a>
+            {{end}}
+            {{if .links.youtube}}
+              <a href="{{.links.youtube}}" target="_blank">YouTube</a>
+            {{end}}
+        {{ end }}
+        {{range .texts}}
+          <div class="pitch-people-text">{{.text}}</div>
+        {{end}}
+      </div>
+    </div>
+    {{ end }}
+  {{ end }}
+
+  {{ if .posttexts }}
+    {{ range .posttexts }}
+      <div class="pitch-text"> {{.text | markdownify }} </div>
+    {{ end }}
+  {{ end }}
 </div>
 {{ end }}

@@ -2,21 +2,31 @@
 <div class="pitch-half">
   {{/*  print the tile is there is one  */}}
   {{ if .title }}
-    <div class="pitch-half-title"> {{.title | markdownify }} </div>
+    <div class="pitch-title"> {{.title | markdownify }} </div>
   {{ end}}
 
   {{ if .subtitle }}
-    <h4> {{.subtitle | markdownify }} </h4>
+    <div class="pitch-subtitle"> {{.subtitle | markdownify }} </div>
   {{ end}}
 
   {{/*  print text if there is one  */}}
-  {{ if .text }}
-    <p> {{.text | markdownify }} </p>
+  {{ if .texts }}
+    {{ range .texts }}
+    <div class="pitch-text"> {{.text | markdownify }} </div>
+    {{ end }}
   {{ end }}
 
   {{/*  print text if there is one  */}}
   {{ if .img }}
     <img src="{{.img}}"/>
+  {{ end }}
+
+  {{/*  video  */}}
+  {{ if .video }}
+    <video class="pitch-video" autoplay muted loop>
+    <source src="{{.video}}" type="video/webm">
+    Your browser does not support the video tag.
+    </video>
   {{ end }}
 
   {{ if .ctas }}

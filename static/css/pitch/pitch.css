@@ -13,7 +13,127 @@
   align-items: center;
   /* background-color:rgb(255, 183, 138); */
   /* border: black 1px dotted; */
-  margin: 0 0 160px 0;
+  margin: 80px 0 80px 0;
+}
+
+.pitch-title {
+  flex: 1 1 100%;
+
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.pitch-subtitle {
+  flex: 1 1 100%;
+  text-align: center;
+
+  font-size: 20px;
+
+  margin: 0 0 16px 0;
+  padding: 0px;
+}
+
+.pitch-text {
+  flex: 1 1 100%;
+  margin: 0px;
+  padding: 8px 64px;
+  text-align: center;
+
+  font-size: 16px;
+}
+
+.pitch-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  flex: 1 1 100%;
+  margin: 0px;
+}
+
+.pitch-card {
+  margin: 1rem;
+  flex: 1 1 20%;
+  max-width: 25%;
+  /* border: 1px black solid; */
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0 0 2px 0px black ;
+  border-radius: 5px;
+}
+
+.pitch-card-img {
+  border-radius: 5px 5px 0 0;
+}
+
+.pitch-card-title {
+  font-size: 18px;
+  margin: 4px;
+  font-weight: bold;
+}
+
+.pitch-card-text {
+  text-align: left;
+  margin: 8px;
+}
+
+.pitch-people {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 8px;
+  /* align-items: center; */
+
+  max-width: 40%;
+  /* border: 1px black solid; */
+  /* background-color: rgb(239, 239, 239); */
+}
+
+.pitch-people-pic, .pitch-people-intro {
+  flex: 1 1 auto;
+  max-width: 45%;
+  text-align: left;
+  padding: 2%;
+}
+
+.pitch-people-pic > img {
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 black;
+}
+
+.pitch-people-intro {
+  text-align: left;
+  /* border: 1px black solid; */
+}
+
+.pitch-people-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.pitch-people-designation {
+  font-size: 14px;
+  font-weight: bold;
+  color: hsl(0 0 20%);
+}
+
+.pitch-people-orgs {
+  font-size: 14px;
+  font-weight: bold;
+  color: hsl(0 0 20%);
+  margin-bottom: 16px;
+}
+
+.pitch-people-text {
+  margin: 8px 0;
+  text-align: justify;
+  font-size: 12px;
+  color: rgb(100, 100, 100);
 }
 
 .pitch-half {
@@ -28,31 +148,6 @@
 
   /* background-color: rgb(195, 195, 195); */
   max-width: 50%;
-
-  .pitch-half-title {
-    flex: 1 1 100%;
-
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
-
-    font-size: xx-large;
-    font-weight: bold;
-  }
-
-  h4 {
-    flex: 1 1 100%;
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
-  }
-
-  p {
-    flex: 1 1 100%;
-    margin: 0px;
-    padding: 4px 24px;
-    text-align: center;
-  }
 
   img {
     align-self: center;
@@ -69,20 +164,42 @@
     align-items: center;
     margin: auto;
   }
+
+  .pitch-video {
+    width: 96%;
+    height: auto;
+    padding: 2%;
+  }
 }
 
 .pitch-full {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
   flex: 1 1 auto;
+
   align-self: center;
+  align-items: center;
 
   /* background-color: rgb(194, 255, 255); */
   min-width: 100%;
   text-align: center;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 771px) {
   .pitch-half {
     max-width: 100%;
     margin: 10px 0px;
+  }
+
+  .pitch-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .pitch-people, .pitch-people-pic, .pitch-people-intro  {
+    min-width: 100%;
   }
 }
