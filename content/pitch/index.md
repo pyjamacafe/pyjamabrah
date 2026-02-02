@@ -55,12 +55,82 @@ sections:
         subtitle: ""
         img: "/images/pitch/plan.jpg"
         video: ""
+  - section:
+    - details:
+        type: "full"
+        title: "How it works?"
+        subtitle: "It't not magic. There is a reason to it."
+  # the CPU
+  - section:
+    - details:
+        type: "half"
+        title: "#1. The CPU"
+        subtitle: "The one that drives the System..."
+        texts:
+          - text: "Digital systems have a CPU (ARM/RISC-V etc) that drives the system states. The most popular CPUs for Embedded systems on the planet at the moment are - ARM-M, RISC-V and ARM-A."
+    - details:
+        type: "half"
+        title: ""
+        subtitle: ""
+        img: "/images/circle/cpu.png"
+        video: ""
+  # The Languages
+  - section:
+    - details:
+        type: "half"
+        title: ""
+        subtitle: ""
+        img: "/images/circle/languages.png"
+        video: ""
+    - details:
+        type: "half"
+        title: "#2. The Languages"
+        subtitle: "Got to program the CPU somehow..."
+        texts:
+          - text: "Majority of Firmware/Systems software solutions are still authored in C with a little bit of Assembly."
+  # Tools
+  - section:
+    - details:
+        type: "half"
+        title: "#3. The Tools"
+        subtitle: "Binary, debugging and automation"
+        texts:
+          - text: "CPUs don't understand Assembly or C, they only understand 0s and 1s in the memory interpreted as an instruction. There are tools compiler, debuggers and others that help go from text to binary, debug the system and automate a lot of flows."
+    - details:
+        type: "half"
+        title: ""
+        subtitle: ""
+        img: "/images/circle/tools.png"
+        video: ""
+  # OS
+  - section:
+    - details:
+        type: "half"
+        title: ""
+        subtitle: ""
+        img: "/images/circle/os.png"
+        video: ""
+    - details:
+        type: "half"
+        title: "#4. The Operating System"
+        subtitle: "Managing state-machines and resources..."
+        texts:
+          - text: "When you have too many state-machines to be managed an Operating System helps. Majority of embedded system solutions use an RTOS."
 
   - section:
     - details:
         type: "full"
         title: "Learning Tracks"
         subtitle: "all included in the **Library**"
+        ctas:
+          - cta:
+            primary: true
+            link: "/library"
+            text: "Explore the Library"
+          - cta:
+            primary: ""
+            link: "mailto:support@pyjamacafe.com"
+            text: "Contact Us"
         cards:
           - card:
             title: "C Language"
@@ -168,60 +238,39 @@ sections:
             text: "Peel the abstraction layer, learn to design basic cuits and deploying on FPGA."
             more: ""
           - card:
-            title: "C Language"
-            img: "/images/courses/cortex-m-102.jpg"
-            text: "Learn C from scratch"
-            more: "/c"
+            title: "How to Embedded Systems"
+            img: "/images/courses/howtoembedded.png"
+            text: "A short presentation on what is Embedded Systems and how to get started."
+            more: ""
           - card:
-            title: "C Language"
-            img: "/images/courses/cortex-m-102.jpg"
-            text: "Learn C from scratch"
-            more: "/c"
+            title: "Low Level @ Pyjama Cafe"
+            img: "/images/courses/book.png"
+            text: "Read the draft of our book focused on learning C Language."
+            more: ""
           - card:
-            title: "C Language"
-            img: "/images/courses/cortex-m-102.jpg"
-            text: "Learn C from scratch"
-            more: "/c"
+            title: "Python 101"
+            img: "/images/courses/python.png"
+            text: "Learn Python and the use in Embedded System."
+            more: ""
           - card:
-            title: "C Language"
-            img: "/images/courses/cortex-m-102.jpg"
-            text: "Learn C from scratch"
-            more: "/c"
+            title: "Walkthroughs"
+            img: "/images/courses/walkthrough.png"
+            text: "Learn how to navigate and deal with new source codes."
+            more: ""
           - card:
-            title: "C Language"
-            img: "/images/courses/cortex-m-102.jpg"
-            text: "Learn C from scratch"
-            more: "/c"
+            title: "Tech-Syncs"
+            img: "/images/courses/tech-syncs.png"
+            text: "Collection of talks by industry experts on ad-hoc topics."
+            more: ""
           - card:
-            title: "C Language"
-            img: "/images/courses/cortex-m-102.jpg"
-            text: "Learn C from scratch"
-            more: "/c"
-          - card:
-            title: "C Language"
-            img: "/images/courses/cortex-m-102.jpg"
-            text: "Learn C from scratch"
-            more: "/c"
-          - card:
-            title: "C Language"
-            img: "/images/courses/cortex-m-102.jpg"
-            text: "Learn C from scratch"
-            more: "/c"
-          - card:
-            title: "C Language"
-            img: "/images/courses/cortex-m-102.jpg"
-            text: "Learn C from scratch"
-            more: "/c"
-          - card:
-            title: "C Language"
-            img: "/images/courses/cortex-m-102.jpg"
-            text: "Learn C from scratch"
-            more: "/c"
-          - card:
-            title: "C Language"
-            img: "/images/courses/cortex-m-102.jpg"
-            text: "Learn C from scratch"
-            more: "/c"
+            title: "Podcasts"
+            img: "/images/courses/podcast.png"
+            text: "Collection of casual discussions with industry experts."
+            more: ""
+        posttexts:
+          - text: ""
+          - text: "Again, the library is a growing repositor of resources dedicated to learning Embedded systems from scratch."
+          - text: "Yes. There is everything on the internet. We just organised it one place."
   - section:
     - details:
         type: "full"
@@ -253,7 +302,14 @@ sections:
               - text: "Computer Engineer holding a Master’s degree in Embedded Systems. Worked on improving the debug architecture of the Bluetooth Firmware at Intel."
               - text: "Worked on ARM64 architecture, programming and exercising latest ARMv8/v9 extensions - programming in low-level FWs (ARM TF-A, trusty) and kernels (LK and Linux) at Google."
               - text: "Currently exploring the Pixel Watch Kernel and BSP (boot-loaders, Linux Kernel, Android HALs and frameworks)."
-        posttexts:
-          - text: "You can stand on our shoulders!"
-
+  - section:
+    - details:
+        type: "full"
+        title: "stand on our shoulders!"
+        subtitle: "basics is on us. inventing is on you..."
+        ctas:
+          - cta:
+            primary: true
+            link: "/library"
+            text: "Join the Library!"
 ---

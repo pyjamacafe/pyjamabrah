@@ -63,5 +63,15 @@
       <div class="pitch-text"> {{.text | markdownify }} </div>
     {{ end }}
   {{ end }}
+
+  {{ if .ctas }}
+    <div class="pitch-ctas">
+    {{ range .ctas }}
+      <a href="{{ .link }}">
+        <button class="pitch-cta-button">{{ .text }}</button>
+      </a>
+    {{ end }}
+    </div>
+  {{ end }}
 </div>
 {{ end }}
