@@ -1,3 +1,10 @@
+:root {
+  --title-font-size: clamp(16px, 4.5cqi, 64px);
+  --subtitle-font-size: clamp(12px, 3.5cqi, 20px);
+  --text-font-size: clamp(8px, 3cqi, 16px);
+  --card-title-font-size: clamp(10px, 3cqi, 16px);
+}
+
 .pitch-container {
   /* background-color: rgb(255, 251, 147); */
   margin: 0px;
@@ -23,18 +30,22 @@
   margin: 0px;
   padding: 0px;
 
-  font-size: 48px;
+  font-size: var(--title-font-size);
   font-weight: bold;
+
+  color: rgb(43, 43, 43);
 }
 
 .pitch-subtitle {
   flex: 1 1 100%;
   text-align: center;
 
-  font-size: 20px;
+  font-size: var(--subtitle-font-size);
 
   margin: 0 0 16px 0;
   padding: 0px;
+
+  color: rgb(88, 88, 88);
 }
 
 .pitch-break {
@@ -49,7 +60,15 @@
   padding: 8px 64px;
   text-align: center;
 
-  font-size: 16px;
+  font-size: var(--text-font-size);
+  color: rgb(75, 75, 75);
+
+  b {
+    color: black;
+  }
+  code {
+    font-size: var(--text-font-size);
+  }
 }
 
 .pitch-card-container {
@@ -78,7 +97,7 @@
 
 .pitch-card-title {
   text-align: left;
-  font-size: 16px;
+  font-size: var(--card-title-font-size);
   margin: 8px;
   font-weight: bold;
 }
@@ -204,7 +223,7 @@
 
 .pitch-cta-button {
   height: 42px;
-  font-size: 16px;
+  font-size: var(--text-font-size);
   border-radius: 5px;
 }
 
@@ -237,6 +256,8 @@
   padding-left: 30px;
   max-width: 85%;
   counter-increment: step-counter;
+  font-size: var(--text-font-size);
+  color: rgb(75, 75, 75);
 }
 
 /* Custom numbers */
@@ -251,7 +272,7 @@
   color: white;
   border-radius: 50%;
   text-align: center;
-  font-size: 12px;
+  font-size: var(--text-font-size);
   line-height: 20px;
   z-index: 2;
 }

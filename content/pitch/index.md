@@ -63,7 +63,7 @@ sections:
         type: "full"
         title: "CPU, Memory, and Peripherals"
         subtitle: "Fetch, Decode, Execute, Write back"
-        video: "https://raw.githubusercontent.com/pyjamacafe/cache/master/pitch/cpu-model.mp4"
+        video: "https://raw.githubusercontent.com/pyjamacafe/cache/master/pitch/cpu-model.webm"
         caption: "RISC-V Emulator running assembly code. Controls the GREEN LED with the Switch."
   - section:
     - details:
