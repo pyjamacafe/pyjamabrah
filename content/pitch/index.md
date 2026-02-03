@@ -16,7 +16,8 @@ sections:
         type: "half"
         title: ""
         subtitle: ""
-        img: "/images/pitch/model.jpeg"
+        # img: "/images/pitch/model.jpeg"
+        video: "https://raw.githubusercontent.com/pyjamacafe/cache/master/pitch/cpu-model.mp4"
     - details:
         type: "half"
         title: ""
@@ -72,8 +73,9 @@ sections:
         type: "half"
         title: ""
         subtitle: ""
-        img: "/images/circle/cpu.png"
-        video: ""
+        img: "/images/pitch/model.jpeg"
+        # img: "/images/circle/cpu.png"
+        # video: "https://raw.githubusercontent.com/pyjamacafe/cache/master/pitch/cpu-model.mp4"
   # The Languages
   - section:
     - details:

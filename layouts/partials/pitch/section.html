@@ -7,6 +7,7 @@
     {{ if eq .details.type "full" }}
       {{ partial "pitch/full.html" .details }}
     {{ end }}
+    {{/*  If it's a break type just add a gap here */}}
     {{ if eq .details.type "break" }}
       <div class="pitch-break"></div>
     {{ end }}
