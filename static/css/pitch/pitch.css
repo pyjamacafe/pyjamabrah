@@ -1,6 +1,6 @@
 :root {
-  --title-font-size: clamp(16px, 4.5cqi, 64px);
-  --subtitle-font-size: clamp(12px, 3.5cqi, 20px);
+  --title-font-size: clamp(12px, 4.5cqi, 64px);
+  --subtitle-font-size: clamp(10px, 3.5cqi, 20px);
   --text-font-size: clamp(8px, 3cqi, 16px);
   --card-title-font-size: clamp(10px, 3cqi, 16px);
 }
