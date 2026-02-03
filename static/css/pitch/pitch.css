@@ -1,8 +1,8 @@
 :root {
-  --title-font-size: clamp(12px, 5cqi, 64px);
-  --subtitle-font-size: clamp(10px, 3cqi, 20px);
-  --text-font-size: clamp(8px, 2cqi, 16px);
-  --card-title-font-size: clamp(10px, 3cqi, 16px);
+  --title-font-size: clamp(20px, 5cqi, 64px);
+  --subtitle-font-size: clamp(16px, 3cqi, 20px);
+  --text-font-size: clamp(12px, 2cqi, 16px);
+  --card-title-font-size: clamp(12px, 3cqi, 16px);
 }
 
 .pitch-container {
