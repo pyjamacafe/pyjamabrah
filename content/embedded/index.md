@@ -4,6 +4,12 @@ title: "How to Embedded systems?"
 description: "A structured path to learning and becoming Embedded Systems Engineer."
 thumbnail: "/images/pitch/model.jpeg"
 
+url: /embedded
+
+aliases:
+- /emb/
+- /embdedsystems/
+
 sections:
   - section:
     - details:
@@ -378,6 +384,16 @@ sections:
           - text: "Yes. There is everything on the internet. We just organised it one place."
   - section:
     - details:
+        type: "half"
+        title: "earn the badge"
+        subtitle: "get a certificate for each technical track"
+        texts:
+          - text: "Certificates are available for the technical courses. The color and design may vary."
+    - details:
+        type: "half"
+        img: "https://pyjamacafe.com/library/certificate.png"
+  - section:
+    - details:
         type: "full"
         title: "at the End of it all"
         subtitle: "at the end of it all, you will..."
@@ -387,19 +403,24 @@ sections:
     - details:
         type: "half"
         sequence:
-          - "C programming, converting to Assembly and machine code."
-          - "Grasp ARM-M, ARM-A, and RISC-V memory maps and programmer's models."
-          - "Write and debug C programs for practical use."
-          - "Command C constructs - functions, pointers, structs, unions, enums."
-          - "Analyze data types - integers, floats, doubles, signed/unsigned, const, volatile."
-          - "Understand data type memory representation - 2's complement, floating-point encoding."
+          - "Feel confident about all things Embedded Software."
+          - "Have a strong grasp of the C and Assembly Language."
+          - "Be able to program ARM-A (aarch64), ARM-M and RISC-V CPUs from scratch."
+          - "Understand and use RTOS/Operating Systems confidently."
+          - "Write and Debug software state-machines using tools and utilities."
+          - "Be able to design and control a build system."
+          - "And more..."
     - details:
         type: "full"
         ctas:
-            - cta:
-              primary: true
-              link: "/library"
-              text: "Join the Library!"
+          - cta:
+            primary: true
+            link: "/library"
+            text: "Explore the Library"
+          - cta:
+            primary: ""
+            link: "mailto:support@pyjamacafe.com"
+            text: "Contact Us"
   - section:
     - details:
         type: "full"
@@ -434,6 +455,12 @@ sections:
               - text: "Computer Engineer holding a Master’s degree in Embedded Systems. Worked on improving the debug architecture of the Bluetooth Firmware at Intel."
               - text: "Worked on ARM64 architecture, programming and exercising latest ARMv8/v9 extensions - programming in low-level FWs (ARM TF-A, trusty) and kernels (LK and Linux) at Google."
               - text: "Currently exploring the Pixel Watch Kernel and BSP (boot-loaders, Linux Kernel, Android HALs and frameworks)."
-
+    - details:
+        type: "full"
+        ctas:
+          - cta:
+            primary: ""
+            link: "mailto:support@pyjamacafe.com"
+            text: "Contact Us"
 ---
 
