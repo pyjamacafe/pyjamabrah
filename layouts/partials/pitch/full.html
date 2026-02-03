@@ -58,6 +58,15 @@
     {{ end }}
   {{ end }}
 
+  {{/*  sequence  */}}
+  {{ if .sequence }}
+    <ol class="pitch-sequence">
+    {{ range .sequence }}
+      <li class="pitch-sequence-item">{{ . }}</li>
+    {{ end }}
+    </ol>
+  {{ end }}
+
   {{ if .posttexts }}
     {{ range .posttexts }}
       <div class="pitch-text"> {{.text | markdownify }} </div>

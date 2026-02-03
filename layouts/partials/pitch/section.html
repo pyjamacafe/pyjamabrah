@@ -7,6 +7,9 @@
     {{ if eq .details.type "full" }}
       {{ partial "pitch/full.html" .details }}
     {{ end }}
+    {{ if eq .details.type "break" }}
+      <div class="pitch-break"></div>
+    {{ end }}
   {{ end }}
 </section>
 {{ end }}

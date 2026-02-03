@@ -13,7 +13,7 @@
   align-items: center;
   /* background-color:rgb(255, 183, 138); */
   /* border: black 1px dotted; */
-  margin: 120px 0 120px 0;
+  margin: 100px 0 100px 0;
 }
 
 .pitch-title {
@@ -35,6 +35,12 @@
 
   margin: 0 0 16px 0;
   padding: 0px;
+}
+
+.pitch-break {
+  flex: 1 1 100%;
+  text-align: center;
+  padding: 12px;
 }
 
 .pitch-text {
@@ -216,6 +222,50 @@
   /* background-color: rgb(194, 255, 255); */
   min-width: 100%;
   text-align: center;
+}
+
+.pitch-sequence {
+  flex: 1 1 100%;
+  list-style: none;
+  counter-reset: step-counter;
+}
+
+.pitch-sequence-item {
+  text-align: left;
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  max-width: 85%;
+  counter-increment: step-counter;
+}
+
+/* Custom numbers */
+.pitch-sequence li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: #ff0000;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+  z-index: 2;
+}
+
+/* Connecting Line */
+.pitch-sequence li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 20px;
+  width: 2px;
+  height: calc(100% + 20px);
+  background: #ccc;
+  z-index: 1;
 }
 
 @media screen and (max-width: 771px) {

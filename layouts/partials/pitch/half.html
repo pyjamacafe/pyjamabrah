@@ -29,6 +29,14 @@
     </video>
   {{ end }}
 
+  {{/*  sequence  */}}
+  {{ if .sequence }}
+    <ol class="pitch-sequence">
+    {{ range .sequence }}
+      <li class="pitch-sequence-item">{{ . }}</li>
+    {{ end }}
+    </ol>
+  {{ end }}
   {{ if .ctas }}
     <div class="pitch-ctas">
     {{ range .ctas }}

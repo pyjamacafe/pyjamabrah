@@ -7,14 +7,20 @@ thumbnail: "/images/pitch/model.jpeg"
 sections:
   - section:
     - details:
+        type: "full"
+        title: "Embedded Systems"
+        subtitle: "insights and resoning from first principles"
+    - details:
+        type: "break"
+    - details:
         type: "half"
         title: ""
         subtitle: ""
         img: "/images/pitch/model.jpeg"
     - details:
         type: "half"
-        title: "Embedded Systems!"
-        subtitle: "insights and resoning from first principles"
+        title: ""
+        subtitle: ""
         texts:
         - text: "Historically, it has been very difficult and time consuming to learn low level details of how Computers really work. We are on a mission `to lowering the barrier to learning Embedded systems Software and Hardware`."
         - text: "We have organised the basics as organised courses in the **Embedded Systems Library**."
@@ -31,40 +37,34 @@ sections:
             text: "Contact Us"
   - section:
     - details:
-        type: "half"
-        title: "The Virtuous Circle"
-        subtitle: "Learn a little bit of everything. Repeat!"
-        texts:
-          - text: "We figured, these are the topics that enables one to contribute the fastest..."
-          - text: "Our claim is, any bit of electronics around you will almost always leverage any three of these five topics - **C**, **CPU**, **OS**, **FPGA** and **Build Tools**."
-          - text: "The **Library** of courses we created is based on this philosophy of learning in a round-robin fashion!"
-        img: ""
-        video: ""
-        ctas:
-          - cta:
-            primary: true
-            link: "/library"
-            text: "Explore the Library"
-          - cta:
-            primary: ""
-            link: "mailto:support@pyjamacafe.com"
-            text: "Contact Us"
+        type: "full"
+        title: "getting started"
+        subtitle: "there is a structured path to it..."
     - details:
         type: "half"
-        title: ""
-        subtitle: ""
+        sequence:
+          - "Pick a 32/64 Bit CPU of choice (ARM/RISC-V etc)."
+          - "Learn the basics of Assembly/C."
+          - "Learn how to use build tools (gcc, as, ld) and utilities (make)."
+          - "Write baremetal bootcode and boot the CPU from scratch."
+          - "Implement a scheduler for the CPU and later replace it with an RTOS."
+          - "Write state-machines and develop applications."
+    - details:
+        type: "half"
         img: "/images/pitch/plan.jpg"
-        video: ""
+
   - section:
     - details:
         type: "full"
-        title: "How it works?"
-        subtitle: "It't not magic. There is a reason to it."
+        title: "Why it works?"
+        subtitle: "the logical link"
+    - details:
+        type: "break"
+
   # the CPU
-  - section:
     - details:
         type: "half"
-        title: "#1. The CPU"
+        title: "The CPU"
         subtitle: "The one that drives the System..."
         texts:
           - text: "Digital systems have a CPU (ARM/RISC-V etc) that drives the system states. The most popular CPUs for Embedded systems on the planet at the moment are - ARM-M, RISC-V and ARM-A."
@@ -84,7 +84,7 @@ sections:
         video: ""
     - details:
         type: "half"
-        title: "#2. The Languages"
+        title: "The Languages"
         subtitle: "Got to program the CPU somehow..."
         texts:
           - text: "Majority of Firmware/Systems software solutions are still authored in C with a little bit of Assembly."
@@ -92,7 +92,7 @@ sections:
   - section:
     - details:
         type: "half"
-        title: "#3. The Tools"
+        title: "The Tools"
         subtitle: "Binary, debugging and automation"
         texts:
           - text: "CPUs don't understand Assembly or C, they only understand 0s and 1s in the memory interpreted as an instruction. There are tools compiler, debuggers and others that help go from text to binary, debug the system and automate a lot of flows."
@@ -112,7 +112,7 @@ sections:
         video: ""
     - details:
         type: "half"
-        title: "#4. The Operating System"
+        title: "The Operating System"
         subtitle: "Managing state-machines and resources..."
         texts:
           - text: "When you have too many state-machines to be managed an Operating System helps. Majority of embedded system solutions use an RTOS."
@@ -305,11 +305,26 @@ sections:
   - section:
     - details:
         type: "full"
-        title: "stand on our shoulders!"
-        subtitle: "basics is on us. inventing is on you..."
+        title: "what you'll learn"
+        subtitle: "at the end of it all, you will..."
+    - details:
+        type: "half"
+        img: "/images/circle/target.png"
+    - details:
+        type: "half"
+        sequence:
+          - "C programming, converting to Assembly and machine code."
+          - "Grasp ARM-M, ARM-A, and RISC-V memory maps and programmer's models."
+          - "Write and debug C programs for practical use."
+          - "Command C constructs - functions, pointers, structs, unions, enums."
+          - "Analyze data types - integers, floats, doubles, signed/unsigned, const, volatile."
+          - "Understand data type memory representation - 2's complement, floating-point encoding."
+    - details:
+        type: "full"
         ctas:
-          - cta:
-            primary: true
-            link: "/library"
-            text: "Join the Library!"
+            - cta:
+              primary: true
+              link: "/library"
+              text: "Join the Library!"
 ---
+
