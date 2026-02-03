@@ -16,8 +16,8 @@ sections:
         type: "half"
         title: ""
         subtitle: ""
-        # img: "/images/pitch/model.jpeg"
-        video: "https://raw.githubusercontent.com/pyjamacafe/cache/master/pitch/cpu-model.mp4"
+        img: "/images/pitch/model.jpeg"
+
     - details:
         type: "half"
         title: ""
@@ -43,6 +43,8 @@ sections:
         subtitle: "there is a structured path to it..."
     - details:
         type: "half"
+        texts:
+          - text: "Learning Embedded Systems is a circular process. Often times, you need to know a little bit of everything to make progress.Here is what we recommend -"
         sequence:
           - "Pick a 32/64 Bit CPU of choice (ARM/RISC-V etc)."
           - "Learn the basics of Assembly/C."
@@ -50,18 +52,23 @@ sections:
           - "Write baremetal bootcode and boot the CPU from scratch."
           - "Implement a scheduler for the CPU and later replace it with an RTOS."
           - "Write state-machines and develop applications."
+          - "Restart from #1."
+        posttexts:
+          - text: On each iteration, you will learn something new and more involved about the part.
     - details:
         type: "half"
         img: "/images/pitch/plan.jpg"
-
+  - section:
+    - details:
+        type: "full"
+        title: "CPU, Memory, and Peripherals"
+        subtitle: "Fetch, Decode, Execute, Write back"
+        video: "https://raw.githubusercontent.com/pyjamacafe/cache/master/pitch/cpu-model.mp4"
+        caption: "RISC-V Emulator running assembly code. Controls the GREEN LED with the Switch."
   - section:
     - details:
         type: "full"
         title: "Why it works?"
-        subtitle: "the logical link"
-    - details:
-        type: "break"
-
   # the CPU
     - details:
         type: "half"

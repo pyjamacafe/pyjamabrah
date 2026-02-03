@@ -23,10 +23,13 @@
 
   {{/*  video  */}}
   {{ if .video }}
-    <video class="pitch-video" autoplay muted loop>
-    <source src="{{.video}}" type="video/webm">
-    Your browser does not support the video tag.
-    </video>
+    <figure>
+      <video class="pitch-video" autoplay muted loop>
+      <source src="{{.video}}" type="video/webm">
+      Your browser does not support the video tag.
+      </video>
+      {{ if .caption }}<figcaption>{{.caption}}</figcaption> {{ end }}
+    </figure>
   {{ end }}
 
   {{/*  sequence  */}}
@@ -37,6 +40,13 @@
     {{ end }}
     </ol>
   {{ end }}
+
+  {{ if .posttexts }}
+    {{ range .posttexts }}
+      <div class="pitch-text"> {{.text | markdownify }} </div>
+    {{ end }}
+  {{ end }}
+
   {{ if .ctas }}
     <div class="pitch-ctas">
     {{ range .ctas }}

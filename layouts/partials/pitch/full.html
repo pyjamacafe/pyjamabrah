@@ -16,6 +16,17 @@
     {{ end }}
   {{ end }}
 
+  {{/*  video  */}}
+  {{ if .video }}
+    <figure>
+      <video class="pitch-video" autoplay muted loop>
+      <source src="{{.video}}" type="video/webm">
+      Your browser does not support the video tag.
+      </video>
+      {{ if .caption }}<figcaption>{{.caption}}</figcaption> {{ end }}
+    </figure>
+  {{ end }}
+
   {{ if .cards }}
     <div class="pitch-card-container">
     {{ range .cards }}
