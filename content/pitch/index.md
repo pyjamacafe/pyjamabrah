@@ -16,7 +16,7 @@ sections:
         type: "half"
         title: ""
         subtitle: ""
-        img: "/images/pitch/model.jpeg"
+        img: "/images/pitch/model.png"
 
     - details:
         type: "half"
@@ -55,7 +55,7 @@ sections:
           - "Restart from #1."
     - details:
         type: "half"
-        img: "/images/pitch/plan.jpg"
+        img: "/images/pitch/plan.png"
     - details:
         type: "full"
         texts:
@@ -71,7 +71,10 @@ sections:
     - details:
         type: "full"
         title: "Why it works?"
-  # the CPU
+        subtitle: "the logic to becoming productive fast"
+    - details:
+        type: "break"
+    # the CPU
     - details:
         type: "half"
         title: "The CPU"
@@ -82,7 +85,7 @@ sections:
         type: "half"
         title: ""
         subtitle: ""
-        img: "/images/pitch/model.jpeg"
+        img: "/images/circle/cpu.png"
         # img: "/images/circle/cpu.png"
         # video: "https://raw.githubusercontent.com/pyjamacafe/cache/master/pitch/cpu-model.mp4"
   # The Languages

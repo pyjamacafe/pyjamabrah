@@ -3,7 +3,7 @@
   --subtitle-font-size: clamp(16px, 1.25cqi, 20px);
   --text-font-size: clamp(12px, 2cqi, 16px);
   --card-title-font-size: clamp(12px, 3cqi, 16px);
-  --section-margin: clamp(32px, 5cqi, 100px);
+  --section-margin: clamp(64px, 10cqi, 280px);
 }
 
 .pitch-container {
@@ -49,13 +49,13 @@
 .pitch-break {
   flex: 1 1 100%;
   text-align: center;
-  padding: 12px;
+  padding: 24px;
 }
 
 .pitch-text {
   flex: 1 1 100%;
   margin: 0px;
-  padding: 8px 64px;
+  padding: 8px 4vw;
   text-align: center;
 
   font-size: var(--text-font-size);
