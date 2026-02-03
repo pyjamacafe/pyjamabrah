@@ -16,7 +16,7 @@
     {{ end }}
   {{ end }}
 
-  {{/*  print text if there is one  */}}
+  {{/*  print image if there is one  */}}
   {{ if .img }}
     <img src="{{.img}}"/>
   {{ end }}
@@ -36,7 +36,7 @@
   {{ if .sequence }}
     <ol class="pitch-sequence">
     {{ range .sequence }}
-      <li class="pitch-sequence-item">{{ . }}</li>
+      <li class="pitch-sequence-item">{{ . | markdownify }}</li>
     {{ end }}
     </ol>
   {{ end }}
@@ -50,7 +50,7 @@
   {{ if .ctas }}
     <div class="pitch-ctas">
     {{ range .ctas }}
-      <a href="{{ .link }}">
+      <a href="{{ .link }}" target="_blank">
         <button class="pitch-cta-button">{{ .text }}</button>
       </a>
     {{ end }}

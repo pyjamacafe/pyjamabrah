@@ -161,7 +161,7 @@
   flex: 1 1 100%;
   margin: 8px 0;
   text-align: justify;
-  font-size: 12px;
+  font-size: var(--text-font-size);
   color: var(--fontcolor);
 }
 

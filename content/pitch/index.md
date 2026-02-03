@@ -1,37 +1,68 @@
 ---
 type: pitch
-title: "Learning Embedded Systems!"
-description: "Serious Skills. Comfy Setting."
+title: "How to Embedded systems?"
+description: "A structured path to learning and becoming Embedded Systems Engineer."
 thumbnail: "/images/pitch/model.jpeg"
 
 sections:
   - section:
     - details:
         type: "full"
-        title: "Embedded Systems"
-        subtitle: "insights and resoning from first principles"
+        title: "what is Embedded Systems?"
+        subtitle: "Electronics with a CPU in them. Almost everything around us!"
+    - details:
+        type: "break"
+    - details:
+        type: "half"
+        img: "/images/pitch/model.png"
+    - details:
+        type: "half"
+        texts:
+          - text: "Embedded Systems refers to electronics which are driven by an onboard CPU. Embedded Systems at the heart of it sense, process and actuate."
+        sequence:
+          - "**Sensors:** Measure the environment."
+          - "**ADC:** Convert analog signals to digital numbers."
+          - "**CPU:** Processes the numbers and figures what needs to be done. The software it runs implements the algorithms."
+          - "**DAC:** Converts processed number to a analog signal."
+          - "**Acturators:** Convery electrical signals to physical phenomena."
+        posttexts:
+          - text: "Embedded Software is all about program the CPU, reading inputs and generating outputs."
+  - section:
+    - details:
+        type: "full"
+        title: "in action ..."
+        subtitle: "emulator based example"
+        texts:
+          - text: "This is the CPU (an internal view) reading the program, sensing the Switch state, processing the information and setting the output LED (actuating)"
+        video: "https://raw.githubusercontent.com/pyjamacafe/cache/master/pitch/cpu-model.webm"
+        caption: "RISC-V Emulator running assembly code. Controls the GREEN LED with the Switch."
+  - section:
+    - details:
+        type: "full"
+        title: "how to Embedded Systems?"
+        subtitle: "master the CPU. learn how to command it."
     - details:
         type: "break"
     - details:
         type: "half"
         title: ""
         subtitle: ""
-        img: "/images/pitch/model.png"
-
+        img: "/images/pitch/model.jpeg"
     - details:
         type: "half"
         title: ""
         subtitle: ""
         texts:
+        - text: "You only need to master the CPU. The mental model - often referred to as the `Programmer's model!`"
         - text: "Historically, it has been very difficult and time consuming to learn low level details of how Computers really work. We are on a mission `to lowering the barrier to learning Embedded systems Software and Hardware`."
-        - text: "We have organised the basics as organised courses in the **Embedded Systems Library**."
+        - text: "We have organised the basics as organised learning tracks in the **Embedded Systems Library**."
         img: ""
         video: ""
         ctas:
           - cta:
             primary: true
-            link: ""
-            text: "Join the Library!"
+            link: "/library"
+            text: "Explore the Library"
           - cta:
             primary: ""
             link: "mailto:support@pyjamacafe.com"
@@ -39,12 +70,12 @@ sections:
   - section:
     - details:
         type: "full"
-        title: "getting started"
+        title: "where and how to start?"
         subtitle: "there is a structured path to it..."
-        texts:
-          - text: "Learning Embedded Systems is a circular process. Often times, you need to know a little bit of everything to make progress. Here is what we recommend -"
     - details:
         type: "half"
+        texts:
+          - text: "Learning Embedded Systems is a circular process. Often times, you need to know a little bit of everything to make progress. Here is what we recommend -"
         sequence:
           - "Pick a 32/64 Bit CPU of choice (ARM/RISC-V etc)."
           - "Learn the basics of Assembly/C."
@@ -60,20 +91,23 @@ sections:
         type: "full"
         texts:
           - text: On each iteration, you will learn something new and more involved about the part.
+        ctas:
+          - cta:
+            primary: true
+            link: "/library"
+            text: "Explore the Library"
+          - cta:
+            primary: ""
+            link: "mailto:support@pyjamacafe.com"
+            text: "Contact Us"
   - section:
     - details:
         type: "full"
-        title: "CPU, Memory, and Peripherals"
-        subtitle: "Fetch, Decode, Execute, Write back"
-        video: "https://raw.githubusercontent.com/pyjamacafe/cache/master/pitch/cpu-model.webm"
-        caption: "RISC-V Emulator running assembly code. Controls the GREEN LED with the Switch."
-  - section:
-    - details:
-        type: "full"
-        title: "Why it works?"
-        subtitle: "the logic to becoming productive fast"
+        title: "why the 5?"
+        subtitle: "Every Embedded Systems solution will have 3 of the 5 components."
     - details:
         type: "break"
+
     # the CPU
     - details:
         type: "half"
@@ -81,13 +115,20 @@ sections:
         subtitle: "The one that drives the System..."
         texts:
           - text: "Digital systems have a CPU (ARM/RISC-V etc) that drives the system states. The most popular CPUs for Embedded systems on the planet at the moment are - ARM-M, RISC-V and ARM-A."
+        ctas:
+          - cta:
+            primary: true
+            link: "/library"
+            text: "Explore the Library"
+          - cta:
+            primary: ""
+            link: "mailto:support@pyjamacafe.com"
+            text: "Contact Us"
     - details:
         type: "half"
         title: ""
         subtitle: ""
         img: "/images/circle/cpu.png"
-        # img: "/images/circle/cpu.png"
-        # video: "https://raw.githubusercontent.com/pyjamacafe/cache/master/pitch/cpu-model.mp4"
   # The Languages
   - section:
     - details:
@@ -98,10 +139,19 @@ sections:
         video: ""
     - details:
         type: "half"
-        title: "The Languages"
+        title: "C and Assembly"
         subtitle: "Got to program the CPU somehow..."
         texts:
           - text: "Majority of Firmware/Systems software solutions are still authored in C with a little bit of Assembly."
+        ctas:
+          - cta:
+            primary: true
+            link: "/library"
+            text: "Explore the Library"
+          - cta:
+            primary: ""
+            link: "mailto:support@pyjamacafe.com"
+            text: "Contact Us"
   # Tools
   - section:
     - details:
@@ -110,6 +160,15 @@ sections:
         subtitle: "Binary, debugging and automation"
         texts:
           - text: "CPUs don't understand Assembly or C, they only understand 0s and 1s in the memory interpreted as an instruction. There are tools compiler, debuggers and others that help go from text to binary, debug the system and automate a lot of flows."
+        ctas:
+          - cta:
+            primary: true
+            link: "/library"
+            text: "Explore the Library"
+          - cta:
+            primary: ""
+            link: "mailto:support@pyjamacafe.com"
+            text: "Contact Us"
     - details:
         type: "half"
         title: ""
@@ -130,12 +189,44 @@ sections:
         subtitle: "Managing state-machines and resources..."
         texts:
           - text: "When you have too many state-machines to be managed an Operating System helps. Majority of embedded system solutions use an RTOS."
+        ctas:
+          - cta:
+            primary: true
+            link: "/library"
+            text: "Explore the Library"
+          - cta:
+            primary: ""
+            link: "mailto:support@pyjamacafe.com"
+            text: "Contact Us"
+  # FPGA
+  - section:
+    - details:
+        type: "half"
+        title: "Digital Hardware Design"
+        subtitle: "Understanding how machines are designed"
+        texts:
+          - text: "Knowing how to implement simple digital machines and deploying them on FPGA will give you deep insights on how the CPUs and other digital circuits work."
+        ctas:
+          - cta:
+            primary: true
+            link: "/library"
+            text: "Explore the Library"
+          - cta:
+            primary: ""
+            link: "mailto:support@pyjamacafe.com"
+            text: "Contact Us"
+    - details:
+        type: "half"
+        title: ""
+        subtitle: ""
+        img: "/images/circle/fpga.png"
+        video: ""
 
   - section:
     - details:
         type: "full"
-        title: "Learning Tracks"
-        subtitle: "all included in the **Library**"
+        title: "the Library Access"
+        subtitle: "a collection of structured learning tracks with focus on delivering insights with hands on experiments."
         ctas:
           - cta:
             primary: true
@@ -283,13 +374,40 @@ sections:
             more: ""
         posttexts:
           - text: ""
-          - text: "Again, the library is a growing repositor of resources dedicated to learning Embedded systems from scratch."
+          - text: "Again, the library is a growing repository of resources dedicated to learning Embedded systems from scratch."
           - text: "Yes. There is everything on the internet. We just organised it one place."
   - section:
     - details:
         type: "full"
-        title: "Meet the Team"
-        subtitle: "We spent a lot of time digging for the information you are looking for."
+        title: "at the End of it all"
+        subtitle: "at the end of it all, you will..."
+    - details:
+        type: "half"
+        img: "/images/circle/target.png"
+    - details:
+        type: "half"
+        sequence:
+          - "C programming, converting to Assembly and machine code."
+          - "Grasp ARM-M, ARM-A, and RISC-V memory maps and programmer's models."
+          - "Write and debug C programs for practical use."
+          - "Command C constructs - functions, pointers, structs, unions, enums."
+          - "Analyze data types - integers, floats, doubles, signed/unsigned, const, volatile."
+          - "Understand data type memory representation - 2's complement, floating-point encoding."
+    - details:
+        type: "full"
+        ctas:
+            - cta:
+              primary: true
+              link: "/library"
+              text: "Join the Library!"
+  - section:
+    - details:
+        type: "full"
+        title: "the baristas"
+    - details:
+        type: "break"
+    - details:
+        type: "full"
         people:
           - ind:
             name: "Piyush Itankar"
@@ -316,29 +434,6 @@ sections:
               - text: "Computer Engineer holding a Master’s degree in Embedded Systems. Worked on improving the debug architecture of the Bluetooth Firmware at Intel."
               - text: "Worked on ARM64 architecture, programming and exercising latest ARMv8/v9 extensions - programming in low-level FWs (ARM TF-A, trusty) and kernels (LK and Linux) at Google."
               - text: "Currently exploring the Pixel Watch Kernel and BSP (boot-loaders, Linux Kernel, Android HALs and frameworks)."
-  - section:
-    - details:
-        type: "full"
-        title: "what you'll learn"
-        subtitle: "at the end of it all, you will..."
-    - details:
-        type: "half"
-        img: "/images/circle/target.png"
-    - details:
-        type: "half"
-        sequence:
-          - "C programming, converting to Assembly and machine code."
-          - "Grasp ARM-M, ARM-A, and RISC-V memory maps and programmer's models."
-          - "Write and debug C programs for practical use."
-          - "Command C constructs - functions, pointers, structs, unions, enums."
-          - "Analyze data types - integers, floats, doubles, signed/unsigned, const, volatile."
-          - "Understand data type memory representation - 2's complement, floating-point encoding."
-    - details:
-        type: "full"
-        ctas:
-            - cta:
-              primary: true
-              link: "/library"
-              text: "Join the Library!"
+
 ---
 
