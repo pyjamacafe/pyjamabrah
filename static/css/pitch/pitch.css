@@ -1,12 +1,12 @@
 :root {
-  --title-font-size: clamp(20px, 5cqi, 64px);
-  --subtitle-font-size: clamp(16px, 3cqi, 20px);
+  --title-font-size: clamp(32px, 4cqi, 64px);
+  --subtitle-font-size: clamp(16px, 1.25cqi, 20px);
   --text-font-size: clamp(12px, 2cqi, 16px);
   --card-title-font-size: clamp(12px, 3cqi, 16px);
+  --section-margin: clamp(32px, 5cqi, 100px);
 }
 
 .pitch-container {
-  /* background-color: rgb(255, 251, 147); */
   margin: 0px;
   padding: 0px;
   hr {
@@ -18,9 +18,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  /* background-color:rgb(255, 183, 138); */
-  /* border: black 1px dotted; */
-  margin: 100px 0 100px 0;
+  margin: var(--section-margin) 0 var(--section-margin) 0;
 }
 
 .pitch-title {
@@ -33,7 +31,7 @@
   font-size: var(--title-font-size);
   font-weight: bold;
 
-  color: rgb(43, 43, 43);
+  color: var(--fontcolor);
 }
 
 .pitch-subtitle {
@@ -45,7 +43,7 @@
   margin: 0 0 16px 0;
   padding: 0px;
 
-  color: rgb(88, 88, 88);
+  color: var(--fontcolor);
 }
 
 .pitch-break {
@@ -61,10 +59,10 @@
   text-align: center;
 
   font-size: var(--text-font-size);
-  color: rgb(75, 75, 75);
+  color: var(--fontcolor);
 
   b {
-    color: black;
+    color: var(--fontcolor);
   }
   code {
     font-size: var(--text-font-size);
@@ -75,8 +73,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* align-items: center; */
-
   flex: 1 1 100%;
   margin: 0px;
 }
@@ -85,9 +81,8 @@
   margin: 8px;
   flex: 1 1 50%;
   max-width: 20%;
-  /* border: 1px black solid; */
-  background-color: rgb(250, 250, 250);
-  box-shadow: 0 0 2px 0px black ;
+  background-color: var(--bgcolor);
+  box-shadow: 0 0 2px 0px var(--linecolor) ;
   border-radius: 5px;
 }
 
@@ -112,15 +107,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 16px;
-  /* align-items: center; */
-
   max-width: 45%;
-
-  border-radius: 10px;
-  border: 1px black solid;
-  /* box-shadow: 0 0 5px 0 rgb(124, 124, 124); */
-  background-color: rgb(239, 239, 239);
 }
 
 .pitch-people-pic {
@@ -132,7 +119,6 @@
 
   img {
     border-radius: 10px;
-    /* box-shadow: 0 0 10px 0 rgb(124, 124, 124); */
   }
 }
 
@@ -156,14 +142,14 @@
   flex: 1 1 100%;
   font-size: 14px;
   font-weight: bold;
-  color: hsl(0 0 20%);
+  color: var(--fontcolor);
 }
 
 .pitch-people-orgs {
   flex: 1 1 100%;
   font-size: 14px;
   font-weight: bold;
-  color: hsl(0 0 20%);
+  color: var(--fontcolor);
   margin-bottom: 16px;
 }
 
@@ -176,7 +162,7 @@
   margin: 8px 0;
   text-align: justify;
   font-size: 12px;
-  color: rgb(100, 100, 100);
+  color: var(--fontcolor);
 }
 
 .pitch-half {
@@ -189,7 +175,6 @@
   align-self: center;
   align-items: center;
 
-  /* background-color: rgb(195, 195, 195); */
   max-width: 50%;
 
   img {
@@ -209,7 +194,7 @@
 .pitch-video {
   width: 96%;
   height: auto;
-  border: black 2px solid;
+  border: var(--linecolor) 1px solid;
 }
 
 .pitch-ctas {
@@ -257,7 +242,7 @@
   max-width: 85%;
   counter-increment: step-counter;
   font-size: var(--text-font-size);
-  color: rgb(75, 75, 75);
+  color: var(--fontcolor);
 }
 
 /* Custom numbers */

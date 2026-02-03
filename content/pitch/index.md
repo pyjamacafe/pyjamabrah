@@ -41,10 +41,10 @@ sections:
         type: "full"
         title: "getting started"
         subtitle: "there is a structured path to it..."
+        texts:
+          - text: "Learning Embedded Systems is a circular process. Often times, you need to know a little bit of everything to make progress. Here is what we recommend -"
     - details:
         type: "half"
-        texts:
-          - text: "Learning Embedded Systems is a circular process. Often times, you need to know a little bit of everything to make progress.Here is what we recommend -"
         sequence:
           - "Pick a 32/64 Bit CPU of choice (ARM/RISC-V etc)."
           - "Learn the basics of Assembly/C."
@@ -53,11 +53,13 @@ sections:
           - "Implement a scheduler for the CPU and later replace it with an RTOS."
           - "Write state-machines and develop applications."
           - "Restart from #1."
-        posttexts:
-          - text: On each iteration, you will learn something new and more involved about the part.
     - details:
         type: "half"
         img: "/images/pitch/plan.jpg"
+    - details:
+        type: "full"
+        texts:
+          - text: On each iteration, you will learn something new and more involved about the part.
   - section:
     - details:
         type: "full"
