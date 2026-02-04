@@ -14,26 +14,21 @@ ignoreFiles:
 
 menu:
   main: # Change menu as needed
-    - identifier: courses
-      name: Courses
-      url: /courses/
+    - identifier: embedded
+      name: Learn Embedded Systems
+      url: /embedded/
       pre: true
       weight: 1
-    - identifier: Library
-      name: Library
-      pre: true
-      url: /library
-      weight: 2
     - identifier: Login
       pre: true
       name: Login
       url: https://courses.pyjamabrah.com
-      weight: 3
+      weight: 2
     - identifier: Abou
       pre: true
       name: About
       url: /about
-      weight: 4
+      weight: 3
 markup:
   highlight:
     codeFences: true     # Enables fenced code block highlighting (already set)
