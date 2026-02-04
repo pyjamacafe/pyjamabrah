@@ -2,7 +2,7 @@
 type: pitch
 title: "Budding Minds"
 description: "Nurturing the young buds."
-thumbnail: "/images/pitch/model.jpeg"
+thumbnail: "/images/buds/money.png"
 
 url: /buds
 
