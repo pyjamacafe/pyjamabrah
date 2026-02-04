@@ -18,7 +18,7 @@
 
   {{/*  print image if there is one  */}}
   {{ if .img }}
-    <img src="{{.img}}"/>
+    <img class="pitch-full-img" src="{{.img}}"/>
   {{ end }}
 
   {{/*  video  */}}
@@ -36,7 +36,10 @@
     <div class="pitch-card-container">
     {{ range .cards }}
       <div class="pitch-card">
+        <div style="position: relative; display: inline-block">
         <img class="pitch-card-img" src="{{ .img }}"/>
+        {{if .badge }}<span class="pitch-card-img-badge">{{.badge}}</span> {{end}}
+        </div>
         <div class="pitch-card-title">{{.title}}</div>
         <div class="pitch-card-text">{{.text}}</div>
         {{/*  <a class="pitch-card-more">{{.more}}</a>  */}}

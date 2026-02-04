@@ -9,6 +9,7 @@
 .pitch-container {
   margin: 0px;
   padding: 0px;
+
   hr {
     margin: 32px 0 32px 0;
   }
@@ -88,6 +89,20 @@
 
 .pitch-card-img {
   border-radius: 5px 5px 0 0;
+}
+
+.pitch-card-img-badge {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background-color: rgb(255, 242, 0);
+    color: black;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 12px;
+    text-align: center;
+    border: 1px black solid;
+    font-weight: bold;
 }
 
 .pitch-card-title {
@@ -272,6 +287,11 @@
   height: calc(100% + 20px);
   background: #ccc;
   z-index: 1;
+}
+
+.pitch-full-img {
+  max-width: 80%;
+  border: 1px var(--fontcolor) solid;
 }
 
 @media screen and (max-width: 771px) {

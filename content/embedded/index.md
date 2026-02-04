@@ -246,6 +246,7 @@ sections:
           - card:
             title: "C Language"
             img: "/images/courses/c.png"
+            badge: "beginner"
             text: "Learning to write code by investigating the RISC-V assembly instructions."
             more: ""
           - card:
@@ -384,14 +385,51 @@ sections:
           - text: "Yes. There is everything on the internet. We just organised it one place."
   - section:
     - details:
-        type: "half"
+        type: "full"
+        title: "emulator first"
+        subtitle: "you can learn without hardware"
+        texts:
+          - text: "here is a clip from lecture on implementing a scheduler on ARM Cortex-M CPU"
+        video: "https://raw.githubusercontent.com/pyjamacafe/cache/master/pitch/demo-hands-on.webm"
+        caption: "using emulator helps us run code without the need for the hardware."
+  - section:
+    - details:
+        type: "full"
+        title: "what about hardware?"
+        subtitle: "learn on emulator, deploy on hardware (whenever)"
+        cards:
+          - card:
+            title: "STM32 (VLDISCOVERY)"
+            text: "This is cheap board based on the ARM-M3 controller. This also has a Qemu target."
+            img: "/images/pitch/hardware/stm.jpg"
+          - card:
+            title: "Raspberry-Pi (4B)"
+            text: "Raspberry-Pi 4B is a perfect target for learning ARM-A 64Bit (aarch64) CPUs"
+            img: "/images/pitch/hardware/rpi-4b.png"
+          - card:
+            title: "Soan Papdi (FPGA)"
+            text: "We designed our own low-cost high density FPGA to enable learning digital hardware design."
+            img: "/images/pitch/hardware/fpga.jpg"
+        posttexts:
+          - text: "While the course uses a mix of emulator and actual hardware."
+          - text: "We recommend you start with the emulators and later get the hardware when you feel confident"
+  - section:
+    - details:
+        type: "full"
         title: "earn the badge"
         subtitle: "get a certificate for each technical track"
-        texts:
+        posttexts:
           - text: "Certificates are available for the technical courses. The color and design may vary."
-    - details:
-        type: "half"
         img: "https://pyjamacafe.com/library/certificate.png"
+        ctas:
+          - cta:
+            primary: true
+            link: "/library"
+            text: "Explore the Library"
+          - cta:
+            primary: ""
+            link: "mailto:support@pyjamacafe.com"
+            text: "Contact Us"
   - section:
     - details:
         type: "full"
