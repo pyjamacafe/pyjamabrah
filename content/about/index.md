@@ -70,7 +70,7 @@ sections:
             name: "Jegan Amirthalingam"
             img: "/images/authors/ja.jpg"
             designation: "Corporate Trainer, Manager"
-            orgs: "GlobalLogic"
+            orgs: "GlobalLogic, Ex-KPIT, Ex-RNTBCI"
             links:
               linkedin: "https://www.linkedin.com/in/jegan-amirthalingam-44734738/"
             texts:
