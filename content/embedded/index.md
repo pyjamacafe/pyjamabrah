@@ -22,7 +22,7 @@ default_cta: &defaults
 # Add a Sticky Footer
 sticky:
   discount:
-    code: "FUND"
+    code: "FUNDCAFE"
     percent: "70%"
   ctas: *defaults
 
@@ -411,11 +411,8 @@ sections:
             orgs: "Google | Ex-Intel"
             links:
               linkedin: "https://www.linkedin.com/in/streetdogg/"
-              x: "https://x.com/_streetdogg"
               youtube: "https://www.youtube.com/@pyjamacafe"
             texts:
               - text: "Computer Engineer holding a Master’s degree in Embedded Systems. Worked on improving the debug architecture of the Bluetooth Firmware at Intel."
-              - text: "Worked on ARM64 architecture, programming and exercising latest ARMv8/v9 extensions - programming in low-level FWs (ARM TF-A, trusty) and kernels (LK and Linux) at Google."
-              - text: "Currently exploring the Pixel Watch Kernel and BSP (boot-loaders, Linux Kernel, Android HALs and frameworks)."
+              - text: "Worked on ARM64 architecture, programming and exercising latest ARMv8/v9 extensions - programming in low-level FWs (ARM TF-A, trusty) and kernels (LK and Linux) at Google. Currently exploring the Pixel Watch Kernel and BSP (boot-loaders, Linux Kernel, Android HALs and frameworks)."
 ---
-

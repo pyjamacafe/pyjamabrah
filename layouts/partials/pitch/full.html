@@ -49,8 +49,10 @@
   {{ end }}
 
   {{ if .people }}
+    <div class="pitch-people-wrapper">
     {{ range .people}}
     <div class="pitch-people">
+      <div class="pitch-people-intro-wrapper">
       <div class="pitch-people-pic">
         <img src="{{.img}}"/>
       </div>
@@ -59,22 +61,24 @@
         <div class="pitch-people-designation">{{.designation}}</div>
         <div class="pitch-people-orgs">{{.orgs}}</div>
         {{ if .links }}
-            {{if .links.linkedin}}
-              <a class="pitch-people-links" href="{{.links.linkedin}}" target="_blank">linkedin</a>
-            {{end}}
-            {{if .links.x}}
-              <a class="pitch-people-links" href="{{.links.x}}" target="_blank">x.com</a>
-            {{end}}
-            {{if .links.youtube}}
-              <a class="pitch-people-links" href="{{.links.youtube}}" target="_blank">YouTube</a>
-            {{end}}
+          {{if .links.linkedin}}
+            <a class="pitch-people-links" href="{{.links.linkedin}}" target="_blank"><i class="bi bi-linkedin"></i></a>
+          {{end}}
+          {{if .links.x}}
+            <a class="pitch-people-links" href="{{.links.x}}" target="_blank"><i class="bi bi-twitter-x"></i></a>
+          {{end}}
+          {{if .links.youtube}}
+            <a class="pitch-people-links" href="{{.links.youtube}}" target="_blank"><i class="bi bi-youtube"></i></a>
+          {{end}}
         {{ end }}
+        </div>
         {{range .texts}}
           <div class="pitch-people-text">{{.text}}</div>
         {{end}}
       </div>
     </div>
     {{ end }}
+    </div>
   {{ end }}
 
   {{/*  sequence  */}}

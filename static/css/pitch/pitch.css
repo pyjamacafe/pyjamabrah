@@ -118,22 +118,37 @@
   font-size: 12px;
 }
 
+.pitch-people-wrapper {
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+}
+
 .pitch-people {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 45%;
+  max-width: 40%;
+}
+
+.pitch-people-intro-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: baseline;
+  flex: 1 1 auto;
+  margin: 16px;
 }
 
 .pitch-people-pic {
   flex: 1 1 auto;
-  max-width: 30%;
+  max-width: 100px;
   text-align: left;
-  padding: 2%;
-  min-height: 300px;
 
   img {
-    border-radius: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--linecolor);
   }
 }
 
@@ -141,16 +156,15 @@
   display: flex;
   flex-wrap: wrap;
   text-align: left;
-
+  flex-direction: row;
   flex: 1 1 auto;
   max-width: 60%;
-  padding: 2%;
+  padding-left: 2%;
 }
 
 .pitch-people-name {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 4px;
 }
 
 .pitch-people-designation {
@@ -165,17 +179,16 @@
   font-size: 14px;
   font-weight: bold;
   color: var(--fontcolor);
-  margin-bottom: 16px;
 }
 
 .pitch-people-links {
-  margin-right: 4px;
+  margin-right: 8px;
 }
 
 .pitch-people-text {
   flex: 1 1 100%;
   margin: 8px 0;
-  text-align: justify;
+  text-align: left;
   font-size: var(--text-font-size);
   color: var(--fontcolor);
 }
@@ -333,9 +346,10 @@
     max-width: 45%;
   }
 
-  .pitch-people, .pitch-people-pic, .pitch-people-intro  {
+  .pitch-people  {
     min-width: 100%;
     padding: 16px;
     box-shadow: none;
+    min-height: auto;
   }
 }
