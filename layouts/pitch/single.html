@@ -10,4 +10,6 @@
 {{ if .Params.sticky }}
   {{ partial "pitch/sticky.html" .Params.sticky }}
 {{ end }}
+
+{{.Content}}
 {{ end }}
