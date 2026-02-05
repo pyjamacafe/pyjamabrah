@@ -14,10 +14,16 @@ aliases:
 default_cta: &defaults
   - cta:
     link: "https://courses.pyjamabrah.com/web/checkout/68200b15f391a0bf84933bc7?purchaseNow=true&couponcode=FUNDCAFE"
-    text: "Join the Library @ 70% OFF!"
+    text: "🛒 Get Library (Yearly Access)"
   - cta:
     link: "/library"
-    text: "Learn More"
+    text: "learn more ↗"
+sticky:
+  text: "hello"
+  discount:
+    code: "FUND"
+    percent: "70%"
+  ctas: *defaults
 
 sections:
   - section:

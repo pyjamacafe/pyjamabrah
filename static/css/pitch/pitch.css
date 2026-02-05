@@ -221,6 +221,34 @@
   }
 }
 
+.pitch-sticky {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--bgcolor);
+  position: sticky;
+  bottom: 0px;
+  align-items: center;
+  z-index: 2;
+  margin-top: 10px;
+  border-top: 1px solid var(--linecolor);
+  align-self: flex-start;
+  margin: 0px;
+}
+
+.pitch-sticky-ctas {
+  align-items: center;
+  margin: auto;
+  /* padding: 16px; */
+  a {
+    text-decoration: none;
+
+    button {
+      margin: 0 0 8px 0;
+    }
+  }
+}
+
 .pitch-cta-button {
   height: 42px;
   font-size: var(--text-font-size);

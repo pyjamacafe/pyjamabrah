@@ -7,4 +7,22 @@
     {{ end }}
   {{end}}
 </div>
+{{ if .Params.sticky }}
+  <div class="pitch-sticky">
+    {{ if .Params.sticky.ctas }}
+      {{ if .Params.sticky.discount }}
+        <div class="pitch-text">
+          Use code <b>{{.Params.sticky.discount.code}}</b> to get a <b>{{.Params.sticky.discount.percent}}</b> discount on the Yearly Access.
+        </div>
+      {{ end }}
+      <div class="pitch-sticky-ctas">
+        {{ range .Params.sticky.ctas }}
+        <a href="{{ .link }}" target="_blank">
+          <button class="pitch-cta-button">{{ .text }}</button>
+        </a>
+      {{ end }}
+      </div>
+    {{ end }}
+  </div>
+{{ end }}
 {{ end }}
