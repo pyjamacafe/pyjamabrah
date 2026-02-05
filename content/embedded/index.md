@@ -18,8 +18,9 @@ default_cta: &defaults
   - cta:
     link: "/library"
     text: "learn more ↗"
+
+# Add a Sticky Footer
 sticky:
-  text: "hello"
   discount:
     code: "FUND"
     percent: "70%"
@@ -79,7 +80,6 @@ sections:
         - text: "We have organised the basics as organised learning tracks in the **Embedded Systems Library**."
         img: ""
         video: ""
-        ctas: *defaults
   - section:
     - details:
         type: "full"
@@ -104,7 +104,6 @@ sections:
         type: "full"
         texts:
           - text: On each iteration, you will learn something new and more involved about the part.
-        ctas: *defaults
   - section:
     - details:
         type: "full"
@@ -120,7 +119,6 @@ sections:
         subtitle: "The one that drives the System..."
         texts:
           - text: "Digital systems have a CPU (ARM/RISC-V etc) that drives the system states. The most popular CPUs for Embedded systems on the planet at the moment are - ARM-M, RISC-V and ARM-A."
-        ctas: *defaults
     - details:
         type: "half"
         title: ""
@@ -140,7 +138,6 @@ sections:
         subtitle: "Got to program the CPU somehow..."
         texts:
           - text: "Majority of Firmware/Systems software solutions are still authored in C with a little bit of Assembly."
-        ctas: *defaults
   # Tools
   - section:
     - details:
@@ -149,7 +146,6 @@ sections:
         subtitle: "Binary, debugging and automation"
         texts:
           - text: "CPUs don't understand Assembly or C, they only understand 0s and 1s in the memory interpreted as an instruction. There are tools compiler, debuggers and others that help go from text to binary, debug the system and automate a lot of flows."
-        ctas: *defaults
     - details:
         type: "half"
         title: ""
@@ -170,7 +166,6 @@ sections:
         subtitle: "Managing state-machines and resources..."
         texts:
           - text: "When you have too many state-machines to be managed an Operating System helps. Majority of embedded system solutions use an RTOS."
-        ctas: *defaults
   # FPGA
   - section:
     - details:
@@ -179,7 +174,6 @@ sections:
         subtitle: "Understanding how machines are designed"
         texts:
           - text: "Knowing how to implement simple digital machines and deploying them on FPGA will give you deep insights on how the CPUs and other digital circuits work."
-        ctas: *defaults
     - details:
         type: "half"
         title: ""
@@ -192,7 +186,6 @@ sections:
         type: "full"
         title: "the Library Access"
         subtitle: "a collection of structured learning tracks with focus on delivering insights with hands on experiments."
-        ctas: *defaults
         cards:
           - card:
             title: "C Language"
@@ -372,7 +365,6 @@ sections:
         posttexts:
           - text: "Certificates are available for the technical courses. The color and design may vary."
         img: "https://pyjamacafe.com/library/certificate.png"
-        ctas: *defaults
   - section:
     - details:
         type: "full"
@@ -391,9 +383,6 @@ sections:
           - "Write and Debug software state-machines using tools and utilities."
           - "Be able to design and control a build system."
           - "And more..."
-    - details:
-        type: "full"
-        ctas: *defaults
   - section:
     - details:
         type: "full"
@@ -428,8 +417,5 @@ sections:
               - text: "Computer Engineer holding a Master’s degree in Embedded Systems. Worked on improving the debug architecture of the Bluetooth Firmware at Intel."
               - text: "Worked on ARM64 architecture, programming and exercising latest ARMv8/v9 extensions - programming in low-level FWs (ARM TF-A, trusty) and kernels (LK and Linux) at Google."
               - text: "Currently exploring the Pixel Watch Kernel and BSP (boot-loaders, Linux Kernel, Android HALs and frameworks)."
-    - details:
-        type: "full"
-        ctas: *defaults
 ---
 
