@@ -29,7 +29,7 @@ sections:
         type: "break"
     - details:
         type: "half"
-        img: "/images/pitch/model.png"
+        img: "/images/pitch/es.png"
     - details:
         type: "half"
         texts:
