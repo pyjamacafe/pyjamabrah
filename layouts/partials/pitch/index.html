@@ -1,0 +1,15 @@
+{{ with . }}
+<link rel="stylesheet" href="{{ "css/pitch/pitch.css" | relURL}}">
+<div class="pitch-container">
+  {{ range .sections }}
+    {{ range . }}
+      {{ partial "pitch/section.html" . }}
+    {{ end }}
+  {{end}}
+</div>
+{{ if .sticky }}
+  {{ partial "pitch/sticky.html" .sticky }}
+{{ end }}
+
+{{.Content}}
+{{ end }}

@@ -220,7 +220,7 @@
 }
 
 .pitch-video {
-  width: 96%;
+  width: 100%;
   height: auto;
   border: var(--linecolor) 1px solid;
 }

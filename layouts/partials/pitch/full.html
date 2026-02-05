@@ -12,7 +12,7 @@
   {{/*  print text if there is one  */}}
   {{ if .texts }}
     {{ range .texts }}
-    <div class="pitch-text"> {{.text | markdownify }} </div>
+    <div class="pitch-text"> {{. | markdownify }} </div>
     {{ end }}
   {{ end }}
 
@@ -73,7 +73,7 @@
         {{ end }}
         </div>
         {{range .texts}}
-          <div class="pitch-people-text">{{.text}}</div>
+          <div class="pitch-people-text">{{.}}</div>
         {{end}}
       </div>
     </div>
@@ -92,7 +92,7 @@
 
   {{ if .posttexts }}
     {{ range .posttexts }}
-      <div class="pitch-text"> {{.text | markdownify }} </div>
+      <div class="pitch-text"> {{. | markdownify }} </div>
     {{ end }}
   {{ end }}
 

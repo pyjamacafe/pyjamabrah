@@ -34,8 +34,8 @@ sections:
               x: "https://x.com/_streetdogg"
               youtube: "https://www.youtube.com/@pyjamacafe"
             texts:
-              - text: "Electrical Engineer holding a Master’s degree in Embedded Systems, with a proven track record at industry giants. At Intel, contributed expertise to Navigation Firmware, Bluetooth Driver development, and RF validation software."
-              - text: "Currently thriving as an Embedded Software Engineer at Google, drove innovation in Firmware development for the Power Management Sub-system on Tensor SoCs (Pixel Phones) and presently advancing system software for the Pixel Watch."
+              - "Electrical Engineer holding a Master’s degree in Embedded Systems, with a proven track record at industry giants. At Intel, contributed expertise to Navigation Firmware, Bluetooth Driver development, and RF validation software."
+              - "Currently thriving as an Embedded Software Engineer at Google, drove innovation in Firmware development for the Power Management Sub-system on Tensor SoCs (Pixel Phones) and presently advancing system software for the Pixel Watch."
           - ind:
             name: "Mahmad Bharmal"
             img: "/images/authors/mb.jpg"
@@ -45,8 +45,8 @@ sections:
               linkedin: "https://www.linkedin.com/in/streetdogg/"
               youtube: "https://www.youtube.com/@pyjamacafe"
             texts:
-              - text: "Computer Engineer holding a Master’s degree in Embedded Systems. Worked on improving the debug architecture of the Bluetooth Firmware at Intel."
-              - text: "Worked on ARM64 architecture, programming and exercising latest ARMv8/v9 extensions - programming in low-level FWs (ARM TF-A, trusty) and kernels (LK and Linux) at Google. Currently exploring the Pixel Watch Kernel and BSP (boot-loaders, Linux Kernel, Android HALs and frameworks)."
+              - "Computer Engineer holding a Master’s degree in Embedded Systems. Worked on improving the debug architecture of the Bluetooth Firmware at Intel."
+              - "Worked on ARM64 architecture, programming and exercising latest ARMv8/v9 extensions - programming in low-level FWs (ARM TF-A, trusty) and kernels (LK and Linux) at Google. Currently exploring the Pixel Watch Kernel and BSP (boot-loaders, Linux Kernel, Android HALs and frameworks)."
 
   - section:
     - details:
@@ -64,8 +64,8 @@ sections:
             links:
               linkedin: "https://www.linkedin.com/in/balajinatakala/"
             texts:
-              - text: "Firmware Architect and Technical Leader dedicated to bridging the gap between complex hardware design and seamless software execution. Over 12-year tenure at Intel, pivoted from mastering GNSS stacks for global mobile OEMs to architecting next-generation FPGA configuration and secured boot subsystems."
-              - text: "Expertise lies in HW-SW co-design, led the development of RISC-V based submodules and high-speed DMA engines. Beyond technical architecture, Balaji is passionate about organizational growth—having scaled teams from the ground up and mentored the next generation of technical leads."
+              - "Firmware Architect and Technical Leader dedicated to bridging the gap between complex hardware design and seamless software execution. Over 12-year tenure at Intel, pivoted from mastering GNSS stacks for global mobile OEMs to architecting next-generation FPGA configuration and secured boot subsystems."
+              - "Expertise lies in HW-SW co-design, led the development of RISC-V based submodules and high-speed DMA engines. Beyond technical architecture, Balaji is passionate about organizational growth—having scaled teams from the ground up and mentored the next generation of technical leads."
           - ind:
             name: "Jegan Amirthalingam"
             img: "/images/authors/ja.jpg"
@@ -74,8 +74,8 @@ sections:
             links:
               linkedin: "https://www.linkedin.com/in/jegan-amirthalingam-44734738/"
             texts:
-              - text: "Holds a Master's in Automotive Electronics and 13+ years of experience, began as an Assistant System Engineer at TCS, then served as an Assistant Professor at SRM University, teaching automotive courses and leading a formula student electric race car project."
-              - text: "He established a research lab and conducted corporate training. Jegan later held roles at different companies. His research focuses on autonomous vehicle control, vehicle dynamics, and AUTOSAR."
+              - "Holds a Master's in Automotive Electronics and 13+ years of experience, began as an Assistant System Engineer at TCS, then served as an Assistant Professor at SRM University, teaching automotive courses and leading a formula student electric race car project."
+              - "He established a research lab and conducted corporate training. Jegan later held roles at different companies. His research focuses on autonomous vehicle control, vehicle dynamics, and AUTOSAR."
           - ind:
             name: "Hardik Seth"
             img: "/images/authors/hs.jpg"
@@ -86,14 +86,14 @@ sections:
               youtube: "https://www.youtube.com/@DIYwithHardik"
               x: "https://x.com/HardikSeth69?s=20"
             texts:
-              - text: "A PCB dsigner by profession, Hardik has a passion for building Hardware products."
+              - "A PCB dsigner by profession, Hardik has a passion for building Hardware products."
   - section:
     - details:
         type: "half"
         title: "what we don't do"
     - details:
         type: "half"
-        subtitle: "The teams **does not** offer any help/services with respect to"
+        subtitle: "The team **does not** offer any help/services with respect to"
         sequence:
           - Career Guidance.
           - Resume Review.

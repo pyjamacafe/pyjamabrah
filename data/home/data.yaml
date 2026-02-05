@@ -1,0 +1,26 @@
+# default CTA
+default_cta: &def
+  - cta:
+    link: "https://courses.pyjamabrah.com/web/checkout/68200b15f391a0bf84933bc7?purchaseNow=true&couponcode=FUNDCAFE"
+    text: "🛒 Get Library (Yearly Access)"
+  - cta:
+    link: "/embedded"
+    text: "How to learn Embedded ↗"
+
+sections:
+  - section:
+    - details:
+        type: "half"
+        video: "https://raw.githubusercontent.com/pyjamacafe/cache/master/pitch/demo-hands-on.webm"
+        caption: "a clip from the lecture on implementing a scheduler in assembly for the ARM M CPU."
+    - details:
+        type: "half"
+        title: "trusted by 4000+"
+        subtitle: "lowering the barrier to learning Embedded Systems"
+        texts:
+          - "We curate and organise learning tracks on our platform. You can learn the basics from us and spend your precious time searching other critical stuf."
+        ctas: *def
+  - section:
+    - details:
+        type: "full"
+        title: "Posts"

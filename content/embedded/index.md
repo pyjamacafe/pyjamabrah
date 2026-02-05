@@ -40,7 +40,7 @@ sections:
     - details:
         type: "half"
         texts:
-          - text: "Embedded Systems refers to electronics which are driven by an onboard CPU. Embedded Systems at the heart of it sense, process and actuate."
+          - "Embedded Systems refers to electronics which are driven by an onboard CPU. Embedded Systems at the heart of it sense, process and actuate."
         sequence:
           - "**Sensors:** Measure the environment."
           - "**ADC:** Convert analog signals to digital numbers."
@@ -48,14 +48,14 @@ sections:
           - "**DAC:** Converts processed number to a analog signal."
           - "**Acturators:** Convery electrical signals to physical phenomena."
         posttexts:
-          - text: "Embedded Software is all about program the CPU, reading inputs and generating outputs."
+          - "Embedded Software is all about program the CPU, reading inputs and generating outputs."
   - section:
     - details:
         type: "full"
         title: "in action ..."
         subtitle: "emulator based example"
         texts:
-          - text: "This is the CPU (an internal view) reading the program, sensing the Switch state, processing the information and setting the output LED (actuating)"
+          - "This is the CPU (an internal view) reading the program, sensing the Switch state, processing the information and setting the output LED (actuating)"
         video: "https://raw.githubusercontent.com/pyjamacafe/cache/master/pitch/cpu-model.webm"
         caption: "RISC-V Emulator running assembly code. Controls the GREEN LED with the Switch."
   - section:
@@ -75,9 +75,9 @@ sections:
         title: ""
         subtitle: ""
         texts:
-        - text: "You only need to master the CPU. The mental model - often referred to as the `Programmer's model!`"
-        - text: "Historically, it has been very difficult and time consuming to learn low level details of how Computers really work. We are on a mission `to lowering the barrier to learning Embedded systems Software and Hardware`."
-        - text: "We have organised the basics as organised learning tracks in the **Embedded Systems Library**."
+        - "You only need to master the CPU. The mental model - often referred to as the `Programmer's model!`"
+        - "Historically, it has been very difficult and time consuming to learn low level details of how Computers really work. We are on a mission `to lowering the barrier to learning Embedded systems Software and Hardware`."
+        - "We have organised the basics as organised learning tracks in the **Embedded Systems Library**."
         img: ""
         video: ""
   - section:
@@ -88,7 +88,7 @@ sections:
     - details:
         type: "half"
         texts:
-          - text: "Learning Embedded Systems is a circular process. Often times, you need to know a little bit of everything to make progress. Here is what we recommend -"
+          - "Learning Embedded Systems is a circular process. Often times, you need to know a little bit of everything to make progress. Here is what we recommend -"
         sequence:
           - "Pick a 32/64 Bit CPU of choice (ARM/RISC-V etc)."
           - "Learn the basics of Assembly/C."
@@ -103,7 +103,7 @@ sections:
     - details:
         type: "full"
         texts:
-          - text: On each iteration, you will learn something new and more involved about the part.
+          - On each iteration, you will learn something new and more involved about the part.
   - section:
     - details:
         type: "full"
@@ -118,7 +118,7 @@ sections:
         title: "The CPU"
         subtitle: "The one that drives the System..."
         texts:
-          - text: "Digital systems have a CPU (ARM/RISC-V etc) that drives the system states. The most popular CPUs for Embedded systems on the planet at the moment are - ARM-M, RISC-V and ARM-A."
+          - "Digital systems have a CPU (ARM/RISC-V etc) that drives the system states. The most popular CPUs for Embedded systems on the planet at the moment are - ARM-M, RISC-V and ARM-A."
     - details:
         type: "half"
         title: ""
@@ -137,7 +137,7 @@ sections:
         title: "C and Assembly"
         subtitle: "Got to program the CPU somehow..."
         texts:
-          - text: "Majority of Firmware/Systems software solutions are still authored in C with a little bit of Assembly."
+          - "Majority of Firmware/Systems software solutions are still authored in C with a little bit of Assembly."
   # Tools
   - section:
     - details:
@@ -145,7 +145,7 @@ sections:
         title: "The Tools"
         subtitle: "Binary, debugging and automation"
         texts:
-          - text: "CPUs don't understand Assembly or C, they only understand 0s and 1s in the memory interpreted as an instruction. There are tools compiler, debuggers and others that help go from text to binary, debug the system and automate a lot of flows."
+          - "CPUs don't understand Assembly or C, they only understand 0s and 1s in the memory interpreted as an instruction. There are tools compiler, debuggers and others that help go from text to binary, debug the system and automate a lot of flows."
     - details:
         type: "half"
         title: ""
@@ -165,7 +165,7 @@ sections:
         title: "The Operating System"
         subtitle: "Managing state-machines and resources..."
         texts:
-          - text: "When you have too many state-machines to be managed an Operating System helps. Majority of embedded system solutions use an RTOS."
+          - "When you have too many state-machines to be managed an Operating System helps. Majority of embedded system solutions use an RTOS."
   # FPGA
   - section:
     - details:
@@ -173,7 +173,7 @@ sections:
         title: "Digital Hardware Design"
         subtitle: "Understanding how machines are designed"
         texts:
-          - text: "Knowing how to implement simple digital machines and deploying them on FPGA will give you deep insights on how the CPUs and other digital circuits work."
+          - "Knowing how to implement simple digital machines and deploying them on FPGA will give you deep insights on how the CPUs and other digital circuits work."
     - details:
         type: "half"
         title: ""
@@ -324,16 +324,16 @@ sections:
             text: "Collection of casual discussions with industry experts."
             more: ""
         posttexts:
-          - text: ""
-          - text: "Again, the library is a growing repository of resources dedicated to learning Embedded systems from scratch."
-          - text: "Yes. There is everything on the internet. We just organised it one place."
+          - ""
+          - "Again, the library is a growing repository of resources dedicated to learning Embedded systems from scratch."
+          - "Yes. There is everything on the internet. We just organised it one place."
   - section:
     - details:
         type: "full"
         title: "emulator first"
         subtitle: "you can learn without hardware"
         texts:
-          - text: "here is a clip from lecture on implementing a scheduler on ARM Cortex-M CPU"
+          - "here is a clip from lecture on implementing a scheduler on ARM Cortex-M CPU"
         video: "https://raw.githubusercontent.com/pyjamacafe/cache/master/pitch/demo-hands-on.webm"
         caption: "using emulator helps us run code without the need for the hardware."
   - section:
@@ -355,15 +355,15 @@ sections:
             text: "We designed our own low-cost high density FPGA to enable learning digital hardware design."
             img: "/images/pitch/hardware/fpga.jpg"
         posttexts:
-          - text: "While the course uses a mix of emulator and actual hardware."
-          - text: "We recommend you start with the emulators and later get the hardware when you feel confident"
+          - "While the course uses a mix of emulator and actual hardware."
+          - "We recommend you start with the emulators and later get the hardware when you feel confident"
   - section:
     - details:
         type: "full"
         title: "earn the badge"
         subtitle: "get a certificate for each technical track"
         posttexts:
-          - text: "Certificates are available for the technical courses. The color and design may vary."
+          - "Certificates are available for the technical courses. The color and design may vary."
         img: "https://pyjamacafe.com/library/certificate.png"
   - section:
     - details:
@@ -402,8 +402,8 @@ sections:
               x: "https://x.com/_streetdogg"
               youtube: "https://www.youtube.com/@pyjamacafe"
             texts:
-              - text: "Electrical Engineer holding a Master’s degree in Embedded Systems, with a proven track record at industry giants. At Intel, contributed expertise to Navigation Firmware, Bluetooth Driver development, and RF validation software."
-              - text: "Currently thriving as an Embedded Software Engineer at Google, drove innovation in Firmware development for the Power Management Sub-system on Tensor SoCs (Pixel Phones) and presently advancing system software for the Pixel Watch."
+              - "Electrical Engineer holding a Master’s degree in Embedded Systems, with a proven track record at industry giants. At Intel, contributed expertise to Navigation Firmware, Bluetooth Driver development, and RF validation software."
+              - "Currently thriving as an Embedded Software Engineer at Google, drove innovation in Firmware development for the Power Management Sub-system on Tensor SoCs (Pixel Phones) and presently advancing system software for the Pixel Watch."
           - ind:
             name: "Mahmad Bharmal"
             img: "/images/authors/mb.jpg"
@@ -413,6 +413,6 @@ sections:
               linkedin: "https://www.linkedin.com/in/streetdogg/"
               youtube: "https://www.youtube.com/@pyjamacafe"
             texts:
-              - text: "Computer Engineer holding a Master’s degree in Embedded Systems. Worked on improving the debug architecture of the Bluetooth Firmware at Intel."
-              - text: "Worked on ARM64 architecture, programming and exercising latest ARMv8/v9 extensions - programming in low-level FWs (ARM TF-A, trusty) and kernels (LK and Linux) at Google. Currently exploring the Pixel Watch Kernel and BSP (boot-loaders, Linux Kernel, Android HALs and frameworks)."
+              - "Computer Engineer holding a Master’s degree in Embedded Systems. Worked on improving the debug architecture of the Bluetooth Firmware at Intel."
+              - "Worked on ARM64 architecture, programming and exercising latest ARMv8/v9 extensions - programming in low-level FWs (ARM TF-A, trusty) and kernels (LK and Linux) at Google. Currently exploring the Pixel Watch Kernel and BSP (boot-loaders, Linux Kernel, Android HALs and frameworks)."
 ---

@@ -1,19 +1,14 @@
 {{ define "main" }}
-{{/*  {{ partial "courses/tiles.html" .}}  */}}
+	{{/*  {{ partial "courses/tiles.html" .}}  */}}
+	{{ partial "pitch/index.html" .Site.Data.home.data }}
 
-<main>
-	<div class="landingpage-hero">
-		<h1>posts</h1>
-	</div>
 	<div class="post-list">
 		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
 		{{ range $paginator.Pages }}
-		<a class="blog-card" href="{{ .RelPermalink }}" >
-				{{ .Render "summary" }}
-		</a>
+			<a class="blog-card" href="{{ .RelPermalink }}" >
+					{{ .Render "summary" }}
+			</a>
 		{{ end }}
 	</div>
 </main>
-<div class="clear"></div>
-{{ partial "pagination.html" . }}
 {{ end }}
