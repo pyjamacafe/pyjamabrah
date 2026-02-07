@@ -3,7 +3,7 @@
 type: pitch
 title: "Soan Papdi FPGA"
 description: "A beginner friendly FPGA board based on the Lattice-iCE40UP5K Chip with healthy support from the open-source community."
-thumbnail: "/images/pitch/model.jpeg"
+thumbnail: "/images/soanpapdi/soanpapdi.jpg"
 
 # url: /embedded
 #
