@@ -16,7 +16,7 @@ sections:
         caption: "a clip from the lecture on implementing a scheduler in assembly for the ARM M CPU."
     - details:
         type: "half"
-        title: "trusted by 4000+"
+        title: "Trusted by 4000+"
         subtitle: "lowering the barrier to learning Embedded Systems"
         texts:
           - "We curate and organise learning tracks on our platform. You can learn the basics from us and spend your precious time searching other critical stuf."

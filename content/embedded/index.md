@@ -31,7 +31,7 @@ sections:
   - section:
     - details:
         type: "full"
-        title: "what is Embedded Systems?"
+        title: "What is Embedded Systems?"
         subtitle: "Electronics with a CPU in them. Almost everything around us!"
     - details:
         type: "break"
@@ -53,7 +53,7 @@ sections:
   - section:
     - details:
         type: "full"
-        title: "in action ..."
+        title: "In action ..."
         subtitle: "emulator based example"
         texts:
           - "This is the CPU (an internal view) reading the program, sensing the Switch state, processing the information and setting the output LED (actuating)"
@@ -62,7 +62,7 @@ sections:
   - section:
     - details:
         type: "full"
-        title: "how to Embedded Systems?"
+        title: "How to Embedded Systems?"
         subtitle: "master the CPU. learn how to command it."
     - details:
         type: "break"
@@ -84,7 +84,7 @@ sections:
   - section:
     - details:
         type: "full"
-        title: "where and how to start?"
+        title: "Where and how to start?"
         subtitle: "there is a structured path to it..."
     - details:
         type: "half"
@@ -108,7 +108,7 @@ sections:
   - section:
     - details:
         type: "full"
-        title: "why the 5?"
+        title: "Why the 5?"
         subtitle: "Every Embedded Systems solution will have 3 of the 5 components."
     - details:
         type: "break"
@@ -185,7 +185,7 @@ sections:
   - section:
     - details:
         type: "full"
-        title: "the Library Access"
+        title: "The Library Access"
         subtitle: "a collection of structured learning tracks with focus on delivering insights with hands on experiments."
         cards:
           - card:
@@ -331,7 +331,7 @@ sections:
   - section:
     - details:
         type: "full"
-        title: "emulator first"
+        title: "Emulator first"
         subtitle: "you can learn without hardware"
         texts:
           - "here is a clip from lecture on implementing a scheduler on ARM Cortex-M CPU"
@@ -340,7 +340,7 @@ sections:
   - section:
     - details:
         type: "full"
-        title: "what about hardware?"
+        title: "What about hardware?"
         subtitle: "learn on emulator, deploy on hardware (whenever)"
         cards:
           - card:
@@ -361,7 +361,7 @@ sections:
   - section:
     - details:
         type: "full"
-        title: "earn the badge"
+        title: "Earn the badge"
         subtitle: "get a certificate for each technical track"
         posttexts:
           - "Certificates are available for the technical courses. The color and design may vary."
@@ -369,7 +369,7 @@ sections:
   - section:
     - details:
         type: "full"
-        title: "at the End of it all"
+        title: "At the End of it all"
         subtitle: "at the end of it all, you will..."
     - details:
         type: "half"
@@ -387,7 +387,7 @@ sections:
   - section:
     - details:
         type: "full"
-        title: "the baristas"
+        title: "The baristas"
     - details:
         type: "break"
     - details:
