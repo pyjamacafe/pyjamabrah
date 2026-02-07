@@ -85,11 +85,7 @@
 
   {{ if .ctas }}
     <div class="pitch-ctas">
-    {{ range .ctas }}
-      <a href="{{ .link }}" target="_blank">
-        <button class="pitch-cta-button">{{ .text }}</button>
-      </a>
-    {{ end }}
+      {{partial "pitch/ctas.html" .ctas}}
     </div>
   {{ end }}
 </div>

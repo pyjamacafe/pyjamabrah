@@ -16,6 +16,7 @@ default_cta: &defaults
   - cta:
     link: "https://pages.razorpay.com/pl_S5TIBZBqV4mteF/view"
     text: "🛒 Get Soanpapdi"
+    primary: true
   - cta:
     link: "mailto:hardikseth1975@gmail.com"
     text: "Contact Us ↗"

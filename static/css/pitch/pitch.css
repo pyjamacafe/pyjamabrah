@@ -220,7 +220,7 @@
 }
 
 .pitch-video {
-  width: 100%;
+  width: 99%;
   height: auto;
   border: var(--linecolor) 1px solid;
 }
@@ -266,6 +266,13 @@
   height: 42px;
   font-size: var(--text-font-size);
   border-radius: 5px;
+  background-color: var(--bgcolor);
+  /* border-color: var(--theme-primary); */
+}
+
+.pitch-cta-button-primary {
+  background-color: var(--theme-primary);
+  /* border: var(--theme-primary); */
 }
 
 .pitch-full {

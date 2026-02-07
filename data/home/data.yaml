@@ -2,10 +2,11 @@
 default_cta: &def
   - cta:
     link: "https://courses.pyjamabrah.com/web/checkout/68200b15f391a0bf84933bc7?purchaseNow=true&couponcode=FUNDCAFE"
-    text: "🛒 Get Library (Yearly Access)"
+    text: "Get Library (Yearly Access)"
+    primary: true
   - cta:
     link: "/embedded"
-    text: "How to learn Embedded ↗"
+    text: "How to learn Embedded?"
 
 sections:
   - section:

@@ -14,10 +14,11 @@ aliases:
 default_cta: &defaults
   - cta:
     link: "https://courses.pyjamabrah.com/web/checkout/68200b15f391a0bf84933bc7?purchaseNow=true&couponcode=FUNDCAFE"
-    text: "🛒 Get Library (Yearly Access)"
+    text: "Get Library (Yearly Access)"
+    primary: true
   - cta:
     link: "/library"
-    text: "learn more ↗"
+    text: "learn more"
 
 # Add a Sticky Footer
 sticky:

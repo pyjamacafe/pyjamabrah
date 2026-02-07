@@ -1,0 +1,7 @@
+{{with .}}
+{{ range . }}
+<a href="{{ .link }}" target="_blank">
+  <button class="pitch-cta-button {{if .primary}}pitch-cta-button-primary{{end}}">{{ .text }}</button>
+</a>
+{{ end }}
+{{end}}
