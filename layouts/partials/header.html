@@ -13,15 +13,28 @@
   </div>
   <hr />
   <nav class="navbar">
-
     {{ with .Site.Menus.main }}
       {{ range $index, $value := . }}
-        {{ if $index }}  {{ end }}
-        <a {{ if .Pre }} class="menu-special"{{ end }}
-           href="{{ .URL | relURL }}"
-           {{ if .Pre }} {{end}}><b>{{ .Name }}</b></a>
+        {{if eq .Identifier "spacer" }}
+          <span style="flex: 1 1 100%;"></span>
+        {{else}}
+        <a class="menu-special" id="{{.Identifier}}" href="{{ .URL | relURL }}">{{ .Name }}</a>
+        {{end}}
       {{ end }}
     {{ end }}
   </nav>
   <hr />
+  <script>
+    p = window.location.pathname.split("/").join("");
+    if (p == "") {
+      p = "home";
+    }
+
+    console.log(p);
+
+    btn = document.getElementById(p);
+    btn.style.backgroundColor = "var(--cafe)";
+    btn.style.color = "var(--bgcolor)";
+    console.log(btn)
+  </script>
 </header>

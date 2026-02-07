@@ -14,26 +14,32 @@ ignoreFiles:
 
 menu:
   main: # Change menu as needed
+    - identifier: home
+      name: Home
+      url: /
+      weight: 1
     - identifier: embedded
-      name: Embedded Systems
+      name: Library
       url: /embedded/
       pre: true
-      weight: 1
+      weight: 2
     - identifier: soanpapdi
-      name: Soan Papdi
+      name: "SoanPapdi"
       url: /soanpapdi/
       pre: true
-      weight: 2
-    - identifier: Login
-      pre: true
-      name: Login
-      url: https://courses.pyjamabrah.com
-      weight: 4
+      weight: 3
     - identifier: about
       pre: true
       name: About
       url: /about
+      weight: 4
+    - identifier: spacer
       weight: 5
+    - identifier: Login
+      pre: true
+      name: "Login"
+      url: https://courses.pyjamabrah.com
+      weight: 6
 markup:
   highlight:
     codeFences: true     # Enables fenced code block highlighting (already set)
