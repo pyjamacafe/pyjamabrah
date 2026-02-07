@@ -32,6 +32,16 @@
     </figure>
   {{ end }}
 
+  {{/*  youtube  */}}
+  {{ if .youtube }}
+    <iframe style= "width:100%; height:auto; aspect-ratio:16/9" src="https://www.youtube.com/embed/{{.youtube}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  {{ end }}
+
+  {{/* Model */}}
+  {{ if .model }}
+    {{ partial "pitch/model.html" .model }}
+  {{ end }}
+
   {{/*  sequence  */}}
   {{ if .sequence }}
     <ol class="pitch-sequence">
@@ -39,6 +49,32 @@
       <li class="pitch-sequence-item">{{ . | markdownify }}</li>
     {{ end }}
     </ol>
+  {{ end }}
+
+  {{/*  numbered  */}}
+  {{ if .numbered }}
+    <ol class="">
+    {{ range .numbered }}
+      <li class="">{{ . | markdownify }}</li>
+    {{ end }}
+    </ol>
+  {{ end }}
+
+  {{/*  numbered  */}}
+  {{ if .defines }}
+    {{ range $key, $value := .defines }}
+      <dt class="">{{$key}}</dt>
+      <dd>{{$value}}</dd>
+    {{ end }}
+  {{ end }}
+
+  {{/*  list  */}}
+  {{ if .list }}
+    <ul class="">
+    {{ range .list }}
+      <li class="">{{ . | markdownify }}</li>
+    {{ end }}
+    </ul>
   {{ end }}
 
   {{ if .posttexts }}

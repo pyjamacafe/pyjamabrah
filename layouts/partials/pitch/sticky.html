@@ -1,6 +1,11 @@
 {{ with . }}
 <div class="pitch-sticky">
     {{ if .ctas }}
+      {{ if .text }}
+        <div class="pitch-text">
+          {{.text}}
+        </div>
+      {{ end }}
       {{ if .discount }}
         <div class="pitch-text">
           Use code <b>{{.discount.code}}</b> to get a <b>{{.discount.percent}}</b> discount on the Yearly Access.

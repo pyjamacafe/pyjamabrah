@@ -32,6 +32,10 @@
     </figure>
   {{ end }}
 
+  {{if .youtubePlaylist }}
+    {{partial "pitch/youtube-playlist.html" .youtubePlaylist}}
+  {{ end}}
+
   {{ if .cards }}
     <div class="pitch-card-container">
     {{ range .cards }}
