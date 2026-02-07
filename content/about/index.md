@@ -86,7 +86,8 @@ sections:
               youtube: "https://www.youtube.com/@DIYwithHardik"
               x: "https://x.com/HardikSeth69?s=20"
             texts:
-              - "A PCB dsigner by profession, Hardik has a passion for building Hardware products."
+              - "An embedded product engineer who designs PCBs, writes firmware, and enjoys turning ideas into complete, working hardware products from first schematic to final blink."
+              - "Engineer by day, Maker by night - playing with electronics since the age of 9. From childhood, I’ve loved tearing things apart, rebuilding them, and learning through hands-on experimentation and how-to videos."
   - section:
     - details:
         type: "half"
