@@ -19,6 +19,11 @@ menu:
       url: /embedded/
       pre: true
       weight: 1
+    - identifier: soanpapdi
+      name: Soan Papdi
+      url: /soanpapdi/
+      pre: true
+      weight: 2
     - identifier: Login
       pre: true
       name: Login
