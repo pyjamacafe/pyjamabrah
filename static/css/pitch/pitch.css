@@ -342,6 +342,10 @@
   border: 1px var(--fontcolor) solid;
 }
 
+.pitch-half-image-framed {
+  border: 1px solid var(--linecolor);
+}
+
 @media screen and (max-width: 771px) {
   .pitch-half {
     max-width: 100%;

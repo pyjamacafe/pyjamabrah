@@ -32,6 +32,17 @@
     </figure>
   {{ end }}
 
+  {{/*  video  */}}
+  {{ if .videoPaused }}
+    <figure>
+      <video class="pitch-video" controls autoplay muted >
+      <source src="{{.videoPaused}}" type="video/webm">
+      Your browser does not support the video tag.
+      </video>
+      {{ if .caption }}<figcaption>{{.caption}}</figcaption> {{ end }}
+    </figure>
+  {{ end }}
+
   {{if .youtubePlaylist }}
     {{partial "pitch/youtube-playlist.html" .youtubePlaylist}}
   {{ end}}

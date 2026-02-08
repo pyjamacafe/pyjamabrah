@@ -21,6 +21,11 @@
     <img src="{{.img}}"/>
   {{ end }}
 
+  {{/*  print image if there is one  */}}
+  {{ if .img2 }}
+    <img class="pitch-half-image-framed" src="{{.img2}}"/>
+  {{ end }}
+
   {{/*  video  */}}
   {{ if .video }}
     <figure>

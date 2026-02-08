@@ -28,18 +28,23 @@ menu:
       url: /soanpapdi/
       pre: true
       weight: 3
+    - identifier: buds
+      pre: true
+      name: Buds
+      url: /buds
+      weight: 4
     - identifier: about
       pre: true
       name: About
       url: /about
-      weight: 4
-    - identifier: spacer
       weight: 5
+    - identifier: spacer
+      weight: 6
     - identifier: Login
       pre: true
       name: "Login"
       url: https://courses.pyjamabrah.com
-      weight: 6
+      weight: 7
 markup:
   highlight:
     codeFences: true     # Enables fenced code block highlighting (already set)

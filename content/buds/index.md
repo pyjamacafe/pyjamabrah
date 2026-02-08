@@ -30,7 +30,7 @@ sections:
         type: "break"
     - details:
         type: "half"
-        img: "/images/buds/hero.jpg"
+        img2: "/images/buds/hero.jpg"
     - details:
         type: "half"
         ctas: *defaults
@@ -44,6 +44,13 @@ sections:
           - you can be an onlooker and even an active participant in guiding Narayanswamy ...
   - section:
     - details:
+        type: "full"
+        title: "Teaser"
+        subtitle: "You may have a dream, but unless you plan and act..."
+        videoPaused: "https://raw.githubusercontent.com/pyjamacafe/cache/master/buds/story.webm"
+        ctas: *defaults
+  - section:
+    - details:
         type: "half"
         title: "The learnings?"
         subtitle: ""
@@ -55,7 +62,7 @@ sections:
         ctas: *defaults
     - details:
         type: "half"
-        img: "/images/buds/hero-2.jpg"
+        img2: "/images/buds/hero-2.jpg"
 
   - section:
     - details:
@@ -88,7 +95,7 @@ sections:
   - section:
     - details:
         type: "half"
-        img: "/images/buds/vision.jpg"
+        img2: "/images/buds/vision.jpg"
     - details:
         type: "half"
         title: "Our Vision"
