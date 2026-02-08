@@ -14,8 +14,8 @@ ignoreFiles:
 
 menu:
   main: # Change menu as needed
-    - identifier: home
-      name: Home
+    - identifier: courses
+      name: Courses
       url: /
       weight: 1
     - identifier: library
