@@ -63,7 +63,22 @@ sections:
     - details:
         type: "half"
         img2: "/images/buds/hero-2.jpg"
-
+  - section:
+    - details:
+        type: "full"
+        title: "How to access the Course?"
+        texts:
+          - "Browser, iOS or Android - we got you covered!"
+        ctas:
+          - cta:
+            link: "https://apps.apple.com/in/app/pyjama-brah/id6746846358"
+            text: "Download iOS App"
+          - cta:
+            link: "https://play.google.com/store/apps/details?id=com.tagmango.tmpyjamabrah&pcampaignid=web_share"
+            text: "Download Android App"
+          - cta:
+            link: "https://courses.pyjamacafe.com"
+            text: "Access on the Web"
   - section:
     - details:
         type: "full"
@@ -116,5 +131,3 @@ sections:
           text: "Explore Digital Logic"
           primary: true
 ---
-
-
