@@ -1,0 +1,44 @@
+# Essentials
+title: "C++ for Middleware Engineers"
+subtitle: "Object Oriented Programming - Under the Hood"
+poster: "/images/courses/auto-cpp-middleware.png"
+description: "An introduction to the embedded middleware layer for Automotive Embedded Systems."
+preview: ""
+
+# course stats
+rating: 5
+bestseller: true
+
+type: "partner"
+
+badges:
+  - beginner: true
+  - intermediate: true
+  - free: false
+
+content:
+  - videos: "**50+**"
+  - duration: "**~13.6 Hrs**"
+  - downloads:
+  - codeReviews:
+  - projects:
+  - demo: "50+"
+  - enrolled: "**10+**"
+  - certificate: yes
+
+# Link and Payment options
+more: "/automotive-middleware-101"
+ctaText: "Join for Free"
+enroll:
+  - plan: "Start the Course"
+    link: "https://courses.pyjamabrah.com/web/checkout/69887956b426c244c88e0c8a"
+
+discount:
+  code: ""
+  percentage: ""
+  time: ""
+
+
+#
+# Details below this line are for the landing Page.
+#
