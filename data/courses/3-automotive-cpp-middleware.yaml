@@ -31,12 +31,12 @@ more: "/automotive-middleware-101"
 ctaText: "Join for Free"
 enroll:
   - plan: "Start the Course"
-    link: "https://courses.pyjamabrah.com/web/checkout/69887956b426c244c88e0c8a"
+    link: "https://courses.pyjamabrah.com/web/checkout/69887956b426c244c88e0c8a?purchaseNow=true&couponcode=AUTOMOTIVECPP"
 
 discount:
-  code: ""
-  percentage: ""
-  time: ""
+  code: "AUTOMOTIVECPP"
+  percentage: "25"
+  time: "24"
 
 
 #
