@@ -28,7 +28,7 @@ param:
   bundle:
     - course: *course-name
       subtitle: *oneliner
-      description: "**Note:** This is a `Partner Course` and NOT included in the **[Library Access](/library)**!\n\nOOPS Under the Hood is a deep-dive course designed to bridge this gap. It takes you beyond 'how to write C++' into how C++ really works internally—from source code to executable, from object construction to virtual dispatch, and from templates to optimization."
+      description: "**Note:** This is a `Partner Course` and NOT included in the **[Library Access](/library)**!\n\nThis course unpacks the complete compilation pipeline, memory layout, symbol resolution, object lifetime, abstraction mechanisms, and performance behavior. You will analyze real binaries, inspect assembly output, and use professional tools like nm, objdump, and profilers to understand how design choices affect execution.\n\nBy connecting theory with system-level realities, this course builds strong mental models that help you write efficient, maintainable, and production-grade C++ code—especially for embedded systems, middleware, and performance-critical software."
       previewCover: *cover-art
       bestSeller: "yes"
       beginner: "yes"
