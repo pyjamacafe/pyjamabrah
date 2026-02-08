@@ -102,6 +102,7 @@ param:
               type: "video"
             - chapter: "'objdump' utility"
               type: "video"
+              preview: "26Ys5AoyBAs"
             - chapter: "Significance of LMA and VMA"
               type: "video"
             - chapter: "'weak' attributes in Linking"
@@ -170,6 +171,7 @@ param:
               type: "video"
             - chapter: "Move Semantics"
               type: "video"
+              preview: "-tSTXWXCmSA"
             - chapter: "Shallow Copy Vs Deep Copy - Uses"
               type: "video"
 
