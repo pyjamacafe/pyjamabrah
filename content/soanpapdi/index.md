@@ -126,18 +126,29 @@ sections:
           - "This is a ever growing resource"
   - section:
     - details:
-        type: "full"
-        title: "the backstory"
-        subtitle: "Soan Papdi is deliberate and very intentional"
+        type: "break"
     - details:
         type: "half"
         img: "/images/soanpapdi/versions.jpg"
         caption: "The journey of Soan Papdi to it's final form."
     - details:
         type: "half"
+        title: "the backstory"
+        subtitle: "Soan Papdi is deliberate and very intentional"
         texts:
           - "Soan Papdi board is designed to be easy to use, be simple in design and not limit the learner."
         ctas: *defaults
+    - details:
+        type: "half"
+        title: "Ready to Ship"
+        texts:
+          - "Hand assembled and tested by Hardik (personally). Ready to be shipped."
+        ctas: *defaults
+    - details:
+        type: "half"
+        img: "/images/soanpapdi/shipping.jpg"
+        caption: "The journey of Soan Papdi to it's final form."
+
   - section:
     - details:
         type: "full"
@@ -170,4 +181,5 @@ sections:
               - "Currently thriving as an Embedded Software Engineer at Google, drove innovation in Firmware development for the Power Management Sub-system on Tensor SoCs (Pixel Phones) and presently advancing system software for the Pixel Watch."
         posttexts:
           - "Proposal of Soan Papdi was made by Piyush, the idea was brought to life by Hardik."
+          - "Made with Love and Care, in India ❤️"
 ---
