@@ -16,7 +16,7 @@ menu:
   main: # Change menu as needed
     - identifier: courses
       name: Courses
-      url: /
+      url: /courses
       weight: 1
     - identifier: library
       name: Library
