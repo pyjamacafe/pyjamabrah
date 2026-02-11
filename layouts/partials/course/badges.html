@@ -1,0 +1,7 @@
+{{ with . }}
+<div class="bundle-landing-badge-container">
+  {{ range . }}
+  <div class="bundle-landing-badge bundle-landing-badge-{{.}}">{{.}}</div>
+  {{ end }}
+</div>
+{{ end }}

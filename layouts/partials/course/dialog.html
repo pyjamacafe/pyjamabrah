@@ -1,0 +1,63 @@
+{{ with . }}
+<dialog class="bundle-landing-course-details-dialog-container" id="dialog-{{.id}}">
+  <div class="bundle-landing-dialog-details">
+      {{ if .title }}
+      <div class="bundle-landing-title">{{.title | markdownify}}</div>
+      {{ end }}
+
+      {{ if .subtitle }}
+      <div class="bundle-landing-subtitle">{{.subtitle | markdownify }}</div>
+      {{ end }}
+      <hr class="bundle-divider-line"/>
+
+      {{ if .introduction }}
+      <div class="bundle-landing-introduction">
+        {{ range .introduction }}
+          <p>{{ . | markdownify }}</p>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      {{ if .badges }}
+        {{ partial "course/badges.html" .badges }}
+      {{ end }}
+
+      {{ if .rating }}
+      <div class="bundle-landing-rating-student-count-container">
+        {{ partial "course/ratingStars.html" .rating }}
+        {{ if .enrolled }}
+        <span> | <b class="bundle-landing-badge bundle-landing-badge-enrolled">{{.enrolled}}</b> Enrolled.</span>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      {{ if .contents }}
+      {{ range .contents }}
+        <div>
+          {{.section.title}}
+        </div>
+        <div>
+          {{.section.description}}
+        </div>
+
+        {{ range .section.chapters }}
+          <div> {{.chapter.title}} </div>
+        {{ end }}
+      {{ end }}
+      {{ end }}
+  </div>
+</dialog>
+<script>
+  activeDialog = null;
+  function openDialog(cardID) {
+    dialogID = "dialog-"+cardID;
+    activeDialog = document.getElementById(dialogID)
+    console.log(dialogID, activeDialog)
+    activeDialog.showModal();
+  }
+
+  function closeDialog() {
+    activeDialog.close();
+  }
+</script>
+{{ end }}

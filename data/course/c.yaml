@@ -1,0 +1,26 @@
+id: "c"
+title: "C Language"
+subtitle: "A detailed course on C language with insights using the RISC-V assembly."
+
+cover: "/images/courses/c.png"
+introduction:
+  - "This short course introduces the field of embedded systems, how to pursue it and what are the some of the possible journeys."
+
+contents:
+  - section:
+      title: "Section 1"
+      description: "Some description of the section 1"
+      chapters:
+        - chapter:
+            title: "Chapter 1"
+            type: "video"
+        - chapter:
+            title: "Chapter 2"
+            type: "video"
+  - section:
+      title: "Section 2"
+      description: "Some description of the section 2"
+      chapters:
+        - chapter:
+            title: "Chapter 1"
+            type: "video"

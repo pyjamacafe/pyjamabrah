@@ -1,0 +1,33 @@
+id: "roadmap"
+title: "Roadmap to learning Embedded Systems"
+cover: "/images/courses/howtoembedded.png"
+subtitle: "A quick introduction to the field of Embedded systems"
+
+introduction:
+  - "This short course introduces the field of embedded systems, how to pursue it and what are the some of the possible journeys."
+
+badges:
+  - Beginner
+  - Intermediate
+
+rating: 4.9
+enrolled: 3000+
+
+contents:
+  - section:
+      title: "Section 1"
+      description: "Some description of the section 1"
+      chapters:
+        - chapter:
+            title: "Chapter 1"
+            type: "video"
+        - chapter:
+            title: "Chapter 2"
+            type: "video"
+  - section:
+      title: "Section 2"
+      description: "Some description of the section 2"
+      chapters:
+        - chapter:
+            title: "Chapter 1"
+            type: "video"

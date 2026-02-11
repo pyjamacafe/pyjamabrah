@@ -1,0 +1,20 @@
+{{ with . }}
+<div class="bundle-rating-star-container">
+  {{ $fullStars := (math.Floor .) }}
+  {{ range seq $fullStars }}
+    <span class="bi bi-star-fill bundle-rating-star"></span>
+  {{ end }}
+
+  {{ $halfStars := (math.Ceil (sub . $fullStars)) }}
+  {{ if $halfStars }}
+    <span class="bi bi-star-half bundle-rating-star"></span>
+  {{ end }}
+
+  {{ $emptyStars := (sub 5 (add $fullStars $halfStars)) }}
+  {{ range seq $emptyStars }}
+    <span class="bi bi-star bundle-rating-star"></span>
+  {{ end }}
+
+  (<b>{{.}}</b>)
+</div>
+{{ end }}

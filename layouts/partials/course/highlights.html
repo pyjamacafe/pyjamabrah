@@ -1,0 +1,60 @@
+{{ with . }}
+<div class="bundle-landing-section-title">Highlights</div>
+<div class="bundle-landing-highlights-container">
+  {{ range . }}
+    <div class="bundle-landing-highlight">
+      {{ if .courseCount }}
+      <span class="bi bi-folder-fill">&nbsp</span>Collection of <b>{{.courseCount}}</b> Courses.
+      {{ end }}
+
+      {{ if .duration }}
+      <span class="bi bi-play-btn">&nbsp</span><b>{{.duration}}</b> of recorded lectures.
+      {{ end }}
+
+      {{ if .lessonCount }}
+      <span class="bi bi-check2-square">&nbsp</span><b>{{.lessonCount}}</b> Lessons.
+      {{ end }}
+
+      {{ if .emulator }}
+      <span class="bi bi-pci-card">&nbsp</span><b>Emulator</b> based experiments.
+      {{ end }}
+
+      {{ if .hardware }}
+      <span class="bi bi-pci-card">&nbsp</span><b>Hardware</b> based experiments.
+      {{ end }}
+
+      {{ if .downloadableResources }}
+      <span class="bi bi-cloud-arrow-down">&nbsp</span><b>{{.downloadableResources}}</b> downloadable resource.
+      {{ end }}
+
+      {{ if .workshops }}
+      <span class="bi bi-person-video3">&nbsp</span>Occasional <b>workshops</b> by industry experts.
+      {{ end }}
+
+      {{ if .certificate }}
+      <span class="bi bi-trophy">&nbsp</span><b>Certificate</b> on completion of technical tracks.
+      {{ end }}
+
+      {{ if .cheatSheet }}
+      <span class="bi bi-card-list">&nbsp</span><b>Notes/Cheat-sheet</b> on select courses.
+      {{ end }}
+
+      {{ if .caseStudy }}
+      <span class="bi bi-git">&nbsp</span><b>Case studies</b> based on open-source code.
+      {{ end }}
+
+      {{ if .exerciseChallenge }}
+      <span class="bi bi-code-square">&nbsp</span><b>Exercises</b> and <b>Coding Challenges</b>.
+      {{ end }}
+
+      {{ if .projectCount }}
+      <span class="bi bi-hammer">&nbsp</span><b>{{.projectCount}}</b> Project implementation.
+      {{ end }}
+
+      {{ if .freeUpdates }}
+      <span class="bi bi-emoji-sunglasses">&nbsp</span><b>Free updates</b> to the course.
+      {{ end }}
+    </div>
+  {{ end }}
+</div>
+{{ end }}

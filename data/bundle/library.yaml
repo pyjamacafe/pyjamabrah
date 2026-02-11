@@ -1,0 +1,108 @@
+# default CTA
+default_cta: &defaults
+  - cta:
+    link: "link"
+    text: "Sample CTA"
+    primary: true
+
+sticky:
+  text: "This is a sample text for the sticky"
+  discount:
+    code: "COUPONCODE"
+    percent: 35
+  ctas: *defaults
+
+title:        "The Library Access"
+subtitle:     "This is a subtitle"
+cover: "/images/bundle/library.jpeg"
+
+introduction:
+  - "Library is a collection of courses that will guide you on the `fundamentals` and `insights` you need to design and implement Embedded Systems based solutions!"
+  - "Embedded Systems Software Engineering includes writing firmware for micro-controllers and system software for application grade CPUs involving boot-loaders, device trees and higher level operating systems."
+
+badges:
+  - Bestseller
+  - Beginner
+  - Intermediate
+  - Advance
+
+rating: 4.9
+enrolled: 3000+
+
+date: 9 Feb 2026
+language: English
+access: 365 Days
+
+highlights:
+  - courseCount: "25+"
+  - duration: "200+ hours"
+  - lessonCount: "200+"
+  - emulator: true
+  - hardware: true
+  - downloadableResources: "10+"
+  - workshops: true
+  - certificate: true
+  - cheatSheet: true
+  - caseStudy: true
+  - exerciseChallenge: true
+  - projectCount: "Several"
+  - freeUpdates: true
+
+videoMessage: "library"
+
+learnings:
+  - C programming, converting to Assembly and machine code.
+  - Grasp ARM-M, ARM-A, and RISC-V memory maps and programmer's models.
+  - Write and debug C programs for practical use.
+  - Command C constructs - functions, pointers, structs, unions, enums.
+  - Analyze data types - integers, floats, doubles, signed/unsigned, const, volatile.
+  - Understand data type memory representation - 2's complement, floating-point encoding.
+  - Implement control structures (if, else, switch, loops, goto) and track assembly effects.
+  - Manipulate arrays, strings, pointers, and perform pointer arithmetic.
+  - Leverage debug tools - GDB, make, addr2line etc.
+  - Build mental models for pointers in firmware, Linux, FreeRTOS, Zephyr.
+  - Master pointer operations - pointer-to-pointer, arrays, function pointers.
+  - Handle pointer arithmetic, void pointers, NULL pointers in kernels.
+  - Manage dynamic memory with malloc(), free(); avoid leaks, dangling pointers.
+  - Learn low-level programming with RISC-V and Assembly.
+  - Write and debug RISC-V (rv32i) assembly programs; convert C to assembly.
+  - Use QEMU, GDB, Makefiles for low-level debugging.
+  - Develop baremetal firmware, drivers; print “Hello, World!” on UART.
+  - Understand ARM Cortex-M, Cortex-A architecture, registers, boot processes.
+  - Write Cortex-M assembly, including schedulers with context switching, SysTick.
+  - Master exception handling, vector tables, system registers via QEMU.
+  - Create, debug Makefiles for build automation; write GNU linker scripts.
+  - Use Git, Gerrit for version control, code reviews.
+  - Dissect FreeRTOS kernel; port to new targets with task scheduling.
+  - Develop Linux kernel modules; manage with insmod, rmmod, lsmod.
+  - Implement /proc entries, system calls, device drivers in sandbox.
+  - Generate digital audio in C using sampling, file operations.
+  - Simulate real-world coding with QEMU, Codespace, Multipass.
+  - Build mental models of CPU, memory, state machines, scheduling.
+  - Tackle technical discussions on C, memory, interrupts, bit manipulation.
+  - Complete projects - schedulers, digital audio, Linux drivers.
+
+courses:
+  - "roadmap"
+  - "c"
+
+sampleCertificate: "/images/courses/library-certificate.png"
+
+difference:
+  - "difference once"
+
+instructors:
+  - "piyush"
+  - "mahmad"
+
+requirements:
+  - "this is requirement 1"
+  - "this is requirement 2"
+
+audience:
+  - "this is for everyone"
+
+faqs:
+  - faq:
+      - "question"
+      - "answer"

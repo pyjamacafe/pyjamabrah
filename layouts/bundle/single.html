@@ -1,0 +1,158 @@
+{{ define "main" }}
+  <link rel="stylesheet" href="{{"css/bundle/bundle.css" | relURL }}">
+  {{/*  Filter the Data source  */}}
+  {{$bundle := (index .Site.Data.bundle .Params.source) }}
+  {{$courselist :=.Site.Data.course }}
+
+  <main class="bundle-container">
+    <div class="bundle-info-container">
+      {{ if $bundle.title }}
+      <div class="bundle-landing-title">{{$bundle.title | markdownify}}</div>
+      {{ end }}
+
+      {{ if $bundle.subtitle }}
+      <div class="bundle-landing-subtitle">{{$bundle.subtitle | markdownify }}</div>
+      {{ end }}
+      <hr class="bundle-divider-line"/>
+
+      {{ if $bundle.introduction }}
+      <div class="bundle-landing-introduction">
+        {{ range $bundle.introduction }}
+          <p>{{ . | markdownify }}</p>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      {{ if $bundle.badges }}
+        {{ partial "course/badges.html" $bundle.badges }}
+      {{ end }}
+
+      {{ if $bundle.rating }}
+      <div class="bundle-landing-rating-student-count-container">
+        {{ partial "course/ratingStars.html" $bundle.rating }}
+        {{ if $bundle.enrolled }}
+        <span> | <b class="bundle-landing-badge bundle-landing-badge-enrolled">{{$bundle.enrolled}}</b> Enrolled.</span>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      <div class="bundle-landing-general-info-container">
+      <span class="bi bi-exclamation-circle-fill"></span><span>Last Updated: {{$bundle.date}}</span>|
+      <span class="bi bi-globe"></span><span>{{ $bundle.language }}</span>|
+      <span class="bi bi bi-clock"></span><span><b>{{ $bundle.access }}</b></span> Access.
+      </div>
+
+      {{ if $bundle.highlights }}
+      {{ partial "course/highlights.html" $bundle.highlights}}
+      {{ end }}
+
+      {{ if $bundle.videoMessage }}
+      {{ partial "course/videoMessage.html" $bundle.videoMessage}}
+      {{ end }}
+
+      {{ if $bundle.learnings }}
+      {{ partial "course/learnings.html" $bundle.learnings }}
+      {{ end }}
+
+      {{ if $bundle.courses }}
+      <div class="bundle-landing-section-title">Courses</div>
+      <div class="bundle-course-collection-container">
+      {{ range $bundle.courses }}
+        {{$c := (index $courselist .) }}
+        <div id="{{$c.id}}" onclick="openDialog(this.id)"class="bundle-course-card">
+          <div class="bundle-course-card-cover">
+            <img src="{{$c.cover}}"/>
+          </div>
+          <div class="bundle-course-card-title">{{$c.title}}</div>
+          <div class="bundle-course-card-description">{{$c.subtitle}}</div>
+        </div>
+        {{partial "course/dialog.html" $c}}
+      {{ end }}
+      </div>
+      {{ end }}
+
+      {{ if $bundle.sampleCertificate }}
+      <div class="bundle-landing-section-title">Sample Certificate</div>
+      <div class="bundle-course-sample-certificate">
+        <figure>
+        <img src="{{$bundle.sampleCertificate}}"/>
+        </figure>
+        <caption>Earn a certificate for every technical track by completing 95% of the course work.</caption>
+      </div>
+      {{ end }}
+
+      {{ if $bundle.difference }}
+        <div class="bundle-landing-section-title">How is this different</div>
+        <div class="bundle-landing-todo">
+          {{ range $bundle.difference }}
+            <div>{{.}}</div>
+          {{ end }}
+        </div>
+      {{ end }}
+
+      {{ if $bundle.instructors }}
+        <div class="bundle-landing-section-title">Instructors</div>
+        <div class="bundle-landing-todo">
+          {{ range $bundle.instructors }}
+            <div>{{.}}</div>
+          {{ end }}
+        </div>
+      {{ end }}
+
+      {{ if $bundle.requirements }}
+        <div class="bundle-landing-section-title">Requirements</div>
+        <div class="bundle-landing-todo">
+          {{ range $bundle.requirements }}
+            <div>{{.}}</div>
+          {{ end }}
+        </div>
+      {{ end }}
+
+      {{ if $bundle.audience }}
+        <div class="bundle-landing-section-title">Who this is for?</div>
+        <div class="bundle-landing-todo">
+          {{ range $bundle.audience }}
+            <div>{{.}}</div>
+          {{ end }}
+        </div>
+      {{ end }}
+
+      {{ if $bundle.faqs }}
+        <div class="bundle-landing-section-title">FAQs</div>
+        <div class="bundle-landing-todo">
+          {{ range $bundle.faqs }}
+            <div>{{.}}</div>
+          {{ end }}
+        </div>
+      {{ end }}
+
+      {{ if $bundle.sticky }}
+      <div class="bundle-landing-footer-sticky">
+          {{ if $bundle.sticky.ctas }}
+            {{ if $bundle.sticky.text }}
+              <div class="bundle-landing-footer-sticky-text">
+                {{$bundle.sticky.text}}
+              </div>
+            {{ end }}
+            {{ if $bundle.sticky.discount }}
+              <div class="bundle-landing-footer-sticky-text">
+                Use code <b>{{$bundle.sticky.discount.code}}</b> to get a <b>{{$bundle.sticky.discount.percent}}</b> discount on the Yearly Access.
+              </div>
+            {{ end }}
+            <div class="bundle-landing-footer-sticky-ctas">
+              {{ range $bundle.sticky.ctas }}
+                <a href="{{ .link }}" target="_blank">
+                  <button class="bundle-landing-footer-sticky-cta-button {{if .primary}}bundle-landing-footer-sticky-cta-button-primary{{end}}">{{ .text }}</button>
+                </a>
+              {{ end }}
+            </div>
+          {{ end }}
+      </div>
+      {{ end }}
+    </div>
+    <div class="bundle-sidebar-card">
+      <img src="{{$bundle.cover}}">
+      <h3>beautiful sidebar</h3>
+    </div>
+  </main>
+{{ end }}
