@@ -2,7 +2,7 @@
 title: "C++ for Middleware Engineers"
 subtitle: "Object Oriented Programming - Under the Hood"
 poster: "/images/courses/auto-cpp-middleware.png"
-description: "An introduction to the embedded middleware layer for Automotive Embedded Systems."
+description: "A deep dive into how C++ works under the hood."
 preview: ""
 
 # course stats
@@ -27,7 +27,7 @@ content:
   - certificate: yes
 
 # Link and Payment options
-more: "/automotive-middleware-101"
+more: "/automotive-cpp-middleware"
 ctaText: "Join for Free"
 enroll:
   - plan: "Start the Course"
