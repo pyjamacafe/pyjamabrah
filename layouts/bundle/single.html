@@ -152,6 +152,16 @@
       <div class="bundle-sidebar-highlights-container">
       {{ partial "course/highlights.html" $bundle.highlights}}
       </div>
+
+      <div class="bundle-landing-sidebar-cta">
+        <div class="bundle-landing-footer-sticky-ctas">
+          {{ range $bundle.sticky.ctas }}
+            <a href="{{ .link }}" target="_blank">
+              <button class="bundle-landing-footer-sticky-cta-button {{if .primary}}bundle-landing-footer-sticky-cta-button-primary{{end}}">{{ .text }}</button>
+            </a>
+          {{ end }}
+        </div>
+      </div>
     </div>
   </main>
 {{ end }}

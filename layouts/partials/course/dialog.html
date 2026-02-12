@@ -37,6 +37,7 @@
 
       {{ if .contents }}
       {{ range .contents }}
+        <div class="bundle-landing-course-details-dialog-section-container">
         <div class="bundle-landing-course-details-dialog-section-title">
           {{.section.title}}
         </div>
@@ -47,11 +48,12 @@
         {{ range .section.chapters }}
           <div class="bundle-landing-course-details-dialog-section-chapter">
             {{if eq .chapter.type "video"}}
-            <span class="bi bi-play-btn"></span>
+            <span class="bi bi-play-btn bundle-landing-icon">&nbsp</span>
             {{end}}
             {{.chapter.title}}
           </div>
         {{ end }}
+        </div>
       {{ end }}
       {{ end }}
   </div>
