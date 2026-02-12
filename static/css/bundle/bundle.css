@@ -163,7 +163,7 @@ html:has(dialog[open]) {
 .bundle-course-collection-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 8px;
   flex: 1 1 100%;
   justify-content: center;
 }
@@ -199,7 +199,7 @@ cursor: pointer;
 
 .bundle-course-card-title {
   font-weight: bold;
-  margin: 4px;
+  margin: 4px 0px;
   font-size: 14px;
   text-align: center;
   min-width: 100%;
