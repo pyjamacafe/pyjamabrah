@@ -1,7 +1,7 @@
 id: "roadmap"
 title: "Roadmap to learning Embedded Systems"
 cover: "/images/courses/howtoembedded.png"
-subtitle: "A quick introduction to the field of Embedded systems"
+subtitle: "An introduction to the field of Embedded Software Engineering."
 
 introduction:
   - "This short course introduces the field of embedded systems, how to pursue it and what are the some of the possible journeys."
@@ -15,19 +15,41 @@ enrolled: 3000+
 
 contents:
   - section:
-      title: "Section 1"
-      description: "Some description of the section 1"
+      title: "Understanding Embedded Systems"
+      description: "An overview of what Embedded Systems is and what the basics one needs to know."
       chapters:
         - chapter:
-            title: "Chapter 1"
+            title: "what is embedded systems and how it relates to EE, ECE and CS"
             type: "video"
         - chapter:
-            title: "Chapter 2"
+            title: "What is firmware and Systems Engineering"
             type: "video"
   - section:
-      title: "Section 2"
-      description: "Some description of the section 2"
+      title: "Firmware Engineering"
+      description: "Dive into the details of what Firmware engineering means and what are the skills one should have."
       chapters:
         - chapter:
-            title: "Chapter 1"
+            title: "Understanding What Firmware engineering is"
+            type: "video"
+        - chapter:
+            title: "Memory Map and the Programmer's model"
+            type: "video"
+        - chapter:
+            title: "State Machines and OS Primitives"
+            type: "video"
+        - chapter:
+            title: "Roles and Exploring listing"
+            type: "video"
+  - section:
+      title: "Systems Software Engineering"
+      description: "Understand the meaning of what System is and what systems programming means in the context of Embedded systems software."
+      chapters:
+        - chapter:
+            title: "HLOS, Application Grade CPU and Virtual Memory"
+            type: "video"
+        - chapter:
+            title: "Roles and Skills"
+            type: "video"
+        - chapter:
+            title: "Exploring Opportunities and Skillset"
             type: "video"

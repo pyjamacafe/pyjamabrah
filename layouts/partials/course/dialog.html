@@ -5,20 +5,11 @@
   </div>
   <div class="bundle-landing-dialog-details">
       {{ if .title }}
-      <div class="bundle-landing-title">{{.title | markdownify}}</div>
+      <div class="bundle-landing-course-details-dialog-title">{{.title | markdownify}}</div>
       {{ end }}
 
       {{ if .subtitle }}
       <div class="bundle-landing-subtitle">{{.subtitle | markdownify }}</div>
-      {{ end }}
-      <hr class="bundle-divider-line"/>
-
-      {{ if .introduction }}
-      <div class="bundle-landing-introduction">
-        {{ range .introduction }}
-          <p>{{ . | markdownify }}</p>
-        {{ end }}
-      </div>
       {{ end }}
 
       {{ if .badges }}
@@ -34,17 +25,32 @@
       </div>
       {{ end }}
 
+      <hr class="bundle-divider-line"/>
+
+      {{ if .introduction }}
+      <div class="bundle-landing-introduction">
+        {{ range .introduction }}
+          <p>{{ . | markdownify }}</p>
+        {{ end }}
+      </div>
+      {{ end }}
+
       {{ if .contents }}
       {{ range .contents }}
-        <div>
+        <div class="bundle-landing-course-details-dialog-section-title">
           {{.section.title}}
         </div>
-        <div>
+        <div class="bundle-landing-course-details-dialog-section-description">
           {{.section.description}}
         </div>
 
         {{ range .section.chapters }}
-          <div> {{.chapter.title}} </div>
+          <div class="bundle-landing-course-details-dialog-section-chapter">
+            {{if eq .chapter.type "video"}}
+            <span class="bi bi-play-btn"></span>
+            {{end}}
+            {{.chapter.title}}
+          </div>
         {{ end }}
       {{ end }}
       {{ end }}
