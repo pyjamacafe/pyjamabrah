@@ -44,6 +44,7 @@
       </div>
 
       {{ if $bundle.highlights }}
+      <div class="bundle-landing-section-title">Highlights</div>
       {{ partial "course/highlights.html" $bundle.highlights}}
       {{ end }}
 
@@ -147,6 +148,9 @@
       {{ partial "course/badges.html" $bundle.badges }}
       <div class="bundle-landing-rating-student-count-container">
       {{ partial "course/ratingStars.html" $bundle.rating }}
+      </div>
+      <div class="bundle-sidebar-highlights-container">
+      {{ partial "course/highlights.html" $bundle.highlights}}
       </div>
     </div>
   </main>

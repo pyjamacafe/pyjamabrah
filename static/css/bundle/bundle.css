@@ -144,7 +144,7 @@
   flex: 1 1 100%;
 }
 
-.bundle-landing-tick {
+.bundle-landing-icon {
   display: inline-flex;
   padding-top: 2px;
 }
@@ -386,6 +386,22 @@ cursor: pointer;
 .bundle-landing-todo {
   border: 1px dotted black;
   background-color: azure;
+}
+
+.bundle-sidebar-highlights-container {
+  display: flex;
+  padding: 16px;
+
+  .bundle-landing-highlight {
+    min-width: 100%;
+  }
+}
+
+.bundle-landing-dialog-nav {
+  height: 40px;
+  background-color: grey;
+  border: 1px black solid;
+  text-align: center;
 }
 
 @media screen and (max-width: 771px) {

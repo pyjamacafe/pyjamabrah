@@ -5,20 +5,19 @@ cover: "/images/courses/kernel-facilities.png"
 # default CTA
 default_cta: &defaults
   - cta:
-    link: "link"
-    text: "Sample CTA"
+    link: "https://courses.pyjamabrah.com/web/checkout/68200b15f391a0bf84933bc7?purchaseNow=true&couponcode=FUNDCAFE"
+    text: "Yearly Access (non-recurring)"
     primary: true
 
 sticky:
   text: ""
   discount:
-    code: "COUPONCODE"
-    percent: 35%
+    code: "FUNDCAFE"
+    percent: 70%
   ctas: *defaults
 
 introduction:
   - "Library is a collection of courses that will guide you on the `fundamentals` and `insights` you need to design and implement Embedded Systems based solutions!"
-  - "Embedded Systems Software Engineering includes writing firmware for micro-controllers and system software for application grade CPUs involving boot-loaders, device trees and higher level operating systems."
 
 badges:
   - Bestseller
