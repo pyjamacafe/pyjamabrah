@@ -486,18 +486,44 @@ cursor: pointer;
 }
 
 @media screen and (max-width: 771px) {
- .bundle-info-container,
- .bundle-sidebar-card,
- .bundle-course-card,
- .bundle-landing-highlight,
- .bundle-landing-learning,
- .bundle-landing-instructor-card,
- .bundle-landing-course-details-dialog-container  {
-  min-width: 100%;
- }
+  .bundle-info-container,
+  .bundle-sidebar-card,
+  .bundle-course-card,
+  .bundle-landing-highlight,
+  .bundle-landing-learning,
+  .bundle-landing-instructor-card,
+  .bundle-landing-course-details-dialog-container  {
+    min-width: 100%;
+  }
 
- .bundle-landing-course-details-dialog-container {
-  min-height: 100vh;
- }
+  .bundle-landing-course-details-dialog-container {
+    min-height: 100vh;
+  }
+
+  .bundle-sidebar-card {
+    display: none;
+  }
+
+  .bundle-course-card {
+    min-width: 47%;
+  }
 }
 
+@media (min-width: 771px) and (max-width: 1366px) {
+  .bundle-container {
+    width: 771px;
+    margin: auto;
+  }
+
+  .bundle-info-container {
+  min-width: 100%;
+  }
+
+  .bundle-sidebar-card {
+    display: none;
+  }
+
+  .bundle-course-card {
+    min-width: 30%;
+  }
+}

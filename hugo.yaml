@@ -23,9 +23,9 @@ menu:
       url: /Library/
       pre: true
       weight: 2
-    - identifier: soanpapdi
-      name: "SoanPapdi"
-      url: /soanpapdi/
+    - identifier: fpga
+      name: "Fpga"
+      url: /fpga/
       pre: true
       weight: 3
     - identifier: buds
@@ -33,11 +33,11 @@ menu:
       name: Buds
       url: /buds
       weight: 4
-    - identifier: about
-      pre: true
-      name: About
-      url: /about
-      weight: 5
+    # - identifier: about
+    #   pre: true
+    #   name: About
+    #   url: /about
+    #   weight: 5
     - identifier: spacer
       weight: 6
     - identifier: Login
