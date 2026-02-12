@@ -14,7 +14,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8px;
+  gap: 16px;
   margin: 0px;
 }
 
@@ -29,10 +29,15 @@
 .bundle-sidebar-card {
   flex: 1 0 25%;
   align-self: flex-start;
-  background-color: rgb(255, 205, 205);
   position: sticky;
-  top: 0;
-  border: 1px solid black;
+  top: 10px;
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0px var(--linecolor);
+
+  img {
+    border-radius: 5px 5px 0px 0px;
+  }
 }
 
 .bundle-landing-title {
@@ -63,7 +68,7 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  padding: var(--padding);
+  margin: var(--padding) 0px;
   justify-content:center;
   gap: 8px;
   width: 100%;
@@ -73,6 +78,8 @@
   border: 1px solid var(--color-border);
   padding: 1px 2px;
   border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .bundle-landing-badge-Bestseller, .bundle-landing-badge-bestseller {
@@ -117,18 +124,18 @@
 .bundle-landing-learnings-container {
   display: flex;
   flex-wrap: wrap;
-
+  gap: 4px;
   flex: 1 1 100%;
 }
 
 .bundle-landing-learnings-container {
   padding: 4px;
-  border: 1px solid black;
-  background-color: rgb(231, 231, 231);
+  /* border: 1px solid black; */
+  /* background-color: rgb(243, 243, 243); */
 }
 
 .bundle-landing-highlight {
-  flex: 1 0 50%;
+  flex: 1 0 45%;
   max-width: 50%;
   padding: 1px 0px;
 }
@@ -139,11 +146,12 @@
 
 .bundle-landing-tick {
   display: inline-flex;
+  padding-top: 2px;
 }
 
 .bundle-landing-learning {
   display: inline-flex;
-  flex: 1 1 50%;
+  flex: 1 1 45%;
   max-width: 50%;
 }
 
@@ -191,9 +199,23 @@ cursor: pointer;
 }
 
 .bundle-course-sample-certificate {
+  display: flex;
+  flex-wrap: wrap;
   flex: 1 1 100%;
   padding: 8px;
-  border: 1px solid var(--linecolor);
+  justify-content: center;
+
+  figure {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+}
+
+.bundle-course-sample-certificate-caption {
+  flex: 1 1 100%;
+  padding-top: 8px;
+  min-width: 100%;
+  text-align: center;
 }
 
 .bundle-landing-course-details-dialog-container {
@@ -278,6 +300,88 @@ cursor: pointer;
   /* border: var(--theme-primary); */
 }
 
+.bundle-landing-instructors-containter {
+  flex: 1 1 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  justify-content: center;
+  align-items: start;
+  min-width: 100%;
+}
+
+.bundle-landing-instructor-card {
+  flex: 1 1 45%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  max-width: 50%;
+}
+
+.bundle-sidebar-card-title {
+  flex: 1 1 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.bundle-sidebar-card-subtitle {
+  flex: 1 1 100%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.bundle-landing-instructor-bio-container {
+  flex: 1 1 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+}
+
+.bundle-landing-instructor-bio-image {
+  flex: 1 1 auto;
+  max-width: 5rem;
+  img {
+    border: 1px var(--linecolor) solid;
+    border-radius: 50%;
+  }
+}
+
+.bundle-landing-instructor-bio-text-container {
+  flex: 1 1 50%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px;
+}
+
+.bundle-landing-instructor-bio-name {
+  flex: 1 1 100%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bundle-landing-instructor-bio-designation, .bundle-landing-instructor-bio-orgs {
+  flex: 1 1 100%;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.bundle-landing-instructor-bio-details {
+  flex: 1 1 100%;
+  font-size: 14px;
+}
+
+.bundle-landing-instructor-bio-links-container {
+  flex: 1 1 100%;
+  display: flex;
+}
+
+.bundle-landing-instructor-bio-links {
+  margin-right: 4px;
+}
 
 .bundle-landing-todo {
   border: 1px dotted black;
@@ -289,7 +393,14 @@ cursor: pointer;
  .bundle-sidebar-card,
  .bundle-course-card,
  .bundle-landing-highlight,
- .bundle-landing-learning {
+ .bundle-landing-learning,
+ .bundle-landing-instructor-card,
+ .bundle-landing-course-details-dialog-container  {
   min-width: 100%;
  }
+
+ .bundle-landing-course-details-dialog-container {
+  height: 100vh;
+ }
 }
+

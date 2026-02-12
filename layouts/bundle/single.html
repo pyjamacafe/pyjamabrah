@@ -2,7 +2,8 @@
   <link rel="stylesheet" href="{{"css/bundle/bundle.css" | relURL }}">
   {{/*  Filter the Data source  */}}
   {{$bundle := (index .Site.Data.bundle .Params.source) }}
-  {{$courselist :=.Site.Data.course }}
+  {{$courselist := .Site.Data.course }}
+  {{$faqs := (index .Site.Data.faqs $bundle.faqs) }}
 
   <main class="bundle-container">
     <div class="bundle-info-container">
@@ -46,14 +47,6 @@
       {{ partial "course/highlights.html" $bundle.highlights}}
       {{ end }}
 
-      {{ if $bundle.videoMessage }}
-      {{ partial "course/videoMessage.html" $bundle.videoMessage}}
-      {{ end }}
-
-      {{ if $bundle.learnings }}
-      {{ partial "course/learnings.html" $bundle.learnings }}
-      {{ end }}
-
       {{ if $bundle.courses }}
       <div class="bundle-landing-section-title">Courses</div>
       <div class="bundle-course-collection-container">
@@ -71,60 +64,57 @@
       </div>
       {{ end }}
 
+      {{ if $bundle.learnings }}
+      <div class="bundle-landing-section-title">What you will learn</div>
+      {{ partial "course/checklist.html" $bundle.learnings }}
+      {{ end }}
+
       {{ if $bundle.sampleCertificate }}
       <div class="bundle-landing-section-title">Sample Certificate</div>
       <div class="bundle-course-sample-certificate">
         <figure>
         <img src="{{$bundle.sampleCertificate}}"/>
         </figure>
-        <caption>Earn a certificate for every technical track by completing 95% of the course work.</caption>
+        <div class="bundle-course-sample-certificate-caption">Earn a certificate for every technical track by completing 95% of the course work.</div>
       </div>
+      {{ end }}
+
+      {{ if $bundle.videoMessage }}
+      {{ partial "course/videoMessage.html" $bundle.videoMessage}}
       {{ end }}
 
       {{ if $bundle.difference }}
         <div class="bundle-landing-section-title">How is this different</div>
-        <div class="bundle-landing-todo">
-          {{ range $bundle.difference }}
-            <div>{{.}}</div>
-          {{ end }}
-        </div>
+        {{ partial "course/checklist.html" $bundle.difference }}
       {{ end }}
 
       {{ if $bundle.instructors }}
-        <div class="bundle-landing-section-title">Instructors</div>
-        <div class="bundle-landing-todo">
-          {{ range $bundle.instructors }}
-            <div>{{.}}</div>
-          {{ end }}
-        </div>
+        {{ partial "course/instructors.html" . }}
       {{ end }}
 
       {{ if $bundle.requirements }}
         <div class="bundle-landing-section-title">Requirements</div>
-        <div class="bundle-landing-todo">
-          {{ range $bundle.requirements }}
-            <div>{{.}}</div>
-          {{ end }}
-        </div>
+        {{ partial "course/checklist.html" $bundle.requirements }}
       {{ end }}
 
       {{ if $bundle.audience }}
         <div class="bundle-landing-section-title">Who this is for?</div>
-        <div class="bundle-landing-todo">
-          {{ range $bundle.audience }}
-            <div>{{.}}</div>
-          {{ end }}
-        </div>
+        {{ partial "course/checklist.html" $bundle.audience }}
       {{ end }}
 
-      {{ if $bundle.faqs }}
-        <div class="bundle-landing-section-title">FAQs</div>
-        <div class="bundle-landing-todo">
-          {{ range $bundle.faqs }}
-            <div>{{.}}</div>
-          {{ end }}
-        </div>
+      <div class="bundle-landing-section-title">FAQs</div>
+      <div class="">
+      {{ $counter := 0 }}
+      {{ range $faqs }}
+        {{if eq (math.Mod $counter 2) 0}}
+        <p><b>{{. | markdownify}}</b></p>
+        {{else}}
+        <p>{{. | markdownify}}</p>
+        <br/>
+        {{end}}
+        {{ $counter = (add $counter 1)}}
       {{ end }}
+      </div>
 
       {{ if $bundle.sticky }}
       <div class="bundle-landing-footer-sticky">
@@ -152,7 +142,12 @@
     </div>
     <div class="bundle-sidebar-card">
       <img src="{{$bundle.cover}}">
-      <h3>beautiful sidebar</h3>
+      <div class="bundle-sidebar-card-title">{{$bundle.title | markdownify}}</div>
+      <div class="bundle-sidebar-card-subtitle">{{$bundle.subtitle | markdownify}}</div>
+      {{ partial "course/badges.html" $bundle.badges }}
+      <div class="bundle-landing-rating-student-count-container">
+      {{ partial "course/ratingStars.html" $bundle.rating }}
+      </div>
     </div>
   </main>
 {{ end }}

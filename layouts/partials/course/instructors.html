@@ -1,0 +1,48 @@
+{{ with . }}
+{{$bundle := (index .Site.Data.bundle .Params.source) }}
+{{$instructorList := .Site.Data.creators }}
+{{$bundleInstructors := $bundle.instructors}}
+
+<div class="bundle-landing-section-title">Instructors</div>
+<div class="bundle-landing-instructors-containter">
+  {{ range $bundleInstructors }}
+    {{$instructor := (index $instructorList .) }}
+    <div class="bundle-landing-instructor-card">
+      <div class="bundle-landing-instructor-bio-container">
+        <div class="bundle-landing-instructor-bio-image">
+          <img src="{{$instructor.photo}}"/>
+        </div>
+        <div class="bundle-landing-instructor-bio-text-container">
+          <div class="bundle-landing-instructor-bio-name">
+            {{$instructor.name}}
+          </div>
+          <div class="bundle-landing-instructor-bio-designation">
+            {{$instructor.designation}}
+          </div>
+          <div class="bundle-landing-instructor-bio-orgs">
+            {{$instructor.orgs}}
+          </div>
+          <div class="bundle-landing-instructor-bio-links-container">
+            {{ if $instructor.links }}
+              {{if $instructor.links.linkedin}}
+                <a class="bundle-landing-instructor-bio-links" href="{{$instructor.links.linkedin}}" target="_blank"><i class="bi bi-linkedin"></i></a>
+              {{end}}
+              {{if $instructor.links.x}}
+                <a class="bundle-landing-instructor-bio-links" href="{{$instructor.links.x}}" target="_blank"><i class="bi bi-twitter-x"></i></a>
+              {{end}}
+              {{if $instructor.links.youtube}}
+                <a class="bundle-landing-instructor-bio-links" href="{{$instructor.links.youtube}}" target="_blank"><i class="bi bi-youtube"></i></a>
+              {{end}}
+            {{ end }}
+          </div>
+        </div>
+        <div class="bundle-landing-instructor-bio-details">
+          {{range $instructor.details}}
+          <p>{{.}}</p>
+          {{end}}
+        </div>
+      </div>
+    </div>
+  {{ end }}
+</div>
+{{ end }}

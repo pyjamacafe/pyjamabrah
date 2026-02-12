@@ -2,17 +2,21 @@
 id: jegan
 
 name: "Jegan Amirthalingam"
-
-# summary line
 designation: "Corporate Trainer, Manager"
-
-# contact link
-contactLink: "https://www.linkedin.com/in/jegan-amirthalingam-44734738/"
-
-# photo
+orgs: "Ex-KPIT, Ex-RNTBCI"
 photo: "/images/authors/ja.jpg"
+links:
+  linkedin: "https://www.linkedin.com/in/jegan-amirthalingam-44734738/"
+details:
+  - "Jegan is an Automotive Embedded Systems/Software trainer holding a Master's degree in Automotive Electronics, with 14+ years of experience spanning academia and industry. In academia, served as Assistant Professor teaching Automotive Control Systems, Electric Hybrid Vehicles, and Vehicle Dynamics while establishing a research laboratory for Rapid Control Prototyping and Hardware-in-the-Loop simulation. Guided a Formula Student electric race car project competing at international events in Italy and India."
+  - "In industry, progressed through senior roles designing competency frameworks for automotive business units, leading Model-Based Development tools creation, and managing technical delivery across diverse client segments. Currently leading the Embedded and Automotive track within a global talent development function, shaping the next generation of automotive software professionals."
+  - "Research interests focus on control strategy development for autonomous vehicles, vehicle dynamics and control, modern automotive software architectures, and vehicle software development. Continues serving on academic boards for automotive electronics programs, bridging industry innovation with academic excellence."
+
 
 # bio
 bio: "Jegan is an Automotive Embedded Systems/Software trainer holding a Master's degree in Automotive Electronics, with 14+ years of experience spanning academia and industry. In academia, served as Assistant Professor teaching Automotive Control Systems, Electric Hybrid Vehicles, and Vehicle Dynamics while establishing a research laboratory for Rapid Control Prototyping and Hardware-in-the-Loop simulation. Guided a Formula Student electric race car project competing at international events in Italy and India.\n\nIn industry, progressed through senior roles designing competency frameworks for automotive business units, leading Model-Based Development tools creation, and managing technical delivery across diverse client segments. Currently leading the Embedded and Automotive track within a global talent development function, shaping the next generation of automotive software professionals.\n\nResearch interests focus on control strategy development for autonomous vehicles, vehicle dynamics and control, modern automotive software architectures, and vehicle software development. Continues serving on academic boards for automotive electronics programs, bridging industry innovation with academic excellence."
+
+# contact link
+contactLink: "https://www.linkedin.com/in/jegan-amirthalingam-44734738/"
 
 # - - - - - - - - - - - - - - - - -

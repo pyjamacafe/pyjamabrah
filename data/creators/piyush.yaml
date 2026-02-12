@@ -6,11 +6,24 @@ name: "Piyush Itankar"
 # summary line
 designation: "Embedded Engineer (L5), Google"
 
-# contact link
-contactLink: "https://www.linkedin.com/in/streetdogg/"
+orgs: "Google, Ex-Intel"
 
 # photo
 photo: "/images/authors/pi.jpg"
+
+details:
+  - "Electrical Engineer holding a Master’s degree in Embedded Systems, with a proven track record at industry giants. At Intel, contributed expertise to Navigation Firmware, Bluetooth Driver development, and RF validation software."
+  - "Currently thriving as an Embedded Software Engineer at Google, drove innovation in Firmware development for the Power Management Sub-system on Tensor SoCs (Pixel Phones) and presently advancing system software for the Pixel Watch."
+
+links:
+  linkedin: "https://www.linkedin.com/in/streetdogg/"
+  x: "https://x.com/_streetdogg"
+  youtube: "https://www.youtube.com/@pyjamacafe"
+
+## LEGACY
+
+# contact link
+contactLink: "https://www.linkedin.com/in/streetdogg/"
 
 # bio
 bio: "Electrical Engineer holding a Master’s degree in Embedded Systems, with a proven track record at industry giants. At Intel, contributed expertise to Navigation Firmware, Bluetooth Driver development, and RF validation software. Currently thriving as an Embedded Software Engineer at Google, drove innovation in Firmware development for the Power Management Sub-system on Tensor SoCs (Pixel Phones) and presently advancing system software for the Pixel Watch."

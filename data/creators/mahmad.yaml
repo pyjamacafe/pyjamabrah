@@ -1,16 +1,19 @@
 id: mahmad
 
-# name of the instructor
 name: "Mahmad Bharmal"
-
-# summary line
 designation: "Embedded Engineer (L4), Google"
+orgs: "Google, Ex-Intel"
+photo: "/images/authors/mb.jpg"
+details:
+  - "Computer Engineer holding a Master’s degree in Embedded Systems. Worked on improving the debug architecture of the Bluetooth Firmware at Intel. Worked on ARM64 architecture, programming and exercising latest ARMv8/v9 extensions - programming in low-level FWs (ARM TF-A, trusty) and kernels (LK and Linux) at Google."
+  - "Currently exploring the Pixel Watch Kernel and BSP (boot-loaders, Linux Kernel, Android HALs and frameworks)."
+links:
+  linkedin: "https://www.linkedin.com/in/mahmadbharmal/"
+  youtube: "https://www.youtube.com/@pyjamacafe"
+
+## LEGACY DATA
+# bio
+bio: "Computer Engineer holding a Master’s degree in Embedded Systems. Worked on improving the debug architecture of the Bluetooth Firmware at Intel. Worked on ARM64 architecture, programming and exercising latest ARMv8/v9 extensions - programming in low-level FWs (ARM TF-A, trusty) and kernels (LK and Linux) at Google. Currently exploring the Pixel Watch Kernel and BSP (boot-loaders, Linux Kernel, Android HALs and frameworks)."
 
 # contact link
 contactLink: "https://www.linkedin.com/in/mahmadbharmal/"
-
-# photo
-photo: "/images/authors/mb.jpg"
-
-# bio
-bio: "Computer Engineer holding a Master’s degree in Embedded Systems. Worked on improving the debug architecture of the Bluetooth Firmware at Intel. Worked on ARM64 architecture, programming and exercising latest ARMv8/v9 extensions - programming in low-level FWs (ARM TF-A, trusty) and kernels (LK and Linux) at Google. Currently exploring the Pixel Watch Kernel and BSP (boot-loaders, Linux Kernel, Android HALs and frameworks)."

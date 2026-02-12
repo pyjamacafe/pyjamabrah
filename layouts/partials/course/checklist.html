@@ -1,9 +1,8 @@
 {{ with . }}
-<div class="bundle-landing-section-title">What you will learn</div>
 <div class="bundle-landing-learnings-container">
   {{ range . }}
     <div class="bundle-landing-learning">
-      <div class="bi bi-check2 bundle-landing-tick">&nbsp</div>{{.}}
+      <div class="bi bi-check bundle-landing-tick">&nbsp</div>{{. | markdownify}}
     </div>
   {{ end }}
 </div>

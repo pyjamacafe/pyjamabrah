@@ -1,3 +1,7 @@
+title: "Embedded Systems Library Access"
+subtitle: "A Collection of Courses"
+cover: "/images/courses/kernel-facilities.png"
+
 # default CTA
 default_cta: &defaults
   - cta:
@@ -6,15 +10,11 @@ default_cta: &defaults
     primary: true
 
 sticky:
-  text: "This is a sample text for the sticky"
+  text: ""
   discount:
     code: "COUPONCODE"
-    percent: 35
+    percent: 35%
   ctas: *defaults
-
-title:        "The Library Access"
-subtitle:     "This is a subtitle"
-cover: "/images/bundle/library.jpeg"
 
 introduction:
   - "Library is a collection of courses that will guide you on the `fundamentals` and `insights` you need to design and implement Embedded Systems based solutions!"
@@ -89,20 +89,38 @@ courses:
 sampleCertificate: "/images/courses/library-certificate.png"
 
 difference:
-  - "difference once"
+  - C language and pointers with focus on machine behavior
+  - Detailed analysis of data types and significance.
+  - Assembly and C Coding without IDE
+  - Detailed explanation and view of Programmer's model of CPU.
+  - Mental models of various components in the System to reason based off.
+  - A Bottom-Up Approach with the tinge of answering the Whys.
+  - Thorough explanation of toolchain utilities (gcc, as, ld, ar, gdb etc)
+  - Connecting the concepts with practical use cases and use in industry.
+  - Hands-on experiments to prove every concept.
+  - Focused on practical professional insights
+  - Teach multiple CPU architectures (ARM-M, ARM-A, RISC-V).
+  - Cover the toolchain utilities like compiler, assembler, linker and debug tools like GDB?
+  - Learn at your own pace.
+  - Superficial and confusing explanation
+  - Burn a hole in the pocket with Fee
+  - On campus presence required.
 
 instructors:
   - "piyush"
   - "mahmad"
 
 requirements:
-  - "this is requirement 1"
-  - "this is requirement 2"
+  - GitHub account to do the hands-on coding in Codespaces.
+  - Interest in the lower level working of the system.
+  - Some exposure to Digital systems is good (but not strictly required).
+  - Basic understanding of number systems, logic gates, bits and bytes is good to have (but not strictly required).
 
 audience:
-  - "this is for everyone"
+  - Students in Academia with C as a subject in the course.
+  - Firmware and System Software Engineers looking to revisit concepts.
+  - Electrical/Electronics Engineers working on hardware programming.
+  - Systems Engineer seeking gain system level insights.
+  - Those curious to learn the underlying details of Systems and how to program it using C.
 
-faqs:
-  - faq:
-      - "question"
-      - "answer"
+faqs: pyjamacafe
