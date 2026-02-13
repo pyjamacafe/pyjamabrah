@@ -1,0 +1,131 @@
+# mandatory ID for the course
+id: "pointers"
+
+# mandatory title, cover and subtitle
+title: "C Pointers"
+subtitle: "Learn and Master pointers and the art of using them."
+cover: "/images/courses/pointers.png"
+
+# mandatory introduction
+introduction:
+  - "C pointers are crucial in Firmware and System Software (based on the C language) design. Linux, Unix, FreeRTOs, Zephyr, ThreadX etc kernels use C pointers heavily. This Course dives into the mental models and inner workings of pointers!"
+
+# mandatory badges
+badges:
+  - Bestseller
+  - Beginner
+  - Intermediate
+  # - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+contents:
+  - section:
+      title: "Mental Models, Motivation and Reasoning about pointers"
+      description: "Exploring how CPU and Memory work together. Inferring what pointers are and how to think about them."
+      chapters:
+        - chapter:
+            title: "What to Imagine?"
+        - chapter:
+            title: "What is a pointer?"
+        - chapter:
+            title: "Why pointers?"
+
+  - section:
+      title: "Pointers - Syntax and Code"
+      description: "Understanding and Exploring the C syntax for pointer declaration and usage."
+      chapters:
+        - chapter:
+            title: "Environment Setup"
+        - chapter:
+            title: "Declaring|Defining a Pointer"
+        - chapter:
+            title: "Pointer Variable and Address"
+        - chapter:
+            title: "* and & in relation to pointer variable"
+
+  - section:
+      title: "Multi-level Pointers"
+      description: "Exploring how multilevel pointers can be declared, used and manipulated"
+      chapters:
+        - chapter:
+            title: "Use of * and &"
+        - chapter:
+            title: "Array and Pointers - Similarity and differences"
+        - chapter:
+            title: "Many *s and Many &s"
+        - chapter:
+            title: "Pointer to pointer"
+        - chapter:
+            title: "Array of pointers"
+        - chapter:
+            title: "Different types of Pointers"
+
+  - section:
+      title: "Pointer to Data"
+      description: "Exploring how to point to data and manipulate."
+      chapters:
+        - chapter:
+            title: "Pointing to data with a Datatype"
+        - chapter:
+            title: "Pointer to a struct, *, . and ->"
+        - chapter:
+            title: "Pointer Arithmetic"
+        - chapter:
+            title: "Memory model and pointer to data"
+
+  - section:
+      title: "Pointer to code - Function pointers or Callback"
+      description: "Exploring pointers that point to code."
+      chapters:
+        - chapter:
+            title: "What is a function pointer?"
+        - chapter:
+            title: "Function pointers syntax"
+        - chapter:
+            title: "typedef and function pointers"
+        - chapter:
+            title: "Example - function pointer array"
+
+  - section:
+      title: "void pointer"
+      description: "Exploring the idea of pointers that only save a memory location and not the type information."
+      chapters:
+        - chapter:
+            title: "What is a void pointer?"
+        - chapter:
+            title: "What is NULL and NULL pointer?"
+        - chapter:
+            title: "void pointers in - Linux source code"
+
+  - section:
+      title: "Pointers, Dynamic allocation and problems"
+      description: "Diving into the usage of pointers using the concept of dynamic memory allocation."
+      chapters:
+        - chapter:
+            title: "heap/ malloc() and free()"
+        - chapter:
+            title: "Allocation failure"
+        - chapter:
+            title: "Memory Leak"
+        - chapter:
+            title: "Dangling Pointer"
+        - chapter:
+            title: "Double free()"
+        - chapter:
+            title: "pointer manipulation and unowned memory"
+
+  - section:
+      title: "Open Source code and Pointers"
+      description: "Exploring the use of pointers in open source code bases."
+      chapters:
+        - chapter:
+            title: "Baremetal Code"
+        - chapter:
+            title: "FreeRTOS"
+        - chapter:
+            title: "Linux"

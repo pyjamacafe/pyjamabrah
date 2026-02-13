@@ -84,6 +84,7 @@ learnings:
 courses:
   - "roadmap"
   - "c"
+  - "pointers"
 
 sampleCertificate: "/images/courses/library-certificate.png"
 
