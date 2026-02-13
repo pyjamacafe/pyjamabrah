@@ -1,0 +1,73 @@
+# mandatory ID for the course
+id: "make"
+
+# mandatory title, cover and subtitle
+title: "GNU Make and Automation"
+subtitle: "Master the build/automation tool."
+cover: "/images/courses/gnu-make.png"
+
+# mandatory introduction
+introduction:
+  - "Make is a build automation tool that automatically updates files in your project based on their dependencies. It's primarily used for compiling source code, but can also be used to run other commands or perform tasks."
+
+# mandatory badges
+badges:
+  - Bestseller
+  - Beginner
+  - Intermediate
+  - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+contents:
+  - section:
+      title: "The Basics"
+      description: "Understanding what make is and what it is used for."
+      chapters:
+        - chapter:
+            title: "Setup and Quick Introduction"
+        - chapter:
+            title: "First makefile and basic rules"
+        - chapter:
+            title: "Dependencies and when make misbehaves"
+
+  - section:
+      title: "Dependencies and Variables"
+      description: "Diving into the internals of how makefiles are to be written."
+      chapters:
+        - chapter:
+            title: "Resolving dependencies - target as a dependency"
+        - chapter:
+            title: "A better example and variables"
+        - chapter:
+            title: "Pattern Rules and some internal variables"
+        - chapter:
+            title: "Variable for target, pattern substitution, functions and debugging makefile"
+        - chapter:
+            title: "Executing shell commands and assigning value to variable"
+
+  - section:
+      title: "Simple Project"
+      description: "Implementing a project using the concepts learned in previous sections."
+      chapters:
+        - chapter:
+            title: "Organising the source code and use of shell function"
+        - chapter:
+            title: "Discovering the header paths"
+        - chapter:
+            title: "Generating the path to headers and targets without recipe"
+
+  - section:
+      title: "Other features"
+      description: "Exploring some other features of make."
+      chapters:
+        - chapter:
+            title: "Different names for Makefile and including other makefiles"
+        - chapter:
+            title: "Passing values form commandline, ?= and +="
+        - chapter:
+            title: "macros"

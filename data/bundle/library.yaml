@@ -90,6 +90,7 @@ courses:
   - "dsa"
   - "m101"
   - "m102"
+  - "make"
 
 sampleCertificate: "/images/courses/library-certificate.png"
 
