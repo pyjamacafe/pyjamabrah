@@ -1,0 +1,90 @@
+# mandatory ID for the course
+id: "gdb"
+
+# mandatory title, cover and subtitle
+title: "GDB - Debugging, Scripting and Tricks"
+subtitle: "Master the basics of GNU debugger."
+cover: "/images/courses/gdb.png"
+
+# mandatory introduction
+introduction:
+  - "A quick course on GDB and how to use it for debugging C based applications running on Linux as native applications and Firmware Code running on a development board."
+
+# mandatory badges
+badges:
+  - Bestseller
+  - Beginner
+  # - Intermediate
+  # - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+contents:
+  - section:
+      title: "Introduction"
+      description: "Environment setup and a quick demo."
+      chapters:
+        - chapter:
+            title: "Quick Introduction, Plan and Environment Setup"
+        - chapter:
+            title: "A quick demo - gdb look and feel"
+
+  - section:
+      title: "what is GDB and how it works"
+      description: "understanding what is GDB and how it works."
+      chapters:
+        - chapter:
+            title: "what is GDB"
+        - chapter:
+            title: "A model for how GDB works and dependencies"
+
+  - section:
+      title: "gdb commands"
+      description: "Hands on experiments to explore various GDB commands."
+      chapters:
+        - chapter:
+            title: "debug symbols, file, run, break and continue"
+        - chapter:
+            title: "DETOUR - fixing the annoying messages"
+        - chapter:
+            title: "list, layout, next, step"
+        - chapter:
+            title: "info commands"
+        - chapter:
+            title: "printing, setting variables, memory locations"
+        - chapter:
+            title: "setting conditional break points"
+        - chapter:
+            title: "watch points - write, read and access"
+        - chapter:
+            title: "printing ro examining memory regions - array, pointers"
+        - chapter:
+            title: "backtrace and stack frame navigation"
+
+  - section:
+      title: "Automation using command file and GDB dashboard"
+      description: "Diving into the basics of how the GDB commands can be automated by scripting."
+      chapters:
+        - chapter:
+            title: "gdb command file, automation and dumping memory regions"
+        - chapter:
+            title: "GDB Dashboard"
+        - chapter:
+            title: "Debugging a Hardware Target"
+        - chapter:
+            title: "View of the Setup"
+        - chapter:
+            title: "Demo: Debugging Hardware Target"
+
+  - section:
+      title: "Conclusion"
+      description: "Concluding thoughts and recommended next steps."
+      chapters:
+        - chapter:
+            title: "Conclusion and Next Steps"
+        - chapter:
+            title: "Notes"

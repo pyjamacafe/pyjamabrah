@@ -85,6 +85,8 @@ courses:
   - "roadmap"
   - "c"
   - "pointers"
+  - "bit-manipulation"
+  - "gdb"
 
 sampleCertificate: "/images/courses/library-certificate.png"
 

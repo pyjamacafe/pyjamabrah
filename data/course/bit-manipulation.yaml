@@ -1,0 +1,36 @@
+# mandatory ID for the course
+id: "bit-manipulation"
+
+# mandatory title, cover and subtitle
+title: "Bit Manipulation in C"
+subtitle: "Understanding how and why to manipulate bits using the C language."
+cover: "/images/courses/bit-manipulation.png"
+
+# mandatory introduction
+introduction:
+  - "A Short course focused on how to do bit-manipulation in the C Language work."
+
+# mandatory badges
+badges:
+  - Bestseller
+  - Beginner
+  # - Intermediate
+  # - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+contents:
+  - section:
+      title: "Introduction"
+      description: "Understanding the concept of bit-manipulation, various operators available and doing hands on experiments to learn those."
+      chapters:
+        - chapter:
+            title: "The idea behind bit manipulation"
+        - chapter:
+            title: "Operators and practical aspects of Bit Manipulation"
+        - chapter:
+            title: "Bit Masking, Setting and Clearing Bits"
