@@ -1,0 +1,52 @@
+# mandatory ID for the course
+id: "git-gerrit"
+
+# mandatory title, cover and subtitle
+title: "Git and Gerrit"
+subtitle: "Master the tools source control and collaborative development."
+cover: "/images/courses/git-gerrit.png"
+
+# mandatory introduction
+introduction:
+  - "Git and Gerrit are pivotal tools in the software development industry, each serving distinct yet complementary roles that enhance collaboration, code quality, and workflow efficiency."
+
+# mandatory badges
+badges:
+  - Bestseller
+  - Beginner
+  # - Intermediate
+  # - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+contents:
+  - section:
+      title: "Orientation, Context and Tour of GIT"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Introduction and Team Setup"
+        - chapter:
+            title: "Simulating the real world on local machine"
+        - chapter:
+            title: "Quick Tour of GIT - why and how"
+        - chapter:
+            title: "Where to install git from"
+  - section:
+      title: "git commands"
+      description: ""
+      chapters:
+        - chapter:
+            title: "the init command"
+        - chapter:
+            title: "status and adding files to staging area"
+        - chapter:
+            title: "commits and git data management"
+        - chapter:
+            title: "discarding experimental changes with checkout"
+        - chapter:
+            title: "resetting and discarding commits"

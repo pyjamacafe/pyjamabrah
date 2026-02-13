@@ -1,0 +1,88 @@
+# mandatory ID for the course
+id: "zephyr101"
+
+# mandatory title, cover and subtitle
+title: "Zephyr 101"
+subtitle: "Setting up, booting Zephyr from source."
+cover: "/images/courses/zephyr-101.png"
+
+# mandatory introduction
+introduction:
+  - "A short course introducing the Zephyr OS with hands on execution of an example. Recommended for beginners"
+
+# mandatory badges
+badges:
+  # - Bestseller
+  - Beginner
+  - Intermediate
+  # - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+contents:
+  - section:
+      title: "Introduction"
+      description: ""
+      chapters:
+        - chapter:
+            title: "What to Expect"
+        - chapter:
+            title: "Notes"
+
+  - section:
+      title: "Environment Setup"
+      description: ""
+      chapters:
+        - chapter:
+            title: "About the Environment"
+        - chapter:
+            title: "Setup docker and Test"
+
+  - section:
+      title: "Fetch and setup the Zephyr SDK"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Components needed for zephyr development"
+        - chapter:
+            title: "Getting the Zephyr SDK"
+        - chapter:
+            title: "Setup python virtual environment and install modules"
+
+  - section:
+      title: "Get the source code and compile the firmware"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Fetching the zephyr OS Source code"
+        - chapter:
+            title: "Update the zephyr OS repo"
+        - chapter:
+            title: "Compiling the sample application"
+
+  - section:
+      title: "Run the program on qemu"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Load and run the firmware on qemu"
+        - chapter:
+            title: "Exiting qemu"
+
+  - section:
+      title: "Code Organisation"
+      description: ""
+      chapters:
+        - chapter:
+            title: "This section is being worked on."
+
+  - section:
+      title: "Conclusion and Next Steps"
+      description: ""
+      chapters:
+        - chapter:
+            title: "This section is being worked on."

@@ -1,0 +1,38 @@
+# mandatory ID for the course
+id: "podcast"
+
+# mandatory title, cover and subtitle
+title: "The Podcast"
+subtitle: "Technical Podcast fro passive learning."
+cover: "/images/courses/podcast.png"
+
+# mandatory introduction
+introduction:
+  - "Casual Conversations with Embedded Systems Experts. We show up with the guests, you show up with 🍿!!"
+
+# mandatory badges
+badges:
+  # - Bestseller
+  - Beginner
+  - Intermediate
+  # - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+contents:
+  - section:
+      title: "Podcasts"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Manav | SoC Design flow, MIPS, RISC-V and Automotive"
+        - chapter:
+            title: "Jegan | Automotive Embedded Software, Autosar and Opportunities"
+        - chapter:
+            title: "Hardik | How he became a PCB designing"
+        - chapter:
+            title: "Aayush | Career, Roles, Teams and GPU"

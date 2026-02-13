@@ -82,6 +82,7 @@ learnings:
   - Complete projects - schedulers, digital audio, Linux drivers.
 
 courses:
+  - "podcast"
   - "roadmap"
   - "c"
   - "pointers"
@@ -93,6 +94,8 @@ courses:
   - "make"
   - "ld"
   - "freertos101"
+  - "zephyr101"
+  - "git-gerrit"
 
 sampleCertificate: "/images/courses/library-certificate.png"
 
