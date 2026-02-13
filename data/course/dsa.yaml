@@ -1,0 +1,135 @@
+# mandatory ID for the course
+id: "dsa"
+
+# mandatory title, cover and subtitle
+title: "Data Structures"
+subtitle: "Implementing Data Structures in the C Language."
+cover: "/images/courses/dsa.png"
+
+# mandatory introduction
+introduction:
+  - "Data structures are heavily used in sophisticated embedded system software. This course focuses on the commonly used data structures and their use in applications using the C Language."
+
+# mandatory badges
+badges:
+  - Bestseller
+  - Beginner
+  - Intermediate
+  # - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+contents:
+  - section:
+      title: "Introduction and environment setup"
+      description: "Course introduction and Environment setup to run the experiment."
+      chapters:
+        - chapter:
+            title: "IMPORTANT"
+            type: "file"
+        - chapter:
+            title: "Introduction"
+        - chapter:
+            title: "Setup and work environment"
+
+  - section:
+      title: "Revisiting C Essentials"
+      description: "A quick overview of the important concepts in the C language that will help with implementing Data Structures."
+      chapters:
+        - chapter:
+            title: "Three essential concepts in C"
+        - chapter:
+            title: "One dimensional array"
+        - chapter:
+            title: "Visualising and working with multi-dimensional array"
+        - chapter:
+            title: "The concept of structs"
+        - chapter:
+            title: "Everything you should know about struct"
+        - chapter:
+            title: "Pointers and Addresses"
+        - chapter:
+            title: "Pointers to struct"
+
+  - section:
+      title: "Abstract Data Types and Vocabulary"
+      description: "Understanding the terminology used to describe the performance aspect of the data structure."
+      chapters:
+        - chapter:
+            title: "Abstract Data Types and Operations"
+        - chapter:
+            title: "Space and Time complexity"
+
+  - section:
+      title: "Linked List"
+      description: "Diving into the concepts of the foundational data structure of Linked Lists."
+      chapters:
+        - chapter:
+            title: "Visualising Linked List"
+        - chapter:
+            title: "Code to represent a node and initialisation"
+        - chapter:
+            title: "Adding nodes and Traversing the list"
+        - chapter:
+            title: "Adding nodes at the end and reasoning about time"
+        - chapter:
+            title: "Testing the Run time for insertion"
+        - chapter:
+            title: "Searching for given data"
+        - chapter:
+            title: "Deleting data"
+        - chapter:
+            title: "Insert operation"
+        - chapter:
+            title: "Shipping the code as static Library"
+
+  - section:
+      title: "Queue"
+      description: "Understanding and implementing the Queues data structures"
+      chapters:
+        - chapter:
+            title: "The concept of Queue and why we use it"
+        - chapter:
+            title: "Implementing the add interface"
+        - chapter:
+            title: "Improving run time of the add operation"
+        - chapter:
+            title: "Fetching the first entry in the Queue"
+
+  - section:
+      title: "Stacks"
+      description: "Understanding and implementing the Stack data structure in C."
+      chapters:
+        - chapter:
+            title: "The concept of stacks and various operations"
+        - chapter:
+            title: "Implementing the push operation"
+        - chapter:
+            title: "Implementing the peek and pop operations"
+
+  - section:
+      title: "Trees"
+      description: "Understanding why we would need the Tree data structure, the details and implementation in the C language."
+      chapters:
+        - chapter:
+            title: "Concept of Tree and Terminology"
+        - chapter:
+            title: "Operations on Tree and managing nodes"
+        - chapter:
+            title: "Adding node to tree and challenges"
+        - chapter:
+            title: "Walking the Tree and explore free pointers"
+        - chapter:
+            title: "Strategy to find slot for new node"
+        - chapter:
+            title: "Implementing the algorithm to find free slot"
+        - chapter:
+            title: "Implementing the add() api (part - 1)"
+        - chapter:
+            title: "Debugging the add() api and confirming the addition of nodes"
+        - chapter:
+            title: "Traversal - preorder, inorder, post-order and breadth first"

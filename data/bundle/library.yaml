@@ -87,6 +87,7 @@ courses:
   - "pointers"
   - "bit-manipulation"
   - "gdb"
+  - "dsa"
 
 sampleCertificate: "/images/courses/library-certificate.png"
 
