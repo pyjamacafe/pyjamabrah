@@ -265,9 +265,11 @@
 .pitch-cta-button {
   height: 42px;
   font-size: var(--text-font-size);
-  border-radius: 5px;
   background-color: var(--bgcolor);
-  /* border-color: var(--theme-primary); */
+  box-shadow: 0px 0px 5px 2px var(--linecolor);
+  border: none;
+  border-radius: 20px;
+  padding: 0px 30px;
 }
 
 .pitch-cta-button-primary {

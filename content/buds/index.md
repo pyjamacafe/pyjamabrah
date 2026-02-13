@@ -10,7 +10,7 @@ url: /buds
 default_cta: &defaults
   - cta:
     link: "https://courses.pyjamabrah.com/web/checkout/6982b85e4496ead2c9979031?purchaseNow=true&couponcode=EARLYBUDS"
-    text: "Join the Adventure"
+    text: "Join the Course"
     primary: true
 
 # Add a Sticky Footer
@@ -125,9 +125,7 @@ sections:
         - cta:
           link: "/embedded"
           text: "Explore Embedded"
-          primary: true
         - cta:
           link: "/soanpapdi"
           text: "Explore Digital Logic"
-          primary: true
 ---
