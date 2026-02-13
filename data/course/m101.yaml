@@ -1,0 +1,80 @@
+# mandatory ID for the course
+id: "m101"
+
+# mandatory title, cover and subtitle
+title: "ARM Cortex M (101)"
+subtitle: "A quick introduction to the ARM M CPUs for first timers."
+cover: "/images/courses/arm-m101.png"
+
+# mandatory introduction
+introduction:
+  - "An introductory course on the ARM Cortex-M CPUs. How to go about learning them."
+  - "Recommended for those new to the ARM M Class CPUs"
+
+# mandatory badges
+badges:
+  - Bestseller
+  - Beginner
+  # - Intermediate
+  # - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+contents:
+  - section:
+      title: "Introduction"
+      description: "Understanding the concept of bit-manipulation, various operators available and doing hands on experiments to learn those."
+      chapters:
+        - chapter:
+            title: "The idea behind bit manipulation"
+        - chapter:
+            title: "Operators and practical aspects of Bit Manipulation"
+        - chapter:
+            title: "Bit Masking, Setting and Clearing Bits"
+
+  - section:
+      title: "Introduction"
+      description: "Understanding the vocabulary used in describing CPU architectures."
+      chapters:
+        - chapter:
+            title: "ARM CPU Architectures"
+        - chapter:
+            title: "Micro Architecture Vs Architecture"
+
+  - section:
+      title: "How to learn and master CPUs"
+      description: "Learn ways to master any CPU architecture."
+      chapters:
+        - chapter:
+            title: "Mental model of CPU Memory interactions"
+        - chapter:
+            title: "How to master CPU - Different models to learn"
+
+  - section:
+      title: "Mental Models and How to Use them"
+      description: "Explore how to think and reason about the CPU internals as a Software Engineer."
+      chapters:
+        - chapter:
+            title: "Programmers model - Register Set"
+        - chapter:
+            title: "Modes and Privileges"
+
+  - section:
+      title: "CPU boot-up and Register Set"
+      description: "Explore the programmers model and the boot sequence of the ARM-M CPUs."
+      chapters:
+        - chapter:
+            title: "CPU boot up and Vector Table"
+        - chapter:
+            title: "Exploring Cortex-M3 registers using QEMU"
+
+  - section:
+      title: "Conclusion"
+      description: "Concluding remarks and next steps."
+      chapters:
+        - chapter:
+            title: "where to next.... Invitation"
