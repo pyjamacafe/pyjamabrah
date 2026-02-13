@@ -7,7 +7,7 @@
 
   --subtitle-font-size: clamp(16px, 1.25cqi, 20px);
   --section-itle-font-size: clamp(28px, 1.25cqi, 40px);
-  --text-font-size: clamp(12px, 2cqi, 16px);
+  --text-font-size: clamp(13px, 2cqi, 16px);
   --card-title-font-size: clamp(12px, 3cqi, 16px);
   --section-margin: clamp(64px, 10cqi, 280px);
 
@@ -172,7 +172,7 @@ div {
 .bundle-course-collection-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 16px;
   flex: 1 1 100%;
   justify-content: center;
 }
@@ -180,14 +180,14 @@ div {
 .bundle-course-card {
   display: flex;
   flex-wrap: wrap;
-  flex: 1 1 22.5%;
-  max-width: 22.5%;
+  flex: 1 1 30%;
+  max-width: 30%;
   border-radius: 12px;
   justify-content: flex-start;
   align-content: flex-start;
-  box-shadow: 0 0 2px 0px var(--linecolor);
+  box-shadow: 0 0 3px 0px var(--linecolor);
   div {
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
 
   img {
@@ -521,7 +521,7 @@ cursor: pointer;
 
 @media (min-width: 771px) and (max-width: 1366px) {
   .bundle-container {
-    width: 771px;
+    width: 100%;
     margin: auto;
   }
 
