@@ -96,6 +96,9 @@ courses:
   - "freertos101"
   - "zephyr101"
   - "git-gerrit"
+  - "tech-discussions"
+  - "a101"
+  - "a102"
 
 sampleCertificate: "/images/courses/library-certificate.png"
 

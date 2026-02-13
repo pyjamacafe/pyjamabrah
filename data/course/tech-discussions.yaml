@@ -1,0 +1,69 @@
+# mandatory ID for the course
+id: "tech-discussions"
+
+# mandatory title, cover and subtitle
+title: "The ART of Technical Discussions"
+subtitle: "Set of discussions to help review the topics."
+cover: "/images/courses/discussions.png"
+
+# mandatory introduction
+introduction:
+  - "Organised collection of topics, projects and questions from the web that a Embedded Engineer should know and be able to reasons about."
+
+# mandatory badges
+badges:
+  - Bestseller
+  - Beginner
+  - Intermediate
+  # - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+contents:
+  - section:
+      title: "Format and Introduction"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Introduction and Format of the Course"
+  - section:
+      title: "Key Concepts in C"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Key concepts in C"
+        - chapter:
+            title: "C Program and Memory Layout"
+        - chapter:
+            title: ".text section and behaviour in freestanding and hosted environment"
+        - chapter:
+            title: "Stack, the location and what all goes there"
+        - chapter:
+            title: "Understanding Heap and the need"
+        - chapter:
+            title: "demo - code analysis"
+        - chapter:
+            title: "structs and union"
+        - chapter:
+            title: "volatile and const"
+        - chapter:
+            title: "bit-manipulation and pointers"
+
+  - section:
+      title: "General Embedded Systems"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Section Introduction"
+        - chapter:
+            title: "Some History of computing system"
+        - chapter:
+            title: "CPU, Memory, ISA and IO"
+        - chapter:
+            title: "The concept of Interrupts"
+        - chapter:
+            title: "More lectures being recorded..."

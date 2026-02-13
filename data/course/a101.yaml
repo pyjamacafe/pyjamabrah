@@ -1,0 +1,87 @@
+# mandatory ID for the course
+id: "a101"
+
+# mandatory title, cover and subtitle
+title: "ARM Cortex-A (101)"
+subtitle: "An introduction to the 64bit ARM CPUs"
+cover: "/images/courses/arm-a101.png"
+
+# mandatory introduction
+introduction:
+  - "Introduction to ARM-A Class CPUs implementing the AARCH64 architecture."
+
+# mandatory badges
+badges:
+  - Bestseller
+  - Beginner
+  # - Intermediate
+  # - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+contents:
+  - section:
+      title: "Introduction"
+      description: ""
+      chapters:
+        - chapter:
+            title: Who is ARM as the Company?
+        - chapter:
+            title: A Class CPUs, Architecture and Micro Architecture
+
+  - section:
+      title: "CPU, Memory and Mental Models"
+      description: ""
+      chapters:
+        - chapter:
+            title: "How to learn CPU - different models"
+        - chapter:
+            title: "CPU as seen by Software Programmer - Programmers model"
+
+  - section:
+      title: "Execution Levels and Execution Worlds"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Programmers guide and revisiting uArch"
+        - chapter:
+            title: "Long discussion on Els and Secure/non-secure"
+        - chapter:
+            title: "Exception Levels"
+        - chapter:
+            title: "Secure and Non-Secure world"
+        - chapter:
+            title: "Use cases and Software Execution in different ELs"
+        - chapter:
+            title: "Use case for Secure World Software Execution"
+        - chapter:
+            title: "Revisiting the Document"
+
+  - section:
+      title: "Programmer's Model - Registers"
+      description: ""
+      chapters:
+        - chapter:
+            title: "GPRs, QEMU and Demo"
+        - chapter:
+            title: "Exploring the idea of System Registers, SCTLR as example"
+        - chapter:
+            title: "Processor State Register - CPSR or PSTATE"
+        - chapter:
+            title: "Idea of Exceptions and saving CPU state"
+        - chapter:
+            title: "Special Registers"
+        - chapter:
+            title: "Case study and Conclusion"
+        - chapter:
+            title: "Boot process - Single core and Multi Core"
+        - chapter:
+            title: "Setup and Demo - Glitch at the end"
+        - chapter:
+            title: "Revisiting the Demo"
+        - chapter:
+            title: "Next"

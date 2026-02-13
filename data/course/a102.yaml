@@ -1,0 +1,98 @@
+# mandatory ID for the course
+id: "a102"
+
+# mandatory title, cover and subtitle
+title: "Aarch64 - Baremetal Programming"
+subtitle: "Programming the ARM A Class CPU from scratch using Assembly Language."
+cover: "/images/courses/arm-a102.png"
+
+# mandatory introduction
+introduction:
+  - "A short course on programming the ARM-A Class CPU (aarch64 based Cortex-A72) from scratch using the Raspberry Pi 4B as the platform."
+
+# mandatory badges
+badges:
+  - Bestseller
+  - Beginner
+  # - Intermediate
+  # - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+contents:
+  - section:
+      title: "Introduction and Essentials"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Course Introduction"
+        - chapter:
+            title: "Repository and documentation"
+        - chapter:
+            title: "Tour of Hardware Components"
+        - chapter:
+            title: "Operating system as development environment"
+
+  - section:
+      title: "System on Chip (SoC) and Boot Flow"
+      description: ""
+      chapters:
+        - chapter:
+            title: "What is System on Chip (SoC)"
+        - chapter:
+            title: "Getting the RaspberryPI OS and exploring the contents"
+        - chapter:
+            title: "The Raspberry Pi 4B Boot sequence"
+        - chapter:
+            title: "The Raspberry Pi 4B Boot Sequence"
+        - chapter:
+            title: "Files on the SDCard"
+        - chapter:
+            title: "Preparing the SDCard and booting RaspberryPi"
+        - chapter:
+            title: "RPI 4b and FT232H connection"
+
+  - section:
+      title: "Environment Setup for Development and Debug - OpenOCD, JTAG and GDB"
+      description: ""
+      chapters:
+        - chapter:
+            title: "The case for hardware debugging"
+        - chapter:
+            title: "Setting up OpenOCD from source and GDB Dashboard"
+        - chapter:
+            title: "OpenOCD and GDB in Action"
+        - chapter:
+            title: "FT232H and Raspberry PI connection for JTAG mode"
+        - chapter:
+            title: "Compiling first assembly program"
+        - chapter:
+            title: "debugging our code with OpenOCD and GDB"
+
+  - section:
+      title: "UART Driver and Printing `Hello, World!`"
+      description: ""
+      chapters:
+        - chapter:
+            title: "multi-core boot and jumping to C function"
+        - chapter:
+            title: "memory mapped IO and controlling the hardware"
+        - chapter:
+            title: "Demo - Sending bytes on the UART"
+        - chapter:
+            title: "Uart protocol, and exploring the register configuration"
+        - chapter:
+            title: "Debugging the UART configuration (failed attempt)"
+        - chapter:
+            title: "Fixing code with buggy documentation, printing Hello World"
+
+  - section:
+      title: "Next Steps and conclusion"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Ways to dive deeper"
