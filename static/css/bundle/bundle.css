@@ -236,7 +236,7 @@ cursor: pointer;
 
 .bundle-landing-course-details-dialog-container {
   width: 600px;
-  max-height: 100vh;
+  max-height: 90vh;
   padding: 0px;
   background-color: var(--bgcolor);
   color: var(--fontcolor);
@@ -497,7 +497,7 @@ cursor: pointer;
   }
 
   .bundle-landing-course-details-dialog-container {
-    min-height: 100vh;
+    min-height: 90vh;
   }
 
   .bundle-sidebar-card {

@@ -1,18 +1,29 @@
+# mandatory ID for the course
 id: "roadmap"
+
+# mandatory title, cover and subtitle
 title: "Roadmap to learning Embedded Systems"
 cover: "/images/courses/howtoembedded.png"
 subtitle: "An introduction to the field of Embedded Software Engineering."
 
+# mandatory introduction
 introduction:
   - "This short course introduces the field of embedded systems, how to pursue it and what are the some of the possible journeys."
 
+# mandatory badges
 badges:
+  # - Bestseller
   - Beginner
   - Intermediate
+  # - Advance
 
+# Mandatory Rating
 rating: 4.9
+
+# Optional, number of students
 enrolled: 3000+
 
+# mandatory, content
 contents:
   - section:
       title: "Understanding Embedded Systems"

@@ -1,26 +1,280 @@
+# mandatory ID for the course
 id: "c"
+
+# mandatory title, cover and subtitle
 title: "C Language"
 subtitle: "A detailed course on C language with insights using the RISC-V assembly."
-
 cover: "/images/courses/c.png"
+
+# mandatory introduction
 introduction:
-  - "This short course introduces the field of embedded systems, how to pursue it and what are the some of the possible journeys."
+  - "This course dives into the practical applications of the C language, emphasizing hands-on learning to solidify key concepts. Delivered in an engaging and unconventional style, the lessons go beyond theory, equipping you with the skills to apply C programming in real-world scenarios."
+  - "By the end of the course, you’ll feel confident in your mastery of the C language, adept at using it alongside the tools and utilities professional C programmers rely on daily."
+
+# mandatory badges
+badges:
+  - Bestseller
+  - Beginner
+  - Intermediate
+  # - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
 
 contents:
   - section:
-      title: "Section 1"
-      description: "Some description of the section 1"
+      title: "C Language Tour"
+      description: "A quick hands on tour of the C language and a demo to experience it's raw power."
       chapters:
         - chapter:
-            title: "Chapter 1"
-            type: "video"
+            title: "Roadmap and Mindset"
         - chapter:
-            title: "Chapter 2"
-            type: "video"
+            title: "Sandbox Environment and Basic C Program"
+        - chapter:
+            title: "Keep an Eye on Functions, Pointers and Structs"
+        - chapter:
+            title: "Example of the RAW power - Functions, Struct and Pointers"
   - section:
-      title: "Section 2"
-      description: "Some description of the section 2"
+      title: "Mental models to brain tattoo"
+      description: "How to think like a computer scientist when working in the C language."
       chapters:
         - chapter:
-            title: "Chapter 1"
-            type: "video"
+            title: "Mental Model of the System"
+        - chapter:
+            title: "The mental model of the CPU"
+        - chapter:
+            title: "The mental model of the Memory"
+
+  - section:
+      title: "From Text to Binary"
+      description: "Introduction to the RISC-V ISA and how the text gets converted to 0s and 1s."
+      chapters:
+        - chapter:
+            title: "Instruction Encoding and the rv32i ISA"
+        - chapter:
+            title: "A tour of Toolchain, QEMU, GDB"
+        - chapter:
+            title: "Demo - assembly to binary, QEMU and GDB"
+        - chapter:
+            title: "Instruction Encoder Decoder, Makefile and GDB Dashboard"
+
+  - section:
+      title: "Dwelling in the world of Assembly"
+      description: "How to write assembly programs using the RISC-V RV32I instructions."
+      chapters:
+        - chapter:
+            title: "Anatomy of Assembly Program, writing code, debugging in GDB"
+        - chapter:
+            title: "Decomposing C to Assembly and the relation"
+        - chapter:
+            title: "Getting CPU from assembly to jump to C program"
+
+  - section:
+      title: "C Keywords - Data Types"
+      description: "Explore the C Keywords to understand the scope and powers of the language."
+      chapters:
+        - chapter:
+            title: "Introducing the C Keywords"
+        - chapter:
+            title: "Data types, Variables and Integers"
+        - chapter:
+            title: "Datatypes - float and double"
+        - chapter:
+            title: "Exploring sizes of data types and location in memory"
+        - chapter:
+            title: "How integers are stored - 2s complement"
+        - chapter:
+            title: "floating point number encoding and few examples"
+        - chapter:
+            title: "more floating point - float and double"
+        - chapter:
+            title: "signed and unsigned"
+        - chapter:
+            title: "const and volatile"
+        - chapter:
+            title: "demo - const and volatile"
+        - chapter:
+            title: "void, c standard and gnu C manual"
+        - chapter:
+            title: "typedef and sizeof"
+        - chapter:
+            title: "structs and unions"
+        - chapter:
+            title: "enums as named numbers"
+
+  - section:
+      title: "C Keywords - Branching and Looping"
+      description: "Exploring the branching instructions the C language provides by means of hands on experiments."
+      chapters:
+        - chapter:
+            title: "if, else, switch, case, default, do, while, for, continue and break"
+        - chapter:
+            title: "goto and return"
+        - chapter:
+            title: "Demo - if, else if and else effects at assembly level"
+        - chapter:
+            title: "Demo - switch case and effects at assembly level"
+        - chapter:
+            title: "Demo - loops - for, do, while, continue and effects at assembly level"
+        - chapter:
+            title: "Demo - goto and jumps across functions"
+        - chapter:
+            title: "auto, register, extern and static"
+        - chapter:
+            title: "Demo - auto keyword"
+        - chapter:
+            title: "Demo - register keyword"
+        - chapter:
+            title: "Demo - extern keyword"
+        - chapter:
+            title: "Demo - static keyword"
+
+  - section:
+      title: "Variables and Functions"
+      description: "How to save data and group instructions together."
+      chapters:
+        - chapter:
+            title: "Introduction to Variables and Functions"
+        - chapter:
+            title: "definition vs declaration"
+        - chapter:
+            title: "Demo - variable and function names"
+        - chapter:
+            title: "Arithmetic operations and pitfalls"
+
+  - section:
+      title: "Project - 1"
+      description: "Using the concepts learned in the previous sections to implement an interactive program."
+      chapters:
+        - chapter:
+            title: "Problem statement"
+            type: "file"
+        - chapter:
+            title: "Problem statement walkthrough"
+        - chapter:
+            title: "Setup, variables and I/O"
+        - chapter:
+            title: "Using conditions, switch and loops"
+        - chapter:
+            title: "debugging scanf issue and cleaning up the code"
+        - chapter:
+            title: "guarding against bad inputs and concluding the project"
+
+  - section:
+      title: "Strings, Array and Pointers"
+      description: "Understanding strings, arrays, pointers, and the relation/differences between them."
+      chapters:
+        - chapter:
+            title: "Strings and concept of array and pointers"
+        - chapter:
+            title: "Defining and Assigning Arrays"
+        - chapter:
+            title: "Arrays and out of bound access"
+        - chapter:
+            title: "Strings and Character arrays"
+        - chapter:
+            title: "Introduction to the concept of pointers"
+        - chapter:
+            title: "Syntax related to Pointers"
+        - chapter:
+            title: "Demo - introduction to working with data pointers"
+        - chapter:
+            title: "Detour - Endianness"
+        - chapter:
+            title: "Demo - Difference between array and pointers"
+
+  - section:
+      title: "Project - 2"
+      description: "Project based on the concepts learned in the previous sections. Implement a program to generate digital audion."
+      chapters:
+        - chapter:
+            title: "Problem Statement"
+            type: "file"
+        - chapter:
+            title: "Generating Digital Audio - walkthrough"
+        - chapter:
+            title: "Math concepts and sampling"
+        - chapter:
+            title: "Generating samples and file operations"
+        - chapter:
+            title: "Demo - Playing the Digital Audio"
+
+  - section:
+      title: "User defined Datatypes"
+      description: "Exploring ways in which we can define data types that C doesn't already provide."
+      chapters:
+        - chapter:
+            title: "Revisiting types of data types"
+        - chapter:
+            title: "Structures - Sneak peak"
+        - chapter:
+            title: "Anatomy of Struct and examples"
+        - chapter:
+            title: "Demo - structs"
+        - chapter:
+            title: "unions and how they defer from struct"
+        - chapter:
+            title: "Demo - union"
+        - chapter:
+            title: "Enums and fun experiments"
+        - chapter:
+            title: "Enum and Scope"
+
+  - section:
+      title: "Project - 3: Embedded Sensor Management"
+      description: "Using the concepts from previous sections to implement a sensor management system."
+      chapters:
+        - chapter:
+            title: "Problem Statement"
+            type: "file"
+        - chapter:
+            title: "Introduction and Walkthrough"
+        - chapter:
+            title: "Converting specification to data structure"
+        - chapter:
+            title: "The case for union and saving memory"
+        - chapter:
+            title: "Accessing elements with nested union and structs"
+
+  - section:
+      title: "Operators"
+      description: "Exploring and understanding the operators available in the C language and how to use them."
+      chapters:
+        - chapter:
+            title: "Types of Operators"
+        - chapter:
+            title: "Arithmetic Operators"
+        - chapter:
+            title: "Arithmetic Operators at Assembly Level"
+        - chapter:
+            title: "Relational Operators"
+        - chapter:
+            title: "Relational Operators - Assembly Level decomposition"
+        - chapter:
+            title: "Use of Relational Operators"
+        - chapter:
+            title: "Logical Operators"
+        - chapter:
+            title: "Logical Operator - Assembly decomposition"
+
+  - section:
+      title: "Bitwise Operators"
+      description: "Understand and learn how to use the Bitwise operations for bit manipulation. More importantly, discover the insights and reasons to use such manipulations."
+      chapters:
+        - chapter:
+            title: "What are bitwise operations and the types"
+        - chapter:
+            title: "Shift Operations - Left, Logical Right and Arithmetic Right"
+        - chapter:
+            title: "Bitwise NOT operation"
+        - chapter:
+            title: "Understanding using printf"
+        - chapter:
+            title: "Understanding the Assembly View"
+        - chapter:
+            title: "Exploring the Shift operations"
+        - chapter:
+            title: "Assembly view of Shift operation"
