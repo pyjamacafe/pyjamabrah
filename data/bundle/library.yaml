@@ -89,6 +89,7 @@ courses:
   - "gdb"
   - "dsa"
   - "m101"
+  - "m102"
 
 sampleCertificate: "/images/courses/library-certificate.png"
 

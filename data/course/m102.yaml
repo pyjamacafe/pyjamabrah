@@ -1,0 +1,104 @@
+# mandatory ID for the course
+id: "m102"
+
+# mandatory title, cover and subtitle
+title: "ARM Cortex-M (102)"
+subtitle: "Master M Class CPUs by writing a Scheduler in Assembly."
+cover: "/images/courses/cortex-m-102.jpg"
+
+# mandatory introduction
+introduction:
+  - "A rigorous course on mastering the ARM Cortex-M CPU's programmer's model by implementing a Round Robin scheduler written in pure assembly language."
+  - "Learn the assembly programming for ARM Cortex-M CPUs by writing a scheduler from scratch, without using any IDE, SDK or boiler plate code."
+
+# mandatory badges
+badges:
+  - Bestseller
+  - Beginner
+  - Intermediate
+  - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+contents:
+  - section:
+      title: "Environment Setup"
+      description: "Introduction and environment setup."
+      chapters:
+        - chapter:
+            title: "End Goal"
+        - chapter:
+            title: "Environment Setup"
+
+  - section:
+      title: "How the ARM M Class CPUs Work"
+      description: "Understanding the basics of how the ARM Cortex-M line of CPUs work."
+      chapters:
+        - chapter:
+            title: "Mental Model of the CPU, Systems and the Cortex M Controller"
+        - chapter:
+            title: "From bit to the Programmers model and NVIC"
+        - chapter:
+            title: "Various ARM Architecture and CPUs - M0, M3, M23 etc."
+        - chapter:
+            title: "Programmers model for the M Class CPUs"
+        - chapter:
+            title: "Privilege and Modes of operation"
+        - chapter:
+            title: "Boot up process"
+        - chapter:
+            title: "Exception Handling and Register Save/Restore"
+
+  - section:
+      title: "Assembly Programs"
+      description: "Understanding the basics of how to write programs in Assembly Language."
+      chapters:
+        - chapter:
+            title: "Booting the Processor and First Assembly Program"
+        - chapter:
+            title: "Instructions, Encoding and binary dump"
+        - chapter:
+            title: "Anatomy of assembly file"
+        - chapter:
+            title: "Cortex m3 instructions and experiments"
+        - chapter:
+            title: "Stack manipulation instructions"
+
+  - section:
+      title: "Implementing the Scheduler - Theory"
+      description: "Diving into how a scheduler works and how we can implement one."
+      chapters:
+        - chapter:
+            title: "How can Single CPU run multiple processes?"
+        - chapter:
+            title: "Anatomy of a Task"
+        - chapter:
+            title: "Trick to Context Switching and Scheduling"
+        - chapter:
+            title: "Exception Entry, Exit and SysTick timer"
+
+  - section:
+      title: "Implementing the Scheduler - Hands On"
+      description: "Implementing the Scheduler."
+      chapters:
+        - chapter:
+            title: "Programming SysTick and confirming the exception"
+        - chapter:
+            title: "saving and restoring CPU context"
+        - chapter:
+            title: "Setting up the tasks and the stack and trying to round robin"
+        - chapter:
+            title: "Round robin and switching between processes"
+
+  - section:
+      title: "Conclusion"
+      description: "Concluding thoughts and where to next?"
+      chapters:
+        - chapter:
+            title: "Things to be mindful of"
+        - chapter:
+            title: "FreeRTOS - the struggle to get to context switching"
