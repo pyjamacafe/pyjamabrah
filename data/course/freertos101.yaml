@@ -1,0 +1,120 @@
+# mandatory ID for the course
+id: "freertos101"
+
+# mandatory title, cover and subtitle
+title: "FreeRTOS - Teardown and Porting"
+subtitle: "Porting the FreeRTOS kernel to new target from scratch."
+cover: "/images/courses/freeRTOS-101.png"
+
+# mandatory introduction
+introduction:
+  - "Learn FreeRTOS kernel by tearing it down to it's bare minimum and doing a port for a new target from scratch. This includes booting the CPU from scratch and placing the code in memory manually."
+
+# mandatory badges
+badges:
+  - Bestseller
+  - Beginner
+  - Intermediate
+  - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+contents:
+  - section:
+      title: "Introduction and Setup"
+      description: ""
+      chapters:
+        - chapter:
+            title: "What and Why FreeRTOS"
+        - chapter:
+            title: "Demo walkthrough - End goal and Tools"
+        - chapter:
+            title: "Codespace Setup"
+
+  - section:
+      title: "Booting the ARM M CPU from Scratch"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Programmers model and Essentials of ARM M CPU"
+        - chapter:
+            title: "Demo - Booting the CPU"
+
+  - section:
+      title: "Exploring FreeRTOS Source"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Jumping from Assembly code to function in C files"
+        - chapter:
+            title: "Fixing the problem of function calls in C"
+        - chapter:
+            title: "Getting the FreeRTOS source code and documentation"
+
+  - section:
+      title: "Integrating the FreeRTOS Kernel"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Starting to Integrate the FreeRTOS-Kernel"
+        - chapter:
+            title: "Finding and fixing the portmacro.h errors"
+        - chapter:
+            title: "Finding and adding the FreeRTOSConfig"
+        - chapter:
+            title: "Enabling heap for dynamic memory allocation"
+        - chapter:
+            title: "Setting the Scheduling Rate"
+        - chapter:
+            title: "Getting the Kernel to compile successfully"
+
+  - section:
+      title: "Investigating Runtime Instabilities"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Running the compiled binary"
+        - chapter:
+            title: "Investigating why task is not getting created"
+        - chapter:
+            title: "GDB Investigation - Memory Allocation failure"
+        - chapter:
+            title: "Correcting the boot-up code and memory init"
+
+  - section:
+      title: "Debugging and Getting the Scheduler to run"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Installing the Exception Handlers"
+        - chapter:
+            title: "Hunting the cause for the Hard Fault"
+        - chapter:
+            title: "Getting the Scheduling to work"
+        - chapter:
+            title: "SVC Handler leading to Hard Fault"
+            type: "file"
+
+  - section:
+      title: "Fixing errors and Testing on real hardware"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Correcting the Linker script and reasoning about SVC"
+        - chapter:
+            title: "Working with the Hardware, uploading the code"
+        - chapter:
+            title: "Loading the code to board and exploring task scheduling"
+
+  - section:
+      title: "Conclusion and Next Steps"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Exploring the Scheduler implementation"
+        - chapter:
+            title: "Summary and What to pursue next"

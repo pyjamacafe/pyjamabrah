@@ -1,0 +1,111 @@
+# mandatory ID for the course
+id: "ld"
+
+# mandatory title, cover and subtitle
+title: "GNU Linker Scripts"
+subtitle: "Dictating the placement of code and data in the memory."
+cover: "/images/courses/gnu-ld.png"
+
+# mandatory introduction
+introduction:
+  - "This 𝗵𝗮𝗻𝗱𝘀-𝗼𝗻 𝗰𝗼𝘂𝗿𝘀𝗲 dives into the 𝗱𝗲𝘁𝗮𝗶𝗹𝘀 𝗼𝗳 𝘄𝗿𝗶𝘁𝗶𝗻𝗴 𝗹𝗶𝗻𝗸𝗲𝗿 𝘀𝗰𝗿𝗶𝗽𝘁𝘀 (based on GNU LD). Linker scripts are a must-have skill for firmware and systems engineers who have to deal with scenarios where the placement of various sections (code, data, etc) in the memory needs granular control. Engineers who work on Bootrom, Firmwares, Bootloaders, or otherwise are involved in lower-level systems code."
+
+# mandatory badges
+badges:
+  - Bestseller
+  - Beginner
+  - Intermediate
+  - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+contents:
+  - section:
+      title: "Introduction and Setup"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Environment Setup"
+        - chapter:
+            title: "Opening and Closing the Codespace Environment"
+        - chapter:
+            title: "Compilation Process, Linker and the linkerscript"
+        - chapter:
+            title: "Demo - Resolving addresses and Merging sections"
+        - chapter:
+            title: "C Code and Allocation in Memory"
+        - chapter:
+            title: "Diagnostic Tools"
+
+  - section:
+      title: "Our own linker script"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Goal"
+        - chapter:
+            title: "Anatomy, Memory details, Sections"
+        - chapter:
+            title: "Sneaky linker and linking multiple objects"
+        - chapter:
+            title: "Including and discarding sections from same file"
+        - chapter:
+            title: "Note"
+            type: "file"
+        - chapter:
+            title: "Discarding and wildcard"
+
+  - section:
+      title: "Two Memory systems"
+      description: ""
+      chapters:
+        - chapter:
+            title: ".rodata, problems with Single memory bank"
+        - chapter:
+            title: "Defining two memories and the problem with .data section"
+        - chapter:
+            title: "Introducing VMA and LMA"
+
+  - section:
+      title: "Copying .data section from ROM to RAM"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Current location counter, variables and destination info"
+        - chapter:
+            title: "Address of .data section in the ROM"
+        - chapter:
+            title: "Code to copy .data section from ROM to RAM"
+        - chapter:
+            title: "Zero Initialising the .bss section"
+        - chapter:
+            title: "Creating custom sections and placing them"
+
+  - section:
+      title: "Linker command language"
+      description: ""
+      chapters:
+        - chapter:
+            title: "What is the linker command language"
+        - chapter:
+            title: "Linker Script and Statement"
+        - chapter:
+            title: "Expressions"
+        - chapter:
+            title: "Values"
+        - chapter:
+            title: "Symbol Names and naming rules"
+        - chapter:
+            title: "Location Counter"
+        - chapter:
+            title: "Expression Evaluation"
+        - chapter:
+            title: "Assignment operation"
+        - chapter:
+            title: "Assignment statement placement - relative and absolute addresses"
+        - chapter:
+            title: "Symbol types - Absolute and Relocatable"

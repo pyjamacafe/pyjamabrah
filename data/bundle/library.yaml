@@ -91,6 +91,8 @@ courses:
   - "m101"
   - "m102"
   - "make"
+  - "ld"
+  - "freertos101"
 
 sampleCertificate: "/images/courses/library-certificate.png"
 
