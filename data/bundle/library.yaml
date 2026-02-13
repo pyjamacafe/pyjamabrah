@@ -13,7 +13,7 @@ sticky:
   text: ""
   discount:
     code: "FUNDCAFE"
-    percent: 70%
+    percent: 65%
   ctas: *defaults
 
 introduction:
