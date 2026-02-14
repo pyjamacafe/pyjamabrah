@@ -5,15 +5,15 @@ cover: "/images/courses/kernel-facilities.png"
 # default CTA
 default_cta: &defaults
   - cta:
-    link: "https://courses.pyjamabrah.com/web/checkout/68200b15f391a0bf84933bc7?purchaseNow=true&couponcode=FUNDCAFE"
+    link: "https://courses.pyjamabrah.com/web/checkout/68200b15f391a0bf84933bc7?purchaseNow=true&couponcode=ILOVEEMBEDDED"
     text: "Yearly Access (non-recurring)"
     primary: true
 
 sticky:
   text: ""
   discount:
-    code: "FUNDCAFE"
-    percent: 65%
+    code: "ILOVEEMBEDDED"
+    percent: 67%
   ctas: *defaults
 
 introduction:

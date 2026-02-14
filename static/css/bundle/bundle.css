@@ -266,7 +266,7 @@ cursor: pointer;
   min-width: 100%;
 }
 
-.bundle-landing-dialog-nav {
+.bundle-landing-dialog-nav, .bundle-landing-dialog-footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -278,8 +278,12 @@ cursor: pointer;
   /* margin: 16px; */
   color: var(--fontcolor);
   font-weight: bold;
-  position: sticky;
-  top: 0px;
+
+}
+
+.bundle-landing-dialog-footer {
+    position: sticky;
+  bottom: 0px
 }
 
 .bundle-landing-course-details-dialog-title {
