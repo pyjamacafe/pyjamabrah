@@ -59,9 +59,14 @@
       {{ end }}
       {{ end }}
   </div>
-  <div class="bundle-landing-dialog-footer" onclick="closeDialog()">
-  Back
-  </div>
+
+  {{ if .ctas }}
+    {{ range .ctas }}
+      <a class="bundle-landing-dialog-footer" href="{{ .link }}" target="_blank">
+        {{ .text }}
+      </a>
+    {{ end }}
+  {{ end }}
 </dialog>
 <script>
   activeDialog = null;

@@ -278,12 +278,16 @@ cursor: pointer;
   /* margin: 16px; */
   color: var(--fontcolor);
   font-weight: bold;
-
+  text-decoration: none !important;
 }
 
 .bundle-landing-dialog-footer {
-    position: sticky;
+  position: sticky;
   bottom: 0px
+}
+
+.bundle-landing-dialog-footer:hover {
+  text-decoration: none;
 }
 
 .bundle-landing-course-details-dialog-title {
