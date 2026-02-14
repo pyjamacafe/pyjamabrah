@@ -2,13 +2,13 @@
   --padding: 8px;
   --color-border: rgb(0, 0, 0);
 
-  --base-font-size: clamp(13px, 1cqi, 16px);
+  --base-font-size: clamp(16px, 1cqi, 16px);
   --title-font-size: clamp(32px, 4cqi, 48px);
 
   --subtitle-font-size: clamp(16px, 1.25cqi, 20px);
   --section-itle-font-size: clamp(28px, 1.25cqi, 40px);
   --text-font-size: clamp(13px, 2cqi, 16px);
-  --card-title-font-size: clamp(12px, 3cqi, 16px);
+  --card-title-font-size: clamp(1px, 3cqi, 16px);
   --section-margin: clamp(64px, 10cqi, 280px);
 
 }
@@ -93,7 +93,7 @@ div {
   border: 1px solid var(--color-border);
   padding: 1px 2px;
   border-radius: 3px;
-  font-size: 12px;
+  font-size: var(--base-font-size);
   font-weight: bold;
 }
 
@@ -126,7 +126,7 @@ div {
 }
 
 .bundle-landing-section-title {
-  font-size: var(--section-itle-font-size);
+  font-size: var(--section-title-font-size);
   font-weight: bold;
   margin: 40px 0px 20px 0px;
   text-align: left;
@@ -187,7 +187,7 @@ div {
   align-content: flex-start;
   box-shadow: 0 0 3px 0px var(--linecolor);
   div {
-    font-size: 14px !important;
+    font-size: var(--base-font-size) !important;
   }
 
   img {
@@ -208,13 +208,13 @@ cursor: pointer;
 .bundle-course-card-title {
   font-weight: bold;
   margin: 4px 0px;
-  font-size: 14px;
+  font-size: var(--base-font-size);
   text-align: center;
   min-width: 100%;
 }
 
 .bundle-course-card-description {
-  font-size: 12px;
+  font-size: var(--base-font-size);
   padding: 0px 8px 8px 8px;
 }
 
@@ -317,7 +317,7 @@ cursor: pointer;
 
 .bundle-landing-course-details-dialog-section-description {
   flex: 1 1 100%;
-  font-size: 14px;
+  font-size: var(--base-font-size);
   min-width: 100%;
   margin: 8px 0px;
 }
@@ -325,7 +325,7 @@ cursor: pointer;
 .bundle-landing-course-details-dialog-section-chapter {
   display: inline-flex;
   /* flex: 1 1 100%; */
-  font-size: 16px;
+  font-size: var(--base-font-size);
   min-width: 100%;
   color: var(--linkcolor);
 }
@@ -352,14 +352,14 @@ cursor: pointer;
   padding: 8px 4vw;
   text-align: center;
 
-  font-size: var(--text-font-size);
+  font-size: var(--base-font-size);
   color: var(--fontcolor);
 
   b {
     color: var(--fontcolor);
   }
   code {
-    font-size: var(--text-font-size);
+    font-size: var(--base-font-size);
   }
 }
 
@@ -385,7 +385,7 @@ cursor: pointer;
   flex: 1 1 100%;
   min-width: 100%;
   height: 42px;
-  font-size: var(--text-font-size);
+  font-size: var(--base-font-size);
   border-radius: 10px;
   background-color: var(--bgcolor);
   /* border-color: var(--theme-primary); */
@@ -428,7 +428,7 @@ cursor: pointer;
 .bundle-sidebar-card-subtitle {
   flex: 1 1 100%;
   text-align: center;
-  font-size: 14px;
+  font-size: var(--base-font-size);
 }
 
 .bundle-landing-instructor-bio-container {
@@ -457,19 +457,19 @@ cursor: pointer;
 
 .bundle-landing-instructor-bio-name {
   flex: 1 1 100%;
-  font-size: 20px;
+  font-size: var(--base-font-size);
   font-weight: bold;
 }
 
 .bundle-landing-instructor-bio-designation, .bundle-landing-instructor-bio-orgs {
   flex: 1 1 100%;
-  font-size: 14px;
+  font-size: var(--base-font-size);
   font-weight: bold;
 }
 
 .bundle-landing-instructor-bio-details {
   flex: 1 1 100%;
-  font-size: 14px;
+  font-size: var(--base-font-size);
 }
 
 .bundle-landing-instructor-bio-links-container {
