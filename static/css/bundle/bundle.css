@@ -2,16 +2,37 @@
   --padding: 8px;
   --color-border: rgb(0, 0, 0);
 
-  --base-font-size: clamp(16px, 1cqi, 16px);
-  --title-font-size: clamp(32px, 4cqi, 48px);
-  --subtitle-font-size: clamp(16px, 1.25cqi, 20px);
+  --ff: "Iosevka", sans-serif;
 
-  --section-title-font-size: clamp(28px, 1.25cqi, 40px);
+  --title: bold 2.5rem/1.4 var(--ff);
+  --subtitle: 1.125rem/1.4 var(--ff);
+
+  --base-font-size: 1rem/1.4 var(--ff);
+
+  --subsection-title: bold 1.75rem/3.5 var(--ff);
   --text-font-size: clamp(13px, 2cqi, 16px);
   --card-title-font-size: 16px;
   --card-description-font-size: 14px;
   --section-margin: clamp(64px, 10cqi, 280px);
 
+}
+
+:root {
+  --c100: hsl(0, 0%, 0%);
+  --c80: hsl(0, 0, 20);
+  --c70: hsl(0, 0%, 30%);
+  --c50: hsl(0, 0%, 50%);
+  --c30: hsl(0, 0%, 70%);
+  --c0: hsl(0, 0%, 100%);
+} @media (prefers-color-scheme: dark) {
+:root {
+  --c0: hsl(0, 0%, 0%);
+  --c30: hsl(0, 0%, 30%);
+  --c50: hsl(0, 0%, 50%);
+  --c70: hsl(0, 0%, 70%);
+  --c80: hsl(0, 0, 80);
+  --c100: hsl(0, 0%, 100%);
+}
 }
 
 html {
@@ -23,7 +44,8 @@ html:has(dialog[open]) {
 }
 
 div {
-  font-size: var(--base-font-size);
+  font: var(--base-font-size);
+  color: var(--c80);
 }
 
 .bundle-container {
@@ -60,13 +82,15 @@ div {
 .bundle-landing-title {
   flex: 1 1 100%;
   text-align: center;
-  font-size: var(--title-font-size);
+  font: var(--title);
+  color: var(--c100);
 }
 
 .bundle-landing-subtitle {
   flex: 1 1 100%;
   text-align: center;
-  margin: 4px;
+  font: var(--subtitle);
+  color: var(--c50);
 }
 
 .bundle-divider-line {
@@ -78,6 +102,7 @@ div {
   flex: 1 1 100%;
   text-align: center;
   padding: var(--padding);
+  font: var(--base-font-size);
 }
 
 .bundle-landing-badge-container, .bundle-landing-rating-student-count-container,
@@ -93,10 +118,9 @@ div {
 
 .bundle-landing-badge {
   border: 1px solid var(--color-border);
-  padding: 1px 2px;
+  padding: 0px 5px;
   border-radius: 3px;
-  font-size: var(--base-font-size);
-  font-weight: bold;
+  font: var(--base-font-size);
 }
 
 .bundle-landing-badge-Bestseller, .bundle-landing-badge-bestseller {
@@ -128,10 +152,9 @@ div {
 }
 
 .bundle-landing-section-title {
-  font-size: var(--section-title-font-size);
-  font-weight: bold;
-  margin: 40px 0px 20px 0px;
+  font: var(--subsection-title);
   text-align: left;
+  color: var(--c100);
 }
 
 .bundle-landing-highlights-container,
@@ -511,6 +534,15 @@ div {
   border-top: 1px var(--linecolor) solid;
   padding-top: 8px;
   display: flex;
+}
+
+.bundle-landing-faqs {
+
+}
+
+.bundle-landing-faq-q, .bundle-landing-faq-a {
+  margin: 0px;
+  padding: 0px;
 }
 
 @media screen and (max-width: 771px) {

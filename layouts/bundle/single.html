@@ -44,7 +44,7 @@
       </div>
 
       {{ if $bundle.highlights }}
-      <div class="bundle-landing-section-title">Highlights</div>
+      <div class="bundle-landing-section-title">This bundle of courses includes</div>
       {{ partial "course/highlights.html" $bundle.highlights}}
       {{ end }}
 
@@ -105,13 +105,13 @@
       {{ end }}
 
       <div class="bundle-landing-section-title">FAQs</div>
-      <div class="">
+      <div class="bundle-landing-faqs">
       {{ $counter := 0 }}
       {{ range $faqs }}
         {{if eq (math.Mod $counter 2) 0}}
-        <p><b>{{. | markdownify}}</b></p>
+        <div class="bundle-landing-faq-q"><b>{{. | markdownify}}</b></div>
         {{else}}
-        <p>{{. | markdownify}}</p>
+        <div class="bundle-landing-faq-a">{{. | markdownify}}</div>
         <br/>
         {{end}}
         {{ $counter = (add $counter 1)}}

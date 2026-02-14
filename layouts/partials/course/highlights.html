@@ -3,55 +3,55 @@
   {{ range . }}
     <div class="bundle-landing-highlight">
       {{ if .courseCount }}
-      <span class="bi bi-folder-fill">&nbsp</span><span>Collection of <b>{{.courseCount}}</b> Courses.</span>
+      <span class="bi bi-folder-fill">&nbsp</span><span>Collection of {{.courseCount}} Courses.</span>
       {{ end }}
 
       {{ if .duration }}
-      <span class="bi bi-play-btn">&nbsp</span><span><b>{{.duration}}</b> of recorded lectures.</span>
+      <span class="bi bi-play-btn">&nbsp</span><span>{{.duration}} of recorded lectures.</span>
       {{ end }}
 
       {{ if .lessonCount }}
-      <span class="bi bi-check2-square">&nbsp</span><span><b>{{.lessonCount}}</b> Lessons.</span>
+      <span class="bi bi-check2-square">&nbsp</span><span>{{.lessonCount}} Lessons.</span>
       {{ end }}
 
       {{ if .emulator }}
-      <span class="bi bi-pci-card">&nbsp</span><span><b>Emulator</b> based experiments.</span>
+      <span class="bi bi-pci-card">&nbsp</span><span>Emulator based experiments.</span>
       {{ end }}
 
       {{ if .hardware }}
-      <span class="bi bi-pci-card">&nbsp</span><span><b>Hardware</b> based experiments.</span>
+      <span class="bi bi-pci-card">&nbsp</span><span>Hardware based experiments.</span>
       {{ end }}
 
       {{ if .downloadableResources }}
-      <span class="bi bi-cloud-arrow-down">&nbsp</span><span><b>{{.downloadableResources}}</b> downloadable resource.</span>
+      <span class="bi bi-cloud-arrow-down">&nbsp</span><span>{{.downloadableResources}} downloadable resource.</span>
       {{ end }}
 
       {{ if .workshops }}
-      <span class="bi bi-person-video3">&nbsp</span><span>Occasional <b>workshops</b> by industry experts.</span>
+      <span class="bi bi-person-video3">&nbsp</span><span>Occasional workshops by industry experts.</span>
       {{ end }}
 
       {{ if .certificate }}
-      <span class="bi bi-trophy">&nbsp</span><span><b>Certificate</b> on completion of technical tracks.</span>
+      <span class="bi bi-trophy">&nbsp</span><span>Certificate on completion of technical tracks.</span>
       {{ end }}
 
       {{ if .cheatSheet }}
-      <span class="bi bi-card-list">&nbsp</span><span><b>Notes/Cheat-sheet</b> on select courses.</span>
+      <span class="bi bi-card-list">&nbsp</span><span>Notes/Cheat-sheet on select courses.</span>
       {{ end }}
 
       {{ if .caseStudy }}
-      <span class="bi bi-git">&nbsp</span><span><b>Case studies</b> based on open-source code.</span>
+      <span class="bi bi-git">&nbsp</span><span>Case studies based on open-source code.</span>
       {{ end }}
 
       {{ if .exerciseChallenge }}
-      <span class="bi bi-code-square">&nbsp</span><span><b>Exercises</b> and <b>Coding Challenges</b>.</span>
+      <span class="bi bi-code-square">&nbsp</span><span>Exercises and Coding Challenges.</span>
       {{ end }}
 
       {{ if .projectCount }}
-      <span class="bi bi-hammer">&nbsp</span><span><b>{{.projectCount}}</b> Project implementation.</span>
+      <span class="bi bi-hammer">&nbsp</span><span>{{.projectCount}} Project implementation.</span>
       {{ end }}
 
       {{ if .freeUpdates }}
-      <span class="bi bi-emoji-sunglasses">&nbsp</span><span><b>Free updates</b> to the course.</span>
+      <span class="bi bi-emoji-sunglasses">&nbsp</span><span>Free updates to the course.</span>
       {{ end }}
     </div>
   {{ end }}
