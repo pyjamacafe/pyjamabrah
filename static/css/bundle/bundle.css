@@ -513,7 +513,7 @@ cursor: pointer;
   }
 
   .bundle-landing-course-details-dialog-container {
-    min-height: 90vh;
+    max-height: 90vh;
   }
 
   .bundle-sidebar-card {
