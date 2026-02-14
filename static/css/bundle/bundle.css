@@ -4,11 +4,12 @@
 
   --base-font-size: clamp(16px, 1cqi, 16px);
   --title-font-size: clamp(32px, 4cqi, 48px);
-
   --subtitle-font-size: clamp(16px, 1.25cqi, 20px);
-  --section-itle-font-size: clamp(28px, 1.25cqi, 40px);
+
+  --section-title-font-size: clamp(28px, 1.25cqi, 40px);
   --text-font-size: clamp(13px, 2cqi, 16px);
-  --card-title-font-size: clamp(1px, 3cqi, 16px);
+  --card-title-font-size: 16px;
+  --card-description-font-size: 14px;
   --section-margin: clamp(64px, 10cqi, 280px);
 
 }
@@ -49,6 +50,7 @@ div {
   /* border: 1px solid black; */
   border-radius: 5px;
   box-shadow: 0 0 5px 0px var(--linecolor);
+  background-color: var(--dimcolor);
 
   img {
     border-radius: 5px 5px 0px 0px;
@@ -180,15 +182,14 @@ div {
 .bundle-course-card {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   flex: 1 1 30%;
   max-width: 30%;
   border-radius: 12px;
   justify-content: flex-start;
   align-content: flex-start;
-  box-shadow: 0 0 3px 0px var(--linecolor);
-  div {
-    font-size: var(--base-font-size) !important;
-  }
+  box-shadow: 1px 1px 4px 0px var(--prebgcolor);
+  background-color: var(--dimcolor);
 
   img {
     border-radius: 10px 10px 0 0;
@@ -196,7 +197,7 @@ div {
 }
 
 .bundle-course-card:hover {
-box-shadow: 0 0 10px 0 var(--linecolor);
+box-shadow: 4px 4px 4px 0px var(--prebgcolor);
 cursor: pointer;
 }
 
@@ -208,13 +209,13 @@ cursor: pointer;
 .bundle-course-card-title {
   font-weight: bold;
   margin: 4px 0px;
+  padding: 0px 8px;
   font-size: var(--base-font-size);
   text-align: center;
-  min-width: 100%;
 }
 
 .bundle-course-card-description {
-  font-size: var(--base-font-size);
+  font-size: var(--card-description-font-size);
   padding: 0px 8px 8px 8px;
 }
 
@@ -386,17 +387,23 @@ cursor: pointer;
   min-width: 100%;
   height: 42px;
   font-size: var(--base-font-size);
-  border-radius: 10px;
+  border-radius: 0px;
   background-color: var(--bgcolor);
   /* border-color: var(--theme-primary); */
   border: none;
-  box-shadow: 0px 0px 3px 0px var(--linecolor);
+  box-shadow: 1px 1px 2px 0px var(--prebgcolor);
+}
+
+.bundle-landing-footer-sticky-cta-button:hover {
+  box-shadow: 3px 3px 2px 0px var(--prebgcolor);
+  background-color: var(--cafe);
 }
 
 .bundle-landing-footer-sticky-cta-button-primary {
   background-color: var(--theme-primary);
   /* border: var(--theme-primary); */
 }
+
 
 .bundle-landing-instructors-containter {
   flex: 1 1 100%;
