@@ -10,6 +10,8 @@
   --base-font-size: 1rem/1.4 var(--ff);
 
   --subsection-title: bold 1.75rem/3.5 var(--ff);
+  --dialog-title: bold 1.75rem/2 var(--ff);
+  --dialog-section-title: bold 1.125rem/2 var(--ff);
   --text-font-size: clamp(13px, 2cqi, 16px);
   --card-title-font-size: 16px;
   --card-description-font-size: 14px;
@@ -292,20 +294,23 @@ div {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
+  height: 50px;
   background-color: var(--theme-primary);
-  box-shadow: 0px 0px 2px 0px var(--linecolor);
   text-align: center;
   cursor: pointer;
-  /* margin: 16px; */
   color: var(--fontcolor);
   font-weight: bold;
   text-decoration: none !important;
 }
 
+.bundle-landing-dialog-nav {
+  border-bottom: 1px solid var(--linecolor);
+}
+
 .bundle-landing-dialog-footer {
   position: sticky;
-  bottom: 0px
+  bottom: 0px;
+  border-top: 1px solid var(--linecolor);
 }
 
 .bundle-landing-dialog-footer:hover {
@@ -314,29 +319,26 @@ div {
 
 .bundle-landing-course-details-dialog-title {
   flex: 1 1 100%;
-  font-size: 28px;
-  font-weight: bold;
   min-width: 100%;
-  margin-top: 16px;
   text-align: center;
-  color: var(--fontcolor);
+  color: var(--c100);
+  font: var(--dialog-title);
 }
 
 .bundle-landing-course-details-dialog-section-container {
   flex: 1 1 100%;
   border: 1px var(--linecolor) solid;
+  background-color: var(--dimcolor);
   padding: 8px;
   margin: 8px;
 }
 
 .bundle-landing-course-details-dialog-section-title {
   flex: 1 1 100%;
-  font-size: 24px;
-  font-weight: bold;
+  font: var(--dialog-section-title);
   min-width: 100%;
-  color: var(--fontcolor);
+  color: var(--c80);
   border-bottom: 1px var(--linecolor) solid;
-  padding-bottom: 4px;
 }
 
 .bundle-landing-course-details-dialog-section-description {
@@ -348,7 +350,6 @@ div {
 
 .bundle-landing-course-details-dialog-section-chapter {
   display: inline-flex;
-  /* flex: 1 1 100%; */
   font-size: var(--base-font-size);
   min-width: 100%;
   color: var(--linkcolor);
