@@ -8,8 +8,9 @@
   --subtitle: 1.125rem/1.4 var(--ff);
 
   --base-font-size: 1rem/1.4 var(--ff);
+  --toc-title-size: bold 1.15rem/1.4 var(--ff);
 
-  --subsection-title: bold 1.75rem/3.5 var(--ff);
+  --subsection-title: bold 1.75rem/1.4 var(--ff);
   --dialog-title: bold 1.75rem/2 var(--ff);
   --dialog-section-title: bold 1.125rem/2 var(--ff);
   --text-font-size: clamp(13px, 2cqi, 16px);
@@ -154,6 +155,7 @@ div {
 }
 
 .bundle-landing-section-title {
+  margin: 24px 0px;
   font: var(--subsection-title);
   text-align: left;
   color: var(--c100);
@@ -544,6 +546,28 @@ div {
 .bundle-landing-faq-q, .bundle-landing-faq-a {
   margin: 0px;
   padding: 0px;
+}
+
+.bundle-landing-toc-entry {
+  border: 1px solid var(--linecolor);
+  padding: 12px;
+  margin: 4px 0px;
+  background-color: var(--dimcolor);
+}
+
+.bundle-landing-toc-entry-details[open] > summary {
+  border: none;
+  border-bottom: 1px solid var(--linecolor);
+  position: sticky;
+  top: 0px;
+  padding-bottom: 8px;
+  background-color: var(--dimcolor);
+}
+
+.bundle-landing-toc-entry-title {
+  display: inline;
+  padding-left: 8px;
+  font: var(--toc-title-size);
 }
 
 @media screen and (max-width: 771px) {
