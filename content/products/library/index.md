@@ -19,7 +19,7 @@ product: "embedded-engineering"
 
 define:
   enrolled: &enrolled 3000+
-  lastupdated: &lastupdated "10 Jan 2026"
+  lastupdated: &lastupdated "15 Feb 2026"
 
 param:
   image: "/library/cover.png"
@@ -45,7 +45,7 @@ param:
       lessons: 200+
       length: "200+ hrs"
       files: 10+
-      courseCount: 25
+      courseCount: 25+
       emulator: true
       hardware: true
       workshops: true
@@ -58,6 +58,7 @@ param:
       courselist:
         - Roadmap to Learning Embedded Systems
         - Low Level with Pyjama Brah! (Public Draft)
+        - C (For those in Hurry!)
         - The C Language
         - C Pointers
         - C - Mastering Bit Manipulation
@@ -199,6 +200,75 @@ param:
               type: "pdf"
             - chapter: "Where to Next?"
               type: "pdf"
+        - section: "C (For those in Hurry!)"
+          id: "c-hurry"
+          description: "A short course on the four fundamental ideas in the C language that will enable you to be productive and work with code bases written in C."
+          open: "open"
+          chapters:
+            - chapter: "Introduction and Environment Setup"
+              type: "title"
+            - chapter: "Goals and what to expect"
+              type: "video"
+            - chapter: "Environment Setup - Codespaces"
+              type: "video"
+            - chapter: "Offline Setup - (optional)"
+              type: "video"
+            - chapter: "Mental Models - The Visuals of how the CPU works"
+              type: "title"
+            - chapter: "CPU Memory Interactions"
+              type: "video"
+            - chapter: "Animation - CPU/Memory Interaction"
+              type: "video"
+            - chapter: "Functions"
+              type: "video"
+            - chapter: "What is a function?"
+              type: "video"
+            - chapter: "Essential parts of a function"
+              type: "video"
+            - chapter: "Functions as machines with input and output"
+              type: "video"
+            - chapter: "function inputs and function calls"
+              type: "video"
+            - chapter: "function calls and assembly code"
+              type: "video"
+            - chapter: "Bit Manipulation"
+              type: "title"
+            - chapter: "Bit manipulation - Motivation"
+              type: "video"
+            - chapter: "Visual reasoning behind Bit manipulation"
+              type: "video"
+            - chapter: "Left and right shift operation"
+              type: "video"
+            - chapter: "Other bit manipulation operations"
+              type: "video"
+            - chapter: "Structure (struct)"
+              type: "tile"
+            - chapter: "What is a struct and the imagination"
+              type: "video"
+            - chapter: "Size of the Struct and insights about paddding"
+              type: "video"
+            - chapter: "Assigning and accessing struct members"
+              type: "video"
+            - chapter: "Named assignment of struct members"
+              type: "video"
+            - chapter: "Pointers"
+              type: "title"
+            - chapter: "Pointers are numbers treated as address"
+              type: "video"
+            - chapter: "Why we need pointers?"
+              type: "video"
+            - chapter: "Pointer Variables and dereference operation"
+              type: "video"
+            - chapter: "void pointers"
+              type: "video"
+            - chapter: "pointer to struct"
+              type: "video"
+            - chapter: "functions pointers (or callback functions)"
+              type: "video"
+            - chapter: "Exploring Source code and Next steps"
+              type: "video"
+            - chapter: "Exploring Linux Source code & conclusion"
+              type: "video"
         - section: "The C Language"
           id: "c"
           description: "This course dives into the practical applications of the C language, emphasizing hands-on learning to solidify key concepts. Delivered in an engaging and unconventional style, the lessons go beyond theory, equipping you with the skills to apply C programming in real-world scenarios. By the end of the course, you’ll feel confident in your mastery of the C language, adept at using it alongside the tools and utilities professional C programmers rely on daily."
