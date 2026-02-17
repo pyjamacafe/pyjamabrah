@@ -37,8 +37,8 @@ sections:
           - "This is THE board if you wanted to dip yours toes and try Digital Design!"
     - details:
         type: "half"
-        img: "/images/soanpapdi/soanpapdi.jpg"
-        # model: "/models/sp.glb"
+        # img: "/images/soanpapdi/soanpapdi.jpg"
+        model: "/models/sp.glb"
 
   - section:
     - details:
@@ -116,12 +116,20 @@ sections:
     - details:
         type: "full"
         youtubePlaylist:
-          - title: "Soanpapdi FPGA Board"
+          - title: "Soan Papdi: Unboxing and board Walkthrough"
+            link: "U5uXXChxLwI"
+          - title: "Soan Papdi: Software Setup from the Source"
+            link: "mDM6PSjPgIU"
+          - title: "Soanpapdi FPGA Board (optional)"
             link: _XBXZJRrtPg
           - title: "1. Transistor as a Switch"
             link: "vo9w4ybxnvg"
           - title: "2. Logical Gates using Switches"
             link: "4x95liMJepA"
+          - title: "3. CPU vs FPGA detailed discussion"
+            link: "LOV8ZIaD4OY"
+          - title: "4. On the history of where it all started"
+            link: "c_OnaoL9F4Q"
         posttexts:
           - "This is a ever growing resource"
   - section:

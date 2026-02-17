@@ -1,7 +1,7 @@
 {{ with . }}
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
     <div style="height: 500px;">
-      <model-viewer style="height: 100%; width: 100%" alt="" src="{{.}}" ar environment-image="" poster="" shadow-intensity="1" camera-controls touch-action="pan-y" camera-orbit="calc(env(window-scroll-y) * 4rad) calc(0deg + env(window-scroll-y) * 180deg) calc(5m - env(window-scroll-y) * 10m)">
+      <model-viewer style="height: 100%; min-width: 150%" alt="" src="{{.}}" ar environment-image="" poster="" shadow-intensity="1" camera-controls touch-action="pan-y" camera-orbit="calc(env(window-scroll-y) * 4rad) calc(0deg + env(window-scroll-y) * 180deg) calc(5m - env(window-scroll-y) * 10m)">
 
       </model-viewer>
 {{ end }}
