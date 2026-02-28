@@ -1,11 +1,11 @@
 ---
 layout: products
 
-url: /library
+url: /library-old
 
 aliases:
-- /library/
-- /lib/
+- /library-old/
+- /lib2/
 - /products/embedded-engineering/
 
 title: "The Embedded Systems Library"
