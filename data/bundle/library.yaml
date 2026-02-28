@@ -99,6 +99,9 @@ courses:
   - "tech-discussions"
   - "a101"
   - "a102"
+  - "smmu"
+  - "ldd-scratch"
+  - "ldd-101"
 
 sampleCertificate: "/images/courses/library-certificate.png"
 

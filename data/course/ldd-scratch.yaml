@@ -1,0 +1,80 @@
+# mandatory ID for the course
+id: "ldd-scratch"
+
+# mandatory title, cover and subtitle
+title: "Build and Run Linux Kernel"
+subtitle: "Minimal Kernel build and run from the source."
+cover: "/images/courses/linux-101.png"
+
+# mandatory introduction
+introduction:
+  - "Unlock the power of low-level system development with this hands-on video course, designed to guide you through the process of building a Linux kernel from source for the ARM64 architecture and running it on the QEMU virtual machine."
+  - "Perfect for developers, system administrators, and enthusiasts eager to dive into kernel development, this course provides a step-by-step approach to compiling, configuring, and deploying a custom Linux kernel, using BusyBox to create a lightweight userspace environment."
+
+# mandatory badges
+badges:
+  - Bestseller
+  - Beginner
+  # - Intermediate
+  # - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+contents:
+  - section:
+      title: "Introduction"
+      description: ""
+      chapters:
+          - chapter:
+              title: "Introduction"
+          - chapter:
+              title: "Cheat sheet"
+          - chapter:
+              title: "Environment and Plan"
+          - chapter:
+              title: "Using docker to create a linux host machine"
+
+  - section:
+      title: "Setup, Build and Run"
+      description: ""
+      chapters:
+          - chapter:
+              title: "Installing the toolchain and utilities"
+          - chapter:
+              title: "Compiling the kernel"
+          - chapter:
+              title: "Ramdisk and busybox"
+          - chapter:
+              title: "Getting and building busybox"
+          - chapter:
+              title: "Creating the ramfs image"
+          - chapter:
+              title: "Booting the kernel"
+
+  - section:
+      title: "Trim the Kernel"
+      description: ""
+      chapters:
+          - chapter:
+              title: "menuconfig and .config"
+          - chapter:
+              title: "The trimmed Linux Kernel"
+          - chapter:
+              title: "the .config file"
+              type: "file"
+
+  - section:
+      title: "Recap and Conclusion"
+      description: ""
+      chapters:
+          - chapter:
+              title: "Revisiting all the steps and the significance"
+          - chapter:
+              title: "(Bonus) Device Tree"
+          - chapter:
+              title: "Resources and Pointers"
+              type: "file"

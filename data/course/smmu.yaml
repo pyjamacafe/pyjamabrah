@@ -1,0 +1,54 @@
+# mandatory ID for the course
+id: "system-components"
+
+# mandatory title, cover and subtitle
+title: "System Components - MMU/SMMU"
+subtitle: "Hardware programming details of the memory management unit."
+cover: "/images/courses/smmu.png"
+
+# mandatory introduction
+introduction:
+  - "A Course dedicated to understand the concepts of Virtual memory and the hardware components that enable it - the Memory Management Unit (MMU) and the System Memory Management Unit (SMMU)."
+
+# mandatory badges
+badges:
+#   - Bestseller
+#   - Beginner
+  - Intermediate
+  - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+contents:
+  - section:
+      title: "Setting the Background"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Problems with multiple processes and physical addresses"
+        - chapter:
+            title: "Exploring reasons for Memory Managementn"
+
+  - section:
+      title: "Imagining Memory Management Unit"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Logical Placing of MMU Hardware"
+        - chapter:
+            title: "Regarding Virtual memory assumption - Small Clarification"
+        - chapter:
+            title: "MMU's mappings and where are they stored and retrieved"
+
+  - section:
+      title: "Towards Efficient Desing of MMU mappings"
+      description: ""
+      chapters:
+        - chapter:
+            title: "First level optimisations mappings"
+        - chapter:
+            title: "Continued - One Last Optimisation trick"

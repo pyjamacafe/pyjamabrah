@@ -1,0 +1,99 @@
+# mandatory ID for the course
+id: "ldd-101"
+
+# mandatory title, cover and subtitle
+title: "Linux Device Drivers (101)"
+subtitle: "Writing and understanding a dummy driver"
+cover: "/images/courses/ldd-101.png"
+
+# mandatory introduction
+introduction:
+  - "A hands on Introduction to Linux Device Driver development. Recommended for those getting started with driver development."
+
+# mandatory badges
+badges:
+  - Bestseller
+  - Beginner
+  # - Intermediate
+  # - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+contents:
+  - section:
+      title: "Development Environment"
+      description: ""
+      chapters:
+          - chapter:
+              title: "A sandbox to run our experiments"
+          - chapter:
+              title: "mac-setup"
+          - chapter:
+              title: "Linux Setup"
+          - chapter:
+              title: "Windows-setup"
+          - chapter:
+              title: "Multipass relaunch and installing utilities"
+
+  - section:
+      title: "Linux Kernel and Roles of Device Drivers"
+      description: ""
+      chapters:
+          - chapter:
+              title: "Linux Kernel, System and Bootup"
+            preview:
+                title: "t_fL8MVIo5A"
+          - chapter:
+              title: "User Space, Kernel Space, system calls and device drivers"
+          - chapter:
+              title: "Files and File operations, System Calls and Drivers"
+
+  - section:
+      title: "Basic Loadable Kernel module and utilities"
+      description: ""
+      chapters:
+          - chapter:
+              title: "Our first Loadable module - Minimum Code based"
+          - chapter:
+              title: "Deep Dive - make and Makefile"
+          - chapter:
+              title: "Using lsmod utility to list loaded Kernel Modules"
+          - chapter:
+              title: "insmod, module and the kernel"
+          - chapter:
+              title: "rmmod, kernel and module unloading"
+          - chapter:
+              title: "modinfo and the mod.c file"
+
+  - section:
+      title: "Extending the Driver to be user interactable"
+      description: ""
+      chapters:
+          - chapter:
+              title: "proc file system, system calls and user interaction"
+          - chapter:
+              title: "Exploring entries in /proc"
+          - chapter:
+              title: "creating the /proc file entry and screwing up the kernel"
+          - chapter:
+              title: "Implementing the read operation"
+
+  - section:
+      title: "Data Passing"
+      description: ""
+      chapters:
+          - chapter:
+              title: "Passing data to user from kernel"
+          - chapter:
+              title: "User space app example and challenge for you"
+
+  - section:
+      title: "Conclusion"
+      description: ""
+      chapters:
+          - chapter:
+              title: "Quick Revision, What we did not cover and where to next.."
