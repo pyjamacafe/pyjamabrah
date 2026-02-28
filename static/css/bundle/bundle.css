@@ -22,7 +22,7 @@
 
 :root {
   --c100: hsl(0, 0%, 0%);
-  --c80: hsl(0, 0, 20);
+  --c80: hsl(0, 0, 20%);
   --c70: hsl(0, 0%, 30%);
   --c50: hsl(0, 0%, 50%);
   --c30: hsl(0, 0%, 70%);
@@ -33,7 +33,7 @@
   --c30: hsl(0, 0%, 30%);
   --c50: hsl(0, 0%, 50%);
   --c70: hsl(0, 0%, 70%);
-  --c80: hsl(0, 0, 80);
+  --c80: hsl(0, 0, 80%);
   --c100: hsl(0, 0%, 100%);
 }
 }
@@ -354,7 +354,8 @@ div {
   display: inline-flex;
   font-size: var(--base-font-size);
   min-width: 100%;
-  color: var(--linkcolor);
+  color: var(--c100);
+  font-weight: bold;
 }
 
 .bundle-landing-footer-sticky {
@@ -550,9 +551,16 @@ div {
 
 .bundle-landing-toc-entry {
   border: 1px solid var(--linecolor);
-  padding: 12px;
-  margin: 4px 0px;
-  background-color: var(--dimcolor);
+  margin: 8px 0px;;
+}
+
+.bundle-landing-toc-content {
+  margin: var(--padding);
+}
+
+.bundle-landing-toc-entry-details > summary {
+  padding: var(--padding);
+  background-color: var(--theme-primary);
 }
 
 .bundle-landing-toc-entry-details[open] > summary {
@@ -560,14 +568,29 @@ div {
   border-bottom: 1px solid var(--linecolor);
   position: sticky;
   top: 0px;
-  padding-bottom: 8px;
-  background-color: var(--dimcolor);
+}
+
+.bundle-landing-toc-entry-details-title {
+  font-weight: bold;
+  background-color: var(--c100);
+  color: var(--c0);
+  padding: var(--padding);
+}
+
+.bundle-landing-toc-entry-details-chapter-list {
+  padding-left: var(--padding);
 }
 
 .bundle-landing-toc-entry-title {
   display: inline;
   padding-left: 8px;
   font: var(--toc-title-size);
+  color: var(--c100) !important;
+  text-decoration: none;
+}
+
+.bundle-landing-toc-entry-title:visited {
+  color: var(--c100);
 }
 
 @media screen and (max-width: 771px) {

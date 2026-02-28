@@ -48,8 +48,12 @@
       {{ partial "course/highlights.html" $bundle.highlights}}
       {{ end }}
 
+      {{ if $bundle.videoMessage }}
+      {{ partial "course/videoMessage.html" $bundle.videoMessage}}
+      {{ end }}
+
       {{ if $bundle.courses }}
-      <div class="bundle-landing-section-title">Courses</div>
+      <div class="bundle-landing-section-title">Courses Included</div>
       <div class="bundle-course-collection-container">
       {{ range $bundle.courses }}
         {{$c := (index $courselist .) }}
@@ -66,32 +70,38 @@
       </div>
       {{ end }}
 
-      {{ if $bundle.videoMessage }}
-      {{ partial "course/videoMessage.html" $bundle.videoMessage}}
-      {{ end }}
-
-      <div class="bundle-landing-section-title">Table of Contents</div>
-      <p>Explore the detailed list of lectures included in each course.</p>
+      <div class="bundle-landing-section-title">Details of Content (Course wise)</div>
+      {{/*  <p>Explore the detailed list of lectures included in each course.</p>  */}}
       {{ range $bundle.courses }}
         {{ $c := (index $courselist .) }}
         <span id="{{$c.id}}"></span>
         <div class="bundle-landing-toc-entry">
-          <details class="bundle-landing-toc-entry-details">
+          <details class="bundle-landing-toc-entry-details" open>
           <summary>
           <a class="bundle-landing-toc-entry-title" href="#{{$c.id}}">{{$c.title}}</a>
           </summary>
+          <div class="bundle-landing-toc-content">
           {{range $c.introduction }}
           <p>{{.}}</p>
           {{ end }}
           {{range $c.contents }}
-            <b>{{.section.title}}</b>
-            <ul>
+            <div class="bundle-landing-toc-entry-details-title">{{.section.title}}</div>
+            <ul class="bundle-landing-toc-entry-details-chapter-list">
             {{range .section.chapters}}
-            <li>{{.chapter.title}}</li>
-            {{end}}
+              <div class="bundle-landing-course-details-dialog-section-chapter">
+              {{if eq .chapter.type "file"}}
+              <span class="bi bi-file-earmark bundle-landing-icon">&nbsp</span>
+              {{ else }}
+              <span class="bi bi-play-btn bundle-landing-icon">&nbsp</span>
+              {{end}}
+              {{.chapter.title}}
+              </div>
+              {{end}}
             </ul>
           {{ end }}
-        </details>
+                    </div>
+          </details>
+
         </div>
       {{ end }}
 
