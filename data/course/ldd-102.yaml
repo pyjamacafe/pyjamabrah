@@ -1,0 +1,36 @@
+# mandatory ID for the course
+id: "ldd-102"
+
+# mandatory title, cover and subtitle
+title: "Linux Device Drivers (102)"
+subtitle: "Controlling the Hardware through device drivers in Linux."
+cover: "/images/courses/ldd-102.png"
+
+# mandatory introduction
+introduction:
+  - "Course on writing and understanding how the Linux Device Drivers controls real hardware. In this course, we write a kernel driver for the GPIO port of Raspberry Pi - 4."
+
+# mandatory badges
+badges:
+  - Bestseller
+  - Beginner
+  - Intermediate
+  - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+contents:
+  - section:
+      title: "Introduction and Expectations"
+      description: ""
+      chapters:
+          - chapter:
+              title: "Hardware and Demo"
+          - chapter:
+              title: "The generic Boot flow for SoCs"
+          - chapter:
+              title: "more videos being recorded"

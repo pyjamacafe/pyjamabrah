@@ -102,6 +102,8 @@ courses:
   - "smmu"
   - "ldd-scratch"
   - "ldd-101"
+  - "ldd-102"
+  - "ldd-103"
 
 sampleCertificate: "/images/courses/library-certificate.png"
 

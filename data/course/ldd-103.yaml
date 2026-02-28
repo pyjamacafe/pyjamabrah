@@ -1,0 +1,150 @@
+# mandatory ID for the course
+id: "ldd-103"
+
+# mandatory title, cover and subtitle
+title: "Linux Device Drivers: Kernel Facilities & Helper Functions"
+subtitle: "Controlling the Hardware through device drivers in Linux."
+cover: "/images/courses/kernel-facilities.png"
+
+# mandatory introduction
+introduction:
+  - "The Linux kernel doesn't use the Standard C Library and implements the functions as it's own modern libraries. This course is focused on exploring the facilities and helper functions the kernel provides to manage data and different activities from the driver."
+
+# mandatory badges
+badges:
+  - Bestseller
+  - Beginner
+  - Intermediate
+  - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+contents:
+  - section:
+      title: "Expectations and Getting Started"
+      description: ""
+      chapters:
+          - chapter:
+              title: "Introduction and what we will cover"
+          - chapter:
+              title: "Environment Setup"
+          - chapter:
+              title: "Browsing the Linux Kernel Source"
+  - section:
+      title: "the container_of() macro"
+      description: ""
+      chapters:
+          - chapter:
+              title: "What it is and why care?"
+          - chapter:
+              title: "Discovering the implementation of container_of()"
+          - chapter:
+              title: "Implementation in the Kernel"
+  - section:
+      title: "Linked Lists"
+      description: ""
+      chapters:
+          - chapter:
+              title: "Linked Lists and how the kernel helps us"
+          - chapter:
+              title: "the linux/list.h file"
+          - chapter:
+              title: "Exploring the list_head struct and understanding how lists will work"
+          - chapter:
+              title: "Initializing head pointer"
+          - chapter:
+              title: "Adding to the list"
+          - chapter:
+              title: "Traversing the list"
+          - chapter:
+              title: "Deleting entries from the list"
+          - chapter:
+              title: "Be mindful when deleting"
+  - section:
+      title: "The Kernel sleeping mechanism"
+      description: ""
+      chapters:
+          - chapter:
+              title: "The case for wait queue"
+          - chapter:
+              title: "Using wait queue in the driver"
+          - chapter:
+              title: "Review and next steps"
+  - section:
+      title: "Standard Timers *"
+      description: ""
+      chapters:
+          - chapter:
+              title: "Jiffies vs Hz *"
+          - chapter:
+              title: "The timer API *"
+          - chapter:
+              title: "Timer Setup and Initialization *"
+          - chapter:
+              title: "Standard timer example *"
+  - section:
+      title: "High-Resolution timers (HRT) *"
+      description: ""
+      chapters:
+          - chapter:
+              title: "The API and parameters *"
+          - chapter:
+              title: "HRT Setup and Initialisation *"
+          - chapter:
+              title: "Dynamic tick/tickless kernel *"
+          - chapter:
+              title: "Delays and Sleep in the Kernel *"
+          - chapter:
+              title: "Atomic Context *"
+          - chapter:
+              title: "Non-Atomic Context *"
+  - section:
+      title: "Kernel locking mechanism *"
+      description: ""
+      chapters:
+          - chapter:
+              title: "the Mutex APIs *"
+          - chapter:
+              title: "the Spinlock APIs *"
+          - chapter:
+              title: "Spinlock vs Mutex *"
+  - section:
+      title: "Work deferring mechanism *"
+      description: ""
+      chapters:
+          - chapter:
+              title: "Softwirqs and ksoftirqd *"
+          - chapter:
+              title: "Tasklets - declaring *"
+          - chapter:
+              title: "Enabling and Disabling a tasklet *"
+          - chapter:
+              title: "Tasklet scheduling *"
+          - chapter:
+              title: "Work queues *"
+          - chapter:
+              title: "Dedicated work queue *"
+          - chapter:
+              title: "Kernel threads *"
+  - section:
+      title: "Kernel interruption mechanism *"
+      description: ""
+      chapters:
+          - chapter:
+              title: "Register an interrupt handler *"
+          - chapter:
+              title: "Interrupt handler and lock *"
+          - chapter:
+              title: "Concept of bottom halves *"
+          - chapter:
+              title: "Limitations and solutions for bottom halves *"
+          - chapter:
+              title: "Threaded IRQs *"
+          - chapter:
+              title: "Invoking user space application from the kernel *"
+          - chapter:
+              title: "Lectures marked with a * are begin recorded and will be available soon."
