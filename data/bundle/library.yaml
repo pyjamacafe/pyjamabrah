@@ -1,6 +1,6 @@
 title: "Embedded Systems Library Access"
-subtitle: "A Collection of Courses"
-cover: "/images/courses/library.png"
+subtitle: "Save `time` and `frustraction`. Focus on `Impact` and `Growth`!"
+cover: "/images/bundle/library/ts.svg"
 
 # default CTA
 default_cta: &defaults
@@ -16,8 +16,11 @@ sticky:
     percent: 67%
   ctas: *defaults
 
+infographic: "/images/bundle/library/ts.svg"
 introduction:
-  - "Library is a collection of courses that will guide you on the `fundamentals` and `insights` you need to design and implement Embedded Systems based solutions!"
+  - "We'll save you the **time** and **frustration** so you can focus on creating `IMPACT`."
+  - "A collection of courses to put your pursuit of learning Embedded Systems - `ON STEROIDS`!"
+  - "We have done all the research, organised and strucuted the content with focus on reasoning from first principles, becoming productive fast, and insights."
 
 badges:
   - Bestseller

@@ -16,6 +16,12 @@
       {{ end }}
       <hr class="bundle-divider-line"/>
 
+      {{ if $bundle.infographic }}
+      <div class="bundle-landing-introduction">
+        <img src="{{$bundle.infographic}}"/>
+      </div>
+      {{ end }}
+
       {{ if $bundle.introduction }}
       <div class="bundle-landing-introduction">
         {{ range $bundle.introduction }}
