@@ -1,11 +1,16 @@
 :root {
+  font-size: 14px;
+}
+
+:root {
   --padding: 8px;
   --color-border: rgb(0, 0, 0);
 
   --ff: "Iosevka", sans-serif;
 
-  --title: bold 2.5rem/1.4 var(--ff);
-  --subtitle: 1.125rem/1.4 var(--ff);
+  --fTitle: bold clamp(1.5rem/1.4 , 2vw + 1rem, 4rem/1.4) var(--ff);
+  --fSubTitle: clamp(1rem/1.4 , 2vw + 1rem, 1.5rem/1.4) var(--ff);
+  --fNormal: clamp(1rem/1.4 , 2vw + 0.rem, 2rem/1.4) var(--ff);
 
   --base-font-size: 1rem/1.4 var(--ff);
   --toc-title-size: bold 1.15rem/1.4 var(--ff);
@@ -22,7 +27,7 @@
 
 :root {
   --c100: hsl(0, 0%, 0%);
-  --c80: hsl(0, 0, 20%);
+  --c80: hsl(0, 0%, 20%);
   --c70: hsl(0, 0%, 30%);
   --c50: hsl(0, 0%, 50%);
   --c30: hsl(0, 0%, 70%);
@@ -33,7 +38,7 @@
   --c30: hsl(0, 0%, 30%);
   --c50: hsl(0, 0%, 50%);
   --c70: hsl(0, 0%, 70%);
-  --c80: hsl(0, 0, 80%);
+  --c80: hsl(0, 0%, 80%);
   --c100: hsl(0, 0%, 100%);
 }
 }
@@ -46,8 +51,8 @@ html:has(dialog[open]) {
   overflow: hidden;
 }
 
-div {
-  font: var(--base-font-size);
+div, p {
+  font: var(----fNormal);
   color: var(--c80);
 }
 
@@ -85,14 +90,14 @@ div {
 .bundle-landing-title {
   flex: 1 1 100%;
   text-align: center;
-  font: var(--title);
+  font: var(--fTitle);
   color: var(--c100);
 }
 
 .bundle-landing-subtitle {
   flex: 1 1 100%;
   text-align: center;
-  font: var(--subtitle);
+  font: var(--fSubTitle);
   color: var(--c50);
 }
 
@@ -212,20 +217,23 @@ div {
   flex-direction: column;
   flex: 1 1 30%;
   max-width: 30%;
-  border-radius: 12px;
+  border-radius: 10px;
   justify-content: flex-start;
   align-content: flex-start;
-  box-shadow: 1px 1px 4px 0px var(--prebgcolor);
+  box-shadow: 0px 0px 2px 0px var(--prebgcolor);
   background-color: var(--dimcolor);
+  transition-duration: 0.5s;
 
   img {
+    display: block;
     border-radius: 10px 10px 0 0;
   }
 }
 
 .bundle-course-card:hover {
-  box-shadow: 4px 4px 4px 0px var(--prebgcolor);
+  box-shadow: 0px 0px 4px 0px var(--prebgcolor);
   cursor: pointer;
+  transform: scale(1.025);
 }
 
 .bundle-course-card-cover {
@@ -345,17 +353,18 @@ div {
 
 .bundle-landing-course-details-dialog-section-description {
   flex: 1 1 100%;
-  font-size: var(--base-font-size);
+  font: var(--fNormal);
+  color: var(--c80);
   min-width: 100%;
   margin: 8px 0px;
 }
 
 .bundle-landing-course-details-dialog-section-chapter {
   display: inline-flex;
-  font-size: var(--base-font-size);
+  font: var(--fNormal);
   min-width: 100%;
   color: var(--c100);
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .bundle-landing-footer-sticky {
@@ -417,23 +426,18 @@ div {
   border-radius: 0px;
   background-color: var(--bgcolor);
   border-color: var(--prebgcolor);
-  /* border: none; */
-  box-shadow: 1px 1px 2px 0px var(--prebgcolor);
 }
 
 .bundle-landing-footer-sticky-cta-button:hover {
-  box-shadow: 1px 3px 4px 0px var(--prebgcolor);
   background-color: var(--cafe);
 }
 
 .bundle-landing-footer-sticky-cta-button:active {
-  transform: translateY(1px); /* Moves button down by 4px */
-  box-shadow: 1px 1px 2px 0px var(--prebgcolor);
+  transform: translateY(1px);
 }
 
 .bundle-landing-footer-sticky-cta-button-primary {
   background-color: var(--theme-primary);
-  /* border: var(--theme-primary); */
 }
 
 
@@ -572,7 +576,7 @@ div {
 
 .bundle-landing-toc-entry-details-title {
   font-weight: bold;
-  background-color: var(--c100);
+  background-color: var(--c70);
   color: var(--c0);
   padding: var(--padding);
 }
