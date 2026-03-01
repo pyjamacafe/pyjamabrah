@@ -1,0 +1,102 @@
+# mandatory ID for the course
+id: "c-hurry"
+
+# mandatory title, cover and subtitle
+title: "C (For those in Hurry!)"
+subtitle: "a quick tour of the 4 key concepts of the Lanaguge."
+cover: "/images/courses/c-hurry.png"
+
+# mandatory introduction
+introduction:
+  - "A short course on the four fundamental ideas in the C language that will enable you to be productive and work with code bases written in C."
+
+# mandatory badges
+badges:
+#   - Bestseller
+  - Beginner
+#   - Intermediate
+#   - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+contents:
+  - section:
+      title: "Introduction and Environment Setup"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Goals and what to expect"
+        - chapter:
+            title: "Environment Setup - Codespaces"
+        - chapter:
+            title: "Offline Setup - (optional)"
+  - section:
+      title: "Mental Models - The Visuals of how the CPU works"
+      description: ""
+      chapters:
+        - chapter:
+            title: "CPU Memory Interactions"
+        - chapter:
+            title: "Animation - CPU/Memory Interaction"
+        - chapter:
+            title: "Functions"
+        - chapter:
+            title: "What is a function?"
+        - chapter:
+            title: "Essential parts of a function"
+        - chapter:
+            title: "Functions as machines with input and output"
+        - chapter:
+            title: "function inputs and function calls"
+        - chapter:
+            title: "function calls and assembly code"
+  - section:
+      title: "Bit Manipulation"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Bit manipulation - Motivation"
+        - chapter:
+            title: "Visual reasoning behind Bit manipulation"
+        - chapter:
+            title: "Left and right shift operation"
+        - chapter:
+            title: "Other bit manipulation operations"
+  - section:
+      title: "Structure (struct)"
+      description: ""
+      chapters:
+        - chapter:
+            title: "What is a struct and the imagination"
+        - chapter:
+            title: "Size of the Struct and insights about paddding"
+        - chapter:
+            title: "Assigning and accessing struct members"
+        - chapter:
+            title: "Named assignment of struct members"
+  - section:
+      title: "Pointers"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Pointers are numbers treated as address"
+        - chapter:
+            title: "Why we need pointers?"
+        - chapter:
+            title: "Pointer Variables and dereference operation"
+        - chapter:
+            title: "void pointers"
+        - chapter:
+            title: "pointer to struct"
+        - chapter:
+            title: "functions pointers (or callback functions)"
+  - section:
+      title: "Exploring Source code and Next steps"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Exploring Linux Source code & conclusion"

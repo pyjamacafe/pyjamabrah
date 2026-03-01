@@ -85,8 +85,9 @@ learnings:
   - Complete projects - schedulers, digital audio, Linux drivers.
 
 courses:
-  - "podcast"
   - "roadmap"
+  - "book"
+  - "c-hurry"
   - "c"
   - "pointers"
   - "bit-manipulation"
@@ -107,6 +108,7 @@ courses:
   - "ldd-101"
   - "ldd-102"
   - "ldd-103"
+  - "podcast"
 
 sampleCertificate: "/images/courses/library-certificate.png"
 

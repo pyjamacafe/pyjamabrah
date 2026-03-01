@@ -1,0 +1,115 @@
+# mandatory ID for the course
+id: "book"
+
+# mandatory title, cover and subtitle
+title: "Low Level with Pyjama Cafe! (Public Draft)"
+subtitle: "a quick tour of the 4 key concepts of the Lanaguge."
+cover: "/images/courses/book.png"
+
+# mandatory introduction
+introduction:
+  - "We are writing a book to teach C by understanding the CPU/Memory programmers model, exploring the ISA for RISC-V, the assembly, writing baremetal firmware/driver, and ends with printing 'Hello, World!'' on the UART."
+  - "The book covers lot more than just C. Things like Assembly, Makefile, GDB based Debugging, Linker Scripts, C, Driver Writing etc… The public draft is available for FREE for online reading."
+
+# mandatory badges
+badges:
+  - Bestseller
+  - Beginner
+  - Intermediate
+#   - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+contents:
+  - section:
+      title: "Part I - Mental Models"
+      description: ""
+      chapters:
+        - chapter:
+            title: "C: History and Relevance"
+            type: "file"
+        - chapter:
+            title: "Computer System Model"
+            type: "file"
+        - chapter:
+            title: "Storage Model"
+            type: "file"
+        - chapter:
+            title: "CPU Model"
+            type: "file"
+        - chapter:
+            title: "Instruction Set (RISC-V)"
+            type: "file"
+        - chapter:
+            title: "Setup - Virtual Lab"
+            type: "file"
+
+  - section:
+      title: "Part II - Assembly"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Text to 0s and 1s"
+            type: "file"
+        - chapter:
+            title: "Assembly Language"
+            type: "file"
+        - chapter:
+            title: "Directives and Generated Assembly"
+            type: "file"
+        - chapter:
+            title: "Build Process"
+            type: "file"
+
+  - section:
+      title: "Part III - C Language"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Keywords"
+            type: "file"
+        - chapter:
+            title: "Anatomy of Code"
+            type: "file"
+        - chapter:
+            title: "Not C Keywords!"
+            type: "file"
+        - chapter:
+            title: "C: Pointers"
+            type: "file"
+        - chapter:
+            title: "C: More Pointers"
+            type: "file"
+        - chapter:
+            title: "The power of structs"
+            type: "file"
+        - chapter:
+            title: "Object Oriented Approach"
+            type: "file"
+
+  - section:
+      title: "Part IV - Programming Embedded Systems"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Mixing Assembly & C"
+            type: "file"
+        - chapter:
+            title: "CPU Boot Process"
+            type: "file"
+        - chapter:
+            title: "Code and Data Placement"
+            type: "file"
+        - chapter:
+            title: "C: Address Map and Struct"
+            type: "file"
+        - chapter:
+            title: "Interacting with Qemu UART"
+            type: "file"
+        - chapter:
+            title: "Where to Next?"
+            type: "file"

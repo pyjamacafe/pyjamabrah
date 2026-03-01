@@ -78,13 +78,15 @@
 
       <div class="bundle-landing-section-title">Details of Content (Course wise)</div>
       {{/*  <p>Explore the detailed list of lectures included in each course.</p>  */}}
+      {{ $counter := 0 }}
       {{ range $bundle.courses }}
+        {{ $counter = (add $counter 1)}}
         {{ $c := (index $courselist .) }}
         <span id="{{$c.id}}"></span>
         <div class="bundle-landing-toc-entry">
           <details class="bundle-landing-toc-entry-details" open>
           <summary>
-          <a class="bundle-landing-toc-entry-title" href="#{{$c.id}}">{{$c.title}}</a>
+          <a class="bundle-landing-toc-entry-title" href="#{{$c.id}}">#{{$counter}}: {{$c.title}}</a>
           </summary>
           <div class="bundle-landing-toc-content">
           {{range $c.introduction }}
