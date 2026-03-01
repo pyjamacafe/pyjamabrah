@@ -11,7 +11,7 @@
       <h3 class="site-subtitle">{{ default "Description about Blog Author" .Site.Params.subtitle }}</h3>
     </div>
   </div>
-  <hr />
+  <hr id="nav-top-hr" />
   <nav class="navbar">
     {{ with .Site.Menus.main }}
       {{ range $index, $value := . }}
@@ -23,7 +23,7 @@
       {{ end }}
     {{ end }}
   </nav>
-  <hr />
+  <hr id="nav-bottom-hr" />
   <script>
     p = window.location.pathname.split("/").join("");
     if (p == "") {

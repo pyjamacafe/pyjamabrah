@@ -47,6 +47,12 @@ html {
   scrollbar-gutter: stable;
 }
 
+header {
+  .navbar, #nav-top-hr {
+    display: none;
+  }
+}
+
 html:has(dialog[open]) {
   overflow: hidden;
 }
