@@ -1,5 +1,5 @@
 :root {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 :root {
@@ -404,6 +404,12 @@ div, p {
   code {
     font-size: var(--base-font-size);
   }
+}
+
+.bundle-landing-discount-text {
+  /* background-color: var(--theme-primary); */
+  padding: 1px 4px;
+  color: var(--cafe) !important;
 }
 
 .bundle-landing-footer-sticky-ctas {

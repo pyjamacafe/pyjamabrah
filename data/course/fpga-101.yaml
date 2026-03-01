@@ -1,0 +1,58 @@
+# mandatory ID for the course
+id: "fpga-101"
+
+# mandatory title, cover and subtitle
+title: "FPGA based Hardware Design (101)"
+subtitle: "Dive into the details of how digital hardware is designed."
+cover: "/images/courses/fpga-101.png"
+
+# mandatory introduction
+introduction:
+  - "This course focuses on Digital Circuit Design using FPGAs (Field Programmable Gate Arrays). Recommended for Software Engineers to help them understand how the underlying electronic machines work."
+
+# mandatory badges
+badges:
+  - Bestseller
+  - Beginner
+#   - Intermediate
+#   - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+contents:
+  - section:
+      title: "Quick Demo"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Demo - FPGA and deploying simple circuits on it"
+
+  - section:
+      title: "Essentials"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Understanding the Transistor"
+        - chapter:
+            title: "Using transistors as a base for logic gates"
+        - chapter:
+            title: "What is an FPGA"
+        - chapter:
+            title: "Exploring the iCEBreaker Development board"
+
+  - section:
+      title: "What does programming FPGA mean?"
+      description: ""
+      chapters:
+        - chapter:
+            title: "icestudio and simple circuit"
+        - chapter:
+            title: "Mental model for the internals of the FPGA"
+        - chapter:
+            title: "Build flow and tools"
+        - chapter:
+            title: "More lectures to be uploaded soon"

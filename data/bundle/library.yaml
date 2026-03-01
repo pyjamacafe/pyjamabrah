@@ -100,7 +100,6 @@ courses:
   - "freertos101"
   - "zephyr101"
   - "git-gerrit"
-  - "tech-discussions"
   - "a101"
   - "a102"
   - "smmu"
@@ -108,7 +107,12 @@ courses:
   - "ldd-101"
   - "ldd-102"
   - "ldd-103"
+  - "walkthroughs"
+  - "fpga-101"
   - "podcast"
+  - "tech-discussions"
+  - "tech-syncs"
+
 
 sampleCertificate: "/images/courses/library-certificate.png"
 

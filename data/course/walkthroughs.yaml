@@ -1,0 +1,78 @@
+# mandatory ID for the course
+id: "walkthrough"
+
+# mandatory title, cover and subtitle
+title: "Source Code Walkthrough"
+subtitle: "Reverse engineering random source codes making sense out of the code."
+cover: "/images/courses/walkthrough.png"
+
+# mandatory introduction
+introduction:
+  - "Learn how to tame huge code bases written in C. Techniques, tricks and general patterns that help understanding the structure and abstractions used in a repository."
+
+# mandatory badges
+badges:
+  - Bestseller
+  - Beginner
+  - Intermediate
+  - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+contents:
+  - section:
+      title: "Little Kernel (LK)"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Setup and getting started"
+        - chapter:
+            title: "Reverse engineering directory structure"
+        - chapter:
+            title: "Reverse engineering the APP structure"
+        - chapter:
+            title: "Deciphering compilation logs"
+  - section:
+      title: "LK Startup Code deciphering"
+      description: ""
+      chapters:
+        - chapter:
+            title: "Two Segways - Towards deciphering Boot Code"
+        - chapter:
+            title: "LK Startup Code broad Overview"
+        - chapter:
+            title: "ARM64 Exception Levels - Quick Refresher"
+        - chapter:
+            title: "aarch64 Exception level switching"
+            type: "file"
+        - chapter:
+            title: "FPU SVE/NEON, Cache Configuration"
+            type: "file"
+        - chapter:
+            title: "All about Stacks and SP"
+            type: "file"
+        - chapter:
+            title: "Page table setup in Memory"
+            type: "file"
+        - chapter:
+            title: "MMU Initialisation and TTBR setup"
+            type: "file"
+        - chapter:
+            title: "Stack Setup and BSS section"
+            type: "file"
+        - chapter:
+            title: "Secondary Cores Boot path"
+            type: "file"
+        - chapter:
+            title: "Trampoline Vector path"
+            type: "file"
+        - chapter:
+            title: "Calling kernel's main()"
+            type: "file"
+        - chapter:
+            title: "more videos being recorded..."
+            type: ""

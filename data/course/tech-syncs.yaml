@@ -1,0 +1,50 @@
+# mandatory ID for the course
+id: "tech-syncs"
+
+# mandatory title, cover and subtitle
+title: "Tech Syncs"
+subtitle: "recordings of seminar/workshops on ad-hoc topics"
+cover: "/images/courses/tech-syncs.png"
+
+# mandatory introduction
+introduction:
+  - "Live Tech Syncs with learners every once in a while where we discuss ad-hoc topics relating to Firmware and System Software Engineering."
+
+# mandatory badges
+badges:
+  - Bestseller
+  - Beginner
+  - Intermediate
+  - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+contents:
+  - section:
+      title: "Recorded Sessions"
+      description: ""
+      chapters:
+        - chapter:
+            title: "ARM Cortex-M CPUs (part - 1) | 30 April 2025"
+        - chapter:
+            title: "ARM Cortex-M CPUs : Memory Model (part - 1) | 03 May 2025"
+        - chapter:
+            title: "RISC-V - Introduction | 08 May 2025"
+        - chapter:
+            title: "ARM Cortex-M CPUs : Memory Model (part - 2) | 14 May 2025"
+        - chapter:
+            title: "Raspberry Pi PICO 2 SoC Deep Dive (Part 1) | 25 May 2025"
+        - chapter:
+            title: "Understanding PCIe (Part I)| 28 May 2025"
+        - chapter:
+            title: "AutoSAR - Introduction | 07 June 2025"
+        - chapter:
+            title: "Understanding PCIe (Part II) | 10 June 2025"
+        - chapter:
+            title: "How to Embedded Systems? | 27 Sep 2025"
+        - chapter:
+            title: "What Every Programmer Should Know About Memory | (tbd)"
