@@ -12,18 +12,7 @@
       <div class="bundle-landing-subtitle">{{.subtitle | markdownify }}</div>
       {{ end }}
 
-      {{ if .badges }}
-        {{ partial "course/badges.html" .badges }}
-      {{ end }}
-
-      {{ if .rating }}
-      <div class="bundle-landing-rating-student-count-container">
-        {{ partial "course/ratingStars.html" .rating }}
-        {{ if .enrolled }}
-        <span> | <b class="bundle-landing-badge bundle-landing-badge-enrolled">{{.enrolled}}</b> Enrolled.</span>
-        {{ end }}
-      </div>
-      {{ end }}
+      {{ partial "course/quality-meta.html" . }}
 
       <hr class="bundle-divider-line"/>
 

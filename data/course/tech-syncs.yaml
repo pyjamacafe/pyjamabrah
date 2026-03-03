@@ -29,22 +29,20 @@ contents:
       description: ""
       chapters:
         - chapter:
-            title: "ARM Cortex-M CPUs (part - 1) | 30 April 2025"
+            title: "ARM Cortex-M CPUs (part - 1)"
         - chapter:
-            title: "ARM Cortex-M CPUs : Memory Model (part - 1) | 03 May 2025"
+            title: "ARM Cortex-M CPUs : Memory Model (part - 1)"
         - chapter:
-            title: "RISC-V - Introduction | 08 May 2025"
+            title: "RISC-V - Introduction"
         - chapter:
-            title: "ARM Cortex-M CPUs : Memory Model (part - 2) | 14 May 2025"
+            title: "ARM Cortex-M CPUs : Memory Model (part - 2)"
         - chapter:
-            title: "Raspberry Pi PICO 2 SoC Deep Dive (Part 1) | 25 May 2025"
+            title: "Raspberry Pi PICO 2 SoC Deep Dive (Part 1)"
         - chapter:
-            title: "Understanding PCIe (Part I)| 28 May 2025"
+            title: "Understanding PCIe (Part I)"
         - chapter:
-            title: "AutoSAR - Introduction | 07 June 2025"
+            title: "AutoSAR - Introduction"
         - chapter:
-            title: "Understanding PCIe (Part II) | 10 June 2025"
+            title: "Understanding PCIe (Part II)"
         - chapter:
-            title: "How to Embedded Systems? | 27 Sep 2025"
-        - chapter:
-            title: "What Every Programmer Should Know About Memory | (tbd)"
+            title: "How to Embedded Systems?"
