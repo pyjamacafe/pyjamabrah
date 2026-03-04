@@ -6,10 +6,10 @@ description: "A beginner friendly FPGA board based on the Lattice-iCE40UP5K Chip
 thumbnail: "/images/soanpapdi/soanpapdi.jpg"
 
 url: /fpga
-#
-# aliases:
-# - /emb/
-# - /embdedsystems/
+
+aliases:
+- /soanpapdi/
+- /sp/
 
 # default CTA
 default_cta: &defaults
