@@ -566,8 +566,8 @@ div, p {
 }
 
 .bundle-landing-toc-entry {
-  border: 1px solid var(--linecolor);
-  margin: 8px 0px;;
+  /* border: 1px solid var(--linecolor); */
+  margin: 8px 0px;
 }
 
 .bundle-landing-toc-content {
@@ -584,12 +584,16 @@ div, p {
 
 .bundle-landing-course-details {
   border: 1px solid var(--linecolor);
-  padding: 16px;
   margin: 16px 0px;
+  background-color: var(--dimcolor);
 }
 
 .bundle-landing-course-details-cover {
   flex: 1 1 40%;
+
+  img {
+    border-radius: 10px;
+  }
 }
 
 .bundle-landing-course-details-highlights {
@@ -598,14 +602,15 @@ div, p {
 
 .bundle-landing-toc-entry-details > summary {
   padding: var(--padding);
+  text-align: center;
+}
+
+.bundle-landing-toc-entry-details:hover > summary {
   background-color: var(--theme-primary);
 }
 
 .bundle-landing-toc-entry-details[open] > summary {
   border: none;
-  border-bottom: 1px solid var(--linecolor);
-  position: sticky;
-  top: 0px;
 }
 
 .bundle-landing-toc-entry-details-title {
@@ -620,10 +625,16 @@ div, p {
 }
 
 .bundle-landing-toc-entry-title {
-  display: inline;
+  flex: 1 1 100%;
+  background-color: var(--theme-primary);
+  display: block;
   font: var(--toc-title-size);
   color: var(--c100) !important;
   text-decoration: none;
+  position: sticky;
+  top: 0px;
+  padding: 8px;
+  border-bottom: 1px solid var(--linecolor);
 }
 
 .bundle-landing-toc-entry-title:visited {
@@ -660,6 +671,13 @@ div, p {
   .bundle-landing-course-details-highlights {
     min-width: 100%;
   }
+}
+
+.bundle-landing-yt-container {
+  flex: 1 1 auto;
+  width: auto;
+  height: auto;
+  margin: 8px;
 }
 
 @media (min-width: 771px) and (max-width: 1366px) {

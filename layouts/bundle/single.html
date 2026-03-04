@@ -114,6 +114,9 @@
                 {{end}}
                 {{.chapter.title}}
                 </div>
+                {{ if .chapter.preview }}
+                  {{ partial "course/yt-preview.html" .chapter.preview}}
+                {{ end }}
                 {{end}}
               </ul>
               {{ end }}

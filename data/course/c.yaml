@@ -37,6 +37,7 @@ contents:
             title: "Keep an Eye on Functions, Pointers and Structs"
         - chapter:
             title: "Example of the RAW power - Functions, Struct and Pointers"
+            preview: "1-GXQFRaHZc"
   - section:
       title: "Mental models to brain tattoo"
       description: "How to think like a computer scientist when working in the C language."
@@ -69,6 +70,7 @@ contents:
             title: "Anatomy of Assembly Program, writing code, debugging in GDB"
         - chapter:
             title: "Decomposing C to Assembly and the relation"
+            preview: "2eAv_b4OrAE"
         - chapter:
             title: "Getting CPU from assembly to jump to C program"
 
