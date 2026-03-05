@@ -1,7 +1,15 @@
 {{ with . }}
+
 {{$bundle := (index .Site.Data.bundle .Params.source) }}
+{{$course := (index .Site.Data.course .Params.source) }}
 {{$instructorList := .Site.Data.creators }}
-{{$bundleInstructors := $bundle.instructors}}
+
+{{ $bundleInstructors := ""}}
+{{ if $bundle }}
+  {{$bundleInstructors = $bundle.instructors}}
+{{ else }}
+  {{$bundleInstructors = $course.instructors}}
+{{ end}}
 
 <div class="bundle-landing-section-title">Instructors</div>
 <div class="bundle-landing-instructors-containter">

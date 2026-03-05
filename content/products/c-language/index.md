@@ -1,11 +1,11 @@
 ---
 layout: products
 
-url: /c
+url: /c-old
 
 aliases:
-- /c/
-- /c-language/
+- /c-old/
+- /c-language-old/
 - /products/c-language/
 
 title: "The C Language"

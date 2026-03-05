@@ -1,0 +1,183 @@
+{{ define "main" }}
+  <link rel="stylesheet" href="{{"css/bundle/bundle.css" | relURL }}">
+  {{/*  Filter the Data source  */}}
+  {{$bundle := (index .Site.Data.course .Params.source) }}
+  {{$courselist := .Site.Data.course }}
+  {{$faqs := (index .Site.Data.faqs $bundle.faqs) }}
+
+  <main class="bundle-container">
+    <div class="bundle-info-container">
+      {{ if $bundle.title }}
+      <div class="bundle-landing-title">{{$bundle.title | markdownify}}</div>
+      {{ end }}
+
+      {{ if $bundle.subtitle }}
+      <div class="bundle-landing-subtitle">{{$bundle.subtitle | markdownify }}</div>
+      {{ end }}
+      <hr class="bundle-divider-line"/>
+
+      {{ if $bundle.infographic }}
+      <div class="bundle-landing-introduction">
+        <img loading="lazy" src="{{$bundle.infographic}}"/>
+      </div>
+      {{ end }}
+
+      {{ if $bundle.introduction }}
+      <div class="bundle-landing-introduction">
+        {{ range $bundle.introduction }}
+          <p>{{ . | markdownify }}</p>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      {{ if $bundle.badges }}
+        {{ partial "course/badges.html" $bundle.badges }}
+      {{ end }}
+
+      {{ if $bundle.rating }}
+      <div class="bundle-landing-rating-student-count-container">
+        {{ partial "course/ratingStars.html" $bundle.rating }}
+        {{ if $bundle.enrolled }}
+        <span> | <b class="bundle-landing-badge bundle-landing-badge-enrolled">{{$bundle.enrolled}}</b> Enrolled.</span>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      <div class="bundle-landing-general-info-container">
+      <span class="bi bi-exclamation-circle-fill"></span><span>Last Updated: {{$bundle.date}}</span>|
+      <span class="bi bi-globe"></span><span>{{ $bundle.language }}</span>|
+      <span class="bi bi bi-clock"></span><span><b>{{ $bundle.access }}</b></span> Access.
+      </div>
+
+      {{ if $bundle.highlights }}
+      <div class="bundle-landing-section-title">Includes</div>
+      {{ partial "course/highlights.html" $bundle.highlights}}
+      {{ end }}
+
+      {{ if $bundle.videoMessage }}
+      {{ partial "course/videoMessage.html" $bundle.videoMessage}}
+      {{ end }}
+
+      <div class="bundle-landing-section-title">Details of Content</div>
+      {{/*  <p>Explore the detailed list of lectures included in each course.</p>  */}}
+      {{ range $bundle.contents }}
+        <div class="bundle-landing-course-details-dialog-section-container">
+        <div class="bundle-landing-course-details-dialog-section-title">
+          {{.section.title}}
+        </div>
+        <div class="bundle-landing-course-details-dialog-section-description">
+          {{.section.description}}
+        </div>
+
+        {{ range .section.chapters }}
+          <div class="bundle-landing-course-details-dialog-section-chapter">
+            {{if eq .chapter.type "file"}}
+            <span class="bi bi-file-earmark bundle-landing-icon">&nbsp</span>
+            {{ else }}
+            <span class="bi bi-play-btn bundle-landing-icon">&nbsp</span>
+            {{end}}
+            {{.chapter.title}}
+          </div>
+          {{ if .chapter.preview }}
+                  {{ partial "course/yt-preview.html" .chapter.preview}}
+          {{ end }}
+        {{ end }}
+        </div>
+      {{ end }}
+
+      {{ if $bundle.learnings }}
+      <div class="bundle-landing-section-title">What you will learn</div>
+      {{ partial "course/checklist.html" $bundle.learnings }}
+      {{ end }}
+
+      {{ if $bundle.sampleCertificate }}
+      <div class="bundle-landing-section-title">Sample Certificate</div>
+      <div class="bundle-course-sample-certificate">
+        <figure>
+        <img loading="lazy" src="{{$bundle.sampleCertificate}}"/>
+        </figure>
+        <div class="bundle-course-sample-certificate-caption">Earn a certificate for every technical track by completing 95% of the course work.</div>
+      </div>
+      {{ end }}
+
+      {{ if $bundle.difference }}
+        <div class="bundle-landing-section-title">How is this different</div>
+        {{ partial "course/checklist.html" $bundle.difference }}
+      {{ end }}
+
+      {{ if $bundle.instructors }}
+        {{ partial "course/instructors.html" . }}
+      {{ end }}
+
+      {{ if $bundle.requirements }}
+        <div class="bundle-landing-section-title">Requirements</div>
+        {{ partial "course/checklist.html" $bundle.requirements }}
+      {{ end }}
+
+      {{ if $bundle.audience }}
+        <div class="bundle-landing-section-title">Who this is for?</div>
+        {{ partial "course/checklist.html" $bundle.audience }}
+      {{ end }}
+
+      <div class="bundle-landing-section-title">FAQs</div>
+      <div class="bundle-landing-faqs">
+      {{ $counter := 0 }}
+      {{ range $faqs }}
+        {{if eq (math.Mod $counter 2) 0}}
+        <div class="bundle-landing-faq-q"><b>{{. | markdownify}}</b></div>
+        {{else}}
+        <div class="bundle-landing-faq-a">{{. | markdownify}}</div>
+        <br/>
+        {{end}}
+        {{ $counter = (add $counter 1)}}
+      {{ end }}
+      </div>
+
+      {{ if $bundle.sticky }}
+      <div class="bundle-landing-footer-sticky">
+          {{ if $bundle.sticky.ctas }}
+            {{ if $bundle.sticky.text }}
+              <div class="bundle-landing-footer-sticky-text">
+                {{$bundle.sticky.text}}
+              </div>
+            {{ end }}
+            {{ if $bundle.sticky.discount }}
+              <div class="bundle-landing-footer-sticky-text">
+                Use code <b class="bundle-landing-discount-text">{{$bundle.sticky.discount.code}}</b> to get a <b class="bundle-landing-discount-text">{{$bundle.sticky.discount.percent}} discount</b> on the Yearly Access.
+              </div>
+            {{ end }}
+            <div class="bundle-landing-footer-sticky-ctas">
+              {{ range $bundle.sticky.ctas }}
+                <a href="{{ .link }}" target="_blank">
+                  <button class="bundle-landing-footer-sticky-cta-button {{if .primary}}bundle-landing-footer-sticky-cta-button-primary{{end}}">{{ .text }}</button>
+                </a>
+              {{ end }}
+            </div>
+          {{ end }}
+      </div>
+      {{ end }}
+    </div>
+    <div class="bundle-sidebar-card">
+      <img loading="lazy" src="{{$bundle.cover}}">
+      <div class="bundle-sidebar-card-title">{{$bundle.title | markdownify}}</div>
+      <div class="bundle-sidebar-card-subtitle">{{$bundle.subtitle | markdownify}}</div>
+      {{ partial "course/badges.html" $bundle.badges }}
+      <div class="bundle-landing-rating-student-count-container">
+      {{ partial "course/ratingStars.html" $bundle.rating }}
+      </div>
+      <div class="bundle-sidebar-highlights-container">
+      {{ partial "course/highlights.html" $bundle.highlights}}
+      </div>
+
+      <div class="bundle-landing-sidebar-cta">
+        <div class="bundle-landing-footer-sticky-ctas">
+          {{ range $bundle.sticky.ctas }}
+            <a href="{{ .link }}" target="_blank">
+              <button class="bundle-landing-footer-sticky-cta-button {{if .primary}}bundle-landing-footer-sticky-cta-button-primary{{end}}">{{ .text }}</button>
+            </a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </main>
+{{ end }}

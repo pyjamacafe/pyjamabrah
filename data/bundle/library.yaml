@@ -130,9 +130,6 @@ difference:
   - Teach multiple CPU architectures (ARM-M, ARM-A, RISC-V).
   - Cover the toolchain utilities like compiler, assembler, linker and debug tools like GDB?
   - Learn at your own pace.
-  - Superficial and confusing explanation
-  - Burn a hole in the pocket with Fee
-  - On campus presence required.
 
 instructors:
   - "piyush"

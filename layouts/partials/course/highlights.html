@@ -1,59 +1,83 @@
 {{ with . }}
 <div class="bundle-landing-highlights-container">
   {{ range . }}
-    <div class="bundle-landing-highlight">
       {{ if .courseCount }}
-      <span class="bi bi-folder-fill">&nbsp</span><span>Collection of {{.courseCount}} Courses.</span>
+        <div class="bundle-landing-highlight">
+        <span class="bi bi-folder-fill">&nbsp</span><span>Collection of {{.courseCount}} Courses.</span>
+        </div>
       {{ end }}
 
       {{ if .duration }}
-      <span class="bi bi-play-btn">&nbsp</span><span>{{.duration}} of recorded lectures.</span>
+        <div class="bundle-landing-highlight">
+        <span class="bi bi-play-btn">&nbsp</span><span>{{.duration}} of recorded lectures.</span>
+        </div>
       {{ end }}
 
       {{ if .lessonCount }}
-      <span class="bi bi-check2-square">&nbsp</span><span>{{.lessonCount}} Lessons.</span>
+        <div class="bundle-landing-highlight">
+        <span class="bi bi-check2-square">&nbsp</span><span>{{.lessonCount}} Lessons.</span>
+        </div>
       {{ end }}
 
       {{ if .emulator }}
-      <span class="bi bi-pci-card">&nbsp</span><span>Emulator based experiments.</span>
+        <div class="bundle-landing-highlight">
+        <span class="bi bi-pci-card">&nbsp</span><span>Emulator based experiments.</span>
+        </div>
       {{ end }}
 
       {{ if .hardware }}
-      <span class="bi bi-pci-card">&nbsp</span><span>Hardware based experiments.</span>
+        <div class="bundle-landing-highlight">
+        <span class="bi bi-pci-card">&nbsp</span><span>Hardware based experiments.</span>
+        </div>
       {{ end }}
 
       {{ if .downloadableResources }}
-      <span class="bi bi-cloud-arrow-down">&nbsp</span><span>{{.downloadableResources}} downloadable resource.</span>
+        <div class="bundle-landing-highlight">
+        <span class="bi bi-cloud-arrow-down">&nbsp</span><span>{{.downloadableResources}} downloadable resource.</span>
+        </div>
       {{ end }}
 
       {{ if .workshops }}
-      <span class="bi bi-person-video3">&nbsp</span><span>Occasional workshops by industry experts.</span>
+        <div class="bundle-landing-highlight">
+        <span class="bi bi-person-video3">&nbsp</span><span>Occasional workshops by industry experts.</span>
+        </div>
       {{ end }}
 
       {{ if .certificate }}
-      <span class="bi bi-trophy">&nbsp</span><span>Certificate on completion of technical tracks.</span>
+        <div class="bundle-landing-highlight">
+        <span class="bi bi-trophy">&nbsp</span><span>Certificate on completion of technical tracks.</span>
+        </div>
       {{ end }}
 
       {{ if .cheatSheet }}
-      <span class="bi bi-card-list">&nbsp</span><span>Notes/Cheat-sheet on select courses.</span>
+        <div class="bundle-landing-highlight">
+        <span class="bi bi-card-list">&nbsp</span><span>Notes/Cheat-sheet on select courses.</span>
+        </div>
       {{ end }}
 
       {{ if .caseStudy }}
-      <span class="bi bi-git">&nbsp</span><span>Case studies based on open-source code.</span>
+        <div class="bundle-landing-highlight">
+        <span class="bi bi-git">&nbsp</span><span>Case studies based on open-source code.</span>
+        </div>
       {{ end }}
 
       {{ if .exerciseChallenge }}
-      <span class="bi bi-code-square">&nbsp</span><span>Exercises and Coding Challenges.</span>
+        <div class="bundle-landing-highlight">
+        <span class="bi bi-code-square">&nbsp</span><span>Exercises and Coding Challenges.</span>
+        </div>
       {{ end }}
 
       {{ if .projectCount }}
-      <span class="bi bi-hammer">&nbsp</span><span>{{.projectCount}} Project implementation.</span>
+        <div class="bundle-landing-highlight">
+        <span class="bi bi-hammer">&nbsp</span><span>{{.projectCount}} Project implementation.</span>
+        </div>
       {{ end }}
 
       {{ if .freeUpdates }}
-      <span class="bi bi-emoji-sunglasses">&nbsp</span><span>Free updates to the course.</span>
+        <div class="bundle-landing-highlight">
+        <span class="bi bi-emoji-sunglasses">&nbsp</span><span>Free updates to the course.</span>
+        </div>
       {{ end }}
-    </div>
   {{ end }}
 </div>
 {{ end }}

@@ -469,7 +469,7 @@ div, p {
   flex-wrap: wrap;
   justify-content: center;
   align-items: start;
-  max-width: 50%;
+  /* max-width: 50%; */
 }
 
 .bundle-sidebar-card-title {

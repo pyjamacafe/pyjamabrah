@@ -2,7 +2,7 @@
 id: "c"
 
 # mandatory title, cover and subtitle
-title: "C Language"
+title: "The C Language"
 subtitle: "A detailed course on C language with insights using the RISC-V assembly."
 cover: "/images/courses/c.png"
 
@@ -23,6 +23,92 @@ rating: 5
 
 # Optional, number of students
 enrolled: 3000+
+
+default_cta: &defaults
+  - cta:
+    link: "https://courses.pyjamabrah.com/web/checkout/681025ad8aeb438c463f3fde?couponcode=ILOVEC"
+    text: "Buy Course (Yearly Access)"
+    primary: true
+sticky:
+  text: ""
+  discount:
+    code: "ILOVEC"
+    percent: 25%
+  ctas: *defaults
+
+date: 5 Mar 2026
+language: "English"
+access: "365 day"
+highlights:
+  - courseCount:
+  - duration: "20+ hours"
+  - lessonCount: "91+"
+  - emulator: true
+  - hardware:
+  - downloadableResources: "10+"
+  - workshops:
+  - certificate: true
+  - cheatSheet:
+  - caseStudy:
+  - exerciseChallenge: true
+  - projectCount: "Several"
+  - freeUpdates: true
+videoMessage: "c"
+learnings:
+  - Mental models to use when coding in C.
+  - What is machine code.
+  - Instruction Set Architecture and Assembly coding.
+  - GNU toolchain utilities/programs (gcc, as, ld wtc).
+  - GNU Debugger (GDB).
+  - Automation using Makefiles.
+  - How text is converted to 0s and 1s.
+  - Syntax and Structure of C Programs.
+  - Data types, variables, declaration/definition.
+  - Arrays, Strings and Pointers.
+  - Structs and Union.
+  - arithmetic, logical, relational operators in C.
+  - Functions and Modules/Libraries in C.
+  - Pointers and how to use them in Design.
+  - Types of pointers.
+  - Bit fields and Bit manipulation.
+  - Const and volatile type qualifiers
+  - Controlling placement of code and data in memory.
+  - Loops - for, while, do while.
+  - Branching - if, if-else, switch, goto.
+  - Mixing Assembly and C and the need for it.
+  - Booting RISC-V CPU from scratch.
+  - Cross compiling and what it means.
+  - memory management - Stack vs. Heap.
+  - Dynamic memory allocation (malloc, calloc, realloc, free).
+  - Compiler optimizations (-O1, -O2, -O3, -Os, -Ofast).
+sampleCertificate: "/images/courses/library-certificate.png"
+difference:
+  - C language and pointers with focus on machine behavior.
+  - Detailed analysis of data types and significance.
+  - Assembly and C Coding without IDE
+  - Detailed explanation and view of Programmer's model of CPU.
+  - Mental models of various components in the System to reason based off.
+  - A Bottom-Up Approach with the tinge of answering the Whys.
+  - Hands-on experiments to prove every concept.
+  - Focused on practical professional insights
+  - Cover the toolchain utilities like compiler, assembler, linker and debug tools like GDB?
+  - Learn at your own pace.
+
+instructors:
+  - "piyush"
+requirements:
+  - GitHub account to do the hands-on coding in Codespaces.
+  - Interest in the lower level working of the system.
+  - Some exposure to Digital systems is good (but not strictly required).
+  - Basic understanding of number systems, logic gates, bits and bytes is good to have (but not strictly required).
+audience:
+  - Students in Academia with C as a subject in the course.
+  - Firmware and System Software Engineers looking to revisit concepts.
+  - Electrical/Electronics Engineers working on hardware programming.
+  - Systems Engineer seeking gain system level insights.
+  - Those curious to learn the underlying details of Systems and how to program it using C.
+faqs: pyjamacafe
+
 
 contents:
   - section:
