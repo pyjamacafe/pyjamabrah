@@ -18,12 +18,12 @@
 
   {{/*  print image if there is one  */}}
   {{ if .img }}
-    <img src="{{.img}}"/>
+    <img loading="lazy" src="{{.img}}"/>
   {{ end }}
 
   {{/*  print image if there is one  */}}
   {{ if .img2 }}
-    <img class="pitch-half-image-framed" src="{{.img2}}"/>
+    <img loading="lazy" class="pitch-half-image-framed" src="{{.img2}}"/>
   {{ end }}
 
   {{/*  video  */}}
@@ -39,7 +39,7 @@
 
   {{/*  youtube  */}}
   {{ if .youtube }}
-    <iframe style= "width:100%; height:auto; aspect-ratio:16/9" src="https://www.youtube.com/embed/{{.youtube}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe loading="lazy" style= "width:100%; height:auto; aspect-ratio:16/9" src="https://www.youtube.com/embed/{{.youtube}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   {{ end }}
 
   {{/* Model */}}

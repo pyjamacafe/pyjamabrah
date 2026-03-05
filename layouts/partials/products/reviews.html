@@ -23,11 +23,11 @@
   <div class="info-card">
       {{if .photo}}
       <div class="reviewer-meta">
-      <img class="reviewer-photo" src="{{.photo}}"></img>
+      <img loading="lazy" class="reviewer-photo" src="{{.photo}}"></img>
       <div class="reviewer-data">
       {{else}}
       <div class="reviewer-meta" style="padding: 5px !important">
-      {{/*  <img class="reviewer-photo" src="/images/old/favicon.png"></img>  */}}
+      {{/*  <img loading="lazy" class="reviewer-photo" src="/images/old/favicon.png"></img>  */}}
       <div>
       {{end}}
 

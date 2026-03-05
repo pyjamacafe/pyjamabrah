@@ -1,10 +1,10 @@
 {{ with .}}
 <div class="product-sidebar">
   {{ if .preview }}
-  <iframe width="100%" style="aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/{{.preview}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe loading="lazy" width="100%" style="aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/{{.preview}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   {{ else }}
     <a class="product-img-container" href="{{.more}}">
-      <img class="product-img" src="{{.poster}}"/>
+      <img loading="lazy" class="product-img" src="{{.poster}}"/>
     </a>
   {{ end }}
 

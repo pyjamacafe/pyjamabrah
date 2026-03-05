@@ -45,7 +45,7 @@
     {{if .teaser}}
     {{partial "webvideo.html" .teaser }}
     {{else}}
-    <img src="{{.poster}}"/>
+    <img loading="lazy" src="{{.poster}}"/>
     {{end}}
     <h4 class="post-title"> {{ .title | markdownify }} </h4>
     <div class="product-subtitle">{{.subtitle | markdownify}}</div>
@@ -96,7 +96,7 @@
 <div class="course-list">
   {{ range .Site.Data.courses }} {{ if eq .type "free"}}
   <a class="course-card" href="{{ .more }}" >
-    <img src="{{.poster}}"/>
+    <img loading="lazy" src="{{.poster}}"/>
     <h4 class="post-title"> {{ .title | markdownify }} </h4>
     <div class="product-subtitle">{{.subtitle | markdownify}}</div>
 
@@ -144,7 +144,7 @@
 <div class="course-list" >
   {{ range .Site.Data.courses }} {{ if eq .type "partner"}}
   <a class="course-card" href="{{ .more }}" >
-    <img src="{{.poster}}"/>
+    <img loading="lazy" src="{{.poster}}"/>
     <h4 class="post-title"> {{ .title | markdownify }} </h4>
     <div class="product-subtitle">{{.subtitle | markdownify}}</div>
 

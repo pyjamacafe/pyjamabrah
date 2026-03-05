@@ -1,6 +1,6 @@
 <article class="summary">
   <h4 class="post-title"> {{ .Title }}</h4>
-  <img class="post-card-image" src="{{.Params.thumbnail}}"/>
+  <img loading="lazy" class="post-card-image" src="{{.Params.thumbnail}}"/>
   <div class="post-card-content">
     {{ .Summary }}
     {{ if .Truncated }}

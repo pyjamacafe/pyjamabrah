@@ -18,7 +18,7 @@
 
       {{ if $bundle.infographic }}
       <div class="bundle-landing-introduction">
-        <img src="{{$bundle.infographic}}"/>
+        <img loading="lazy" src="{{$bundle.infographic}}"/>
       </div>
       {{ end }}
 
@@ -65,7 +65,7 @@
         {{$c := (index $courselist .) }}
         <div id="card-{{$c.id}}" onclick="openDialog(this.id)"class="bundle-course-card">
           <div class="bundle-course-card-cover">
-            <img src="{{$c.cover}}"/>
+            <img loading="lazy" src="{{$c.cover}}"/>
           </div>
           <div class="bundle-course-card-title">{{$c.title}}</div>
           <div class="bundle-course-card-description">{{$c.subtitle}}</div>
@@ -87,7 +87,7 @@
           <a class="bundle-landing-toc-entry-title" href="#{{$c.id}}">#{{$counter}}: {{$c.title}}</a>
           <div class="bundle-landing-course-details-container">
             <div class="bundle-landing-course-details-cover">
-              <img src="{{$c.cover}}"/>
+              <img loading="lazy" src="{{$c.cover}}"/>
             </div>
             <div class="bundle-landing-course-details-highlights">
               {{range $c.introduction }}
@@ -135,7 +135,7 @@
       <div class="bundle-landing-section-title">Sample Certificate</div>
       <div class="bundle-course-sample-certificate">
         <figure>
-        <img src="{{$bundle.sampleCertificate}}"/>
+        <img loading="lazy" src="{{$bundle.sampleCertificate}}"/>
         </figure>
         <div class="bundle-course-sample-certificate-caption">Earn a certificate for every technical track by completing 95% of the course work.</div>
       </div>
@@ -199,7 +199,7 @@
       {{ end }}
     </div>
     <div class="bundle-sidebar-card">
-      <img src="{{$bundle.cover}}">
+      <img loading="lazy" src="{{$bundle.cover}}">
       <div class="bundle-sidebar-card-title">{{$bundle.title | markdownify}}</div>
       <div class="bundle-sidebar-card-subtitle">{{$bundle.subtitle | markdownify}}</div>
       {{ partial "course/badges.html" $bundle.badges }}
