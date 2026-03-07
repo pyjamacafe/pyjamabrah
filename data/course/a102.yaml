@@ -10,7 +10,7 @@ infographic: "/images/snaps/a102/1.png"
 
 # mandatory introduction
 introduction:
-  - "Get get a deeper insight into the ARM 64 Bit CPUs by booting and programming the `aarch64` based Cortex-A72 on the Raspberry-Pi4B - from scratch!"
+  - "Get a deeper insight into the ARM 64 Bit CPUs by booting and programming the `aarch64` based Cortex-A72 on the Raspberry-Pi4B - from scratch!"
   - "You will code both in Assembly and C to get the CPU to print 'Hello, World!' on the UART. There will be no IDE used. Everyting right from the Linker script to the Makefile for the automation will be written from scratch."
   - "Assumes no prior knowledge. Recommended for anyone wanting to understand how a application grade CPU boots from scratch."
 
