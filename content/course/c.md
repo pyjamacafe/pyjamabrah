@@ -13,5 +13,3 @@ aliases:
 - /products/c-language/
 
 ---
-
-
