@@ -112,11 +112,15 @@ div, p {
   width: 100%;
 }
 
-.bundle-landing-introduction {
+.bundle-landing-introduction, .bundle-landing-infographic {
   flex: 1 1 100%;
   text-align: center;
   padding: var(--padding);
   font: var(--base-font-size);
+}
+
+.bundle-landing-infographic > img{
+    border: 1px solid var(--linecolor);
 }
 
 .bundle-landing-badge-container, .bundle-landing-rating-student-count-container,

@@ -3,26 +3,98 @@ id: "a102"
 type: "pjcafe"
 
 # mandatory title, cover and subtitle
-title: "Aarch64 - Baremetal Programming"
-subtitle: "Programming the ARM A Class CPU from scratch using Assembly Language."
+title: "Aarch64 (102)"
+subtitle: "Baremetal Programming and Debugging."
 cover: "/images/courses/arm-a102.png"
+infographic: "/images/snaps/a102/1.png"
 
 # mandatory introduction
 introduction:
-  - "A short course on programming the ARM-A Class CPU (aarch64 based Cortex-A72) from scratch using the Raspberry Pi 4B as the platform."
+  - "Get get a deeper insight into the ARM 64 Bit CPUs by booting and programming the `aarch64` based Cortex-A72 on the Raspberry-Pi4B - from scratch!"
+  - "You will code both in Assembly and C to get the CPU to print 'Hello, World!' on the UART. There will be no IDE used. Everyting right from the Linker script to the Makefile for the automation will be written from scratch."
+  - "Assumes no prior knowledge. Recommended for anyone wanting to understand how a application grade CPU boots from scratch."
 
 # mandatory badges
 badges:
   - Bestseller
   - Beginner
-  # - Intermediate
-  # - Advance
+  - Intermediate
+  - Advance
 
 # Mandatory Rating
 rating: 5
 
 # Optional, number of students
 enrolled: 3000+
+
+default_cta: &defaults
+  - cta:
+    link: "https://courses.pyjamabrah.com/l/2816e7cb48"
+    text: "Start the Course!"
+    primary: true
+sticky:
+  text: "Master the Aarch64 based CPUs by programming one from scratch!"
+#   discount:
+#     code:
+#     percent:
+  ctas: *defaults
+
+date: 7 Mar 2026
+language: "English"
+access: "365 day"
+highlights:
+  - courseCount:
+  - duration: "~4 hours 30 mins"
+  - lessonCount: "24"
+  - emulator:
+  - hardware: true
+  - downloadableResources: "2"
+  - workshops:
+  - certificate: true
+  - cheatSheet: true
+  - caseStudy: true
+  - exerciseChallenge:
+  - projectCount: 1
+  - freeUpdates:
+videoMessage: ""
+learnings:
+  - "Understand the architecture of a System on Chip (SoC)."
+  - "Understand the specific multi-stage boot sequence of the Raspberry Pi."
+  - "Learn to prepare SD cards, explore OS contents. "
+  - "Identify essential system files required for booting."
+  - "Interface Raspberry Pi 4B to FT232H for JTAG and UART communication."
+  - "Install and configure professional-grade debugging tools."
+  - "Learn to use OpenOCD (built from source), GDB, and the GDB Dashboard."
+  - "Compile and run assembly programs and transition from multi-core boot sequences into C functions."
+  - "Control hardware peripherals directly by interacting with memory addresses and register configurations."
+  - "Implement a UART protocol driver to send data and print 'Hello, World!' to a terminal."
+  - "Verify register configurations during a failed execution."
+  - "Develop skills in hardware debugging, handle buggy documentation."
+sampleCertificate: "/images/certificates/a-102.png"
+difference:
+  - "Bare Metal Focus - You write code directly for the hardware without an OS."
+  - "Industry Tools - Uses professional JTAG debugging instead of simple print statements."
+  - "Deep Hardware Access - Teaches direct manipulation of Memory Mapped I/O and registers."
+  - "Boot Flow Mastery - Deconstructs the complex Raspberry Pi multi-core startup sequence."
+  - "Source-Based Setup - Learn to compile OpenOCD from source for custom environments."
+  - "Documentation Reality - Teaches you to fix errors found in 'buggy' official datasheets."
+  - "Low-Level Assembly - Covers the transition from raw assembly to C functions."
+  - "Hardware Interfacing - Uses FT232H adapters for physical, external hardware control."
+  - "No Abstractions - You aren't using libraries; you are building the drivers yourself."
+
+instructors:
+  - "piyush"
+requirements:
+  - Linux machine or Windows/Mac capable of running a Linux based Virtual machine.
+  - Raspberry Pi 4B if you want to run all experiments hands on.
+  - FT232H based board to be used for Serial and JTAG input/output.
+  - A GitHub account to access the development environment.
+audience:
+  - Students with interest in learning lower level programming.
+  - Firmware and System Software Engineers looking to understand the lower level programming details of the aarch64 architeture.
+  - Electrical/Electronics Engineers working on hardware programming.
+  - Those curious to understand the boot sequence of an Application grade CPU and attempt booting it from scratch.
+faqs: pyjamacafe
 
 contents:
   - section:
@@ -44,12 +116,14 @@ contents:
       chapters:
         - chapter:
             title: "What is System on Chip (SoC)"
+            preview: "RaTxwqumIF4"
         - chapter:
             title: "Getting the RaspberryPI OS and exploring the contents"
         - chapter:
             title: "The Raspberry Pi 4B Boot sequence"
         - chapter:
             title: "The Raspberry Pi 4B Boot Sequence"
+            type: "file"
         - chapter:
             title: "Files on the SDCard"
         - chapter:
@@ -72,7 +146,7 @@ contents:
         - chapter:
             title: "Compiling first assembly program"
         - chapter:
-            title: "debugging our code with OpenOCD and GDB"
+            title: "Debugging our code with OpenOCD and GDB"
 
   - section:
       title: "UART Driver and Printing `Hello, World!`"
