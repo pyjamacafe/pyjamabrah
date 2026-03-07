@@ -1,5 +1,6 @@
 # mandatory ID for the course
 id: "tech-syncs"
+type: "pjcafe"
 
 # mandatory title, cover and subtitle
 title: "Tech Syncs"

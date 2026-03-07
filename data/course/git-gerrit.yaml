@@ -1,5 +1,6 @@
 # mandatory ID for the course
 id: "git-gerrit"
+type: "pjcafe"
 
 # mandatory title, cover and subtitle
 title: "Git and Gerrit"

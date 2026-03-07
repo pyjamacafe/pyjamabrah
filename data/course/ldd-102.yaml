@@ -1,5 +1,6 @@
 # mandatory ID for the course
 id: "ldd-102"
+type: "pjcafe"
 
 # mandatory title, cover and subtitle
 title: "Linux Device Drivers (102)"

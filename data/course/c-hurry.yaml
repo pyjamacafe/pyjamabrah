@@ -1,5 +1,6 @@
 # mandatory ID for the course
 id: "c-hurry"
+type: "pjcafe"
 
 # mandatory title, cover and subtitle
 title: "C (For those in Hurry!)"

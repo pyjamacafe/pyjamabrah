@@ -1,14 +1,15 @@
 # mandatory ID for the course
 id: "a101"
+type: "pjcafe"
 
 # mandatory title, cover and subtitle
 title: "ARM Cortex-A (101)"
-subtitle: "An introduction to the 64bit ARM CPUs"
+subtitle: "An introduction to aarch64 architecture from ARM."
 cover: "/images/courses/arm-a101.png"
 
 # mandatory introduction
 introduction:
-  - "Introduction to ARM-A Class CPUs implementing the AARCH64 architecture."
+  - "Most of the moderns compute is powered by the ARM 64 Bit CPUs."
 
 # mandatory badges
 badges:
@@ -23,6 +24,76 @@ rating: 5
 # Optional, number of students
 enrolled: 3000+
 
+default_cta: &defaults
+  - cta:
+    link: ""
+    text: "Join for Free"
+    primary: true
+sticky:
+  text: ""
+  discount:
+    code: ""
+    percent:
+  ctas: *defaults
+
+date: 7 Mar 2026
+language: "English"
+access: "365 day"
+highlights:
+  - courseCount:
+  - duration: "~2 hours"
+  - lessonCount: "20"
+  - emulator: true
+  - hardware:
+  - downloadableResources: ""
+  - workshops:
+  - certificate: true
+  - cheatSheet:
+  - caseStudy: true
+  - exerciseChallenge:
+  - projectCount: ""
+  - freeUpdates:
+videoMessage: ""
+learnings:
+  - Who is ARM as a company.
+  - What is the A Class CPUs.
+  - The difference between Architecture and Micro-Architecture.
+  - Programmers model for the ARM-A CPUs.
+  - How a software engineer should view a CPU.
+  - How to refer to the programmers guide.
+  - The idea of Exception Levels (ELs).
+  - The idea of Secure and Non-Secure worlds.
+  - The use case of different Exception levels.
+  - Exception model.
+  - Case studies.
+sampleCertificate: "/images/courses/library-certificate.png"
+difference:
+  - C language and pointers with focus on machine behavior.
+  - Detailed analysis of data types and significance.
+  - Assembly and C Coding without IDE
+  - Detailed explanation and view of Programmer's model of CPU.
+  - Mental models of various components in the System to reason based off.
+  - A Bottom-Up Approach with the tinge of answering the Whys.
+  - Hands-on experiments to prove every concept.
+  - Focused on practical professional insights
+  - Cover the toolchain utilities like compiler, assembler, linker and debug tools like GDB?
+  - Learn at your own pace.
+
+instructors:
+  - "piyush"
+requirements:
+  - GitHub account to do the hands-on coding in Codespaces.
+  - Interest in the lower level working of the system.
+  - Some exposure to Digital systems is good (but not strictly required).
+  - Basic understanding of number systems, logic gates, bits and bytes is good to have (but not strictly required).
+audience:
+  - Students in Academia with C as a subject in the course.
+  - Firmware and System Software Engineers looking to revisit concepts.
+  - Electrical/Electronics Engineers working on hardware programming.
+  - Systems Engineer seeking gain system level insights.
+  - Those curious to learn the underlying details of Systems and how to program it using C.
+faqs: pyjamacafe
+
 contents:
   - section:
       title: "Introduction"
@@ -32,6 +103,7 @@ contents:
             title: Who is ARM as the Company?
         - chapter:
             title: A Class CPUs, Architecture and Micro Architecture
+            preview: "4VBL2mX7u10"
 
   - section:
       title: "CPU, Memory and Mental Models"
@@ -54,6 +126,7 @@ contents:
             title: "Exception Levels"
         - chapter:
             title: "Secure and Non-Secure world"
+            preview: "_JX-qK3VIjs"
         - chapter:
             title: "Use cases and Software Execution in different ELs"
         - chapter:
@@ -79,6 +152,7 @@ contents:
             title: "Case study and Conclusion"
         - chapter:
             title: "Boot process - Single core and Multi Core"
+            preview: "DwdnT1nv5r8"
         - chapter:
             title: "Setup and Demo - Glitch at the end"
         - chapter:

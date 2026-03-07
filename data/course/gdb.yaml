@@ -1,5 +1,6 @@
 # mandatory ID for the course
 id: "gdb"
+type: "pjcafe"
 
 # mandatory title, cover and subtitle
 title: "GDB - Debugging, Scripting and Tricks"

@@ -1,5 +1,6 @@
 # mandatory ID for the course
 id: "pointers"
+type: "pjcafe"
 
 # mandatory title, cover and subtitle
 title: "C Pointers"

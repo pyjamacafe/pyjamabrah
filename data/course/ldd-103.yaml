@@ -1,5 +1,6 @@
 # mandatory ID for the course
 id: "ldd-103"
+type: "pjcafe"
 
 # mandatory title, cover and subtitle
 title: "Linux Device Drivers: Kernel Facilities & Helper Functions"

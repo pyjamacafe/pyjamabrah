@@ -1,5 +1,6 @@
 # mandatory ID for the course
 id: "system-components"
+type: "pjcafe"
 
 # mandatory title, cover and subtitle
 title: "System Components - MMU/SMMU"

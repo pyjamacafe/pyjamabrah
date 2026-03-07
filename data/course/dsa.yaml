@@ -1,5 +1,6 @@
 # mandatory ID for the course
 id: "dsa"
+type: "pjcafe"
 
 # mandatory title, cover and subtitle
 title: "Data Structures"

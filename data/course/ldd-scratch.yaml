@@ -1,5 +1,6 @@
 # mandatory ID for the course
 id: "ldd-scratch"
+type: "pjcafe"
 
 # mandatory title, cover and subtitle
 title: "Build and Run Linux Kernel"

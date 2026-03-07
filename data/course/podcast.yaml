@@ -1,5 +1,6 @@
 # mandatory ID for the course
 id: "podcast"
+type: "pjcafe"
 
 # mandatory title, cover and subtitle
 title: "The Podcast"
