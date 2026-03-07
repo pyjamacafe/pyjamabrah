@@ -2,6 +2,8 @@
 id: "c"
 type: "pjcafe"
 
+weight: 1
+
 # mandatory title, cover and subtitle
 title: "The C Language"
 subtitle: "A detailed course on C language with insights using the RISC-V assembly."

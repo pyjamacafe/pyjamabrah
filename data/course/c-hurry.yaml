@@ -2,6 +2,8 @@
 id: "c-hurry"
 type: "pjcafe"
 
+weight: 2
+
 # mandatory title, cover and subtitle
 title: "C (For those in Hurry!)"
 subtitle: "a quick tour of the 4 key concepts of the Lanaguge."

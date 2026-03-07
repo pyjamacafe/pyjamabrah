@@ -142,22 +142,19 @@
       {{ end }}
 
       {{ if $bundle.difference }}
-        <div class="bundle-landing-section-title">How is this different</div>
-        {{ partial "course/checklist.html" $bundle.difference }}
+        {{ partial "course/differences.html" $bundle.difference }}
       {{ end }}
 
       {{ if $bundle.instructors }}
         {{ partial "course/instructors.html" . }}
       {{ end }}
 
-      {{ if $bundle.requirements }}
-        <div class="bundle-landing-section-title">Requirements</div>
-        {{ partial "course/checklist.html" $bundle.requirements }}
+      {{ if $bundle.audience }}
+        {{ partial "course/audience.html" $bundle.audience }}
       {{ end }}
 
-      {{ if $bundle.audience }}
-        <div class="bundle-landing-section-title">Who this is for?</div>
-        {{ partial "course/checklist.html" $bundle.audience }}
+      {{ if $bundle.requirements }}
+        {{ partial "course/requirements.html" $bundle.requirements }}
       {{ end }}
 
       <div class="bundle-landing-section-title">FAQs</div>

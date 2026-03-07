@@ -3,13 +3,14 @@ id: "a101"
 type: "pjcafe"
 
 # mandatory title, cover and subtitle
-title: "ARM Cortex-A (101)"
-subtitle: "An introduction to aarch64 architecture from ARM."
+title: "Aarch64 (101)"
+subtitle: "An introduction to ARM-A 64-Bit CPU"
 cover: "/images/courses/arm-a101.png"
 
 # mandatory introduction
 introduction:
-  - "Most of the moderns compute is powered by the ARM 64 Bit CPUs."
+  - "ARM based CPUs powers majority of the modern Compute. This includes Phones, Tablets, Servers, Watches, Automotive infotainment among many others."
+  - "Assuming no prior experience, this course introduces the ARM 64 bit architecture (referred to as aarch64), how to think about it, and how to master it. Intended for anyone interested or getting started with the architecture."
 
 # mandatory badges
 badges:
@@ -17,6 +18,7 @@ badges:
   - Beginner
   # - Intermediate
   # - Advance
+  - Free
 
 # Mandatory Rating
 rating: 5
@@ -26,14 +28,14 @@ enrolled: 3000+
 
 default_cta: &defaults
   - cta:
-    link: ""
-    text: "Join for Free"
+    link: "https://courses.pyjamabrah.com/web/checkout/69ac251c6a03cc3a369824df"
+    text: "Join now!"
     primary: true
 sticky:
-  text: ""
-  discount:
-    code: ""
-    percent:
+  text: "You can watch this course for `free`!"
+#   discount:
+#     code:
+#     percent:
   ctas: *defaults
 
 date: 7 Mar 2026
@@ -66,7 +68,7 @@ learnings:
   - The use case of different Exception levels.
   - Exception model.
   - Case studies.
-sampleCertificate: "/images/courses/library-certificate.png"
+sampleCertificate: "/images/certificates/a-101.png"
 difference:
   - C language and pointers with focus on machine behavior.
   - Detailed analysis of data types and significance.
