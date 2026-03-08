@@ -4,8 +4,8 @@ type: "pjcafe"
 
 # mandatory title, cover and subtitle
 title: "ARM Cortex-M (102)"
-subtitle: "Master M Class CPUs by writing a Scheduler in Assembly."
-cover: "/images/courses/cortex-m-102.jpg"
+subtitle: "Round Robin Scheduler Design."
+cover: "/images/courses/arm-m102.png"
 
 # mandatory introduction
 introduction:
@@ -24,6 +24,82 @@ rating: 5
 
 # Optional, number of students
 enrolled: 3000+
+
+
+default_cta: &defaults
+  - cta:
+    link: "https://courses.pyjamabrah.com/l/8d8c63ca86"
+    text: "Join the Course!"
+    primary: true
+sticky:
+  text: "Implement the Scheduler from Scratch!"
+#   discount:
+#     code:
+#     percent:
+  ctas: *defaults
+
+date: 8 Mar 2026
+language: "English"
+access: "365 day"
+highlights:
+  - courseCount:
+  - duration: "~7 hours 30 mins"
+  - lessonCount: "24"
+  - emulator: true
+  - hardware: true
+  - downloadableResources: "1"
+  - workshops:
+  - certificate: true
+  - cheatSheet: true
+  - caseStudy: true
+  - exerciseChallenge: 1
+  - projectCount: 1
+  - freeUpdates:
+videoMessage: "cortex-m-102"
+learnings:
+  - "Understand ARM Cortex-M CPU Architecture."
+  - "Mental Model of CPU and Systems."
+  - "Programmer’s Model and NVIC."
+  - "Privilege Levels and Operating Modes."
+  - "CPU Boot-Up Process."
+  - "Exception Handling."
+  - "Writing Assembly Code."
+  - "Startup Assembly Program."
+  - "Instruction Sets and Encoding."
+  - "Anatomy of Assembly Files."
+  - "Stack Manipulation."
+  - "Scheduler Theory."
+  - "Task Anatomy."
+  - "Context Switching and Scheduling."
+  - "Exception Entry/Exit and SysTick Timer."
+  - "Hands-On Scheduler Implementation."
+  - "Programming the SysTick timer and verifying exception handling."
+  - "Saving and restoring CPU context during task switches."
+  - "Setting up tasks and their stacks for round-robin scheduling."
+  - "Achieving round-robin scheduling to switch between processes."
+  - "Running Multiple Processes."
+  - "Key Considerations for Scheduling."
+  - "Comparison with FreeRTOS."
+  - "Debugging using GDB."
+sampleCertificate: "/cortex-m-102/certificate.png"
+difference:
+  - "Hardware-First Logic: Move beyond APIs to master the actual Cortex-M silicon architecture."
+  - "The 'Black Box' Unlocked: Understand the NVIC and Register Save/Restore mechanics firsthand."
+  - "Assembly Mastery: Write your own boot process and stack manipulation in raw Assembly."
+  - "Zero Magic: No libraries. You build the Context Switcher from the ground up."
+  - "The 'Aha!' Moment: Master the 'trick' of hijacking exceptions to run multiple tasks."
+  - "Kernel Foundations: Implement a Round-Robin scheduler rather than just calling FreeRTOS functions."
+instructors:
+  - "piyush"
+requirements:
+  - "GitHub account to be able to access the Codespaces."
+audience:
+  - Students with interest in learning lower level programming.
+  - Firmware and System Software Engineers looking to understand the lower level programming details of the aarch64 architeture.
+  - Electrical/Electronics Engineers working on hardware programming.
+  - Those curious to understand the boot sequence of an Application grade CPU and attempt booting it from scratch.
+faqs: pyjamacafe
+
 
 contents:
   - section:
