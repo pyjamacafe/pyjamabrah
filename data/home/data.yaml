@@ -21,7 +21,4 @@ sections:
         texts:
           - "We curate and organise learning tracks on our platform. You can learn the basics from us and spend your precious time searching other critical stuf."
         ctas: *def
-  - section:
-    - details:
-        type: "full"
-        title: "Posts"
+

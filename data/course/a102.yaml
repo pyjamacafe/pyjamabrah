@@ -3,6 +3,8 @@ id: "a102"
 type: "pjcafe"
 sell: true
 
+weight: "18"
+
 # mandatory title, cover and subtitle
 title: "Aarch64 (102)"
 subtitle: "Baremetal Programming and Debugging."

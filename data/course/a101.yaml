@@ -3,6 +3,8 @@ id: "a101"
 type: "pjcafe"
 sell: true
 
+weight: "17"
+
 # mandatory title, cover and subtitle
 title: "Aarch64 (101)"
 subtitle: "An introduction to ARM-A 64-Bit CPU"

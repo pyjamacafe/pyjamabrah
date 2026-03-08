@@ -3,7 +3,7 @@ id: "c"
 type: "pjcafe"
 sell: true
 
-weight: 1
+weight: "4"
 
 # mandatory title, cover and subtitle
 title: "The C Language"

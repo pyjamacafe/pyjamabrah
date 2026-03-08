@@ -543,12 +543,14 @@ th, td {
 }
 
 .menu-special {
-  border: solid var(--shadowDard) 1px;
+  /* border: solid var(--shadowDard) 1px; */
+  box-shadow: 0px 0px 0px 1px var(--linecolor);
   padding: 2px 8px 2px 8px;
   background-color: var(--theme-primary);
   border-radius: 0px;
   color: var(--fontcolor);
   text-decoration: none;
+  border-radius: 10px;
 }
 
 .menu-special:visited {
@@ -570,6 +572,7 @@ th, td {
     text-decoration: none;
     background-color: var(--tick-green);
     color: var(--bgcolor);
+    box-shadow: 0px 0px 4px 1px var(--linecolor);
 }
 
 .razorpay-payment-button {

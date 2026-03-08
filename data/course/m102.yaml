@@ -3,6 +3,8 @@ id: "m102"
 type: "pjcafe"
 sell: true
 
+weight: "10"
+
 # mandatory title, cover and subtitle
 title: "ARM Cortex-M (102)"
 subtitle: "Round Robin Scheduler Design."

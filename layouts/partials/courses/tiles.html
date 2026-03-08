@@ -6,16 +6,17 @@
     {{$CoreCourses = $CoreCourses | append . }}
   {{ end }}
 {{end}}
+
 <link rel="stylesheet" href="{{"css/bundle/bundle.css" | relURL }}">
 
 <main class="bundle-container">
 <div class="bundle-info-container">
-  <div class="bundle-landing-title">From the Core Team</div>
-  <div class="bundle-landing-subtitle">These learning tracks are available for individual purchase</div>
+  <div class="bundle-landing-title">Learning Tracks by the Core Team</div>
+  <div class="bundle-landing-subtitle">Content curated by the Pyjamacafe Team. Learning tracks that are included in the Library Access, but also made available as individual learning tracks.</div>
 </div>
 {{/*  pyjamacafe cards  */}}
 <div class="bundle-course-collection-container">
-  {{range sort $CoreCourses "weight" "asc" }}
+  {{range sort $CoreCourses "weight"}}
     {{if .sell }}
       <div class="bundle-course-card-showcase" onclick="window.location.href='/{{.id}}'">
         <div class="bundle-course-card-cover">
@@ -88,8 +89,11 @@
   {{ end }}{{end}}
 </div>
   */}}
-<hr/>
+
 {{/*  Individual Courses, Offered for Free */}}
+	<br/>
+	<hr/>
+	<br/>
 <div class="landingpage-hero" id="partner">
   <h1>Partner Courses</h1>
   <p>Courses listed below were developed by Industry Experts and professionals who we trust and recommend. These courses are <b>NOT</b> included in the Library Access</p>
