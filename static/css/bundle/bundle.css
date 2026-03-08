@@ -10,7 +10,7 @@
 
   --fTitle: bold clamp(1.5rem/1.4 , 2vw + 1rem, 4rem/1.4) var(--ff);
   --fSubTitle: clamp(1rem/1.4 , 2vw + 1rem, 1.5rem/1.4) var(--ff);
-  --fNormal: clamp(1rem/1.4 , 2vw + 0.rem, 2rem/1.4) var(--ff);
+  --fNormal: clamp(1rem/1.4 , 2vw + 0.5rem , 1.3rem/1.4) var(--ff);
 
   --base-font-size: 1rem/1.4 var(--ff);
   --toc-title-size: bold 1.15rem/1.4 var(--ff);
@@ -49,7 +49,7 @@ html {
 
 header {
   .navbar, #nav-top-hr {
-    display: none;
+    /* display: none; */
   }
 }
 
@@ -196,6 +196,7 @@ div, p {
   /* padding: 1px 0px; */
   text-align: left;
   display: inline-flex;
+  margin: 4px 0px;
 }
 
 .bundle-landing-videomessage-container {
@@ -211,6 +212,7 @@ div, p {
   display: inline-flex;
   flex: 1 1 45%;
   max-width: 50%;
+  margin: 4px 0px;
 }
 
 .bundle-course-collection-container {
@@ -259,7 +261,7 @@ div, p {
 
 .bundle-course-card-title {
   font-weight: bold;
-  margin: 4px 0px;
+  margin: 8px 0px;
   padding: 0px 8px;
   font-size: var(--base-font-size);
   text-align: center;
@@ -268,6 +270,7 @@ div, p {
 .bundle-course-card-description {
   font-size: var(--card-description-font-size);
   padding: 0px 8px 8px 8px;
+  text-align: center;
 }
 
 .bundle-course-sample-certificate {
@@ -355,7 +358,7 @@ div, p {
   flex: 1 1 100%;
   border: 1px var(--linecolor) solid;
   background-color: var(--dimcolor);
-  padding: 8px;
+  padding: 16px;
   margin: 8px;
 }
 
@@ -370,16 +373,16 @@ div, p {
 .bundle-landing-course-details-dialog-section-description {
   flex: 1 1 100%;
   font: var(--fNormal);
-  color: var(--c80);
+  color: var(--c50);
   min-width: 100%;
-  margin: 8px 0px;
+  margin: 16px 0px;
 }
 
 .bundle-landing-course-details-dialog-section-chapter {
   display: inline-flex;
   font: var(--fNormal);
   min-width: 100%;
-  color: var(--c100);
+  color: var(--chapter);
   /* font-weight: bold; */
 }
 
@@ -557,6 +560,7 @@ div, p {
 
   .bundle-landing-highlight {
     min-width: 100%;
+    margin: 2px 0px;
   }
 }
 
@@ -575,6 +579,10 @@ div, p {
 .bundle-landing-faq-q, .bundle-landing-faq-a {
   margin: 0px;
   padding: 0px;
+}
+
+.bundle-landing-faq-a {
+  color: var(--c50);
 }
 
 .bundle-landing-toc-entry {

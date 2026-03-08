@@ -1,6 +1,7 @@
 # mandatory ID for the course
 id: "c"
 type: "pjcafe"
+sell: true
 
 weight: 1
 

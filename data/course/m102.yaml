@@ -1,6 +1,7 @@
 # mandatory ID for the course
 id: "m102"
 type: "pjcafe"
+sell: true
 
 # mandatory title, cover and subtitle
 title: "ARM Cortex-M (102)"
@@ -49,12 +50,12 @@ highlights:
   - hardware: true
   - downloadableResources: "1"
   - workshops:
-  - certificate: true
   - cheatSheet: true
   - caseStudy: true
   - exerciseChallenge: 1
   - projectCount: 1
   - freeUpdates:
+  - certificate: true
 videoMessage: "cortex-m-102"
 learnings:
   - "Understand ARM Cortex-M CPU Architecture."
@@ -104,7 +105,7 @@ faqs: pyjamacafe
 contents:
   - section:
       title: "Environment Setup"
-      description: "Introduction and environment setup."
+      description: "The courses uses the QEMU emulator for a real hardware board (the experiments should also run on real hardware). To ensure that everyone has the same setup and doesn't get tangled in the setup issues - we use the GitHub Codespaces instance running a virtual machine configuration we defined. This section guides through the steps of accessing it."
       chapters:
         - chapter:
             title: "End Goal"
@@ -113,7 +114,7 @@ contents:
 
   - section:
       title: "How the ARM M Class CPUs Work"
-      description: "Understanding the basics of how the ARM Cortex-M line of CPUs work."
+      description: "This section provides a comprehensive introduction to the core concepts of ARM Cortex-M CPUs, laying the foundation for understanding their architecture and operation. Explore the mental model of the CPU, systems, and the Cortex-M controller, gaining insight into how these components interact."
       chapters:
         - chapter:
             title: "Mental Model of the CPU, Systems and the Cortex M Controller"
@@ -132,10 +133,11 @@ contents:
 
   - section:
       title: "Assembly Programs"
-      description: "Understanding the basics of how to write programs in Assembly Language."
+      description: "Introduces the essentials of assembly programming for ARM Cortex-M CPUs, focusing on practical implementation. Start by exploring the processor boot-up process and writing their first assembly program, gaining hands-on experience with the Cortex-M environment. The section delves into the structure of instructions, their encoding, and how to analyze binary dumps to understand the low-level representation of code. Examine the anatomy of an assembly file, learning its components and organization. Master stack manipulation instructions, understanding their critical role in managing data and CPU context."
       chapters:
         - chapter:
             title: "Booting the Processor and First Assembly Program"
+            preview: "aEE4bK-HnHg"
         - chapter:
             title: "Instructions, Encoding and binary dump"
         - chapter:
@@ -147,7 +149,7 @@ contents:
 
   - section:
       title: "Implementing the Scheduler - Theory"
-      description: "Diving into how a scheduler works and how we can implement one."
+      description: "Covers the theoretical foundations of implementing a scheduler on ARM Cortex-M CPUs, enabling multitasking on a single processor. Explore how a single CPU can run multiple processes, uncovering the principles behind concurrent task execution. Covers the anatomy of a task, detailing its structure and role within a scheduler. Discover the critical techniques for context switching and scheduling, including the `trick` that facilitates seamless task transitions."
       chapters:
         - chapter:
             title: "How can Single CPU run multiple processes?"
@@ -160,7 +162,7 @@ contents:
 
   - section:
       title: "Implementing the Scheduler - Hands On"
-      description: "Implementing the Scheduler."
+      description: "Practical implementation of a scheduler. Program the SysTick timer and verify its associated exception handling to ensure accurate timing for task scheduling. Covers techniques for saving and restoring CPU context, a critical step for seamless task switching. Set up tasks and their respective stacks, configuring the system to enable round-robin scheduling. Through hands-on exercises, implement round-robin scheduling and achieve process switching."
       chapters:
         - chapter:
             title: "Programming SysTick and confirming the exception"
@@ -173,7 +175,7 @@ contents:
 
   - section:
       title: "Conclusion"
-      description: "Concluding thoughts and where to next?"
+      description: "Final thoughts and next steps."
       chapters:
         - chapter:
             title: "Things to be mindful of"

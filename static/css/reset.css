@@ -19,6 +19,7 @@ html {
   --section-title: #ffffff;
   --section-title-background: #000000;
   --cafe: #ff1423;
+  --chapter: #005eff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -40,6 +41,7 @@ html {
      --section-title: #ffffff;
      --section-title-background: #ff0000;
      --cafe: #FFE15C;
+     --chapter: #5df7ff;
   }
 }
 

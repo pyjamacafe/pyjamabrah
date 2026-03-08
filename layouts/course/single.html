@@ -90,6 +90,10 @@
         </div>
       {{ end }}
 
+      {{ if .Content }}
+        {{ .Content }}
+      {{ end }}
+
       {{ if $bundle.difference }}
         {{ partial "course/differences.html" $bundle.difference }}
       {{ end }}

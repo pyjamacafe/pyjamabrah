@@ -1,98 +1,57 @@
-<div class="courses-container">
-  {{ range .Site.Data.courses }}{{ if eq .type "bundle"}}
-  <div class="full-width">
-    <h1 class="landing-section-title">Learn <span class="highlight-title">EMBEDDED SYSTEMS</span> from Scratch</h1>
-  </div>
+{{ with . }}
 
-  {{/*  Left side content  */}}
-  <div class="equal">
-    {{partial "webvideoAutoplay.html" .teaser }}
-  </div>
-
-  {{/*  Right side content  */}}
-  <div class="equal">
-    <h2 class="landing-subsection-title">
-      The Library Access!
-    </h2>
-    <span class="product-bestseller">Bestseller</span>
-    {{ if .rating }}
-      {{ partial "products/render-stars.html" .rating }}
-    {{ end }}
-    <p>
-    <span class="product-beginner">Beginner</span>
-    <span class="product-intermediate">Intermediate</span>
-    </p>
-
-    <p>{{ .description | markdownify }}</p>
-    {{ partial "courses/feature-list.html" .content }}
-    <div class="product-cta-button">
-      <a class="btn" href="{{.more}}" target="_blank"><button>explore Library</button></a>
-    </div>
-    {{ end }}
+{{ $CoreCourses := slice }}
+{{range .Site.Data.course}}
+  {{ if eq .type "pjcafe" }}
+    {{$CoreCourses = $CoreCourses | append . }}
   {{ end }}
-  </div>
+{{end}}
+<link rel="stylesheet" href="{{"css/bundle/bundle.css" | relURL }}">
+
+<main class="bundle-container">
+<div class="bundle-info-container">
+  <div class="bundle-landing-title">From the Core Team</div>
+  <div class="bundle-landing-subtitle">These learning tracks are available for individual purchase</div>
 </div>
-
-<hr/>
-{{/*  Individual Courses, included as part of the Library Access  */}}
-<div class="landingpage-hero">
-  <h1>individual learning tracks</h1>
-  <p>Included in The Library Access, also available as a single offering.</p>
-</div>
-<div class="course-list">
-  {{ range .Site.Data.courses }} {{ if eq .type "single"}}
-  <a class="course-card" href="{{ .more }}" >
-    <img loading="lazy" src="{{.poster}}"/>
-    <h4 class="post-title"> {{ .title | markdownify }} </h4>
-    <div class="product-subtitle">{{.subtitle | markdownify}}</div>
-
-    {{ if .badges}}
-    <div class="product-stats">
-      {{ range .badges }}
-        {{ if .beginner }}
-          <span class="product-beginner">Beginner</span>
-        {{ end }}
-        {{ if .intermediate }}
-        <span class="product-intermediate">Intermediate</span>
-        {{ end }}
-        {{ if .free }}
-        <span class="product-free">FREE!</span>
-        {{ end }}
-      {{ end }}
-    </div>
-    {{ end }}
-
-    <div class="product-stats">
-      {{ if .bestseller }}
-        <span class="product-bestseller">Bestseller</span>
-      {{ end }}
-      {{ if .rating }}
-        {{ partial "products/render-stars.html" .rating }}
-      {{ end }}
-    </div>
-
-    <div class="course-card-content">
-      <p>{{ .description | markdownify }}</p>
-      {{ partial "courses/feature-list.html" .content }}
-    </div>
-    <br/>
-  </a>
-  {{ end }}
+{{/*  pyjamacafe cards  */}}
+<div class="bundle-course-collection-container">
+  {{range sort $CoreCourses "weight" "asc" }}
+    {{if .sell }}
+      <div class="bundle-course-card-showcase" onclick="window.location.href='/{{.id}}'">
+        <div class="bundle-course-card-cover">
+          <img loading="lazy" src="{{.cover}}"/>
+        </div>
+        <div class="bundle-course-card-title">{{.title | markdownify}}</div>
+        <div class="bundle-course-card-description">{{.subtitle}}</div>
+        {{ partial "course/badges.html" .badges }}
+        <div class="bundle-landing-rating-student-count-container">
+          {{ partial "course/ratingStars.html" .rating }}
+          </div>
+          <div class="bundle-sidebar-highlights-container">
+          {{ partial "course/highlights.html" .highlights}}
+          </div>
+      </div>
+    {{else}}
+    {{end}}
   {{end}}
 </div>
+<div>
 
+</div>
+</main>
+{{ end }}
+
+{{/*
 <hr/>
-{{/*  Individual Courses, Offered for Free */}}
 <div class="landingpage-hero">
   <h1>FREE learning tracks</h1>
   <p>If you are a student of a beginner, you can try the following courses for <b>free for a month</b> and choose to buy individual courses or the Library access post that.</p>
 </div>
 
-{{/*  Free Courses  */}}
 <div class="course-list">
   {{ range .Site.Data.courses }} {{ if eq .type "free"}}
   <a class="course-card" href="{{ .more }}" >
-    <img loading="lazy" src="{{.poster}}"/>
+    <img src="{{.poster}}"/>
     <h4 class="post-title"> {{ .title | markdownify }} </h4>
     <div class="product-subtitle">{{.subtitle | markdownify}}</div>
 
@@ -128,7 +87,7 @@
   </a>
   {{ end }}{{end}}
 </div>
-
+  */}}
 <hr/>
 {{/*  Individual Courses, Offered for Free */}}
 <div class="landingpage-hero" id="partner">
@@ -140,7 +99,7 @@
 <div class="course-list" >
   {{ range .Site.Data.courses }} {{ if eq .type "partner"}}
   <a class="course-card" href="{{ .more }}" >
-    <img loading="lazy" src="{{.poster}}"/>
+    <img src="{{.poster}}"/>
     <h4 class="post-title"> {{ .title | markdownify }} </h4>
     <div class="product-subtitle">{{.subtitle | markdownify}}</div>
 

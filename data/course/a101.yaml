@@ -1,6 +1,7 @@
 # mandatory ID for the course
 id: "a101"
 type: "pjcafe"
+sell: true
 
 # mandatory title, cover and subtitle
 title: "Aarch64 (101)"
