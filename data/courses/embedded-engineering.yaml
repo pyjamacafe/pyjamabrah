@@ -29,17 +29,17 @@ more: "/library"
 ctaText: "Join the Library!"
 enroll:
   - plan: "Monthly Sub"
-    link: "https://courses.pyjamabrah.com/web/checkout/680ae32052b5ed6c029e8e6b?utm_source=landingpage&utm_medium=web"
+    link: "https://courses.pyjamacafe.com/web/checkout/680ae32052b5ed6c029e8e6b?utm_source=landingpage&utm_medium=web"
     disabled: true
   - plan: "Yearly (One Time)"
     link: "/offer"
   # - plan: "Free Trail"
-  #   link: "https://courses.pyjamabrah.com/web/checkout/68711a098d0069794920894d?utm_source=landingpage&utm_medium=web"
+  #   link: "https://courses.pyjamacafe.com/web/checkout/68711a098d0069794920894d?utm_source=landingpage&utm_medium=web"
 
 
 discount:
-  code: "ILOVEEMBEDDED"
-  percentage: "67%"
+  code: "RAMADAN"
+  percentage: "73%"
   time: "24"
 
 #

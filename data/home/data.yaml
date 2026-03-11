@@ -1,7 +1,7 @@
 # default CTA
 default_cta: &def
   - cta:
-    link: "https://courses.pyjamabrah.com/web/checkout/68200b15f391a0bf84933bc7?purchaseNow=true&couponcode=ILOVEEMBEDDED"
+    link: "https://courses.pyjamacafe.com/web/checkout/68200b15f391a0bf84933bc7?purchaseNow=true&couponcode=RAMADAN"
     text: "Join the Library (Yearly Access)"
     primary: true
   - cta:

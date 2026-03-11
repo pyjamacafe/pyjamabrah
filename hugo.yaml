@@ -43,7 +43,7 @@ menu:
     - identifier: Login
       pre: true
       name: "Login"
-      url: https://courses.pyjamabrah.com
+      url: https://courses.pyjamacafe.com
       weight: 7
 markup:
   highlight:

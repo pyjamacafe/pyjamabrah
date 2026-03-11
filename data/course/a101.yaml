@@ -31,7 +31,7 @@ enrolled: 3000+
 
 default_cta: &defaults
   - cta:
-    link: "https://courses.pyjamabrah.com/web/checkout/69ac251c6a03cc3a369824df"
+    link: "https://courses.pyjamacafe.com/web/checkout/69ac251c6a03cc3a369824df"
     text: "Join now!"
     primary: true
 sticky:

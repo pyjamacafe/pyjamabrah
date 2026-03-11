@@ -30,7 +30,7 @@ enrolled: 3000+
 
 default_cta: &defaults
   - cta:
-    link: "https://courses.pyjamabrah.com/web/checkout/681025ad8aeb438c463f3fde?couponcode=ILOVEC"
+    link: "https://courses.pyjamacafe.com/web/checkout/681025ad8aeb438c463f3fde?couponcode=ILOVEC"
     text: "Buy Course (Yearly Access)"
     primary: true
 sticky:

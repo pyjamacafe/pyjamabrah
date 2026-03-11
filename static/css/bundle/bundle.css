@@ -136,9 +136,11 @@ div, p {
 
 .bundle-landing-badge {
   border: 1px solid var(--color-border);
-  padding: 0px 5px;
-  border-radius: 3px;
+  padding: 0px 15px;
+  border-radius: 10px;
   font: var(--base-font-size);
+  background-color: var(--c100);
+  color: var(--c0);
 }
 
 .bundle-landing-badge-Bestseller, .bundle-landing-badge-bestseller {
@@ -448,7 +450,8 @@ div, p {
   min-width: 100%;
   height: 42px;
   font-size: var(--base-font-size);
-  border-radius: 0px;
+  border-radius: 20px;
+  padding: 0px 20px;
   background-color: var(--bgcolor);
   border-color: var(--prebgcolor);
 }

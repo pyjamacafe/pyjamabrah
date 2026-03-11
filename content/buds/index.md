@@ -9,7 +9,7 @@ url: /buds
 # default CTA
 default_cta: &defaults
   - cta:
-    link: "https://courses.pyjamabrah.com/web/checkout/6982b85e4496ead2c9979031?purchaseNow=true&couponcode=EARLYBUDS"
+    link: "https://courses.pyjamacafe.com/web/checkout/6982b85e4496ead2c9979031?purchaseNow=true&couponcode=EARLYBUDS"
     text: "Join the Course"
     primary: true
 

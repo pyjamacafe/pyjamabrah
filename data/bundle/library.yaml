@@ -1,22 +1,22 @@
 title: "Embedded Systems Library Access"
 subtitle: "Save `time` and `frustraction`. Focus on `Impact` and `Growth`!"
-cover: "/images/bundle/library/ts.svg"
+cover: "/images/courses/library.png"
 
 # default CTA
 default_cta: &defaults
   - cta:
-    link: "https://courses.pyjamabrah.com/web/checkout/68200b15f391a0bf84933bc7?purchaseNow=true&couponcode=ILOVEEMBEDDED"
+    link: "https://courses.pyjamacafe.com/web/checkout/68200b15f391a0bf84933bc7?purchaseNow=true&couponcode=RAMADAN"
     text: "Yearly Access (non-recurring)"
     primary: true
 
 sticky:
   text: ""
   discount:
-    code: "ILOVEEMBEDDED"
-    percent: 67%
+    code: "RAMADAN"
+    percent: 73%
   ctas: *defaults
 
-infographic: "/images/bundle/library/ts.svg"
+# infographic: "/images/bundle/library/ts.svg"
 introduction:
   - "We'll save you the **time** and **frustration** so you can focus on creating `IMPACT`."
   - "A collection of courses to put your pursuit of learning Embedded Systems - `ON STEROIDS`!"

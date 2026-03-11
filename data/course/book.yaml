@@ -3,7 +3,7 @@ id: "book"
 type: "pjcafe"
 
 # mandatory title, cover and subtitle
-title: "Low Level with Pyjama Cafe! (Public Draft)"
+title: "C Language @ Pyjama Cafe! (Book)"
 subtitle: "a quick tour of the 4 key concepts of the Lanaguge."
 cover: "/images/courses/book.png"
 

@@ -32,7 +32,7 @@ enrolled: 3000+
 
 default_cta: &defaults
   - cta:
-    link: "https://courses.pyjamabrah.com/l/2816e7cb48"
+    link: "https://courses.pyjamacafe.com/l/2816e7cb48"
     text: "Start the Course!"
     primary: true
 sticky:
