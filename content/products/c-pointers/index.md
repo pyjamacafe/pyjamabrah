@@ -1,11 +1,11 @@
 ---
 layout: products
 
-url: /pointers
+url: /pointers-old
 
 aliases:
-- /c-pointers/
-- /products/c-pointers/
+- /c-pointers-old/
+- /products/c-pointers-old/
 
 title: "Pointers (in C)"
 date: "2025-11-08T00:00:00+05:30"

@@ -1,6 +1,9 @@
 # mandatory ID for the course
 id: "pointers"
 type: "pjcafe"
+sell: true
+
+weight: "5"
 
 # mandatory title, cover and subtitle
 title: "C Pointers"
@@ -9,7 +12,9 @@ cover: "/images/courses/pointers.png"
 
 # mandatory introduction
 introduction:
-  - "C pointers are crucial in Firmware and System Software (based on the C language) design. Linux, Unix, FreeRTOs, Zephyr, ThreadX etc kernels use C pointers heavily. This Course dives into the mental models and inner workings of pointers!"
+  - "In one intense, code-first course you’ll build rock-solid mental models, wield multi-level pointers, function callbacks, void*, and heap safely, then read real kernel source like a pro."
+  - "From '&' vs '*' to dodging leaks and dangling pointers, leave with the exact pointer super-powers that separate junior coders from firmware ninjas."
+  - "`Zero fluff, 100 % hands-on.`"
 
 # mandatory badges
 badges:
@@ -24,21 +29,108 @@ rating: 5
 # Optional, number of students
 enrolled: 3000+
 
+default_cta: &defaults
+  - cta:
+    link: "https://courses.pyjamacafe.com/web/checkout/690ec081ab69d8a7f38c8066?couponcode=TAMEPOINTERS"
+    text: "Buy Course (Yearly Access)"
+    primary: true
+sticky:
+  text: ""
+  discount:
+    code: "TAMEPOINTERS"
+    percent: 25%
+  ctas: *defaults
+
+date: 14 Mar 2026
+language: "English"
+access: "365 day"
+highlights:
+  - courseCount:
+  - duration: "~5 hr 15 mins"
+  - lessonCount: "33"
+  - emulator: true
+  - hardware:
+  - downloadableResources: "15"
+  - workshops:
+  - cheatSheet: true
+  - caseStudy: true
+  - exerciseChallenge: true
+  - projectCount:
+  - certificate: true
+  - freeUpdates:
+videoMessage: ""
+learnings:
+  - "Develop mental models for visualizing and reasoning about pointers."
+  - "Learn what a pointer fundamentally is and how to imagine its behavior."
+  - "Explore the motivations and reasons for using pointers in C programming."
+  - "Set up an environment for working with pointers in code."
+  - "Master the syntax for declaring and defining pointers."
+  - "Grasp the relationship between pointer variables and memory addresses."
+  - "Understand the roles of the * (dereference) and & (address-of) operators in relation to pointers."
+  - "Work with multi-level pointers and their applications."
+  - "Apply multiple * and & operators effectively in code."
+  - "Differentiate between pointers to pointers and arrays of pointers."
+  - "Identify similarities and differences between arrays and pointers."
+  - "Learn about pointers to data and how they reference data with specific types."
+  - "Use pointers with structures, including the * (dereference), . (dot), and -> (arrow) operators."
+  - "Perform pointer arithmetic and understand its implications."
+  - "Comprehend the memory model in relation to pointers and data."
+  - "Understand function pointers (callbacks) and their purpose."
+  - "Master the syntax for declaring and using function pointers."
+  - "Utilize typedef with function pointers for cleaner code."
+  - "Implement examples like arrays of function pointers."
+  - "Learn about void pointers and their flexibility."
+  - "Differentiate between NULL and NULL pointers, including their uses."
+  - "Examine real-world examples of void pointers in Linux source code."
+  - "Handle dynamic memory allocation using heap, malloc(), and free()."
+  - "Manage allocation failures and best practices for error handling."
+  - "Identify and prevent memory leaks in pointer-based code."
+  - "Recognize and avoid dangling pointers."
+  - "Understand the risks of double free() and how to prevent them."
+  - "Avoid pointer manipulation issues and accessing unowned memory."
+  - "Analyze pointers in open-source baremetal code."
+  - "Explore pointer usage in FreeRTOS."
+  - "Study pointer implementations in Linux source code."
+sampleCertificate: "/images/certificates/pointers.png"
+difference:
+  - "Explain what pointer in C is."
+  - "Code development without IDE, like how the professionals do it."
+  - "Decomposition of code into Assembly to understand the CPU-Memory iterations."
+  - "Mental models to aid thinking and reasoning."
+  - "A Bottom-Up Approach with the tinge of answering the Whys."
+  - "Real and applicable Case study and programming projects"
+  - "Teach with insights at the CPU level."
+
+instructors:
+  - "piyush"
+requirements:
+  - "GitHub account to do the hands-on coding in Codespaces."
+  - "Some familiarity with the C programming language."
+  - "Interest in mastering the concept of Pointers."
+audience:
+  - "Students in Academia with C as a subject in the course."
+  - "Those using the C language for development (Embedded Systems Engineers, System Software Engineers etc)."
+  - "Embedded systems or Firmware Engineers."
+  - "Anyone seeking gain system level insights."
+  - "Anyone curious to learn the underlying details of Systems and how to program it using pointers."
+faqs: pyjamacafe
+
 contents:
   - section:
       title: "Mental Models, Motivation and Reasoning about pointers"
-      description: "Exploring how CPU and Memory work together. Inferring what pointers are and how to think about them."
+      description: "You’ll trade confusion for clarity in under an hour. Instead of dry definitions, you’ll lock in a single, vivid mental image that turns every pointer into something you can literally see on a whiteboard or sketch on a napkin. You’ll discover what a pointer truly is (spoiler: it’s not just “a variable holding an address”), why the Linux kernel, FreeRTOS, Zephyr, and every serious RTOS lean on them like oxygen, and the three everyday firmware disasters that disappear once pointers click. By the end, you’ll explain pointers to a five-year-old!"
       chapters:
         - chapter:
             title: "What to Imagine?"
         - chapter:
             title: "What is a pointer?"
+            preview: "_xdDXEuSHHg"
         - chapter:
             title: "Why pointers?"
 
   - section:
       title: "Pointers - Syntax and Code"
-      description: "Understanding and Exploring the C syntax for pointer declaration and usage."
+      description: "You’ll fire up a real dev environment in five minutes and start writing pointer code that compiles and runs on your laptop. You’ll declare your first pointer, watch the & operator spit out raw memory addresses, and use * to reach inside that address like a surgeon. By the time you finish, the difference between a pointer variable and the memory it guards will feel as natural as breathing, and you’ll never again mix up “value” versus “address” in your sleep. No slides, no theory—just you, a terminal, and the exact four lines of code that make every kernel tick."
       chapters:
         - chapter:
             title: "Environment Setup"
@@ -51,7 +143,7 @@ contents:
 
   - section:
       title: "Multi-level Pointers"
-      description: "Exploring how multilevel pointers can be declared, used and manipulated"
+      description: "You’ll level-up from baby steps to ninja territory in one adrenaline-fueled sprint. You’ll chain ** together until you’re juggling triple-star pointers like a circus pro, then watch & peel them back layer by layer. You’ll see why an array name is secretly a pointer, where the two diverge, and how to build an array of pointers that makes qsort() and Linux device tables look trivial. By the final keystroke, you’ll wield “many *s and many &s” without blinking, turn pointer-to-pointer into your secret weapon, and laugh at code that once looked like hieroglyphics, ready to debug any kernel structure on sight."
       chapters:
         - chapter:
             title: "Use of * and &"
@@ -68,7 +160,7 @@ contents:
 
   - section:
       title: "Pointer to Data"
-      description: "Exploring how to point to data and manipulate."
+      description: "You’ll step inside actual RAM and treat memory like clay in your hands. You’ll point to ints, floats, and custom structs with surgical precision, then swap the clumsy (*p).field for the sleek p->field arrow that every Linux driver lives by. You’ll stride through arrays with p+1, discover why char* walks one byte at a time while int* leaps four, and sketch the exact memory map that turns a flat address into a living struct. By the end, you’ll read any kernel data structure blindfolded, fix off-by-one bugs before breakfast, and never again wonder “where exactly does this pointer land?"
       chapters:
         - chapter:
             title: "Pointing to data with a Datatype"
@@ -81,10 +173,11 @@ contents:
 
   - section:
       title: "Pointer to code - Function pointers or Callback"
-      description: "Exploring pointers that point to code."
+      description: "You’ll discover exactly what a function pointer is, master its complete syntax, and clean it up with a single typedef. You’ll then build and run a real function-pointer array that stores multiple functions and calls any one by index."
       chapters:
         - chapter:
             title: "What is a function pointer?"
+            preview: "ZYDY2B50pws"
         - chapter:
             title: "Function pointers syntax"
         - chapter:
@@ -94,7 +187,7 @@ contents:
 
   - section:
       title: "void pointer"
-      description: "Exploring the idea of pointers that only save a memory location and not the type information."
+      description: "You’ll master the shapeshifting void*: what it is, why it exists, and how to wield it safely. You’ll see NULL in action, learn the exact difference between a null pointer and NULL itself, and then dive straight into real Linux kernel code where void* carries structs, buffers, and callbacks across subsystems."
       chapters:
         - chapter:
             title: "What is a void pointer?"
@@ -105,7 +198,7 @@ contents:
 
   - section:
       title: "Pointers, Dynamic allocation and problems"
-      description: "Diving into the usage of pointers using the concept of dynamic memory allocation."
+      description: "You’ll master the heap with malloc() and free(), catch allocation failures the moment they happen, hunt down every byte lost to memory leaks, rescue code from dangling pointers, stop double-free crashes cold, and lock out pointer manipulation that wanders into unowned memory."
       chapters:
         - chapter:
             title: "heap/ malloc() and free()"
@@ -122,7 +215,7 @@ contents:
 
   - section:
       title: "Open Source code and Pointers"
-      description: "Exploring the use of pointers in open source code bases."
+      description: "You will examine pointers in Baremetal Code, trace their use in FreeRTOS, and study how they work in Linux."
       chapters:
         - chapter:
             title: "Baremetal Code"

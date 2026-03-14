@@ -3,8 +3,10 @@
   {{/*  Filter the Data source  */}}
   {{$bundle := (index .Site.Data.course .Params.source) }}
   {{$courselist := .Site.Data.course }}
-  {{$faqs := (index .Site.Data.faqs $bundle.faqs) }}
-
+  {{$faqs := ""}}
+  {{if $bundle.faqs}}
+  {{$faqs = (index .Site.Data.faqs $bundle.faqs) }}
+  {{end}}
   <main class="bundle-container">
     <div class="bundle-info-container">
       {{ if $bundle.title }}
@@ -120,6 +122,7 @@
         {{ partial "course/requirements.html" $bundle.requirements }}
       {{ end }}
 
+      {{ if $faqs }}
       <div class="bundle-landing-section-title">FAQs</div>
       <div class="bundle-landing-faqs">
       {{ $counter := 0 }}
@@ -133,6 +136,7 @@
         {{ $counter = (add $counter 1)}}
       {{ end }}
       </div>
+      {{end}}
 
       {{ if $bundle.sticky }}
       <div class="bundle-landing-footer-sticky">
