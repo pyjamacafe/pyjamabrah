@@ -13,7 +13,7 @@ date: "2025-04-30T10:10:10+05:30"
 tags:
   - bundle
 description: "Access all courses we create. Structured paths to mastering the essentials of Firmware and Systems Software Engineering."
-thumbnail: "/images/bundle/library.jpeg"
+thumbnail: "/images/courses/library.png"
 categories: courses
 product: "embedded-engineering"
 
@@ -22,7 +22,7 @@ define:
   lastupdated: &lastupdated "15 Feb 2026"
 
 param:
-  image: "/images/bundle/library.jpeg"
+  image: "/images/courses/library.png"
   note: "Claim the Discounted Prices while the course is being developed!"
   bundle:
     - course: "The Embedded Systems LIBRARY!"
@@ -30,7 +30,7 @@ param:
       description: "Library is a collection of courses that will guide you on the `fundamentals` and `insights` you need to design and implement Embedded Systems based solutions! \n\n
 
       Embedded Systems Software Engineering includes writing `firmware` for micro-controllers and `system software` for application grade CPUs involving boot-loaders, device trees and higher level operating systems.\n\n"
-      previewCover: "/images/bundle/library.jpeg"
+      previewCover: "/images/courses/library.png"
       # previewVideo: "/library/portal.mov"
       bestSeller: "yes"
       beginner: "yes"
@@ -52,7 +52,7 @@ param:
       newcontent: true
       quizzes:
       tracks: "/library/tracks.svg"
-      certificate: "/library/certificate.png"
+      certificate: "/library-old/certificate.png"
       validity: Monthly and Yearly
       projects: Several
       courselist:
