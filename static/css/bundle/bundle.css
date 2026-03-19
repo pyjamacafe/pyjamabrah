@@ -189,7 +189,7 @@ div, p {
 }
 
 .bundle-landing-highlight {
-  flex: 1 0 45%;
+  flex: 1 0 30%;
   max-width: 50%;
   /* padding: 1px 0px; */
   text-align: left;
