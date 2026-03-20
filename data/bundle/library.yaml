@@ -5,15 +5,15 @@ cover: "/images/courses/library.png"
 # default CTA
 default_cta: &defaults
   - cta:
-    link: "https://courses.pyjamacafe.com/web/checkout/68200b15f391a0bf84933bc7?purchaseNow=true&couponcode=RAMADAN"
+    link: "https://courses.pyjamacafe.com/web/checkout/68200b15f391a0bf84933bc7?purchaseNow=true&couponcode=ILOVEEMBEDDED"
     text: "Yearly Access (non-recurring)"
     primary: true
 
 sticky:
   text: ""
   discount:
-    code: "RAMADAN"
-    percent: 73%
+    code: "ILOVEEMBEDDED"
+    percent: 67%
   ctas: *defaults
 
 # infographic: "/images/bundle/library/ts.svg"

@@ -13,7 +13,7 @@ aliases:
 # default CTA
 default_cta: &defaults
   - cta:
-    link: "https://courses.pyjamacafe.com/web/checkout/68200b15f391a0bf84933bc7?purchaseNow=true&couponcode=RAMADAN"
+    link: "https://courses.pyjamacafe.com/web/checkout/68200b15f391a0bf84933bc7?purchaseNow=true&couponcode=ILOVEEMBEDDED"
     text: "Get Library (Yearly Access)"
     primary: true
   - cta:
@@ -23,8 +23,8 @@ default_cta: &defaults
 # Add a Sticky Footer
 sticky:
   discount:
-    code: "RAMADAN"
-    percent: "73%"
+    code: "ILOVEEMBEDDED"
+    percent: "67%"
   ctas: *defaults
 
 sections:
