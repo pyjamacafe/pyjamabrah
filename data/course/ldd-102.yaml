@@ -26,12 +26,30 @@ enrolled: 3000+
 
 contents:
   - section:
-      title: "Introduction and Expectations"
-      description: ""
+      title: "Trailer"
+      description: "A quick demo of a device driver written from scratch controlling the GPIO hardware directly."
       chapters:
-          - chapter:
-              title: "Hardware and Demo"
-          - chapter:
-              title: "The generic Boot flow for SoCs"
-          - chapter:
-              title: "more videos being recorded"
+        - chapter:
+            title: "Driver Blinking the LED"
+            preview: "ZA1JnZSXAT0"
+  - section:
+      title: "Introduction, Hardware, and SoC Boot flow"
+      description: "This section introduces the hardware components and the boot flow for the SoC powering the Raspberry-Pi 4B. To prove the point we boot a baremetal firmware that prints on the UART."
+      chapters:
+        - chapter:
+            title: "Hardware and Expectations"
+        - chapter:
+            title: "Demo - Baremetal Boot"
+        - chapter:
+            title: "The generic Boot flow for SoCs"
+        - chapter:
+            title: "Try it yourself - setup the SD Card"
+        - chapter:
+            title: "Raspberry-Pi & WCH Connection"
+            type: "file"
+  - section:
+      title: "Booting Linux on Raspberry-Pi"
+      description: "Moving away from the baremetal boot, we prepare the SD-Card and flash a Linux image that we will develop and the load our device driver."
+      chapters:
+        - chapter:
+            title: "Try it yourself - setup the SD Card"
