@@ -48,8 +48,20 @@ contents:
             title: "Raspberry-Pi & WCH Connection"
             type: "file"
   - section:
-      title: "Booting Linux on Raspberry-Pi"
+      title: "Setup and Boot the Raspberry Pi OS"
       description: "Moving away from the baremetal boot, we prepare the SD-Card and flash a Linux image that we will develop and the load our device driver."
       chapters:
         - chapter:
-            title: "Try it yourself - setup the SD Card"
+            title: "Reasons to use a OS image from RPi"
+        - chapter:
+            title: "Imaging the SD Card with RPi OS"
+        - chapter:
+            title: "Boot and debug the configuration"
+        - chapter:
+            title: "Login - ssh into the Rpi"
+  - section:
+      title: "Writing and understanding a simple driver"
+      description: "Write a quick-n-dirty GPIO driver to turn the LED ON/OFF. Reason about the character driver."
+      chapters:
+        - chapter:
+            title: "Lectures being recorded."
