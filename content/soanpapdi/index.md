@@ -51,7 +51,7 @@ sections:
     - details:
         type: "half"
         texts:
-          - No complicated installation flow. No bullshit driver installation. Download the IDE, double click, get started!
+          - No complicated installation flow. No lame driver installation. Download the IDE, double click, get started!
         sequence:
           - Draw the circuit using building blocks.
           - Map the inputs and output to FPGA pins.
