@@ -31,7 +31,7 @@ enrolled: 3000+
 
 default_cta: &defaults
   - cta:
-    link: "https://courses.pyjamacafe.com/l/2816e7cb48"
+    link: "https://courses.pyjamacafe.com/web/checkout/69ae2e69b33a5bc39a22608f"
     text: "Start for Free!"
     primary: true
 sticky:
