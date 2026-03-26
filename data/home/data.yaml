@@ -16,9 +16,115 @@ sections:
         caption: "a clip from the lecture on implementing a scheduler in assembly for the ARM M CPU."
     - details:
         type: "half"
-        title: "Trusted by 4000+"
-        subtitle: "lowering the barrier to learning Embedded Systems"
+        title: "Mastering EMBEDDED SYSTEMS!"
         texts:
-          - "We curate and organise learning tracks on our platform. You can learn the basics from us and spend your precious time searching other critical stuf."
+          - "We are on a mission to lowering the barrier to learning Embedded Systems, Mastering it and empowering you to build!"
+  - section:
+    - details:
+        type: "full"
+        title: "Key Skills?"
+        subtitle: "the 20% to deal with 100% of the stuff"
+    - details:
+        type: "break"
+    - details:
+        type: "full"
+        features:
+          - card:
+            title: "C Language"
+            img: "/images/home/features/c.png"
+            text: "Almost all of firmware and systems software is written in the C Language. It is the work horse of the Embedded Systems and Semiconductor industry."
+            more: ""
+          - card:
+            title: "CPUs (32 Bit ARM or RISC-V)"
+            img: "/images/home/features/cpu.png"
+            text: "Almost all of the electronics you see around you will have an embedded CPU in it that is taking all the decisions and driving the system to different states."
+            more: ""
+          - card:
+            title: "OS primitives"
+            img: "/images/home/features/os.png"
+            text: "Electronics that involve many inputs and outputs tend to use an OS for the state management."
+            more: ""
+          - card:
+            title: "Utilities and Tools"
+            img: "/images/home/features/tools.png"
+            text: "To go from C code and the hardware configuration to the compiled binary that needs to be loaded on the target there are several tools and utilities that are useful. You need to know those to be able to drive things and lead teams."
+            more: ""
+          - card:
+            title: "Kernel Drivers"
+            img: "/images/home/features/dd.png"
+            text: "Senior engineers deal with complex systems and are able to reason deeply about the system. At the scale more or less a Higher Level Operating System (Linux/Android/iOS) is involved and the hardware management is done through device drivers. A Senior/Staff level engineer understands and manages that complexity."
+            more: ""
+  - section:
+    - details:
+        type: "full"
+        title: "Skill Vs Proficiency"
+        subtitle: "Peel the abstractions, learn and master how the machine works. Control it!"
+        stretchedimg: "/images/home/skill-meter.svg"
+  - section:
+    - details:
+        type: "full"
+        title: "The Library Access!"
+        subtitle: "We have done all the research, organized and structured the content with focus on reasoning from first principles, becoming productive fast, and insights."
+    - details:
+        type: "break"
+    - details:
+        type: "half"
+        title: "25+ Courses "
+        subtitle: "And counting!"
+        texts:
+          - "A collection of courses to learn Embedded Systems Programming with focus on learning by Hands-On Experiments."
+        list:
+          - "Collection of 25+ Courses."
+          - "200+ hours of recorded lectures."
+          - "200+ Lessons."
+          - "Emulator and Hardware based experiments."
+          - "10+ downloadable resource."
+          - "Occasional workshops by industry experts."
+          - "Case studies based on open-source code."
+          - "Exercises, Coding Challenges and Projects."
+          - "Free updates to the course."
+          - "Certificate on completion."
+    - details:
+        type: "half"
+        video: "https://raw.githubusercontent.com/pyjamacafe/cache/master/course-intro/library.webm"
+        caption: "a quick overview of what library access is"
+    - details:
+        type: "full"
         ctas: *def
-
+  - section:
+    - details:
+        type: "full"
+        title: "the Instructors"
+        subtitle: "the odd worker Bees gathering the beans for you"
+    - details:
+        type: "full"
+        people:
+          - ind:
+            name: "Piyush Itankar"
+            img: "/images/authors/pi.jpg"
+            designation: "Senior Embedded SW Engineer"
+            orgs: "Google | Ex-Intel"
+            links:
+              linkedin: "https://www.linkedin.com/in/streetdogg/"
+              x: "https://x.com/_streetdogg"
+              youtube: "https://www.youtube.com/@pyjamacafe"
+            texts:
+              - "Electrical Engineer holding a Master’s degree in Embedded Systems, with a proven track record at industry giants. At Intel, contributed expertise to Navigation Firmware, Bluetooth Driver development, and RF validation software."
+              - "Currently thriving as an Embedded Software Engineer at Google, drove innovation in Firmware development for the Power Management Sub-system on Tensor SoCs (Pixel Phones) and presently advancing system software for the Pixel Watch."
+          - ind:
+            name: "Mahmad Bharmal"
+            img: "/images/authors/mb.jpg"
+            designation: "Embedded SW Engineer"
+            orgs: "Google | Ex-Intel"
+            links:
+              linkedin: "https://www.linkedin.com/in/streetdogg/"
+              youtube: "https://www.youtube.com/@pyjamacafe"
+            texts:
+              - "Computer Engineer holding a Master’s degree in Embedded Systems. Worked on improving the debug architecture of the Bluetooth Firmware at Intel."
+              - "Worked on ARM64 architecture, programming and exercising latest ARMv8/v9 extensions - programming in low-level FWs (ARM TF-A, trusty) and kernels (LK and Linux) at Google. Currently exploring the Pixel Watch Kernel and BSP (boot-loaders, Linux Kernel, Android HALs and frameworks)."
+  - section:
+    - details:
+        type: "full"
+        title: "Join the 8000+ Learners"
+        subtitle: "Go beyond the hobby projects. Peel the abstraction down to the hardware!"
+        ctas: *def

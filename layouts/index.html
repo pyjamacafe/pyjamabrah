@@ -1,25 +1,13 @@
 {{ define "main" }}
 	{{ partial "pitch/index.html" .Site.Data.home.data }}
 
-	<br/>
-	<hr/>
-	<br/>
-
-	{{ partial "courses/tiles.html" .}}
-
-	<br/>
-	<hr/>
-	<br/>
-  <div class="bundle-landing-title">Blog Posts</div>
-	<br/>
-
-	<div class="post-list">
+	{{/*  <div class="post-list">
 		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
 		{{ range $paginator.Pages }}
 			<a class="blog-card" href="{{ .RelPermalink }}" >
 					{{ .Render "summary" }}
 			</a>
 		{{ end }}
-	</div>
+	</div>  */}}
 </main>
 {{ end }}

@@ -87,6 +87,36 @@
   border-radius: 5px;
 }
 
+.pitch-feature {
+  margin: 20px;
+  flex: 1 1 50%;
+  max-width: 30%;
+  background-color: var(--bgcolor);
+  /* box-shadow: 0 0 2px 0px var(--linecolor) ; */
+  border-radius: 5px;
+}
+
+.pitch-feature-img {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  max-width: 40%;
+  margin: auto;
+  border: solid 1px var(--linecolor);
+}
+
+.pitch-feature-title {
+  text-align: center;
+  font-size: 20px;
+  margin: 8px;
+  font-weight: bold;
+}
+
+.pitch-feature-text {
+  text-align: center;
+  margin: 8px;
+  font-size: 16px;
+}
+
 .pitch-card-img {
   border-radius: 5px 5px 0 0;
 }
@@ -357,6 +387,11 @@
   .pitch-card {
     flex: 1 1 50%;
     max-width: 45%;
+  }
+
+  .pitch-feature {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 
   .pitch-people  {

@@ -21,6 +21,9 @@
     <img loading="lazy" class="pitch-full-img" src="{{.img}}"/>
   {{ end }}
 
+  {{ if .stretchedimg }}
+    <img loading="lazy" class="" src="{{.stretchedimg}}"/>
+  {{ end }}
   {{/*  video  */}}
   {{ if .video }}
     <figure>
@@ -58,6 +61,18 @@
         <div class="pitch-card-title">{{.title}}</div>
         <div class="pitch-card-text">{{.text}}</div>
         {{/*  <a class="pitch-card-more">{{.more}}</a>  */}}
+      </div>
+    {{ end }}
+    </div>
+  {{ end }}
+
+  {{ if .features }}
+    <div class="pitch-card-container">
+    {{ range .features }}
+      <div class="pitch-feature">
+        <img loading="lazy" class="pitch-feature-img" src="{{ .img }}"/>
+        <div class="pitch-feature-title">{{.title}}</div>
+        <div class="pitch-feature-text">{{.text}}</div>
       </div>
     {{ end }}
     </div>
