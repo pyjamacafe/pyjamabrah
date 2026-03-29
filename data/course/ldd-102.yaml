@@ -59,9 +59,15 @@ contents:
             title: "Boot and debug the configuration"
         - chapter:
             title: "Login - ssh into the Rpi"
+        - chapter:
+            title: "Setting up VS Code to work over ssh"
   - section:
       title: "Writing and understanding a simple driver"
       description: "Write a quick-n-dirty GPIO driver to turn the LED ON/OFF. Reason about the character driver."
       chapters:
+        - chapter:
+            title: "LED toggle - Crude driver"
+        - chapter:
+            title: "The driver structure"
         - chapter:
             title: "Lectures being recorded."
