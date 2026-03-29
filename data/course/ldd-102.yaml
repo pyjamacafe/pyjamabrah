@@ -70,4 +70,6 @@ contents:
         - chapter:
             title: "The driver structure"
         - chapter:
+            title: "Details - module init and cleanup"
+        - chapter:
             title: "Lectures being recorded."
