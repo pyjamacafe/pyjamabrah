@@ -1,0 +1,11 @@
+{{ with . }}
+<div class="bundle-hw-collection-container">
+  {{ range .}}
+    <div class="bundle-hw-card">
+      <img loading="lazy" src="{{.image}}"/>
+      <div class="bundle-hw-card-title">{{.title | markdownify}}</div>
+      <div class="bundle-hw-card-description">{{.description | markdownify }}</div>
+    </div>
+  {{ end }}
+</div>
+{{ end }}

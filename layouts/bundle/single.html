@@ -16,6 +16,10 @@
       {{ end }}
       <hr class="bundle-divider-line"/>
 
+      {{ if $bundle.videoMessage }}
+      {{ partial "course/videoMessage.html" $bundle.videoMessage}}
+      {{ end }}
+
       {{ if $bundle.infographic }}
       <div class="bundle-landing-introduction">
         <img loading="lazy" src="{{$bundle.infographic}}"/>
@@ -54,8 +58,10 @@
       {{ partial "course/highlights.html" $bundle.highlights}}
       {{ end }}
 
-      {{ if $bundle.videoMessage }}
-      {{ partial "course/videoMessage.html" $bundle.videoMessage}}
+      {{ if $bundle.hardware }}
+      <div class="bundle-landing-section-title">Hardware used</div>
+      <p>Experiments are performed on one of the following Hardware or the Emulator option available no QEMU. The hardware is not included as part of this bundle and needs to be bought separately.</p>
+      {{ partial "course/hw.html" $bundle.hardware}}
       {{ end }}
 
       {{ if $bundle.courses }}

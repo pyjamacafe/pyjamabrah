@@ -6,7 +6,7 @@ cover: "/images/courses/library.png"
 default_cta: &defaults
   - cta:
     link: "https://courses.pyjamacafe.com/web/checkout/68200b15f391a0bf84933bc7?purchaseNow=true&couponcode=ILOVEEMBEDDED"
-    text: "Yearly Access (non-recurring)"
+    text: "Enroll Now! (Yearly Access)"
     primary: true
 
 sticky:
@@ -83,6 +83,19 @@ learnings:
   - Tackle technical discussions on C, memory, interrupts, bit manipulation.
   - Complete projects - schedulers, digital audio, Linux drivers.
 
+hardware:
+  - title: "Raspberry Pi 4B"
+    image: "/images/hw/rpi4b.png"
+    description: "The ARMv8 Architecture based courses use RPI4B to tech the ARM 64 Bit CPU based concepts."
+  - title: "STM32VLDiscovery"
+    image: "/images/hw/stm32vldiscovery.png"
+    description: "This board has a ARM Cortex-M3 Core. It has a QEMU based target which makes it great for emulation as well as a good physical target to learn the architecture and firmware development on."
+  - title: "Raspberry Pi Pico 2"
+    image: "/images/hw/rpi-pico2.png"
+    description: "The Rpi-PICO 2 is a great low cost board to learn RISC-V, ARM-M33 and multi-core controller based application."
+  - title: "QEMU Emulator"
+    image: "/images/hw/qemu.png"
+    description: "The Rpi-PICO 2 is a great low cost board to learn RISC-V, ARM-M33 and multi-core controller based application."
 courses:
   - "roadmap"
   - "book"

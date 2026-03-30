@@ -222,6 +222,14 @@ div, p {
   justify-content: center;
 }
 
+.bundle-hw-collection-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  flex: 1 1 100%;
+  justify-content: center;
+}
+
 .bundle-course-card, .bundle-course-card-showcase {
   display: flex;
   flex-wrap: wrap;
@@ -240,6 +248,39 @@ div, p {
   img {
     display: block;
     /* border-radius: 10px 10px 0 0; */
+  }
+}
+
+.bundle-hw-card {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  flex: 1 1 30%;
+  max-width: 33%;
+  justify-items: center;
+  justify-content: flex-start;
+  align-content: flex-start;
+  /* border: 1px solid var(--linecolor); */
+  font: var(--fSmall);
+  img {
+    margin: auto;
+    flex: 1 1 100%;
+    /* border: 1px solid var(--linecolor); */
+    /* border-radius: 50%; */
+    max-width: 100%;
+  }
+  div {
+    text-align: center;
+    flex: 1 1 100%;
+  }
+  .bundle-hw-card-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .bundle-hw-card-description {
+    font-size: 12px;
+    padding: 12px;
   }
 }
 
@@ -668,6 +709,7 @@ div, p {
   .bundle-info-container,
   .bundle-sidebar-card,
   .bundle-course-card,
+  .bundle-hw-card,
   .bundle-landing-highlight,
   .bundle-landing-learning,
   .bundle-landing-instructor-card,
