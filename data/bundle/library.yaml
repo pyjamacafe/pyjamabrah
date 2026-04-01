@@ -13,7 +13,7 @@ sticky:
   text: ""
   discount:
     code: "ILOVEEMBEDDED"
-    percent: 67%
+    percent: 17%
   ctas: *defaults
 
 infographic: "/images/bundle/library/hero.png"

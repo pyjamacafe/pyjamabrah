@@ -24,7 +24,7 @@ default_cta: &defaults
 sticky:
   discount:
     code: "ILOVEEMBEDDED"
-    percent: "67%"
+    percent: "17%"
   ctas: *defaults
 
 sections:
