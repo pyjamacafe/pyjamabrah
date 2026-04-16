@@ -78,6 +78,12 @@
         <span class="bi bi-emoji-sunglasses">&nbsp</span><span>Free updates to the course.</span>
         </div>
       {{ end }}
+
+      {{ if .feature }}
+        <div class="bundle-landing-highlight">
+        <span class="bi bi-check-circle">&nbsp</span><span>{{.feature}}</span>
+        </div>
+      {{ end }}
   {{ end }}
 </div>
 {{ end }}

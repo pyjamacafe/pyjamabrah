@@ -58,6 +58,10 @@ highlights:
   - projectCount:
   - certificate:
   - freeUpdates:
+  - feature: "Understanding Embedded Systems"
+  - feature: "Firmware Engineering"
+  - feature: "System Software Engineering"
+  - feature: "Key Concepts and Skill set"
 
 videoMessage: ""
 learnings:

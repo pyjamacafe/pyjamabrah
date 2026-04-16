@@ -217,9 +217,10 @@ div, p {
 .bundle-course-collection-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 24px;
   flex: 1 1 100%;
   justify-content: center;
+  align-content: flex-start;
 }
 
 .bundle-hw-collection-container {
@@ -234,20 +235,20 @@ div, p {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  flex: 1 1 20%;
-  max-width: 25%;
-  /* border-radius: 10px; */
+  flex: 1 1 27.5%;
+  max-width: 30%;
+  border-radius: 10px;
   justify-content: flex-start;
-  align-content: flex-start;
-  /* box-shadow: 0px 0px 2px 0px var(--prebgcolor); */
-  border: 1px solid var(--linecolor);
+  box-shadow: 0px 0px 10px 0px var(--prebgcolor);
+  /* border: 1px solid var(--linecolor); */
   background-color: var(--dimcolor);
+  align-self: flex-start;
   transition-duration: 0.5s;
   /* max-height: 400px; */
   font: var(--fSmall);
   img {
     display: block;
-    /* border-radius: 10px 10px 0 0; */
+    border-radius: 10px 10px 0 0;
   }
 }
 
