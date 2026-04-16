@@ -1,5 +1,5 @@
 :root {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 :root {
@@ -72,7 +72,7 @@ div, p {
 }
 
 .bundle-info-container {
-  flex: 1 0 65%;
+  flex: 1 0 70%;
   display: flex;
   flex-direction: column;
   /* background-color: rgb(255, 255, 224); */
@@ -80,12 +80,18 @@ div, p {
 }
 
 .bundle-sidebar-card {
-  flex: 1 0 30%;
+  flex: 1 0 25%;
   align-self: flex-start;
   position: sticky;
   top: 20px;
-  border: 1px solid var(--c50);
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px 0px var(--c50);
+  /* border: 1px solid var(--c50); */
   background-color: var(--dimcolor);
+
+  img {
+    border-radius: 20px 20px 0px 0px;
+  }
 
 }
 
@@ -132,8 +138,8 @@ div, p {
 
 .bundle-landing-badge {
   border: 1px solid var(--color-border);
-  padding: 1px 5px;
-  border-radius: 10px;
+  padding: 1px 10px;
+  border-radius: 5px;
   font: var(--fSmall);
   background-color: var(--c100);
   color: var(--c0);
@@ -493,7 +499,7 @@ div, p {
   min-width: 100%;
   height: 42px;
   font-size: var(--fNormal);
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 0px 20px;
   background-color: var(--bgcolor);
   border-color: var(--prebgcolor);
