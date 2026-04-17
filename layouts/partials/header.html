@@ -15,11 +15,7 @@
   <nav class="navbar">
     {{ with .Site.Menus.main }}
       {{ range $index, $value := . }}
-        {{if eq .Identifier "spacer" }}
-          <span style="flex: 1 1 100%;"></span>
-        {{else}}
         <a class="menu-special" id="{{.Identifier}}" href="{{ .URL | relURL }}">{{ .Name }}</a>
-        {{end}}
       {{ end }}
     {{ end }}
   </nav>
@@ -30,11 +26,13 @@
       p = "home";
     }
 
-    console.log(p);
-
-    btn = document.getElementById(p);
-    btn.style.backgroundColor = "var(--cafe)";
-    btn.style.color = "var(--bgcolor)";
-    console.log(btn)
+    try {
+      btn = document.getElementById(p);
+      btn.style.backgroundColor = "var(--cafe)";
+      btn.style.color = "var(--bgcolor)";
+      btn.style.fontWeight = "bold";
+    } catch (error) {
+      //
+    }
   </script>
 </header>

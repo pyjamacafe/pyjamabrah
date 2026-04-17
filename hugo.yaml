@@ -38,8 +38,6 @@ menu:
     #   name: About
     #   url: /about
     #   weight: 5
-    - identifier: spacer
-      weight: 6
     - identifier: Login
       pre: true
       name: "Login"
