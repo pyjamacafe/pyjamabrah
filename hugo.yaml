@@ -1,4 +1,4 @@
-baseURL: 'https://pyjamacafe.com/'
+baseURL: 'www.pyjamacafe.com'
 languageCode: 'en-us'
 theme: smigle
 title: Pyjama Cafe!
@@ -56,7 +56,7 @@ markup:
     anchorLineNos: true
 
 params:
-  subtitle: "just - STAY IN THE GAME!"
+  subtitle: "Lowering the Barrier to learning Embedded Systems!"
   description: "Reasoning from first principles, everything from AI down to the transistor."
   thumbnail: "/opengraph.png"
   math: true

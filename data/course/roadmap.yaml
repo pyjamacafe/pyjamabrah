@@ -35,7 +35,7 @@ default_cta: &defaults
     text: "Start for Free!"
     primary: true
 sticky:
-  text: "Master the Aarch64 based CPUs by programming one from scratch!"
+  text: "Start the journey of Learning Embedded Systems."
 #   discount:
 #     code:
 #     percent:

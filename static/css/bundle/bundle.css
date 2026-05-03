@@ -241,8 +241,8 @@ div, p {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  flex: 1 1 27.5%;
-  max-width: 30%;
+  flex: 1 1 20%;
+  max-width: 25%;
   border-radius: 10px;
   justify-content: flex-start;
   box-shadow: 0px 0px 10px 0px var(--prebgcolor);
