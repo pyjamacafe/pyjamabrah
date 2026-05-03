@@ -1,0 +1,69 @@
+{{ define "main" }}
+<main>
+<style>
+  .posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .post-card {
+    flex: 1 1 20%;
+    box-shadow: 0px 0px 1px 0px black;
+    border-radius: 5px;
+
+    img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 5px 5px 0px 0px;
+    }
+
+    .post-meta {
+      margin: 10px 0px;
+      padding: 0px 12px;
+
+      .post-card-title {
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .post-card-text {
+        font-size: 12px;
+        margin-top: 4px;
+        color: grey;
+      }
+    }
+  }
+
+  .post-card:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 4px 0px black;
+  }
+
+@media all and (width <= 1200px) {
+  .post-card { flex: 1 1 30%; }
+}
+
+@media all and (width <= 960px) {
+  .post-card { flex: 1 1 45%; }
+}
+
+@media all and (width <= 600px) {
+  .post-card { flex: 1 1 50%; }
+}
+</style>
+
+<div class="posts-container">
+{{ range .Pages }}
+  <div class="post-card" onClick="location.href='{{ .RelPermalink }}';">
+    <img src="{{.Params.thumbnail}}"></img>
+    <div class="post-meta">
+      <div class="post-card-title">{{ .Title }}</div>
+      <div class="post-card-text">{{ .Content | plainify | truncate 150 }}</div>
+    </div>
+  </div>
+{{ end }}
+</div>
+</main>
+{{ end }}
