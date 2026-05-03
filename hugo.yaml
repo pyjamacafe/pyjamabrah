@@ -52,7 +52,7 @@ markup:
     anchorLineNos: true
 
 params:
-  subtitle: "serious skills. comfy setting."
+  subtitle: "just - STAY IN THE GAME!"
   description: "Reasoning from first principles, everything from AI down to the transistor."
   thumbnail: "/opengraph.png"
   math: true
