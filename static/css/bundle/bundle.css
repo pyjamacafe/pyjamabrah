@@ -224,6 +224,7 @@ div, p {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  padding: 0px 16px;
   flex: 1 1 100%;
   justify-content: center;
   align-content: flex-start;
@@ -241,8 +242,8 @@ div, p {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  flex: 1 1 20%;
-  max-width: 25%;
+  flex: 1 1 25%;
+  max-width: 100%;
   border-radius: 10px;
   justify-content: flex-start;
   box-shadow: 0px 0px 10px 0px var(--prebgcolor);
@@ -349,15 +350,16 @@ div, p {
 }
 
 .bundle-landing-course-details-dialog-container {
-  width: 600px;
+  width: 800px;
   max-height: 90vh;
   padding: 0px;
   background-color: var(--bgcolor);
   color: var(--fontcolor);
+  border: none;
 }
 
 .bundle-landing-course-details-dialog-container::backdrop {
-  background-color: hsl(0 0% 0% / 0.5);
+  background-color: hsl(0 0% 0% / 0.7);
 }
 
 .bundle-landing-dialog-details {

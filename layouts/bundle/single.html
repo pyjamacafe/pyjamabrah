@@ -49,10 +49,8 @@
       <span class="bi bi bi-clock"></span><span><b>{{ $bundle.access }}</b></span> Access.
       </div>
 
-      {{ if $bundle.hardware }}
-      <div class="bundle-landing-section-title">Hardware used</div>
-      <p>Experiments are performed on one of the following Hardware (or the Emulator option available on QEMU). The hardware is not included and needs to be bought separately.</p>
-      {{ partial "course/hw.html" $bundle.hardware}}
+      {{ if $bundle.videoMessage }}
+      {{ partial "course/videoMessage.html" $bundle.videoMessage}}
       {{ end }}
 
       {{ if $bundle.highlights }}
@@ -60,16 +58,12 @@
       {{ partial "course/highlights.html" $bundle.highlights}}
       {{ end }}
 
-      {{ if $bundle.videoMessage }}
-      {{ partial "course/videoMessage.html" $bundle.videoMessage}}
-      {{ end }}
-
       {{ if $bundle.courses }}
       <div class="bundle-landing-section-title">Courses Included</div>
       <div class="bundle-course-collection-container">
       {{ range $bundle.courses }}
         {{$c := (index $courselist .) }}
-        <div id="card-{{$c.id}}" onclick="openDialog(this.id)"class="bundle-course-card">
+        <div id="card-{{$c.id}}" onclick="openDialog(this.id)" class="bundle-course-card">
           <div class="bundle-course-card-cover">
             <img loading="lazy" src="{{$c.cover}}"/>
           </div>
@@ -83,7 +77,6 @@
       {{ end }}
 
       <div class="bundle-landing-section-title">Details of Content</div>
-      {{/*  <p>Explore the detailed list of lectures included in each course.</p>  */}}
       {{ $counter := 0 }}
       {{ range $bundle.courses }}
         {{ $counter = (add $counter 1)}}
@@ -125,6 +118,12 @@
             </div>
           </div>
         </div>
+      {{ end }}
+
+      {{ if $bundle.hardware }}
+      <div class="bundle-landing-section-title">Hardware used</div>
+      <p>Experiments are performed on one of the following Hardware (or the Emulator option available on QEMU). The hardware is not included and needs to be bought separately.</p>
+      {{ partial "course/hw.html" $bundle.hardware}}
       {{ end }}
 
       {{ if $bundle.learnings }}

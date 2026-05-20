@@ -57,7 +57,7 @@ markup:
 
 params:
   subtitle: "Lowering the Barrier to learning Embedded Systems!"
-  description: "Reasoning from first principles, everything from AI down to the transistor."
+  description: "Lowering the Barrier to learning Embedded Systems!"
   thumbnail: "/opengraph.png"
   math: true
   abbrDateFmt: "Jan 2"

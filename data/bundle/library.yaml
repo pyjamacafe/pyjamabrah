@@ -16,7 +16,7 @@ sticky:
     percent: 17%
   ctas: *defaults
 
-infographic: "/images/bundle/library/hero.png"
+# infographic: "/images/bundle/library/hero.png"
 introduction:
   - "A collection of courses to learn Embedded Systems Programming with focus on learning by `Hands-On Experiments`."
   - "We have done all the research, organized and structured the content with focus on reasoning from first principles, becoming productive fast, and insights."
