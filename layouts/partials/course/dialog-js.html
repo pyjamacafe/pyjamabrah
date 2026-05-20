@@ -1,0 +1,28 @@
+<script>
+  activeDialog = null;
+
+  function checkHashAndOpen() {
+    if (window.location.hash) {
+      try {
+            dialogID = "dialog-card-"+ window.location.hash.slice(1);
+        activeDialog = document.getElementById(dialogID)
+        activeDialog.showModal();
+      } catch (err) {
+        // silence!
+      }
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', checkHashAndOpen);
+  window.addEventListener('hashchange', checkHashAndOpen);
+
+  function openDialog(cardID) {
+    dialogID = "dialog-"+cardID;
+    activeDialog = document.getElementById(dialogID)
+    activeDialog.showModal();
+  }
+
+  function closeDialog() {
+    activeDialog.close();
+  }
+</script>

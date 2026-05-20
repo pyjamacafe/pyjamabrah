@@ -53,24 +53,11 @@
   </div>
 
   {{ if .ctas }}
+    <div class="bundle-landing-dialog-footer">
     {{ range .ctas }}
-      <a class="bundle-landing-dialog-footer" href="{{ .link }}" target="_blank">
-        {{ .text }}
-      </a>
+        <button onclick="window.open('{{ .link }}', '_blank');">{{ .text }}</button>
     {{ end }}
+    </div>
   {{ end }}
 </dialog>
-<script>
-  activeDialog = null;
-  function openDialog(cardID) {
-    dialogID = "dialog-"+cardID;
-    activeDialog = document.getElementById(dialogID)
-    console.log(dialogID, activeDialog)
-    activeDialog.showModal();
-  }
-
-  function closeDialog() {
-    activeDialog.close();
-  }
-</script>
 {{ end }}

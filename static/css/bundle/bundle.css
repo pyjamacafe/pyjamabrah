@@ -359,7 +359,14 @@ div, p {
 }
 
 .bundle-landing-course-details-dialog-container::backdrop {
-  background-color: hsl(0 0% 0% / 0.7);
+  background-color: hsl(0 0% 0% / 0.3);
+  /* Target the backdrop of the open dialog */
+
+  /* 2. The blur effect */
+  backdrop-filter: blur(8px);
+
+  /* Safari support */
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .bundle-landing-dialog-details {
@@ -377,7 +384,7 @@ div, p {
   justify-content: center;
   align-items: center;
   height: 50px;
-  background-color: var(--theme-primary);
+  background-color: var(--bgcolor);
   text-align: center;
   cursor: pointer;
   color: var(--fontcolor);
