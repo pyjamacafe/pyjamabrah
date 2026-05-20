@@ -24,7 +24,17 @@
       </div>
       {{ end }}
 
+      {{ if .videoMessage }}
+      {{ partial "course/videoMessage.html" .videoMessage}}
+      {{ end }}
+
+      {{ if .learnings }}
+        <div class="bundle-landing-section-title">What you will learn</div>
+        {{ partial "course/checklist.html" .learnings }}
+      {{ end }}
+
       {{ if .contents }}
+      <div class="bundle-landing-section-title">Table of Contents</div>
       {{ range .contents }}
         <div class="bundle-landing-course-details-dialog-section-container">
         <div class="bundle-landing-course-details-dialog-section-title">
@@ -49,6 +59,32 @@
         {{ end }}
         </div>
       {{ end }}
+      {{ end }}
+
+      {{ if .sampleCertificate }}
+      <div class="bundle-landing-section-title">Sample Certificate</div>
+      <div class="bundle-course-sample-certificate">
+        <figure>
+        <img loading="lazy" src="{{.sampleCertificate}}"/>
+        </figure>
+        <div class="bundle-course-sample-certificate-caption">Earn a certificate for every technical track by completing 95% of the course work.</div>
+      </div>
+      {{ end }}
+
+      {{ if .difference }}
+        {{ partial "course/differences.html" .difference }}
+      {{ end }}
+
+      {{if .reviews}}
+        {{ partial "course/reviews.html" .reviews }}
+      {{ end }}
+
+      {{ if .audience }}
+        {{ partial "course/audience.html" .audience }}
+      {{ end }}
+
+      {{ if .requirements }}
+        {{ partial "course/requirements.html" .requirements }}
       {{ end }}
   </div>
 

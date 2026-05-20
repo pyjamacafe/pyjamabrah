@@ -122,6 +122,10 @@
         {{ partial "course/requirements.html" $bundle.requirements }}
       {{ end }}
 
+      {{if $bundle.reviews}}
+        {{ partial "course/reviews.html" $bundle.reviews }}
+      {{ end }}
+
       {{ if $faqs }}
       <div class="bundle-landing-section-title">FAQs</div>
       <div class="bundle-landing-faqs">

@@ -113,8 +113,12 @@
                 {{ if .chapter.preview }}
                   {{ partial "course/yt-preview.html" .chapter.preview}}
                 {{ end }}
-                {{end}}
+              {{end}}
               </ul>
+              {{ end }}
+
+              {{if $c.reviews}}
+                {{ partial "course/reviews.html" $c.reviews }}
               {{ end }}
             </div>
           </div>

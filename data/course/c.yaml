@@ -370,3 +370,23 @@ contents:
             title: "Exploring the Shift operations"
         - chapter:
             title: "Assembly view of Shift operation"
+
+reviews:
+  - name: "Eduardo Chancay"
+    rating: 5
+  - name: "Sreedhar Reddy P"
+    rating: 5
+  - name: "Himanshu Meshram"
+    rating: 5
+  - name: "Prashali Pravin Randive"
+    rating: 5
+    comment: "This C language course is different from other C courses that are available. The C course in point of view of Assembly is great thing ever. The topics like volatile, ISA, Assembly instructions, loops, keywords or storage classes: auto, register, extern, static are very well explained. Loved this course."
+  - name: "Ganeshan Mahalingam"
+    rating: 5
+    comment: "Excellent course and every one in embedded field must do this course"
+  - name: "Jameer Hydrabade"
+    rating: 5
+    comment: ""
+  - name: "Ashish Kumar Verma"
+    rating: 5
+    comment: "Fabulous"

@@ -372,6 +372,7 @@ div, p {
 .bundle-landing-dialog-details {
   display: flex;
   flex-wrap: wrap;
+  padding: 0px 16px;
 }
 
 .bundle-landing-dialog-details-description {
@@ -662,6 +663,11 @@ div, p {
   align-items: center;
 }
 
+.bundle-landing-toc-entry .bundle-landing-section-title {
+  font-size: 20px;
+  margin-left: 8px;
+}
+
 .bundle-landing-course-details {
   border: 1px solid var(--linecolor);
   margin: 16px 0px;
@@ -756,6 +762,10 @@ div, p {
   .bundle-course-card-showcase {
     min-width: 100%;
   }
+
+  .bundle-review {
+    min-width: 45%;
+  }
 }
 
 .bundle-landing-yt-container {
@@ -763,6 +773,65 @@ div, p {
   width: auto;
   height: auto;
   margin: 8px;
+}
+
+.bundle-review-container {
+  flex: 1 1 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.bundle-review {
+  flex: 1 1 25%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 30%;
+  padding: 1%;
+  margin: 0.5%;
+  /* border: black 1px solid; */
+}
+
+.bundle-review-name, .bundle-review-stars, .bundle-review-comment {
+  flex: 1 1 100%;
+  min-width: 100%;
+}
+
+.bundle-review-name {
+  font-weight: bold;
+}
+
+.bundle-review-stars {
+  margin-top: 2px;
+  font-size: 13px;
+}
+
+.bundle-review-comment {
+  font-size: 13px;
+  margin-top: 8px;
+  color: var(--c50)
+}
+
+.bundle-review-photo {
+  flex: 1 1 25px;
+  max-width: 25px;
+  max-height: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 4px;
+  margin: 0px 8px 0px 0px;
+  text-align: center;
+  border: 1px solid var(--linecolor);
+  border-radius: 50%;
+  background-color: var(--c100);
+  color: var(--c0);
+}
+
+.bundle-review-review {
+  flex: 1 1 80%;
+  min-width: 80%;
+
 }
 
 @media (min-width: 771px) and (max-width: 1366px) {
@@ -786,4 +855,5 @@ div, p {
   .bundle-course-card-showcase {
     min-width: 45%;
   }
+
 }

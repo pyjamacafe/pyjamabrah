@@ -1,0 +1,18 @@
+{{ with . }}
+<div class="bundle-landing-section-title">Reviews</div>
+<div class="bundle-review-container">
+{{ range .}}
+<div class="bundle-review">
+  <div class="bundle-review-photo">{{ substr .name 0 1 }}</div>
+  <div class="bundle-review-review">
+    <div class="bundle-review-name">{{.name}}</div>
+    <div class="bundle-review-stars">{{ partial "course/ratingStars.html" .rating }}</div>
+    {{if .comment}}
+    <div class="bundle-review-comment">{{.comment}}</div>
+    {{end}}
+  </div>
+</div>
+{{ end }}
+</div>
+{{ end }}
+
