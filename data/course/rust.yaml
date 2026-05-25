@@ -1,0 +1,114 @@
+# mandatory ID for the course
+id: "rust"
+type: "pjcafe"
+sell: false
+
+weight: "4"
+
+# mandatory title, cover and subtitle
+title: "Rust Forensics"
+subtitle: "Learning rust from the bare-metal/embedded lens"
+cover: "/images/courses/rust.png"
+
+# mandatory introduction
+introduction:
+  - "This course teaches the Rust programming language by programming a ARM Cortex-M3 controller from scratch."
+  - "You will learn the rust internals by disassembling the code into assembly and reason about the CPU memory interactions."
+
+# mandatory badges
+badges:
+  - Bestseller
+  - Beginner
+  - Intermediate
+  - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+default_cta: &defaults
+  - cta:
+    link: ""
+    text: ""
+    primary: true
+sticky:
+  text: ""
+  discount:
+    code: ""
+    percent:
+  ctas: *defaults
+
+date: 25 May 2026
+language: "English"
+access: "365 day"
+highlights:
+  - courseCount:
+  - duration: "2 hours 40 mins"
+  - lessonCount: "7"
+  - emulator: true
+  - hardware:
+  - downloadableResources: "9+"
+  - workshops:
+  - certificate: true
+  - cheatSheet:
+  - caseStudy:
+  - exerciseChallenge: true
+  - projectCount: "Several"
+  - freeUpdates: true
+videoMessage: "rust"
+learnings:
+  - "Compiling the source without the package manager (cargo)."
+  - "Compiling and booting on bare-metal (CPU only, no OS) system."
+  - "Rust Syntax and Key concepts."
+
+sampleCertificate: ""
+difference:
+  - "Rust from ground up."
+  - "Embedded Systems approach."
+  - "Explore language features by disassembling the code."
+
+instructors:
+  - "piyush"
+
+requirements:
+  - GitHub account to do the hands-on coding in Codespaces.
+  - Interest in the lower level working of the system.
+  - Basic understanding of number systems, logic gates, bits and bytes is good to have (but not strictly required).
+
+audience:
+  - Students in Academia with Rust as a subject in the course.
+  - Firmware and System Software Engineers looking to learn/revisit concepts.
+  - Systems Engineer using Rust seeking gain system level insights.
+  - Those with background in the C language.
+
+faqs: pyjamacafe
+
+contents:
+    - section:
+        title: "Environment Setup & Bare-metal Boot"
+        description: "This section guides on the setup we use and dives into the detail of executing the Rust code on a Cortex-M3 based emulation target."
+        chapters:
+            - chapter:
+                title: "Codespace Setup"
+            - chapter:
+                title: "Hello World"
+                preview: "2x2KX5axHnE"
+            - chapter:
+                title: "QEMU and the ARM M Cores"
+            - chapter:
+                title: "Baremetal Boot of Rust Code"
+            - chapter:
+                title: "ARM M CPU and the boot-up flow"
+            - chapter:
+                title: "Putting it all together"
+            - chapter:
+                title: "Debugging the Boot up"
+    - section:
+        title: "Disassembling Rust Programs"
+        description: "Lectures are being recorded and will be added to the course..."
+        chapters:
+            - chapter:
+                title: "more lectures will be added soon"
+reviews:

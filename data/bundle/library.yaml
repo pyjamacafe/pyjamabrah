@@ -109,6 +109,7 @@ courses:
   - "m102"
   - "make"
   - "ld"
+  - "rust"
   - "freertos101"
   - "zephyr101"
   - "git-gerrit"

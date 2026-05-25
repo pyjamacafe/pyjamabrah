@@ -76,7 +76,7 @@
       </div>
       {{partial "course/dialog-js.html"}}
       {{ end }}
-<!--
+
       <div class="bundle-landing-section-title">Details of Content</div>
       {{ $counter := 0 }}
       {{ range $bundle.courses }}
@@ -117,14 +117,14 @@
               </ul>
               {{ end }}
 
-              {{if $c.reviews}}
+              {{/*  {{if $c.reviews}}
                 {{ partial "course/reviews.html" $c.reviews }}
-              {{ end }}
+              {{ end }}  */}}
             </div>
           </div>
         </div>
       {{ end }}
-      -->
+
       {{ if $bundle.hardware }}
       <div class="bundle-landing-section-title">Hardware used</div>
       <p>Experiments are performed on one of the following Hardware (or the Emulator option available on QEMU). The hardware is not included and needs to be bought separately.</p>
