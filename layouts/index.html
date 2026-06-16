@@ -1,13 +1,75 @@
 {{ define "main" }}
-	{{ partial "pitch/index.html" .Site.Data.home.data }}
+	{{/*  {{ partial "pitch/index.html" .Site.Data.home.data }}  */}}
+	{{/* code below is borrowed from layouts/posts/list.html  */}}
+	<style>
+  .posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin: 32px 0px;
+  }
 
-	{{/*  <div class="post-list">
+  .post-card {
+    flex: 1 1 20%;
+    box-shadow: 0px 10px 10px 0px rgb(191, 191, 191);
+    border-radius: 16px;
+    transition: transform .2s;
+
+    img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 16px 16px 0px 0px;
+    }
+
+    .post-meta {
+      margin: 10px 0px;
+      padding: 0px 12px;
+
+      .post-card-title {
+        padding-top: 12px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .post-card-text {
+        font-size: 12px;
+        margin-top: 12px;
+        color: grey;
+      }
+    }
+  }
+
+  .post-card:hover {
+    cursor: pointer;
+    box-shadow: 0px 16px 16px 0px rgb(191, 191, 191);
+    transform: scale(1.01);
+  }
+
+@media all and (width <= 1200px) {
+  .post-card { flex: 1 1 30%; }
+}
+
+@media all and (width <= 960px) {
+  .post-card { flex: 1 1 45%; }
+}
+
+@media all and (width <= 600px) {
+  .post-card { flex: 1 1 50%; }
+}
+</style>
+
+<div class="posts-container">
 		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
 		{{ range $paginator.Pages }}
-			<a class="blog-card" href="{{ .RelPermalink }}" >
-					{{ .Render "summary" }}
-			</a>
+		<div class="post-card" onClick="location.href='{{ .RelPermalink }}';">
+		    <img src="{{.Params.thumbnail}}"></img>
+		    <div class="post-meta">
+		      <div class="post-card-title">{{ .Title }}</div>
+		      <div class="post-card-text">{{ .Content | plainify | truncate 150 }}</div>
+		    </div>
+		  </div>
 		{{ end }}
-	</div>  */}}
+	</div>
 </main>
 {{ end }}

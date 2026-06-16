@@ -58,6 +58,7 @@
       {{ partial "course/highlights.html" $bundle.highlights}}
       {{ end }}
 
+     {{/*
       {{ if $bundle.courses }}
       <div class="bundle-landing-section-title">Courses Included</div>
       <div class="bundle-course-collection-container">
@@ -76,7 +77,7 @@
       </div>
       {{partial "course/dialog-js.html"}}
       {{ end }}
-
+    */}}
       <div class="bundle-landing-section-title">Details of Content</div>
       {{ $counter := 0 }}
       {{ range $bundle.courses }}
