@@ -466,12 +466,27 @@ div, p {
 .bundle-landing-footer-sticky-text {
   flex: 1 1 100%;
   margin: 0px;
-  padding: 8px 4vw;
+  padding: 8px 4vw 0px 4vw;
   text-align: center;
 
   font-size: var(--fNormal);
   color: var(--fontcolor);
 
+  b {
+    color: var(--fontcolor);
+  }
+  code {
+    font-size: var(--fNormal);
+  }
+}
+
+.bundle-landing-footer-sticky-timer {
+  flex: 1 1 100%;
+  margin: 0px;
+  padding: 2px;
+  text-align: center;
+  font-size: var(--fNormal);
+  color: var(--fontcolor);
   b {
     color: var(--fontcolor);
   }

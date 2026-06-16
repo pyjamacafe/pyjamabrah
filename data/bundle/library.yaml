@@ -1,19 +1,19 @@
-title: "Mastering Embedded Systems"
-subtitle: "The finer details!"
+title: "The Library Access"
+subtitle: "Mastering Embedded Systems, the finer details!"
 cover: "/images/courses/library.png"
 
 # default CTA
 default_cta: &defaults
   - cta:
     link: "https://courses.pyjamacafe.com/web/checkout/68200b15f391a0bf84933bc7?purchaseNow=true&couponcode=ILOVEEMBEDDED"
-    text: "Enroll Now! (Yearly Access)"
+    text: "Join now | Yearly Pass!"
     primary: true
 
 sticky:
   text: ""
   discount:
     code: "ILOVEEMBEDDED"
-    percent: 17%
+    percent: 33.34%
   ctas: *defaults
 
 # infographic: "/images/bundle/library/hero.png"
@@ -30,7 +30,7 @@ badges:
 rating: 4.9
 enrolled: 3000+
 
-date: 9 Feb 2026
+date: 16 June 2026
 language: English
 access: 365 Days
 
