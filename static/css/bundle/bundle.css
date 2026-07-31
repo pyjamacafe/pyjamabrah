@@ -33,6 +33,7 @@
   --c50: hsl(0, 0%, 50%);
   --c30: hsl(0, 0%, 70%);
   --c0: hsl(0, 0%, 100%);
+  --cta-pulse-color: color-mix(in srgb, var(--theme-primary) 45%, white);
 } @media (prefers-color-scheme: dark) {
 :root {
   --c0: hsl(0, 0%, 0%);
@@ -41,6 +42,7 @@
   --c70: hsl(0, 0%, 70%);
   --c80: hsl(0, 0%, 80%);
   --c100: hsl(0, 0%, 100%);
+  --cta-pulse-color: color-mix(in srgb, var(--theme-primary) 70%, black);
 }
 }
 
@@ -540,6 +542,21 @@ div, p {
 
 .bundle-landing-footer-sticky-cta-button-primary {
   background-color: var(--theme-primary);
+  animation: bundle-cta-pulse 1.6s ease-in-out infinite;
+}
+
+.bundle-landing-footer-sticky-cta-button-primary:hover {
+  animation: none;
+  background-color: var(--cafe);
+}
+
+@keyframes bundle-cta-pulse {
+  0%, 100% {
+    background-color: var(--theme-primary);
+  }
+  50% {
+    background-color: var(--cta-pulse-color);
+  }
 }
 
 
