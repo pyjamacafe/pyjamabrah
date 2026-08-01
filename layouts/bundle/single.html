@@ -49,17 +49,8 @@
       <span class="bi bi bi-clock"></span><span><b>{{ $bundle.access }}</b></span> Access.
       </div>
 
-      {{ if $bundle.videoMessage }}
-      {{ partial "course/videoMessage.html" $bundle.videoMessage}}
-      {{ end }}
-
-      {{ if $bundle.highlights }}
-      <div class="bundle-landing-section-title">Includes</div>
-      {{ partial "course/highlights.html" $bundle.highlights}}
-      {{ end }}
-
       {{ if $bundle.courses }}
-      <div class="bundle-landing-section-title" id="courses-included">Courses Included</div>
+      <div class="bundle-landing-section-title" id="courses-included">Learning Tracks</div>
       {{ $perRow := 6 }}
       {{ $total := len $bundle.courses }}
       {{ $rowCount := div $total $perRow }}
@@ -107,6 +98,11 @@
       {{ partial "course/hw.html" $bundle.hardware}}
       {{ end }}
 
+      {{ if $bundle.highlights }}
+      <div class="bundle-landing-section-title">Includes</div>
+      {{ partial "course/highlights.html" $bundle.highlights}}
+      {{ end }}
+
       {{ if $bundle.learnings }}
       <div class="bundle-landing-section-title">What you will learn</div>
       {{ partial "course/checklist.html" $bundle.learnings }}
@@ -124,6 +120,10 @@
 
       {{ if .Content }}
         {{ .Content }}
+      {{ end }}
+
+      {{ if $bundle.videoMessage }}
+      {{ partial "course/videoMessage.html" $bundle.videoMessage}}
       {{ end }}
 
       {{ if $bundle.difference }}
@@ -172,10 +172,20 @@
               <div class="bundle-landing-footer-sticky-text">
                 <b class="bundle-landing-discount-text">{{$bundle.sticky.discount.percent}} OFF!</b>Expires in <b id="timer"></b></div>
             {{ end }}
+            {{ if $bundle.sticky.ctas }}
+            <div class="bundle-cta-footer">
+              {{ range $bundle.sticky.ctas }}{{ .text }}{{ end }}
+            </div>
+            {{ end }}
             <div class="bundle-landing-footer-sticky-ctas">
               {{ range $bundle.sticky.ctas }}
                 <a href="{{ .link }}" target="_blank">
-                  <button class="bundle-landing-footer-sticky-cta-button {{if .primary}}bundle-landing-footer-sticky-cta-button-primary{{end}}">{{ .text }}</button>
+                  <button class="bundle-landing-footer-sticky-cta-button {{if .primary}}bundle-landing-footer-sticky-cta-button-primary{{end}}">
+                    <span class="bundle-cta-price">
+                      <s class="bundle-cta-original"></s>
+                      <b class="bundle-cta-discounted"></b>
+                    </span>
+                  </button>
                 </a>
               {{ end }}
             </div>
@@ -196,10 +206,20 @@
       </div>
 
       <div class="bundle-landing-sidebar-cta">
+        {{ if $bundle.sticky.ctas }}
+        <div class="bundle-cta-footer">
+          {{ range $bundle.sticky.ctas }}{{ .text }}{{ end }}
+        </div>
+        {{ end }}
         <div class="bundle-landing-footer-sticky-ctas">
           {{ range $bundle.sticky.ctas }}
             <a href="{{ .link }}" target="_blank">
-              <button class="bundle-landing-footer-sticky-cta-button {{if .primary}}bundle-landing-footer-sticky-cta-button-primary{{end}}">{{ .text }}</button>
+              <button class="bundle-landing-footer-sticky-cta-button {{if .primary}}bundle-landing-footer-sticky-cta-button-primary{{end}}">
+                <span class="bundle-cta-price">
+                  <s class="bundle-cta-original"></s>
+                  <b class="bundle-cta-discounted"></b>
+                </span>
+              </button>
             </a>
           {{ end }}
         </div>
@@ -278,5 +298,39 @@ if (courseRows.length && !prefersReducedMotion) {
   window.addEventListener('resize', onScroll, { passive: true });
   applyParallax();
 }
+
+const libraryPricing = JSON.parse({{ $bundle.pricing | jsonify }});
+const libraryDiscountPercent = {{ $bundle.sticky.discount.percent | strings.TrimSuffix "%" }};
+
+async function getCountryCode() {
+  try {
+    const response = await fetch('https://ipapi.co/json/');
+    const data = await response.json();
+    return data.country_code || 'default';
+  } catch (error) {
+    return 'default';
+  }
+}
+
+function formatPrice(symbol, value) {
+  return symbol + Number(value).toLocaleString('en-IN', {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 2
+  });
+}
+
+async function updateLibraryPrices() {
+  const country = await getCountryCode();
+  const price = libraryPricing.find(p => p.region === country) || libraryPricing.find(p => p.region === 'default');
+  const discounted = price.original * (1 - libraryDiscountPercent / 100);
+  document.querySelectorAll('.bundle-cta-original').forEach(el => {
+    el.textContent = formatPrice(price.symbol, price.original);
+  });
+  document.querySelectorAll('.bundle-cta-discounted').forEach(el => {
+    el.textContent = formatPrice(price.symbol, discounted);
+  });
+}
+
+updateLibraryPrices();
 </script>
 {{ end }}

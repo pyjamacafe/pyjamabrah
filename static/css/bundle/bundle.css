@@ -679,12 +679,59 @@ div, p {
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
-  height: 42px;
+  height: auto;
+  min-height: 42px;
   font-size: var(--fNormal);
   border-radius: 10px;
-  padding: 0px 20px;
+  padding: 8px 20px;
   background-color: var(--bgcolor);
   border-color: var(--prebgcolor);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bundle-cta-price {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: var(--fSmall);
+}
+
+.bundle-cta-original {
+  color: var(--c50);
+}
+
+.bundle-cta-discounted {
+  font-weight: bold;
+  color: var(--c100);
+  font-size: var(--fNormal);
+}
+
+.bundle-landing-footer-sticky-cta-button-primary .bundle-cta-original {
+  color: color-mix(in srgb, var(--c100) 60%, transparent);
+}
+
+.bundle-cta-footer {
+  flex: 1 1 100%;
+  min-width: 100%;
+  text-align: center;
+  padding: 0px 0px 8px 0px;
+  font-size: var(--fSmall);
+  font-weight: bold;
+  color: var(--fontcolor);
+}
+
+.bundle-landing-footer-sticky-cta-button-primary .bundle-cta-discounted {
+  color: var(--cafe);
+}
+
+.bundle-landing-footer-sticky-cta-button-primary:hover .bundle-cta-original {
+  color: color-mix(in srgb, var(--c0) 60%, transparent);
+}
+
+.bundle-landing-footer-sticky-cta-button-primary:hover .bundle-cta-discounted {
+  color: var(--theme-primary);
 }
 
 .bundle-landing-footer-sticky-cta-button:hover {
@@ -818,6 +865,8 @@ div, p {
 
 .bundle-landing-sidebar-cta {
   display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .bundle-landing-faqs {
