@@ -1,5 +1,6 @@
 {{ with . }}
 <dialog class="bundle-landing-course-details-dialog-container" id="dialog-card-{{.id}}" closedby="any">
+  <div class="bundle-landing-dialog-close" onclick="closeDialog()">&times;</div>
   <div class="bundle-landing-dialog-details">
       {{ if .title }}
       <div class="bundle-landing-course-details-dialog-title">{{.title | markdownify}}</div>
