@@ -28,7 +28,7 @@ badges:
   - Advance
 
 rating: 4.9
-enrolled: 3000+
+enrolled: 8000+
 
 date: 16 June 2026
 language: English
@@ -143,6 +143,38 @@ difference:
   - Teach multiple CPU architectures (ARM-M, ARM-A, RISC-V).
   - Cover the toolchain utilities like compiler, assembler, linker and debug tools like GDB?
   - Learn at your own pace.
+
+reviews:
+  - name: "Prashali Pravin Randive"
+    rating: 5
+    comment: "This C language course is different from other C courses that are available. The C course in point of view of Assembly is great thing ever. The topics like volatile, ISA, Assembly instructions, loops, keywords or storage classes are very well explained. Loved this course."
+  - name: "Bharath R"
+    rating: 5
+    comment: "Very clearly spoke about Firmware engineer and Systems Engineer and the relationship between both! We should first understand what role we are applying for! And this course clears all the doubts regarding that."
+  - name: "Ganeshan Mahalingam"
+    rating: 5
+    comment: "Excellent course and everyone who is interested in Firmware/System software must do this to know the opportunities."
+  - name: "Sandesha"
+    rating: 5
+    comment: "The clarity of thoughts and roadmap helps a lot. Thanks a lot for the birds-eye view of the industry."
+  - name: "Aditya Shidlyali"
+    rating: 5
+    comment: "This is one of the most clearest career guidance I have ever seen in my life. Thanks to you Piyush."
+  - name: "Dinesh Fukate"
+    rating: 5
+    comment: "Thorough breakdown of the overall scenario of embedded systems, from CPU to System."
+  - name: "Muthukumar M"
+    rating: 5
+    comment: "Highly Informative & Useful for early professionals and those preferring career switch into embedded systems domain."
+  - name: "Revanth Reddy Pannala"
+    rating: 5
+    comment: "Very thorough introduction and motivation to learn embedded systems and firmware engineering."
+  - name: "Hassam Khan"
+    rating: 5
+    comment: "Nicely explained. For beginners, it can help them choose the right direction."
+  - name: "Ashish Kumar Verma"
+    rating: 5
+    comment: "Fabulous"
 
 instructors:
   - "piyush"

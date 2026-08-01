@@ -94,6 +94,7 @@ div, p {
 
 .bundle-info-container {
   flex: 1 0 70%;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   /* background-color: rgb(255, 255, 224); */
@@ -251,6 +252,90 @@ div, p {
   align-content: flex-start;
 }
 
+.bundle-course-collection-container:has(.bundle-course-card) {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  justify-content: flex-start;
+  align-items: stretch;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 16px 0px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.bundle-course-collection-container:has(.bundle-course-card)::-webkit-scrollbar {
+  display: none;
+}
+
+.bundle-course-row-track {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 24px;
+  min-width: max-content;
+  padding: 0px 16px;
+  will-change: transform;
+}
+
+.bundle-course-row-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 24px;
+  min-width: max-content;
+  animation: bundle-row-loop 40s linear infinite;
+  will-change: transform;
+}
+
+.bundle-course-row-inner-alt {
+  animation: bundle-row-loop-reverse 40s linear infinite;
+}
+
+.bundle-course-collection-container:has(.bundle-course-card):hover .bundle-course-row-inner {
+  animation-play-state: paused;
+}
+
+@keyframes bundle-row-loop {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes bundle-row-loop-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bundle-course-row-inner,
+  .bundle-course-row-inner-alt {
+    animation: none;
+  }
+}
+
+.bundle-course-collection-container:has(.bundle-course-card) .bundle-course-card {
+  flex: 0 0 280px;
+  min-width: 280px;
+  max-width: 280px;
+  scroll-snap-align: start;
+  align-self: stretch;
+  height: auto;
+  min-height: 0;
+}
+
 .bundle-hw-collection-container {
   display: flex;
   flex-wrap: wrap;
@@ -390,6 +475,34 @@ div, p {
   -webkit-backdrop-filter: blur(8px);
 }
 
+.bundle-landing-course-details-dialog-container[open] {
+  animation: bundle-dialog-fade-in 0.3s ease;
+}
+
+.bundle-landing-course-details-dialog-container[open]::backdrop {
+  animation: bundle-dialog-backdrop-in 0.3s ease;
+}
+
+@keyframes bundle-dialog-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-16px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes bundle-dialog-backdrop-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .bundle-landing-dialog-details {
   display: flex;
   flex-wrap: wrap;
@@ -442,6 +555,22 @@ div, p {
   background-color: var(--dimcolor);
   padding: 16px;
   margin: 8px;
+}
+
+.bundle-landing-dialog-description {
+  flex: 1 1 100%;
+  min-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 8px;
+  font: var(--fNormal);
+  color: var(--c80);
+
+  p {
+    flex: 1 1 100%;
+    min-width: 100%;
+    margin: 8px 0px;
+  }
 }
 
 .bundle-landing-course-details-dialog-section-title {
@@ -529,10 +658,14 @@ div, p {
   margin: auto;
   gap: 4px;
   padding: 8px 0px;
+  max-width: 100%;
+  box-sizing: border-box;
   a {
     text-decoration: none;
     flex: 1 1 100%;
     width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 
     button {
       margin: 0 0 8px 0;
@@ -543,6 +676,9 @@ div, p {
 .bundle-landing-footer-sticky-cta-button {
   flex: 1 1 100%;
   min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   height: 42px;
   font-size: var(--fNormal);
   border-radius: 10px;
@@ -803,7 +939,15 @@ div, p {
     min-width: 47%;
   }
 
-  .bundle-landing-course-details-cover {
+  .bundle-course-collection-container:has(.bundle-course-card) .bundle-course-card {
+    min-width: 0;
+    flex: 0 0 280px;
+    max-width: 280px;
+    scroll-snap-align: start;
+    align-self: stretch;
+  }
+
+.bundle-landing-course-details-cover {
     min-width: 100%;
   }
 
@@ -902,6 +1046,14 @@ div, p {
 
   .bundle-course-card {
     min-width: 30%;
+  }
+
+  .bundle-course-collection-container:has(.bundle-course-card) .bundle-course-card {
+    min-width: 0;
+    flex: 0 0 280px;
+    max-width: 280px;
+    scroll-snap-align: start;
+    align-self: stretch;
   }
 
   .bundle-course-card-showcase {

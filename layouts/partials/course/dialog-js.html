@@ -16,8 +16,8 @@
   window.addEventListener('DOMContentLoaded', checkHashAndOpen);
   window.addEventListener('hashchange', checkHashAndOpen);
 
-  function openDialog(cardID) {
-    dialogID = "dialog-"+cardID;
+  function openDialog(courseID) {
+    dialogID = "dialog-card-"+courseID;
     activeDialog = document.getElementById(dialogID)
     activeDialog.showModal();
   }

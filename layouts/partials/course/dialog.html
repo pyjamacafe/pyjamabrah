@@ -1,8 +1,5 @@
 {{ with . }}
 <dialog class="bundle-landing-course-details-dialog-container" id="dialog-card-{{.id}}" closedby="any">
-  {{/*  <div class="bundle-landing-dialog-nav" onclick="closeDialog()">
-  Back
-  </div>  */}}
   <div class="bundle-landing-dialog-details">
       {{ if .title }}
       <div class="bundle-landing-course-details-dialog-title">{{.title | markdownify}}</div>
@@ -12,29 +9,25 @@
       <div class="bundle-landing-subtitle">{{.subtitle | markdownify }}</div>
       {{ end }}
 
-      {{ partial "course/quality-meta.html" . }}
+      {{ if .rating }}
+      <div class="bundle-landing-rating-student-count-container">
+        {{ partial "course/ratingStars.html" .rating }}
+        {{ if .enrolled }}
+        <span> | <b class="bundle-landing-badge bundle-landing-badge-enrolled">{{.enrolled}}</b> Enrolled.</span>
+        {{ end }}
+      </div>
+      {{ end }}
 
       <hr class="bundle-divider-line"/>
 
+      {{ if .contents }}
       {{ if .introduction }}
-      <div class="bundle-landing-introduction">
+      <div class="bundle-landing-dialog-description">
         {{ range .introduction }}
           <p>{{ . | markdownify }}</p>
         {{ end }}
       </div>
       {{ end }}
-
-      {{ if .videoMessage }}
-      {{ partial "course/videoMessage.html" .videoMessage}}
-      {{ end }}
-
-      {{ if .learnings }}
-        <div class="bundle-landing-section-title">What you will learn</div>
-        {{ partial "course/checklist.html" .learnings }}
-      {{ end }}
-
-      {{ if .contents }}
-      <div class="bundle-landing-section-title">Table of Contents</div>
       {{ range .contents }}
         <div class="bundle-landing-course-details-dialog-section-container">
         <div class="bundle-landing-course-details-dialog-section-title">
@@ -59,32 +52,6 @@
         {{ end }}
         </div>
       {{ end }}
-      {{ end }}
-
-      {{ if .sampleCertificate }}
-      <div class="bundle-landing-section-title">Sample Certificate</div>
-      <div class="bundle-course-sample-certificate">
-        <figure>
-        <img loading="lazy" src="{{.sampleCertificate}}"/>
-        </figure>
-        <div class="bundle-course-sample-certificate-caption">Earn a certificate for every technical track by completing 95% of the course work.</div>
-      </div>
-      {{ end }}
-
-      {{ if .difference }}
-        {{ partial "course/differences.html" .difference }}
-      {{ end }}
-
-      {{if .reviews}}
-        {{ partial "course/reviews.html" .reviews }}
-      {{ end }}
-
-      {{ if .audience }}
-        {{ partial "course/audience.html" .audience }}
-      {{ end }}
-
-      {{ if .requirements }}
-        {{ partial "course/requirements.html" .requirements }}
       {{ end }}
   </div>
 
