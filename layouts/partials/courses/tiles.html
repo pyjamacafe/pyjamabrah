@@ -24,6 +24,11 @@
         </div>
         <div class="bundle-course-card-title">{{.title | markdownify}}</div>
         <div class="bundle-course-card-description">{{.subtitle}}</div>
+        {{ with .introduction }}
+        {{ $d := delimit . " " }}
+        {{ if gt (len $d) 150 }}{{ $d = printf "%s..." ((slicestr $d 0 150) | strings.TrimRight " ") }}{{ end }}
+        <div class="bundle-course-card-long-description">{{ $d }}</div>
+        {{ end }}
         {{ partial "course/badges.html" .badges }}
         <div class="bundle-landing-rating-student-count-container">
           {{ partial "course/ratingStars.html" .rating }}
@@ -67,10 +72,11 @@
         {{ end }}
         {{ if .free }}
         <span class="product-free">FREE!</span>
-        {{ end }}
-      {{ end }}
-    </div>
     {{ end }}
+  {{ end }}
+</div>
+</main>
+{{ end }}
 
     <div class="product-stats">
       {{ if .bestseller }}
@@ -90,52 +96,61 @@
 </div>
   */}}
 
-{{/*  Individual Courses, Offered for Free */}}
-	<br/>
-	<hr/>
-	<br/>
-<div class="landingpage-hero" id="partner">
-  <h1>Partner Courses</h1>
-  <p>Courses listed below were developed by Industry Experts and professionals who we trust and recommend. These courses are <b>NOT</b> included in the Library Access</p>
-</div>
-
 {{/*  Partner Courses */}}
-<div class="course-list" >
-  {{ range .Site.Data.courses }} {{ if eq .type "partner"}}
-  <a class="course-card" href="{{ .more }}" >
-    <img src="{{.poster}}"/>
-    <h4 class="post-title"> {{ .title | markdownify }} </h4>
-    <div class="product-subtitle">{{.subtitle | markdownify}}</div>
-
-    {{ if .badges}}
-    <div class="product-stats">
+<main class="bundle-container bundle-partner-section">
+<div class="bundle-info-container" id="partner">
+  <div class="bundle-landing-title">Partner Courses</div>
+  <div class="bundle-landing-subtitle">Courses listed below were developed by Industry Experts and professionals who we trust and recommend. These courses are <b>NOT</b> included in the Library Access.</div>
+</div>
+<div class="bundle-course-collection-container">
+  {{ range .Site.Data.courses }}
+    {{ if eq .type "partner"}}
+      {{ $badges := slice }}
+      {{ if .bestseller }}{{ $badges = $badges | append "Bestseller" }}{{ end }}
       {{ range .badges }}
-        {{ if .beginner }}
-          <span class="product-beginner">Beginner</span>
-        {{ end }}
-        {{ if .intermediate }}
-        <span class="product-intermediate">Intermediate</span>
-        {{ end }}
-        {{ if .free }}
-        <span class="product-free">FREE!</span>
-        {{ end }}
+        {{ if .beginner }}{{ $badges = $badges | append "Beginner" }}{{ end }}
+        {{ if .intermediate }}{{ $badges = $badges | append "Intermediate" }}{{ end }}
+        {{ if .free }}{{ $badges = $badges | append "Free" }}{{ end }}
       {{ end }}
-    </div>
-    {{ end }}
 
-    <div class="product-stats">
-      {{ if .bestseller }}
-        <span class="product-bestseller">Bestseller</span>
+      {{ $highlights := slice }}
+      {{ range .content }}
+        {{ if .videos }}
+          {{ $highlights = $highlights | append (dict "lessonCount" (.videos | markdownify)) }}
+        {{ end }}
+        {{ if .duration }}
+          {{ $highlights = $highlights | append (dict "duration" (.duration | markdownify)) }}
+        {{ end }}
+        {{ if .demo }}
+          {{ $highlights = $highlights | append (dict "projectCount" (.demo | markdownify)) }}
+        {{ end }}
+        {{ if .projects }}
+          {{ $highlights = $highlights | append (dict "projectCount" (.projects | markdownify)) }}
+        {{ end }}
+        {{ if .certificate }}
+          {{ $highlights = $highlights | append (dict "certificate" true) }}
+        {{ end }}
       {{ end }}
-      {{ if .rating }}
-        {{ partial "products/render-stars.html" .rating }}
-      {{ end }}
-    </div>
-    <div class="course-card-content">
-      <p>{{ .description | markdownify }}</p>
-      {{ partial "courses/feature-list.html" .content }}
-      <br/>
-    </div>
-  </a>
-  {{ end }}{{end}}
+
+      <div class="bundle-course-card-showcase" onclick="window.location.href='{{.more}}'">
+        <div class="bundle-course-card-cover">
+          <img loading="lazy" src="{{.poster}}"/>
+        </div>
+        <div class="bundle-course-card-title">{{.title | markdownify}}</div>
+        <div class="bundle-course-card-description">{{.subtitle | markdownify}}</div>
+        {{ with .description }}
+        {{ $d := . }}
+        {{ if gt (len $d) 50 }}{{ $d = printf "%s..." ((slicestr $d 0 50) | strings.TrimRight " ") }}{{ end }}
+        <div class="bundle-course-card-long-description">{{$d}}</div>
+        {{ end }}
+        {{ partial "course/badges.html" $badges }}
+        <div class="bundle-landing-rating-student-count-container">
+          {{ partial "course/ratingStars.html" .rating }}
+        </div>
+        <div class="bundle-sidebar-highlights-container">
+          {{ partial "course/highlights.html" $highlights }}
+        </div>
+      </div>
+    {{ end }}
+  {{ end }}
 </div>

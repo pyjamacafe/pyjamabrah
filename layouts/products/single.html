@@ -1,4 +1,6 @@
 {{ define "main" }}
+  <link rel="stylesheet" href="{{"css/bundle/bundle.css" | relURL }}">
+  {{ $p := (index .Site.Data.courses .Params.product) }}
   <main>
     <article>
       <!-- <h1 class="title">{{ .Title }}</h1> -->
@@ -40,50 +42,10 @@
           {{ end }}
         {{ end }}
         </div>
-        {{ partial "sidebar.html" (index .Site.Data.courses .Params.product) }}
-        {{ partial "products/enroll.html" (index .Site.Data.courses .Params.product) }}
+        {{ partial "products/bundle-sidebar.html" (dict "data" $p "showDescription" (ne $p.type "bundle")) }}
       </div>
     </article>
   </main>
-  <script>
-    const countryPrices = {
-      'US': { halfyearly: 90, yearly: 159.9, halfyearlyOriginal: 449, yearlyOriginal: 799, currency: 'USD', symbol: '$' },
-      'GB': { halfyearly: 95, yearly: 135.99, halfyearlyOriginal: 399, yearlyOriginal: 699, currency: 'GBP', symbol: '£' },
-      'IN': { halfyearly: 8999, yearly: 14999, halfyearlyOriginal: 21999, yearlyOriginal: 39999, currency: 'INR', symbol: '₹' },
-      'default': { halfyearly: 90, yearly: 159.9, halfyearlyOriginal: 449, yearlyOriginal: 799, currency: 'USD', symbol: '$' }
-    };
-
-    async function getCountryCode() {
-      try {
-        // Fetch country code from ipapi.co
-        const response = await fetch('https://ipapi.co/json/');
-        const data = await response.json();
-        return data.country_code || 'default'; // Returns ISO 3166-1 alpha-2 code (e.g., 'US')
-      } catch (error) {
-        console.error('Error fetching country code:', error);
-        return 'default'; // Fallback to default if API fails
-      }
-    }
-
-    async function updateButtonPrices() {
-      const country = await getCountryCode();
-      console.log(country)
-      const prices = countryPrices[country] || countryPrices['default'];
-
-      const halfyearlyBtn = document.querySelector('.btn-halfyearly');
-      const yearlyBtn = document.querySelector('.btn-yearly');
-
-      if (halfyearlyBtn) {
-        halfyearlyBtn.innerHTML = `<s>${prices.symbol}${prices.halfyearlyOriginal}</s> ${prices.symbol}${prices.halfyearly}/6m`;
-      }
-
-      if (yearlyBtn) {
-        yearlyBtn.innerHTML = `<s>${prices.symbol}${prices.yearlyOriginal}</s> ${prices.symbol}${prices.yearly}/yr`;
-      }
-    }
-
-    // Run when DOM is loaded
-    document.addEventListener('DOMContentLoaded', updateButtonPrices);
-  </script>
+  {{ partial "bundle-fade.html" . }}
 {{ end }}
 

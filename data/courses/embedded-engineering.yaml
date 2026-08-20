@@ -28,9 +28,6 @@ content:
 more: "/library"
 ctaText: "Join the Library!"
 enroll:
-  - plan: "Monthly Sub"
-    link: "https://courses.pyjamacafe.com/web/checkout/680ae32052b5ed6c029e8e6b?utm_source=landingpage&utm_medium=web"
-    disabled: true
   - plan: "Yearly (One Time)"
     link: "/offer"
   # - plan: "Free Trail"

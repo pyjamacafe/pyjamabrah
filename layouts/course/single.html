@@ -170,6 +170,9 @@
       <img loading="lazy" src="{{$bundle.cover}}">
       <div class="bundle-sidebar-card-title">{{$bundle.title | markdownify}}</div>
       <div class="bundle-sidebar-card-subtitle">{{$bundle.subtitle | markdownify}}</div>
+      {{ with $bundle.introduction }}
+      <div class="bundle-sidebar-card-description">{{ delimit . " " }}</div>
+      {{ end }}
       {{ partial "course/badges.html" $bundle.badges }}
       <div class="bundle-landing-rating-student-count-container">
       {{ partial "course/ratingStars.html" $bundle.rating }}
@@ -189,4 +192,5 @@
       </div>
     </div>
   </main>
+  {{ partial "bundle-fade.html" . }}
 {{ end }}

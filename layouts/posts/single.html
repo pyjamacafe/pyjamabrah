@@ -1,4 +1,5 @@
 {{ define "main" }}
+  <link rel="stylesheet" href="{{"css/bundle/bundle.css" | relURL }}">
   <main>
     <article>
       <h1 class="title">{{ .Title }}</h1>
@@ -10,9 +11,9 @@
           {{ partial "comments.html" }}
         </div>
         {{ if .Params.product }}
-          {{ partial "sidebar.html" (index .Site.Data.courses .Params.product ) }}
+          {{ partial "products/bundle-sidebar.html" (dict "data" (index .Site.Data.courses .Params.product) "showDescription" true) }}
         {{ else }}
-          {{ partial "sidebar.html" (index .Site.Data.courses "embedded-engineering" ) }}
+          {{ partial "products/bundle-sidebar.html" (dict "data" (index .Site.Data.courses "embedded-engineering") "showDescription" true) }}
         {{end}}
       </div>
     </article>

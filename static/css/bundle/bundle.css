@@ -73,6 +73,14 @@ div, p {
   margin: 0px;
 }
 
+.bundle-container + .bundle-container {
+  margin-top: 24px;
+}
+
+.bundle-partner-section {
+  margin-bottom: 40px;
+}
+
 .fade-section {
   opacity: 0;
   transform: scale(0.96);
@@ -106,6 +114,7 @@ div, p {
   align-self: flex-start;
   position: sticky;
   top: 20px;
+  grid-column: 2;
   border-radius: 20px;
   box-shadow: 10px 10px 20px 0px var(--c50);
   /* border: 1px solid var(--c50); */
@@ -429,6 +438,15 @@ div, p {
   padding: 0px 8px 8px 8px;
   text-align: center;
 
+}
+
+.bundle-course-card-long-description {
+  box-sizing: border-box;
+  font: var(--fSmall);
+  padding: 0px 12px 8px 12px;
+  text-align: center;
+  color: var(--c50);
+  overflow-wrap: break-word;
 }
 
 .bundle-course-sample-certificate {
@@ -811,6 +829,16 @@ div, p {
   flex: 1 1 100%;
   text-align: center;
   font-size: var(--fNormal);
+}
+
+.bundle-sidebar-card-description {
+  box-sizing: border-box;
+  flex: 1 1 100%;
+  text-align: center;
+  font-size: var(--fSmall);
+  color: var(--c50);
+  padding: 6px 24px 10px 24px;
+  overflow-wrap: break-word;
 }
 
 .bundle-landing-instructor-bio-container {

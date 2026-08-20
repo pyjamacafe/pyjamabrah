@@ -1,0 +1,57 @@
+{{ $p := .data }}
+{{ $showDescription := default true .showDescription }}
+
+{{ $badges := slice }}
+{{ if $p.bestseller }}{{ $badges = $badges | append "Bestseller" }}{{ end }}
+{{ range $p.badges }}
+  {{ if .beginner }}{{ $badges = $badges | append "Beginner" }}{{ end }}
+  {{ if .intermediate }}{{ $badges = $badges | append "Intermediate" }}{{ end }}
+  {{ if .free }}{{ $badges = $badges | append "Free" }}{{ end }}
+{{ end }}
+
+{{ $highlights := slice }}
+{{ range $p.content }}
+  {{ if .videos }}{{ $highlights = $highlights | append (dict "lessonCount" (.videos | markdownify)) }}{{ end }}
+  {{ if .duration }}{{ $highlights = $highlights | append (dict "duration" (.duration | markdownify)) }}{{ end }}
+  {{ if .demo }}{{ $highlights = $highlights | append (dict "projectCount" (.demo | markdownify)) }}{{ end }}
+  {{ if .projects }}{{ $highlights = $highlights | append (dict "projectCount" (.projects | markdownify)) }}{{ end }}
+  {{ if .downloads }}{{ $highlights = $highlights | append (dict "downloadableResources" (.downloads | markdownify)) }}{{ end }}
+  {{ if .certificate }}{{ $highlights = $highlights | append (dict "certificate" true) }}{{ end }}
+{{ end }}
+
+<div class="bundle-sidebar-card">
+  {{ if $p.more }}
+  <a class="product-img-container" href="{{$p.more}}">
+    <img loading="lazy" src="{{$p.poster}}"/>
+  </a>
+  {{ else }}
+  <div class="product-img-container">
+    <img loading="lazy" src="{{$p.poster}}"/>
+  </div>
+  {{ end }}
+  <div class="bundle-sidebar-card-title">{{$p.title | markdownify}}</div>
+  <div class="bundle-sidebar-card-subtitle">{{$p.subtitle | markdownify}}</div>
+  {{ if and $p.description $showDescription }}
+  <div class="bundle-sidebar-card-description">{{$p.description | markdownify}}</div>
+  {{ end }}
+  {{ partial "course/badges.html" $badges }}
+  <div class="bundle-landing-rating-student-count-container">
+    {{ partial "course/ratingStars.html" $p.rating }}
+  </div>
+  <div class="bundle-sidebar-highlights-container">
+    {{ partial "course/highlights.html" $highlights }}
+  </div>
+  <hr class="bundle-landing-sidebar-cta-hr">
+  <div class="bundle-landing-sidebar-cta">
+    {{ if $p.discount.code }}
+    <div class="bundle-cta-footer">Use code <span class="bundle-landing-discount-text">{{$p.discount.code}}</span> for {{$p.discount.percentage}} off!</div>
+    {{ end }}
+    <div class="bundle-landing-footer-sticky-ctas">
+      {{ range $p.enroll }}
+        <a href="{{ .link }}" target="_blank">
+          <button class="bundle-landing-footer-sticky-cta-button bundle-landing-footer-sticky-cta-button-primary">{{ .plan }}</button>
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</div>
