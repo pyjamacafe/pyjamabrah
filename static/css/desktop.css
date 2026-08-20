@@ -1,20 +1,25 @@
 @media all and (width > 1024px) {
   .post-container {
-    display: grid;
-    column-gap: 10px;
-    grid-template-columns: 69% 30%
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
   }
 
   .post-content {
-    grid-column: 1;
+    flex: 1 1 auto;
+    min-width: 0;
   }
 
   .sidebar {
-    grid-column: 2;
+    flex: 0 0 30%;
     padding: 10px;
-    height: fit-content;
     position: sticky;
     top: 10px;
+  }
+
+  .post-container .bundle-sidebar-card {
+    flex: 0 0 30%;
+    width: 100%;
   }
 
   .blog-card {
