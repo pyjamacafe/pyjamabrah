@@ -1,21 +1,28 @@
 @font-face {
-  font-family: 'Iosevka';
-  src: local('Iosevka'),
-    url('/fonts/iosevka-regular.woff2') format("woff2");
-  font-weight: normal;
+  font-family: 'Zed Mono Nerd Font';
+  src: local('Zed Mono Nerd Font'),
+    url('/fonts/ZedMonoNerdFont-Regular.woff2') format("woff2");
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Iosevka';
-  src: local('Iosevka'),
-    url('/fonts/iosevka-bold.woff2') format("woff2");
-  font-weight: bold;
-  font-style: bold;
+  font-family: 'Zed Mono Nerd Font';
+  src: local('Zed Mono Nerd Font'),
+    url('/fonts/ZedMonoNerdFont-Medium.woff2') format("woff2");
+  font-weight: 500;
+  font-style: normal;
 }
 @font-face {
-  font-family: 'Iosevka';
-  src: local('Iosevka'),
-    url('/fonts/iosevka-oblique.woff2') format("woff2");
-  font-weight: italic;
-  font-style: italic;
+  font-family: 'Zed Mono Nerd Font';
+  src: local('Zed Mono Nerd Font'),
+    url('/fonts/ZedMonoNerdFont-Medium.woff2') format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Zed Mono Nerd Font';
+  src: local('Zed Mono Nerd Font'),
+    url('/fonts/ZedMonoNerdFont-Bold.woff2') format("woff2");
+  font-weight: 700;
+  font-style: normal;
 }

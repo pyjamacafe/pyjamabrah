@@ -6,7 +6,7 @@
   --padding: 8px;
   --color-border: rgb(0, 0, 0);
 
-  --ff: "Iosevka", sans-serif;
+  --ff: "Zed Mono Nerd Font", "Iosevka", sans-serif;
 
   --fTitle: bold clamp(1.5rem/1.4 , 2vw + 1rem, 4rem/1.4) var(--ff);
   --fSubTitle: clamp(1rem/1.4 , 2vw + 1rem, 1.5rem/1.4) var(--ff);
