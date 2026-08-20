@@ -1,0 +1,62 @@
+<script>
+(function() {
+  var ALERTS = { 'tip': 'Tip', 'note': 'Note', 'important': 'Important', 'warning': 'Warning', 'caution': 'Caution' };
+
+  function initCallouts() {
+    var quotes = document.querySelectorAll('blockquote');
+    quotes.forEach(function(q) {
+      if (q.querySelector('.admonition')) return;
+      var firstP = q.querySelector('p');
+      if (!firstP) return;
+      var text = firstP.textContent || '';
+      var m = text.match(/^\s*\[!\s*([A-Za-z]+)\s*\]/);
+      if (!m) return;
+      var type = m[1].toLowerCase();
+      if (!ALERTS[type]) return;
+
+      // Extract the title, hiding the old token line.
+      var tokenLen = m[0].length;
+
+      // Build the callout.
+      var admonition = document.createElement('div');
+      admonition.className = 'admonition admonition-' + type;
+
+      var title = document.createElement('div');
+      title.className = 'admonition-title';
+      title.textContent = ALERTS[type];
+      admonition.appendChild(title);
+
+      var body = document.createElement('div');
+      body.className = 'admonition-body';
+
+      // Keep the remaining content after the token.
+      [].slice.call(q.childNodes).forEach(function(node, idx) {
+        if (idx === 0) {
+          // first paragraph: strip the token text, preserve the rest
+          if (node.nodeType === Node.TEXT_NODE || node.tagName === 'P') {
+            var content = node.innerHTML;
+            // Remove the leading [!!TYPE] token (including any whitespace/line breaks after).
+            content = content.replace(/^[^<]*\[\s*[.!]?\s*[A-Za-z]+\s*\]\s*\n?/, '');
+            if (content.trim()) {
+              var p = document.createElement('p');
+              p.innerHTML = content;
+              body.appendChild(p);
+            }
+          }
+        } else {
+          body.appendChild(node.cloneNode(true));
+        }
+      });
+
+      admonition.appendChild(body);
+      q.parentNode.replaceChild(admonition, q);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCallouts);
+  } else {
+    initCallouts();
+  }
+})();
+</script>

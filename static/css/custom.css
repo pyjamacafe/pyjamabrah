@@ -649,12 +649,59 @@ figure > img {
 }
 
 blockquote {
-  border-left:rgb(175, 175, 175) solid 5px;
-  margin: 0px;
-  padding: 2px 0px 2px 5px;
-  font-style: italic;
-  background-image: linear-gradient(to right, rgba(200, 200, 200, 0.283) , rgba(255, 255, 255, 0));
+  margin: 16px 0;
+  padding: 8px 16px;
+  border-left: 4px solid var(--cafe);
+  border-radius: 0 6px 6px 0;
+  background-color: var(--dimcolor);
+  color: var(--fontcolor);
 }
+
+blockquote p {
+  margin: 0.5em 0;
+}
+
+blockquote p:first-child {
+  margin-top: 0;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.admonition {
+  margin: 16px 0;
+  padding: 12px 16px;
+  border-left: 4px solid var(--admonition-accent);
+  border-radius: 0 6px 6px 0;
+  background-color: var(--admonition-bg);
+  color: var(--fontcolor);
+}
+
+.admonition-title {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: var(--admonition-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+}
+
+.admonition-body p {
+  margin: 0.5em 0;
+}
+.admonition-body p:first-child {
+  margin-top: 0;
+}
+.admonition-body p:last-child {
+  margin-bottom: 0;
+}
+
+.admonition-note       { --admonition-accent: var(--admonition-note);       --admonition-bg: var(--admonition-note-bg); }
+.admonition-tip        { --admonition-accent: var(--admonition-tip);        --admonition-bg: var(--admonition-tip-bg); }
+.admonition-important  { --admonition-accent: var(--admonition-important);  --admonition-bg: var(--admonition-important-bg); }
+.admonition-warning    { --admonition-accent: var(--admonition-warning);    --admonition-bg: var(--admonition-warning-bg); }
+.admonition-caution    { --admonition-accent: var(--admonition-caution);    --admonition-bg: var(--admonition-caution-bg); }
 
 code {
   line-height: 1.5rem;
@@ -721,13 +768,18 @@ code {
 }
 
 /* Inline <code> should not inherit block styling (GitHub inline code) */
+.post-content p,
+article p {
+  line-height: 1.8;
+}
+
 p > code, li > code {
   color: var(--fontcolor);
   font-weight: 600;
   font-size: 13.6px;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
   line-height: inherit;
-  padding: 0.2em 0.4em;
+  padding: 0.15em 0.4em;
   border-radius: 6px;
   background-color: var(--syntax-inline-bg);
 }

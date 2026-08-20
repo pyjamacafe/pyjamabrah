@@ -55,6 +55,17 @@ markup:
     lineNumbersInTable: false  # Render line numbers inline (no table wrapper)
     tabWidth: 4
     anchorLineNos: true
+  goldmark:
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - ["$$", "$$"]
+            - ["\\[", "\\]"]
+          inline:
+            - ["$", "$"]
+            - ["\\(", "\\)"]
 
 params:
   subtitle: "Lowering the Barrier to learning Embedded Systems!"

@@ -116,7 +116,7 @@ div, p {
   top: 20px;
   grid-column: 2;
   border-radius: 20px;
-  box-shadow: 10px 10px 20px 0px var(--c50);
+  box-shadow: 0px 0px 10px 0px var(--prebgcolor);
   /* border: 1px solid var(--c50); */
   background-color: var(--dimcolor);
 
