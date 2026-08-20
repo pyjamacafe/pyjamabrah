@@ -24,11 +24,11 @@
     cursor: pointer;
     color: var(--fontcolor) !important;
     transition-duration: 0.5s;
-    /* box-shadow: 0px 0px 10px 0px var(--shadow); */
+    box-shadow: 0px 0px 10px 0px var(--prebgcolor);
   }
 
   .blog-card:hover {
-    box-shadow: 0px 0px 10px 0px var(--shadowDard);
+    box-shadow: 0px 0px 4px 0px var(--prebgcolor);
     text-decoration: none;
   }
 
