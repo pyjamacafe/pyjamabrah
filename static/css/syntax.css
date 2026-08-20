@@ -1,0 +1,147 @@
+/* GitHub light/dark syntax highlighting (Primer palette)
+   Mapped to Hugo/Chroma class names emitted with noClasses: false. */
+
+.highlight code,
+.highlight pre {
+  background-color: transparent !important;
+  color: var(--syntax-foreground);
+}
+
+/* Comments */
+.chroma .c1,
+.chroma .cm,
+.chroma .c,
+.chroma .c1,
+.chroma .ch {
+  color: var(--syntax-comment);
+  font-style: italic;
+}
+
+/* Preprocessor */
+.chroma .cp,
+.chroma .cpf {
+  color: var(--syntax-comment);
+}
+
+/* Keyword */
+.chroma .k,
+.chroma .kr,
+.chroma .kd,
+.chroma .kn {
+  color: var(--syntax-keyword);
+}
+
+/* Keyword type */
+.chroma .kt {
+  color: var(--syntax-keyword);
+}
+
+/* String & string variants */
+.chroma .s,
+.chroma .s2,
+.chroma .sb,
+.chroma .sc,
+.chroma .se,
+.chroma .sh,
+.chroma .si {
+  color: var(--syntax-string);
+}
+
+/* Number & number variants */
+.chroma .m,
+.chroma .mf,
+.chroma .mh,
+.chroma .mi,
+.chroma .mo,
+.chroma .mb {
+  color: var(--syntax-number);
+}
+
+/* Function / method name */
+.chroma .nf,
+.chroma .nl {
+  color: var(--syntax-function);
+}
+
+/* Label / name */
+.chroma .nl {
+  color: var(--syntax-function);
+}
+
+/* Tag names (HTML/asm) */
+.chroma .nt {
+  color: var(--syntax-keyword);
+}
+
+/* Class names */
+.chroma .nc {
+  color: var(--syntax-function);
+}
+
+/* Attribute names */
+.chroma .na {
+  color: var(--syntax-constant);
+}
+
+/* Constants */
+.chroma .no,
+.chroma .nb {
+  color: var(--syntax-constant);
+}
+
+/* Variables */
+.chroma .nv,
+.chroma .vc,
+.chroma .vg,
+.chroma .vi {
+  color: var(--syntax-variable);
+}
+
+/* Builtin / generic identifier */
+.chroma .n {
+  color: var(--syntax-foreground);
+}
+
+/* Operator */
+.chroma .o,
+.chroma .ow {
+  color: var(--syntax-operator);
+}
+
+/* Punctuation */
+.chroma .p {
+  color: var(--syntax-punctuation);
+}
+
+/* Error */
+.chroma .err {
+  color: var(--syntax-keyword);
+}
+
+/* Generic output / prompt */
+.chroma .go {
+  color: var(--syntax-comment);
+}
+.chroma .gp {
+  color: var(--syntax-comment);
+}
+
+/* Whitespace */
+.chroma .w {
+  color: var(--syntax-comment);
+}
+
+/* Line number gutter (lineNumbersInTable: false -> inline .ln) */
+.chroma .ln,
+.chroma .lnt {
+  color: var(--syntax-gutter);
+  margin-right: 0.6em;
+  padding: 0 0.4em 0 0;
+  user-select: none;
+  white-space: pre;
+  text-align: right;
+}
+.chroma .lnlinks a {
+  color: inherit;
+  text-decoration: none;
+}

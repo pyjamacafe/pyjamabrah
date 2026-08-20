@@ -20,6 +20,23 @@ html {
   --section-title-background: #000000;
   --cafe: #ff1423;
   --chapter: #005eff;
+
+  /* GitHub light syntax + codebox */
+  --syntax-bg: #f6f8fa;
+  --syntax-header-bg: #f6f8fa;
+  --syntax-inline-bg: rgba(175, 184, 193, 0.2);
+  --syntax-border: #d0d7de;
+  --syntax-gutter: #6e7781;
+  --syntax-foreground: #1f2328;
+  --syntax-comment: #6e7781;
+  --syntax-keyword: #cf222e;
+  --syntax-string: #0a3069;
+  --syntax-number: #0550ae;
+  --syntax-function: #8250df;
+  --syntax-variable: #953800;
+  --syntax-operator: #0550ae;
+  --syntax-punctuation: #24292f;
+  --syntax-constant: #0550ae;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -42,6 +59,23 @@ html {
      --section-title-background: #ff0000;
      --cafe: #FFE15C;
      --chapter: #5df7ff;
+
+  /* GitHub dark syntax + codebox */
+  --syntax-bg: #161b22;
+  --syntax-header-bg: #161b22;
+  --syntax-inline-bg: rgba(110, 118, 129, 0.4);
+  --syntax-border: #30363d;
+  --syntax-gutter: #8b949e;
+  --syntax-foreground: #e6edf3;
+  --syntax-comment: #8b949e;
+  --syntax-keyword: #ff7b72;
+  --syntax-string: #a5d6ff;
+  --syntax-number: #79c0ff;
+  --syntax-function: #d2a8ff;
+  --syntax-variable: #ffa657;
+  --syntax-operator: #79c0ff;
+  --syntax-punctuation: #c9d1d9;
+  --syntax-constant: #79c0ff;
   }
 }
 

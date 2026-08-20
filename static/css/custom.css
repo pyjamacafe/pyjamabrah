@@ -677,7 +677,99 @@ code {
 }
 
 .highlight {
+  position: relative;
+  border: 1px solid var(--syntax-border);
+  border-radius: 6px;
+  background-color: var(--syntax-bg);
+  margin: 16px 0;
+  overflow: hidden;
+}
 
+.highlight pre {
+  margin: 0;
+  padding: 16px;
+  overflow: auto;
+  background-color: var(--syntax-bg) !important;
+  color: var(--syntax-foreground);
+  line-height: 1.45;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 13.6px;
+  font-weight: normal;
+  tab-size: 4;
+  -moz-tab-size: 4;
+  white-space: pre;
+  word-break: normal;
+  word-wrap: normal;
+}
+
+.highlight code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 13.6px;
+  font-weight: normal;
+  background-color: transparent !important;
+  color: var(--syntax-foreground);
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  display: inline;
+  line-height: inherit;
+  overflow: visible;
+  word-break: normal;
+  word-wrap: normal;
+  overflow-wrap: normal;
+}
+
+/* Inline <code> should not inherit block styling (GitHub inline code) */
+p > code, li > code {
+  color: var(--fontcolor);
+  font-weight: 600;
+  font-size: 13.6px;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  line-height: inherit;
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+  background-color: var(--syntax-inline-bg);
+}
+
+/* Header / file label bar */
+.code-block-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  border-bottom: 1px solid var(--syntax-border);
+  background-color: var(--syntax-header-bg);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 12px;
+  min-height: 32px;
+  color: var(--syntax-comment);
+}
+
+.code-block-lang {
+  text-transform: lowercase;
+  font-weight: 600;
+}
+
+.code-block-copy {
+  background: transparent;
+  border: 1px solid var(--syntax-border);
+  border-radius: 6px;
+  color: var(--syntax-comment);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 12px;
+  padding: 2px 10px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.code-block-copy:hover {
+  background-color: var(--syntax-border);
+  color: var(--syntax-foreground);
+}
+
+.code-block-copy.copied {
+  color: var(--tick-green);
 }
 
 .btn-newsletter {

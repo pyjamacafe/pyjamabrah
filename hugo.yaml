@@ -50,8 +50,9 @@ menu:
 markup:
   highlight:
     codeFences: true     # Enables fenced code block highlighting (already set)
+    noClasses: false     # Use markdown classes (not inline styles) so we can theme via CSS
     lineNos: true        # Adds line numbers to code blocks
-    lineNumbersInTable: true  # Optional: uses a table layout for line numbers
+    lineNumbersInTable: false  # Render line numbers inline (no table wrapper)
     tabWidth: 4
     anchorLineNos: true
 
@@ -70,6 +71,7 @@ params:
    - "css/desktop.css"
    - "css/sidebar/sidebar.css"
    - "css/landing/landingpage.css"
+   - "css/syntax.css"
   readingSpeed: 600 # Use to set custom reading speed
   readingSpeedMin: 25 # Use to set custom reading speed range
   readingSpeedMax: 175 # Use to set custom reading speed range

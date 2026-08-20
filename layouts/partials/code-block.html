@@ -1,0 +1,88 @@
+<script>
+(function() {
+  function initCodeBlocks() {
+    var blocks = document.querySelectorAll('.highlight');
+    blocks.forEach(function(highlight) {
+      if (highlight.querySelector('.code-block-header')) return;
+
+      var code = highlight.querySelector('code[class*="language-"]');
+      if (!code) return;
+
+      var lang = '';
+      var m = code.getAttribute('class') && code.getAttribute('class').match(/language-([a-zA-Z0-9+_-]+)/);
+      if (m) lang = m[1];
+      if (!lang && code.getAttribute('data-lang')) lang = code.getAttribute('data-lang');
+
+      var header = document.createElement('div');
+      header.className = 'code-block-header';
+
+      var langEl = document.createElement('span');
+      langEl.className = 'code-block-lang';
+      langEl.textContent = lang || 'code';
+
+      var copyBtn = document.createElement('button');
+      copyBtn.type = 'button';
+      copyBtn.className = 'code-block-copy';
+      copyBtn.textContent = 'Copy';
+      copyBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        var text = getCodeText(code);
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(function() {
+            flashCopied(copyBtn);
+          });
+        } else {
+          var ta = document.createElement('textarea');
+          ta.value = text;
+          document.body.appendChild(ta);
+          ta.select();
+          try { document.execCommand('copy'); flashCopied(copyBtn); } catch (err) {}
+          document.body.removeChild(ta);
+        }
+      });
+
+      header.appendChild(langEl);
+      header.appendChild(copyBtn);
+
+      highlight.insertBefore(header, highlight.firstChild);
+    });
+
+    function getCodeText(code) {
+      // Extract code text without line-number gutters.
+      var lines = code.querySelectorAll('span.line');
+      if (lines.length) {
+        var parts = [];
+        lines.forEach(function(line) {
+          var lineText = '';
+          line.childNodes.forEach(function(node) {
+            if (node.nodeType === Node.TEXT_NODE) {
+              lineText += node.textContent;
+            } else if (node.classList && !node.classList.contains('ln') && !node.classList.contains('lnt')) {
+              lineText += node.textContent;
+            }
+          });
+          parts.push(lineText.replace(/\n$/, ''));
+        });
+        return parts.join('\n');
+      }
+      return code.textContent.replace(/^[\s\S]*?>\s*\d+\s*$/m, '');
+    }
+
+    function flashCopied(btn) {
+      var original = btn.textContent;
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+      setTimeout(function() {
+        btn.textContent = original;
+        btn.classList.remove('copied');
+      }, 1500);
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCodeBlocks);
+  } else {
+    initCodeBlocks();
+  }
+})();
+</script>
