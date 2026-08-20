@@ -768,8 +768,12 @@ code {
 }
 
 /* Inline <code> should not inherit block styling (GitHub inline code) */
+.post-content,
 .post-content p,
-article p {
+.post-content li,
+.post-content blockquote,
+.post-content .admonition-body,
+article {
   line-height: 1.8;
 }
 
