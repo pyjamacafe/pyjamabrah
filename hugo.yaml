@@ -68,7 +68,7 @@ markup:
             - ["\\(", "\\)"]
 
 params:
-  subtitle: "Lowering the Barrier to learning Embedded Systems!"
+  subtitle: "You are not late. You are loading!"
   description: "Lowering the Barrier to learning Embedded Systems!"
   thumbnail: "/opengraph.png"
   math: true

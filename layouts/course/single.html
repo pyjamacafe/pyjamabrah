@@ -171,7 +171,9 @@
       <div class="bundle-sidebar-card-title">{{$bundle.title | markdownify}}</div>
       <div class="bundle-sidebar-card-subtitle">{{$bundle.subtitle | markdownify}}</div>
       {{ with $bundle.introduction }}
-      <div class="bundle-sidebar-card-description">{{ delimit . " " }}</div>
+      {{ $desc := delimit . " " }}
+      {{ if gt (len $desc) 150 }}{{ $desc = printf "%s..." ((slicestr $desc 0 150) | strings.TrimRight " ") }}{{ end }}
+      <div class="bundle-sidebar-card-description">{{ $desc }}</div>
       {{ end }}
       {{ partial "course/badges.html" $bundle.badges }}
       <div class="bundle-landing-rating-student-count-container">

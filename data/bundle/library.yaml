@@ -103,7 +103,7 @@ hardware:
     description: "The Rpi-PICO 2 is a great low cost board to learn RISC-V, ARM-M33 and multi-core controller based application."
   - title: "QEMU Emulator"
     image: "/images/hw/qemu.png"
-    description: "The Rpi-PICO 2 is a great low cost board to learn RISC-V, ARM-M33 and multi-core controller based application."
+    description: "A free, open-source machine emulator that lets you run and debug the ARM Cortex-M, ARM Cortex-A and RISC-V based course targets entirely in software — no physical hardware required for the emulator-based experiments."
 courses:
   - "roadmap"
   - "book"

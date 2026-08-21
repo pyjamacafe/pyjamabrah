@@ -140,7 +140,7 @@
         <div class="bundle-course-card-description">{{.subtitle | markdownify}}</div>
         {{ with .description }}
         {{ $d := . }}
-        {{ if gt (len $d) 50 }}{{ $d = printf "%s..." ((slicestr $d 0 50) | strings.TrimRight " ") }}{{ end }}
+        {{ if gt (len $d) 150 }}{{ $d = printf "%s..." ((slicestr $d 0 150) | strings.TrimRight " ") }}{{ end }}
         <div class="bundle-course-card-long-description">{{$d}}</div>
         {{ end }}
         {{ partial "course/badges.html" $badges }}

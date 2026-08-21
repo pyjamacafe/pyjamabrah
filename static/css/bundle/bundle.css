@@ -443,6 +443,7 @@ div, p {
 .bundle-course-card-long-description {
   box-sizing: border-box;
   font: var(--fSmall);
+  font-size: 0.75rem;
   padding: 0px 12px 8px 12px;
   text-align: center;
   color: var(--c50);
@@ -835,7 +836,7 @@ div, p {
   box-sizing: border-box;
   flex: 1 1 100%;
   text-align: center;
-  font-size: var(--fSmall);
+  font-size: 0.75rem;
   color: var(--c50);
   padding: 6px 24px 10px 24px;
   overflow-wrap: break-word;

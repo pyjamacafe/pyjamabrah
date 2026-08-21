@@ -62,22 +62,32 @@
           <div class="bundle-course-row-inner {{ if eq (mod $n 2) 0 }}bundle-course-row-inner-alt{{ end }}">
           {{ range $chunk }}
             {{$c := (index $courselist .) }}
+            {{$desc := delimit $c.introduction " " }}
+            {{ if gt (len $desc) 150 }}{{ $desc = printf "%s..." ((slicestr $desc 0 150) | strings.TrimRight " ") }}{{ end }}
             <div onclick="openDialog('{{$c.id}}')" class="bundle-course-card">
               <div class="bundle-course-card-cover">
                 <img loading="lazy" src="{{$c.cover}}"/>
               </div>
               <div class="bundle-course-card-title">{{$c.title}}</div>
               <div class="bundle-course-card-description">{{$c.subtitle}}</div>
+              {{ with $desc }}
+              <div class="bundle-course-card-long-description">{{.}}</div>
+              {{ end }}
             </div>
           {{ end }}
           {{ range $chunk }}
             {{$c := (index $courselist .) }}
+            {{$desc := delimit $c.introduction " " }}
+            {{ if gt (len $desc) 150 }}{{ $desc = printf "%s..." ((slicestr $desc 0 150) | strings.TrimRight " ") }}{{ end }}
             <div onclick="openDialog('{{$c.id}}')" class="bundle-course-card">
               <div class="bundle-course-card-cover">
                 <img loading="lazy" src="{{$c.cover}}"/>
               </div>
               <div class="bundle-course-card-title">{{$c.title}}</div>
               <div class="bundle-course-card-description">{{$c.subtitle}}</div>
+              {{ with $desc }}
+              <div class="bundle-course-card-long-description">{{.}}</div>
+              {{ end }}
             </div>
           {{ end }}
           </div>

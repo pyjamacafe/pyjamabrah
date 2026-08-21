@@ -32,7 +32,9 @@
   <div class="bundle-sidebar-card-title">{{$p.title | markdownify}}</div>
   <div class="bundle-sidebar-card-subtitle">{{$p.subtitle | markdownify}}</div>
   {{ if and $p.description $showDescription }}
-  <div class="bundle-sidebar-card-description">{{$p.description | markdownify}}</div>
+  {{ $desc := $p.description }}
+  {{ if gt (len $desc) 150 }}{{ $desc = printf "%s..." ((slicestr $desc 0 150) | strings.TrimRight " ") }}{{ end }}
+  <div class="bundle-sidebar-card-description">{{$desc | markdownify}}</div>
   {{ end }}
   {{ partial "course/badges.html" $badges }}
   <div class="bundle-landing-rating-student-count-container">
