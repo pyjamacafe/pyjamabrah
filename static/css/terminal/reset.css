@@ -12,8 +12,8 @@ html {
   --prebgcolor: #050505;
   --theme-primary: #ffe600;
   --showcase-background: rgba(0, 255, 0, 0.05);
-  --linecolor: #4a4a4a;
-  --btn-border: #00ff00;
+  --linecolor: var(--syntax-border);
+  --btn-border: var(--syntax-border);
   --tick-green: #00ff00;
   --shadow: rgba(0, 255, 0, 0.20);
   --shadowDard: rgba(0, 255, 0, 0.35);

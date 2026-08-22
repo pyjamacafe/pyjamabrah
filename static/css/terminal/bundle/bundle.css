@@ -398,15 +398,13 @@ div, p {
 }
 
 .bundle-course-card:hover {
-  box-shadow: 0px 0px 4px 0px var(--prebgcolor);
+  box-shadow: none;
   cursor: pointer;
-  transform: scale(1.025);
 }
 
 .bundle-course-card-showcase:hover {
-  box-shadow: 0px 0px 4px 0px var(--prebgcolor);
+  box-shadow: none;
   cursor: pointer;
-  transform: scale(1.025);
 }
 
 .bundle-course-card-cover {
@@ -712,7 +710,7 @@ div, p {
   border-radius: 10px;
   padding: 8px 20px;
   background-color: var(--bgcolor);
-  border-color: var(--prebgcolor);
+  border-color: var(--syntax-border);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -884,7 +882,7 @@ div, p {
 }
 
 .bundle-landing-todo {
-  border: 1px dotted black;
+  border: 1px dotted var(--syntax-border);
   background-color: azure;
 }
 
@@ -1160,7 +1158,7 @@ div, p {
 
 .bundle-course-card:hover,
 .bundle-course-card-showcase:hover {
-  box-shadow: 0 0 8px rgba(0, 255, 0, 0.35);
+  box-shadow: none;
 }
 
 .bundle-landing-course-details-dialog-container {

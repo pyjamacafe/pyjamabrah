@@ -19,8 +19,20 @@ a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 summary:focus-visible {
-  outline: 1px solid var(--btn-border);
+  outline: 1px solid var(--tick-green);
   outline-offset: 2px;
+}
+
+/* suppress the browser's default (thick, light) focus ring on mouse focus;
+   keyboard focus keeps the green ring above */
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+summary:focus:not(:focus-visible),
+input:focus:not(:focus-visible),
+select:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible),
+div[onclick]:focus:not(:focus-visible) {
+  outline: none;
 }
 
 /* ---------- type ---------- */
@@ -52,12 +64,21 @@ summary:focus-visible {
 .course-card:hover,
 .bundle-course-card:hover,
 .bundle-course-card-showcase:hover {
-  box-shadow: 0 0 8px rgba(0, 255, 0, 0.35) !important;
+  box-shadow: none !important;
+  background-color: var(--syntax-border);
+  color: var(--syntax-foreground) !important;
 }
 
-/* glowing focus for the product cover */
+.blog-card:hover *,
+.course-card:hover *,
+.bundle-course-card:hover *,
+.bundle-course-card-showcase:hover * {
+  color: var(--syntax-foreground) !important;
+}
+
+/* product cover has no hover glow/shadows */
 .cover-image:hover {
-  box-shadow: 0 0 12px var(--tick-green) !important;
+  box-shadow: none !important;
 }
 
 /* ---------- buttons (match the codeblock copy button) ---------- */
@@ -279,7 +300,13 @@ body::after {
 }
 
 .post-card:hover {
-  box-shadow: 0 0 8px rgba(0, 255, 0, 0.35);
+  box-shadow: none;
+  background-color: var(--syntax-border);
+  transform: none;
+}
+
+.post-card:hover * {
+  color: var(--syntax-foreground) !important;
 }
 
 /* brand icon as a circular white-framed chip */

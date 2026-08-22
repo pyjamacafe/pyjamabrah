@@ -61,7 +61,7 @@ button:hover {
   cursor: not-allowed; /* Changes the cursor on hover */
   background-color: #cccccc; /* Custom background color */
   color: #666666; /* Custom text color */
-  border: 1px solid #999999;
+  border: 1px solid var(--syntax-border);
 }
 
 input {
@@ -95,7 +95,7 @@ input {
 }
 
 .cover-image:hover {
-  box-shadow: 0px 0px 10px 1px var(--prebgcolor);
+  box-shadow: none;
 }
 
 #content {
@@ -572,7 +572,7 @@ th, td {
     text-decoration: none;
     background-color: var(--tick-green);
     color: var(--bgcolor);
-    box-shadow: 0px 0px 4px 1px var(--linecolor);
+    box-shadow: none;
 }
 
 .razorpay-payment-button {
@@ -585,7 +585,7 @@ th, td {
 }
 
 .razorpay-payment-button:hover {
-  box-shadow: 0px 0px 20px 0px var(--shadow);
+  box-shadow: none;
   text-decoration: none;
 }
 

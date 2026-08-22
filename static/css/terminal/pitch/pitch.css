@@ -131,7 +131,7 @@
     border-radius: 3px;
     font-size: 12px;
     text-align: center;
-    border: 1px black solid;
+    border: 1px var(--syntax-border) solid;
     font-weight: bold;
 }
 
@@ -371,7 +371,7 @@
 
 .pitch-full-img {
   max-width: 80%;
-  border: 1px var(--fontcolor) solid;
+  border: 1px var(--syntax-border) solid;
 }
 
 .pitch-half-image-framed {
