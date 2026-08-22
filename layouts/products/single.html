@@ -1,51 +1,35 @@
 {{ define "main" }}
   <link rel="stylesheet" href="{{ printf "css/%s/bundle/bundle.css" (partial "theme-name.html" .) | relURL }}">
   {{ $p := (index .Site.Data.courses .Params.product) }}
-  <main>
-    <article>
-      <!-- <h1 class="title">{{ .Title }}</h1> -->
-      <div class="content post-container">
-        <div class="post-content">
-          {{ if .Params.param.bundle }}
-            {{ range .Params.param.bundle }}
-                {{/*  <hr/>  */}}
-                <div class="course-name">
-                  <h2 class="course-title">{{ .course }}</h2>
-                  <div class="course-subtitle">{{ .subtitle | markdownify }}</div>
-                </div>
-                <div class="details-body">
-                  {{ partial "products/description.html" . }}
-                  {{ partial "products/content-summary.html" . }}
-                  {{ partial "products/message.html" . }}
-                  {{ partial "products/learning.html" . }}
-                  {{/*  {{ partial "products/preview.html" . }}  */}}
-                  {{ partial "products/sections-list.html" . }}
-                </div>
-            {{ end }}
-          {{ end }}
-          {{ if .Content}}
-            <span id="note"></span>
-            {{ .Content }}
-          {{ end }}
-          {{ if .Params.param.bundle }}
-          {{ $creatorsDatabase := .Site.Data.creators}}
-          {{ range .Params.param.bundle }}
-              <div class="details-body">
-                {{ partial "products/certificate.html" . }}
-                {{ partial "products/compare.html" . }}
-                {{ partial "creators/instructors.html" (dict "courseCreators" .creators "creatorDatabase" $creatorsDatabase) }}
-                {{ partial "products/reviews.html" }}
-                {{ partial "products/requirements.html" . }}
-                {{ partial "products/audience.html" . }}
-                {{ partial "products/faqs.html" . }}
-              </div>
-          {{ end }}
+  <main class="bundle-container">
+    <div class="bundle-info-container">
+      {{ if .Params.param.bundle }}
+        {{ range .Params.param.bundle }}
+          {{ partial "products/description.html" . }}
+          {{ partial "products/content-summary.html" . }}
+          {{ partial "products/message.html" . }}
+          {{ partial "products/learning.html" . }}
+          {{ partial "products/sections-list.html" . }}
         {{ end }}
-        </div>
-        {{ partial "products/bundle-sidebar.html" (dict "data" $p "showDescription" (ne $p.type "bundle")) }}
-      </div>
-    </article>
+      {{ end }}
+      {{ if .Content}}
+        <span id="note"></span>
+        {{ .Content }}
+      {{ end }}
+      {{ if .Params.param.bundle }}
+        {{ $creatorsDatabase := .Site.Data.creators}}
+        {{ range .Params.param.bundle }}
+          {{ partial "products/certificate.html" . }}
+          {{ partial "products/compare.html" . }}
+          {{ partial "creators/instructors.html" (dict "courseCreators" .creators "creatorDatabase" $creatorsDatabase) }}
+          {{ partial "products/reviews.html" }}
+          {{ partial "products/requirements.html" . }}
+          {{ partial "products/audience.html" . }}
+          {{ partial "products/faqs.html" . }}
+        {{ end }}
+      {{ end }}
+    </div>
+    {{ partial "products/bundle-sidebar.html" (dict "data" $p "showDescription" (ne $p.type "bundle")) }}
   </main>
   {{ partial "bundle-fade.html" . }}
 {{ end }}
-

@@ -1,0 +1,379 @@
+id: automotive-electronics
+type: partner
+sell: true
+weight: '1'
+title: Automotive Electronics
+cover: /images/courses/automotive-electronics.png
+subtitle: Understanding the modern vehicle electronics
+introduction:
+- '**Note:** This is a `Partner Course` and NOT included in the **[Library Access](/library)**!'
+- This course provides a structured, end-to-end understanding of modern vehicle electronics — from foundational E/E architecture
+  and sensors to advanced vehicle diagnostics, software stacks, and the latest automotive trends. The curriculum blends theory,
+  systems engineering, and hands-on demos to provide a broader perspective on roles in automotive embedded systems, diagnostics,
+  and E/E system development.
+- This program is ideal for engineering students, automotive professionals, and embedded system developers who want to explore
+  the automotive system and software development ecosystem. It helps participants understand the industry-ready skills required
+  for the next generation of vehicles — including EVs, ADAS, and SDVs.
+badges:
+- Bestseller
+- Beginner
+- Intermediate
+rating: 5
+enrolled: 176+
+sticky:
+  text: Start the journey with Automotive Electronics.
+  ctas:
+  - link: https://courses.pyjamacafe.com/web/checkout/68ee39deada179bc4c87b8ab?purchaseNow=true&couponcode=AUTOMOTIVE50
+    text: Start Learning
+    primary: true
+  discount:
+    code: AUTOMOTIVE50
+    percent: 50%
+date: 26 October 2025
+language: English
+access: 365 days
+highlights:
+- duration: 13 Hrs 30 Mins
+- lessonCount: '83'
+- projectCount: '5'
+- certificate: true
+- feature: System-Level Perspective
+- feature: Real Vehicle Relevance
+- feature: Industry Standard Frameworks
+- feature: Modular & Layered Learning Structure
+learnings:
+- Understand vehicle electrical/electronic (E/E) architecture and its components
+- Learn the V-Model for automotive system development and ASPICE framework
+- Explore software testing life cycle and hardware-in-the-loop (HIL) validation
+- Study automotive sensors, including position, pressure, temperature, and virtual sensors
+- Gain knowledge of automotive actuators like solenoids, fuel injectors, and BLDC motors
+- Understand powertrain systems, engine control, and hybrid powertrain configurations
+- Learn vehicle motion control systems, including ABS, TCS, ESP, and ACC
+- Master vehicle diagnostics, OBD standards, and UDS communication protocols
+- Explore Classic and Adaptive AUTOSAR and Linux-based vehicle software stacks
+- Understand emerging trends like electric vehicles, AI, and autonomous driving
+- Learn career roles and development flow in automotive embedded systems
+- Apply practical skills through Scilab and XCOS demos for sensor fusion, actuator modeling, and path planning
+sampleCertificate: /images/courses/automotive-electronics-certificate.png
+difference:
+- System-Level Perspective
+- Real Vehicle Relevance
+- Industry Standard Frameworks
+- Modular & Layered Learning Structure
+- Hands-On Demos on examples from EV, ADAS and System Design
+- Industry-Aligned Skill Mapping
+- Future-Ready Topics
+instructors:
+- jegan
+requirements:
+- Interest in Automotive Electronics
+- Basic Background on Control Theory and Signal Processing
+audience:
+- Students from Automotive, Electrical, Electronics, Mechatronics and Computer science Engineering Discipline.
+- Those seeking to dip their toes in Automotive Electronics.
+faqs: automotive-electronics
+contents:
+- section:
+    title: Introduction
+    description: ''
+    chapters:
+    - chapter:
+        title: Course Introduction
+        type: video
+- section:
+    title: Vehicle E/E Architecture
+    description: ''
+    chapters:
+    - chapter:
+        title: Introduction to E/E Architecture
+        type: video
+    - chapter:
+        title: Components of E/E Architecture
+        type: video
+    - chapter:
+        title: Summary of Vehicle E/E Architecture
+        type: video
+- section:
+    title: Automotive SDLC
+    description: ''
+    chapters:
+    - chapter:
+        title: V-Model for System Development
+        type: video
+    - chapter:
+        title: Development of Engine Control System
+        type: video
+    - chapter:
+        title: Validation phases of Engine Control System
+        type: video
+    - chapter:
+        title: Introduction to ASPICE
+        type: video
+    - chapter:
+        title: Summary of Automotive SDLC
+        type: video
+- section:
+    title: Automotive STLC
+    description: ''
+    chapters:
+    - chapter:
+        title: Software Testing Life Cycle
+        type: video
+    - chapter:
+        title: HIL Validation
+        type: video
+    - chapter:
+        title: Summary of Automotive STLC
+        type: video
+- section:
+    title: Automotive Sensors
+    description: ''
+    chapters:
+    - chapter:
+        title: Introduction to Automotive Sensors
+        type: video
+    - chapter:
+        title: Position Sensing Methods
+        type: video
+    - chapter:
+        title: Pressure, Temperature Sensing Methods
+        type: video
+    - chapter:
+        title: Acceleration Sensing
+        type: video
+    - chapter:
+        title: Exhaust Gas Oxygen Measurement
+        type: video
+    - chapter:
+        title: Knock and MAF Sensor Working
+        type: video
+    - chapter:
+        title: Sensors In Driver Assistance Systems
+        type: video
+    - chapter:
+        title: Virtual Sensors and Estimators
+        type: video
+    - chapter:
+        title: Summary of Automotive Sensors
+        type: video
+    - chapter:
+        title: Scilab Installation
+        type: video
+    - chapter:
+        title: Demo-Sensor Fusion with Complementary Filter
+        type: video
+    - chapter:
+        title: Demo-Sensor Modelling with XCOS
+        type: video
+- section:
+    title: Automotive Actuators
+    description: ''
+    chapters:
+    - chapter:
+        title: Solenoid and Fuel Injectors
+        type: video
+    - chapter:
+        title: EGR Valve and Ignition System
+        type: video
+    - chapter:
+        title: Relays and Reed Switch
+        type: video
+    - chapter:
+        title: BLDC, Servo and Stepper Mechanism
+        type: video
+    - chapter:
+        title: Chemical Actuators for Airbag
+        type: video
+    - chapter:
+        title: Summary of Automotive Actuators
+        type: video
+    - chapter:
+        title: Demo-Servo Actuator Modelling with XCOS
+        type: video
+- section:
+    title: Powertrain Systems
+    description: ''
+    chapters:
+    - chapter:
+        title: Fundamentals of Engine Working
+        type: video
+    - chapter:
+        title: Engine Closed-Loop Control Functions
+        type: video
+    - chapter:
+        title: Electronic Fuel Injection system
+        type: video
+    - chapter:
+        title: Engine Performance Parameters
+        type: video
+    - chapter:
+        title: Engine Maps and Control modes
+        type: video
+    - chapter:
+        title: Hybrid Powertrain Configurations
+        type: video
+    - chapter:
+        title: Hybrid powertrain Control Strategy
+        type: video
+    - chapter:
+        title: Summary of Powertrain Systems
+        type: video
+- section:
+    title: Vehicle Motion Control System
+    description: ''
+    chapters:
+    - chapter:
+        title: Introduction to Vehicle Axes
+        type: video
+    - chapter:
+        title: ABS Working Principle
+        type: video
+    - chapter:
+        title: TCS Working Principle
+        type: video
+    - chapter:
+        title: ESP Working Principle
+        type: video
+    - chapter:
+        title: Vertical Vehicle Dynamics – Suspension System
+        type: video
+    - chapter:
+        title: ACC – Longitudinal Vehicle Control
+        type: video
+    - chapter:
+        title: Active Vs Passive Safety System
+        type: video
+    - chapter:
+        title: Summary of Vehicle Motion Control System
+        type: video
+- section:
+    title: Vehicle Diagnostics
+    description: ''
+    chapters:
+    - chapter:
+        title: Introduction to Vehicle Diagnostics
+        type: video
+    - chapter:
+        title: Diagnostic Requirements for Automotive Systems
+        type: video
+    - chapter:
+        title: OBD Jargons
+        type: video
+    - chapter:
+        title: OBD Milestones and Standardization
+        type: video
+    - chapter:
+        title: Fundamental Concepts and Terms in UDS
+        type: video
+    - chapter:
+        title: 'UDS Communication: Service Types, Primitives, and Message Types'
+        type: video
+    - chapter:
+        title: UDS Addressing Types
+        type: video
+    - chapter:
+        title: UDS Message Structure
+        type: video
+    - chapter:
+        title: UDS Sessions and Services
+        type: video
+    - chapter:
+        title: UDS Request and Response
+        type: video
+    - chapter:
+        title: Role of Diagnostics in Different ECU Development Phases
+        type: video
+    - chapter:
+        title: Summary of Vehicle Diagnostics
+        type: video
+- section:
+    title: Vehicle Software Architecture
+    description: ''
+    chapters:
+    - chapter:
+        title: Exploring Various Vehicle Software Stacks
+        type: video
+    - chapter:
+        title: Roles of Classic AUTOSAR Layers
+        type: video
+    - chapter:
+        title: Internals of the Classic AUTOSAR Stack
+        type: video
+    - chapter:
+        title: Adaptive AUTOSAR Architecture
+        type: video
+    - chapter:
+        title: Role of Various Functional Clusters in Adaptive AUTOSAR
+        type: video
+    - chapter:
+        title: Role of Vehicle Software Platform Suppliers
+        type: video
+    - chapter:
+        title: Linux-Based Software Stacks for Automotive Systems
+        type: video
+    - chapter:
+        title: Summary of Vehicle Software Architecture
+        type: video
+- section:
+    title: Current and Emerging Trends in Automotive Technology
+    description: ''
+    chapters:
+    - chapter:
+        title: Introduction to Latest Trends in Automotive Ecosystem
+        type: video
+        preview: FHUgZst23Us
+    - chapter:
+        title: Electric Vehicle Components
+        type: video
+    - chapter:
+        title: AI Application in Electric Vehicle
+        type: video
+        preview: KIc_Rxl3P7c
+    - chapter:
+        title: Autonomous Driving Software Pipeline
+        type: video
+        preview: d_X0Tqb-MsU
+    - chapter:
+        title: Perception, Localization and Prediction Module
+        type: video
+    - chapter:
+        title: Motion Planning Module
+        type: video
+    - chapter:
+        title: Motion Control Module
+        type: video
+    - chapter:
+        title: Understanding Software Defined Vehicle and Its Architectural Framework
+        type: video
+    - chapter:
+        title: Summary of Current Trends in Automotive Technology
+        type: video
+    - chapter:
+        title: Demo- Electric Scooter Modelling
+        type: video
+    - chapter:
+        title: Demo- RRT* Based Local Path Planner
+        type: video
+- section:
+    title: Career opportunities in Automotive Embedded Systems
+    description: ''
+    chapters:
+    - chapter:
+        title: Automotive System Development Flow
+        type: video
+    - chapter:
+        title: Revisiting V-Development Cycle
+        type: video
+    - chapter:
+        title: Career Roles in Automotive Embedded System
+        type: video
+    - chapter:
+        title: RoadMap for Automotive Embedded System
+        type: video
+- section:
+    title: Demo Codes
+    description: ''
+    chapters:
+    - chapter:
+        title: Demo Scilab Codes and XCOS Models
+        type: video

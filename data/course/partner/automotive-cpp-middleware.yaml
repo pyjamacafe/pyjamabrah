@@ -1,0 +1,281 @@
+id: automotive-cpp-middleware
+type: partner
+sell: true
+weight: '1'
+title: C++ for Middleware Engineers
+cover: /images/courses/auto-cpp-middleware.png
+subtitle: Object Oriented Programming - Under the Hood
+introduction:
+- '**Note:** This is a `Partner Course` and NOT included in the **[Library Access](/library)**!'
+- This course unpacks the complete compilation pipeline, memory layout, symbol resolution, object lifetime, abstraction mechanisms,
+  and performance behavior. You will analyze real binaries, inspect assembly output, and use professional tools like nm, objdump,
+  and profilers to understand how design choices affect execution.
+- By connecting theory with system-level realities, this course builds strong mental models that help you write efficient,
+  maintainable, and production-grade C++ code—especially for embedded systems, middleware, and performance-critical software.
+badges:
+- Bestseller
+- Beginner
+- Intermediate
+rating: 5
+enrolled: 10+
+sticky:
+  text: Start the journey with C++ for Middleware Engineers.
+  ctas:
+  - link: https://courses.pyjamacafe.com/web/checkout/69887956b426c244c88e0c8a?purchaseNow=true&couponcode=AUTOMOTIVECPP
+    text: Join for Free
+    primary: true
+  discount:
+    code: AUTOMOTIVECPP
+    percent: 50%
+date: 8 February 2026
+language: English
+access: 365 days
+highlights:
+- duration: ~13.6 Hrs
+- lessonCount: 50+
+- projectCount: 50+
+- certificate: true
+- feature: Focus on Internals, Not Just Syntax
+- feature: Complete Build Pipeline Coverage
+- feature: Binary-Level Learning
+- feature: Assembly-Oriented Understanding
+learnings:
+- Understand how C++ source code is transformed into an executable at every stage.
+- Analyze preprocessing, compilation, assembly, and linking in real-world toolchains.
+- Inspect binaries using professional tools like nm, size, objdump, and readelf.
+- Interpret symbol tables, relocation entries, and memory maps.
+- Understand stack, heap, data, BSS, and text segment behavior in depth.
+- Monitor memory usage and detect leaks using system-level debugging tools.
+- Master compiler optimization flags and their impact on performance and size.
+- Understand loop unrolling, vectorization, and volatile behavior at assembly level.
+- Analyze how values, references, and pointers are implemented internally.
+- Build efficient ownership models using RAII, move semantics, and RVO.
+- Understand object construction, destruction, and lifetime management.
+- Master virtual functions, vtables, and runtime polymorphism internals.
+- Analyze name mangling, templates, and function overloading resolution.
+- Implement callback systems using function pointers and functors.
+- Design C-style and C++ abstractions for middleware and embedded systems.
+- Understand weak symbols, LMA/VMA, and advanced linker behavior.
+- Debug linker errors, ODR violations, and symbol conflicts confidently.
+- Evaluate shallow vs deep copy and design safe copy/move strategies.
+- Write cache-friendly, low-latency C++ code for real-time systems.
+- Translate high-level C++ constructs into assembly-level mental models.
+sampleCertificate: /images/courses/automotive-cpp-middleware-certificate.png
+difference:
+- Focus on Internals, Not Just Syntax
+- Complete Build Pipeline Coverage
+- Binary-Level Learning
+- Assembly-Oriented Understanding
+- Embedded and Middleware Relevance
+- Tool-Driven Engineering Approach
+- Memory-Centric Teaching
+- Performance-First Mindset
+- Mental Model Development
+- Production-Oriented Problem Solving
+instructors:
+- jegan
+requirements:
+- Basic understanding of C-Programming (with Understanding of pointers, structures)
+audience:
+- 'Embedded and Systems Engineers: Developers working on firmware, RTOS, drivers, and low-level software who want to deeply
+  understand how C++ interacts with hardware and memory.'
+- 'Middleware and Platform Developers: Engineers building communication stacks, frameworks, and infrastructure software who
+  need strong knowledge of object lifetime, performance, and binary behavior.'
+- 'C++ Developers Aiming for Mastery: Programmers who already use C++ and want to move beyond syntax and libraries to become
+  confident, high-performance system-level engineers.'
+- Students from Electrical, Electronics and Computer science Engineering Discipline
+faqs: automotive-cpp-middleware
+contents:
+- section:
+    title: 'Birth of an Executable : Under-the-Hood'
+    description: ''
+    chapters:
+    - chapter:
+        title: Introduction to the Course
+        type: video
+    - chapter:
+        title: Example Codes - Used in this Course
+        type: pdf
+    - chapter:
+        title: Evolution of C++
+        type: video
+    - chapter:
+        title: Toolchain Installation
+        type: video
+    - chapter:
+        title: C++ Compilation Pipeline
+        type: video
+    - chapter:
+        title: Preprocessing Stage
+        type: video
+    - chapter:
+        title: Compilation Stage
+        type: video
+    - chapter:
+        title: Assembler and Linker Role
+        type: video
+    - chapter:
+        title: GCC Utilities - 'nm' and 'size'
+        type: video
+    - chapter:
+        title: Stack and Heap Monitoring Tools
+        type: video
+    - chapter:
+        title: '''objdump'' utility'
+        type: video
+        preview: 26Ys5AoyBAs
+    - chapter:
+        title: Significance of LMA and VMA
+        type: video
+    - chapter:
+        title: '''weak'' attributes in Linking'
+        type: video
+    - chapter:
+        title: Compile Time Vs Link Time Decisions
+        type: video
+    - chapter:
+        title: Caveats in Linker
+        type: video
+    - chapter:
+        title: Useful Tools- To Learn C++ Under the hood
+        type: video
+    - chapter:
+        title: Tools for Performance Analysis
+        type: video
+    - chapter:
+        title: Compiler optimization Flags and its Effects
+        type: video
+    - chapter:
+        title: Loop unrolling, Vectorization and 'volatile' usage
+        type: video
+- section:
+    title: C++ - Values, References, and Efficiency :Under-the-Hood
+    description: ''
+    chapters:
+    - chapter:
+        title: '''const'' Type Qualifier'
+        type: video
+    - chapter:
+        title: '''constexpr'' usage'
+        type: video
+    - chapter:
+        title: '''C'' Style Array and Pointer Arithmetic Basics'
+        type: video
+    - chapter:
+        title: Dynamic Arrays and Memory Management Challenges
+        type: video
+    - chapter:
+        title: C-String Vs std::string in C++
+        type: video
+    - chapter:
+        title: Range Based For Loop in C++
+        type: video
+    - chapter:
+        title: L-Values and R-Values at Assembly Level
+        type: video
+    - chapter:
+        title: Reference in C++
+        type: video
+    - chapter:
+        title: References Under-the-Hood - As a 'Hidden' pointer
+        type: video
+    - chapter:
+        title: LValue,RValue References Usecases and Performance Benchmarking
+        type: video
+    - chapter:
+        title: Internals of 'inline' function
+        type: video
+- section:
+    title: 'Abstraction, Object Lifetime and Ownership : Under-the-Hood'
+    description: ''
+    chapters:
+    - chapter:
+        title: Function Pointers -Callback functions and Dispatch Table in Middleware
+        type: video
+    - chapter:
+        title: Abstraction in C using Struct with function pointers Vs C++ Class
+        type: video
+    - chapter:
+        title: Access Specifiers in C++ Class
+        type: video
+    - chapter:
+        title: '''static'' Data Member and Member Function in the class'
+        type: video
+    - chapter:
+        title: '''static'' objects and Middleware Use-case'
+        type: video
+    - chapter:
+        title: Constructor and Destructor in C++ Class
+        type: video
+    - chapter:
+        title: Copy Constructor for Object Owning Resources
+        type: video
+    - chapter:
+        title: Return Value Optimization with Copy Elision
+        type: video
+    - chapter:
+        title: Move Constructor
+        type: video
+    - chapter:
+        title: Move Semantics
+        type: video
+        preview: -tSTXWXCmSA
+    - chapter:
+        title: Shallow Copy Vs Deep Copy - Uses
+        type: video
+- section:
+    title: 'From Overloading to Templates: Under-the-Hood'
+    description: ''
+    chapters:
+    - chapter:
+        title: Function Overloading and 'Name Mangling' under-the-hood
+        type: video
+    - chapter:
+        title: Inheritance and its Types
+        type: video
+    - chapter:
+        title: Execution order of constructor and Destructor
+        type: video
+    - chapter:
+        title: Function Overriding and the middleware use-case
+        type: video
+    - chapter:
+        title: Function Overriding -Mental Model and Object Slicing
+        type: video
+    - chapter:
+        title: Virtual functions and Runtime Binding - Under the hood
+        type: video
+    - chapter:
+        title: Significance of 'final' keyword
+        type: video
+    - chapter:
+        title: why virtual constructor don't exist? but virtual destructor does?
+        type: video
+    - chapter:
+        title: Operator Overloading - Basics and Middleware use cases
+        type: video
+    - chapter:
+        title: Operator Overloading - Under the hood
+        type: video
+    - chapter:
+        title: Ownership Transfer with Move assignment operator
+        type: video
+    - chapter:
+        title: Function Object or Functor - Overloading Function call () operator
+        type: video
+    - chapter:
+        title: Lambda Function in C++ and its Internals
+        type: video
+    - chapter:
+        title: Namespaces and its uses in Middleware
+        type: video
+    - chapter:
+        title: Templates in C++
+        type: video
+- section:
+    title: Road Map From Here...
+    description: ''
+    chapters:
+    - chapter:
+        title: C++ Learning path for Embedded Middleware Engineers
+        type: video

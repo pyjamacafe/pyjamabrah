@@ -106,6 +106,7 @@ hardware:
     description: "A free, open-source machine emulator that lets you run and debug the ARM Cortex-M, ARM Cortex-A and RISC-V based course targets entirely in software — no physical hardware required for the emulator-based experiments."
 courses:
   - "roadmap"
+  - "missing-mentor"
   - "book"
   - "c-hurry"
   - "c"

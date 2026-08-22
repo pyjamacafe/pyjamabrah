@@ -1,7 +1,8 @@
 {{ with . }}
 
 {{$bundle := (index .Site.Data.bundle .Params.source) }}
-{{$course := (index .Site.Data.course .Params.source) }}
+{{$courses := (partial "course/course-map.html" .) }}
+{{$course := (index $courses .Params.source) }}
 {{$instructorList := .Site.Data.creators }}
 
 {{ $bundleInstructors := ""}}

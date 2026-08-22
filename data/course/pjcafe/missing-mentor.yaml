@@ -1,0 +1,266 @@
+# mandatory ID for the course
+id: "missing-mentor"
+type: "pjcafe"
+sell: false
+
+weight: "1"
+
+# mandatory title, cover and subtitle
+title: "The Missing Mentor"
+cover: "/images/courses/missing-mentor.png"
+subtitle: "Dealing with and thriving in ambiguity!"
+
+# mandatory introduction
+introduction:
+  - "Collection of stories on how to become a Embedded Systems engineer.
+    Vlog style recording from Piyush, reflecting back on his journey in the
+    field of Embedded Systems. Includes interview experiences, pressures and
+    the decisions taken along the way."
+
+# mandatory badges
+badges:
+  # - Bestseller
+  - Beginner
+  - Intermediate
+  # - Advance
+  - Free
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+
+default_cta: &defaults
+  - cta:
+    link: "https://courses.pyjamacafe.com/web/checkout/69ae2e69b33a5bc39a22608f"
+    text: "Start for Free!"
+    primary: true
+sticky:
+  text: "Start the journey of Learning Embedded Systems."
+#   discount:
+#     code:
+#     percent:
+  ctas: *defaults
+
+date: 14 Mar 2026
+language: "English"
+access: "365 day"
+highlights:
+  - courseCount:
+  - duration: "~4 hours"
+  - lessonCount: "10"
+  - emulator:
+  - hardware:
+  - downloadableResources:
+  - workshops:
+  - cheatSheet:
+  - caseStudy:
+  - exerciseChallenge:
+  - projectCount:
+  - certificate:
+  - freeUpdates:
+  - feature: "Early life and studies"
+  - feature: "College to industry transition"
+  - feature: "Internship Experience at Intel"
+  - feature: "Interview experiences"
+
+videoMessage: ""
+learnings:
+  - "How a career in Embedded Systems can unfold over time."
+  - "Dealing with financial pressures and ambiguity as a student."
+  - "Navigating internships, rejections and full-time offers."
+  - "What an internship at Intel looks like: from interview to project."
+  - "The transition from college, a first job to quitting and pursuing a masters."
+  - "Real interview experiences and the lessons from them."
+
+sampleCertificate:
+difference:
+  - "First-hand, honest retelling of a career journey."
+  - "Unscripted conversations, pressures and decisions included."
+  - "Covers rejections and setbacks, not just wins."
+  - "Real internship and interview experiences told in detail."
+
+instructors:
+  - "piyush"
+requirements:
+  - "Intended for students."
+  - "Open mind."
+audience:
+  - Students curious about a career in Embedded Systems.
+  - Early-career engineers exploring the industry.
+  - Anyone interested in internship and interview experiences.
+faqs: pyjamacafe
+
+# mandatory, content
+contents:
+  - section:
+      title: "Introduction And Background"
+      description: "Reflecting on the early years, the personal background and the pressures that shaped the journey."
+      chapters:
+        - chapter:
+            title: "What to expect"
+            type: "video"
+            duration: "3min 36s"
+        - chapter:
+            title: "Toymaker - My personal background"
+            type: "video"
+            duration: "31min 24s"
+        - chapter:
+            title: "Financial Pressures"
+            type: "video"
+            duration: "13min 22s"
+        - chapter:
+            title: "More pressures, seeking validation and first job"
+            type: "video"
+            duration: "36min 37s"
+        - chapter:
+            title: "Quitting the Job, GATE and masters Program"
+            type: "video"
+            duration: "26min 15s"
+  - section:
+      title: "Time at Intel"
+      description: "The internship journey at Intel - from the interview to working on real projects."
+      chapters:
+        - chapter:
+            title: "Intel: Internship Interview"
+            type: "video"
+            duration: "21min 42s"
+        - chapter:
+            title: "GNSS: Internship Project - Memory Manager"
+            type: "video"
+            duration: "20min 51s"
+        - chapter:
+            title: "Rejections - Mathwork, Intel and Full time offer"
+            type: "video"
+            duration: "25min 42s"
+        - chapter:
+            title: "Bluetooth Software and RF"
+            type: "video"
+            duration: "21min 4s"
+  - section:
+      title: "Other Opportunities"
+      description: "Other interview adventures and opportunities explored along the way."
+      chapters:
+        - chapter:
+            title: "ARM interview - Adventures"
+            type: "video"
+            duration: "36min 19s"
+
+reviews:
+  - name: "Dinesh Fukate"
+    rating: 5
+    comment: "Thorough breakdown of the overall scenario of embedded systems, from CPU to System."
+  - name: "Shravan Kumar Bandaru"
+    rating: 5
+    comment:
+  - name: "Sainath Khare"
+    rating: 5
+    comment:
+  - name: "Sandil Azad"
+    rating: 5
+    comment: "Great"
+  - name: "MD Shahnauze Ahsan"
+    rating: 4
+    comment:
+  - name: "Kunalsinh Gohil"
+    rating: 5
+    comment:
+  - name: "Kartik Goli"
+    rating: 3
+    comment: "system software engineer was not very clear"
+  - name: "Bharath R"
+    rating: 5
+    comment: "Very clearly spoke about Firmware engineer and Systems Engineer and the relationship between both! We should first understand what role we are applying for! And this course clears all the doubts regarding that."
+  - name: "Pramod Rao"
+    rating: 5
+  - name: "Georgios Daglaridis"
+    rating: 5
+  - name: "Gheorghe"
+    rating: 5
+    comment: "Very good content, learned some new stuff that I was not aware of."
+  - name: "Arkadeb Mukherjee"
+    rating: 5
+  - name: "Prashali Pravin Randive"
+    rating: 5
+  - name: "Chinmay Sawant"
+    rating: 4
+  - name: "Saviour Dagadu"
+    rating: 5
+  - name: "Ganeshan Mahalingam"
+    rating: 5
+    comment: "Excellent course and everyone who interested in Firmware/System software must do this to know the opportunities."
+  - name: "Ashish Kumar Verma"
+    rating: 5
+    comment: "Overall good But one suggestion for you piyush , this kind of videos are not very brainteasers they are information that is well-structured presented by you so instead of making so much small small videos make 2-3 lengthy videos , i know that you keep upgrading new section to it on regular basis but it is easy for students to see this video if not broken in many chapters."
+  - name: "Ann Rose Antony"
+    rating: 5
+  - name: "Siddharth Hudedamani"
+    rating: 5
+  - name: "JAYAKUMAR E"
+    rating: 5
+  - name: "Vishnu Sankarankutty"
+    rating: 5
+  - name: "Yogesh Bisht"
+    rating: 5
+  - name: "Ayush Kadali"
+    rating: 5
+  - name: "Rachit"
+    rating: 5
+  - name: "Sandesha"
+    rating: 5
+    comment: "The clarity of thoughts and roadmap helps a lot. Thanks a lot for the birds-eye view of the industry."
+  - name: "ABHIJEET AWASTHI"
+    rating: 5
+  - name: "Pinaki Sen"
+    rating: 5
+  - name: "Sheel"
+    rating: 4
+  - name: "Ramasandeep"
+    rating: 5
+    comment: "excellent introduction by Piyush"
+  - name: "Lalit Vilas Badjate"
+    rating: 5
+  - name: "Dilip R"
+    rating: 5
+  - name: "Revanth Reddy Pannala"
+    rating: 5
+    comment: "Very thorough introduction and motivation to learn embedded systems and firmware engineering."
+  - name: "Faheem Ali T"
+    rating: 5
+  - name: "Aditya Shidlyali"
+    rating: 5
+    comment: "This is one of the most clearest career guidance I have ever seen in my life. I swear. Thanks to you Piyush."
+  - name: "Hassam Khan"
+    rating: 5
+    comment: "Nicely explained. For beginners, it can help them choose the right direction."
+  - name: "Sagar patel"
+    rating: 5
+  - name: "Soumyadip Mondal"
+    rating: 5
+  - name: "Dhivin John Chacko"
+    rating: 5
+  - name: "Harani M"
+    rating: 4
+  - name: "Muthukumar M"
+    rating: 5
+    comment: "Highly Informative & Useful for early professionals and those preferring career switch into embedded systems domain."
+  - name: "Dnyaneshwar Walunje"
+    rating: 5
+  - name: "Abdelrahman Ashraf"
+    rating: 5
+  - name: "Suhas Patlolla"
+    rating: 4
+  - name: "Madhuja Das"
+    rating: 5
+  - name: "aman pant"
+    rating: 5
+  - name: "Sanket Yenare"
+    rating: 4
+  - name: "Srikar"
+    rating: 5
+  - name: "Suwash Saurabh"
+    rating: 5
+  - name: "SUMANTH NACHARAM"
+    rating: 5

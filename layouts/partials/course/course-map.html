@@ -1,0 +1,17 @@
+{{/* Reads data/course which may be flat (data/course/a.yaml) or
+       organized in sub-directories (data/course/pjcafe/a.yaml,
+       data/course/partner/a.yaml) and returns a single flat map keyed
+       by the yaml file name (the course "source" used by content pages). */}}
+{{- $courses := dict -}}
+{{- range $k, $v := .Site.Data.course -}}
+  {{- if $v.id -}}
+    {{- $courses = merge $courses (dict $k $v) -}}
+  {{- else -}}
+    {{- range $id, $c := $v -}}
+      {{- if $c.id -}}
+        {{- $courses = merge $courses (dict $id $c) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $courses -}}

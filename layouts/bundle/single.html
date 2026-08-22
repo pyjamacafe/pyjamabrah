@@ -2,7 +2,7 @@
   <link rel="stylesheet" href="{{ printf "css/%s/bundle/bundle.css" (partial "theme-name.html" .) | relURL }}">
   {{/*  Filter the Data source  */}}
   {{$bundle := (index .Site.Data.bundle .Params.source) }}
-  {{$courselist := .Site.Data.course }}
+  {{$courselist := partial "course/course-map.html" . }}
   {{$faqs := (index .Site.Data.faqs $bundle.faqs) }}
 
   <main class="bundle-container">

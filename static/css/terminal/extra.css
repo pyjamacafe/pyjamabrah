@@ -315,3 +315,38 @@ body::after {
   border-radius: 50% !important;
   border: 2px white solid;
 }
+
+/* ---------- dropdown lists (match the codeblock copy button) ---------- */
+.dropdown-listing {
+  overflow: hidden;
+}
+
+.dropdown-summary {
+  background-color: transparent;
+  color: var(--syntax-comment);
+  border-bottom: 1px solid var(--syntax-border);
+}
+
+.dropdown-summary:hover {
+  background-color: var(--syntax-border);
+  color: var(--syntax-foreground) !important;
+}
+
+.dropdown-listing .chapter-names:hover {
+  background-color: var(--syntax-border);
+  color: var(--syntax-foreground) !important;
+}
+
+/* fade in the list content when it opens */
+.dropdown-listing > :not(.dropdown-summary) {
+  transition: opacity 0.25s ease;
+}
+
+.dropdown-listing[open] > :not(.dropdown-summary) {
+  animation: dd-fade-in 0.25s ease;
+}
+
+@keyframes dd-fade-in {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: none; }
+}

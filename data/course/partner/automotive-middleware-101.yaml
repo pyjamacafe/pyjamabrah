@@ -1,0 +1,117 @@
+id: automotive-middleware-101
+type: partner
+sell: true
+weight: '1'
+title: Automotive Middleware 101
+cover: /images/courses/auto-middleware.png
+subtitle: Understanding the modern vehicle electronics
+introduction:
+- '**Note:** This is a `Partner Course` and NOT included in the **[Library Access](/library)**!'
+- This course introduces the role of middleware in modern automotive embedded systems, covering architectures, real-world
+  examples, and controller vs processor-based designs. Learn driver vs middleware code level differences, Covering the middleware
+  example with a SOME/IP case study, OS essentials required for middleware development, why C++ dominates middleware development,
+  and a clear learning roadmap for aspiring embedded middleware engineers.
+badges:
+- Bestseller
+- Beginner
+- Intermediate
+rating: 5
+enrolled: 10+
+sticky:
+  text: Start the journey with Automotive Middleware 101.
+  ctas:
+  - link: https://courses.pyjamacafe.com/web/checkout/69588e1f55071a7d3ffb0459
+    text: Join for Free
+    primary: true
+date: 3 January 2026
+language: English
+access: 30 days
+highlights:
+- duration: 2 Hrs
+- lessonCount: '10'
+- projectCount: '5'
+- certificate: true
+- feature: System-Level Perspective
+- feature: Driver vs Middleware Code level Comparison
+- feature: Controller vs Processor Focus
+- feature: Real Automotive Use Cases
+learnings:
+- Explain the role and significance of middleware in embedded systems and position it correctly within the overall software
+  stack.
+- Differentiate between driver-level code and middleware abstractions, and justify the need for middleware in scalable embedded
+  products.
+- Analyze middleware architectures used in controller-based and processor-based embedded systems.
+- Design layered software architectures that follow best practices for embedded middleware development.
+- Apply middleware concepts to automotive use cases, including communication, diagnostics, and service-oriented architectures.
+- Interpret and evaluate real-world embedded middleware implementations, with emphasis on industry standards.
+- Understand SOME/IP fundamentals and workflows through an applied automotive case study.
+- Select appropriate programming paradigms and Design Patterns (from C++) for middleware development based on performance
+  and maintainability needs.
+- Identify essential OS-level concepts required for effective middleware design and debugging.
+- Plan a structured learning roadmap for becoming a professional embedded middleware developer
+sampleCertificate: /images/courses/automotive-middleware-certificate.png
+difference:
+- System-Level Perspective
+- Driver vs Middleware Code level Comparison
+- Controller vs Processor Focus
+- Real Automotive Use Cases
+- SOME/IP Case Study
+- OS Know-How for Middleware Developers
+- Industry-Oriented Learning Roadmap
+instructors:
+- jegan
+requirements:
+- Basic Background on Embedded System/Software development
+- Interest in Automotive Electronics
+audience:
+- Students from Automotive, Electrical, Electronics, Mechatronics and Computer science Engineering Discipline.
+- Embedded Automotive Professionals
+- Embedded Middleware Developers"
+faqs: automotive-middleware
+contents:
+- section:
+    title: Middleware -Overview
+    description: ''
+    chapters:
+    - chapter:
+        title: Introduction to Embedded Middleware
+        type: video
+    - chapter:
+        title: Various Embedded Middleware Examples
+        type: video
+    - chapter:
+        title: Classification of Embedded Middleware
+        type: video
+- section:
+    title: Middleware -Architecture
+    description: ''
+    chapters:
+    - chapter:
+        title: Architecture of Embedded Middleware
+        type: video
+    - chapter:
+        title: Driver Vs Middleware - An Example
+        type: video
+- section:
+    title: Middleware -Use cases in Automotive
+    description: ''
+    chapters:
+    - chapter:
+        title: Real world Embedded Middleware examples
+        type: video
+    - chapter:
+        title: SOME/IP -Case study
+        type: video
+- section:
+    title: Learning Path for Automotive Middleware Developer
+    description: ''
+    chapters:
+    - chapter:
+        title: Why C++ is preferred for Middleware Development?
+        type: video
+    - chapter:
+        title: OS 'know how' for Midddleware development
+        type: video
+    - chapter:
+        title: Learning Roadmap for Embedded Middleware Developers
+        type: video

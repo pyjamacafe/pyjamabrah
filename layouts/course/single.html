@@ -1,8 +1,9 @@
 {{ define "main" }}
   <link rel="stylesheet" href="{{ printf "css/%s/bundle/bundle.css" (partial "theme-name.html" .) | relURL }}">
   {{/*  Filter the Data source  */}}
-  {{$bundle := (index .Site.Data.course .Params.source) }}
-  {{$courselist := .Site.Data.course }}
+  {{$courses := partial "course/course-map.html" . }}
+  {{$bundle := (index $courses .Params.source) }}
+  {{$courselist := $courses }}
   {{$faqs := ""}}
   {{if $bundle.faqs}}
   {{$faqs = (index .Site.Data.faqs $bundle.faqs) }}
