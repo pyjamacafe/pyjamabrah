@@ -49,6 +49,10 @@
       <span class="bi bi bi-clock"></span><span><b>{{ $bundle.access }}</b></span> Access.
       </div>
 
+      {{ if $bundle.videoMessage }}
+      {{ partial "course/videoMessage.html" $bundle.videoMessage}}
+      {{ end }}
+
       {{ if $bundle.courses }}
       <div class="bundle-landing-section-title" id="courses-included">Learning Tracks</div>
       {{ $perRow := 6 }}
@@ -130,10 +134,6 @@
 
       {{ if .Content }}
         {{ .Content }}
-      {{ end }}
-
-      {{ if $bundle.videoMessage }}
-      {{ partial "course/videoMessage.html" $bundle.videoMessage}}
       {{ end }}
 
       {{ if $bundle.difference }}
