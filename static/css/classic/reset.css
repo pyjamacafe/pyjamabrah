@@ -20,6 +20,7 @@ html {
   --section-title-background: #000000;
   --cafe: #ff1423;
   --chapter: #005eff;
+  --mutedcolor: #666;
 
   /* GitHub light syntax + codebox */
   --syntax-bg: #f6f8fa;
@@ -69,8 +70,9 @@ html {
      --shadowDard: rgba(122, 122, 122, 0.065);
      --section-title: #ffffff;
      --section-title-background: #ff0000;
-     --cafe: #FFE15C;
-     --chapter: #5df7ff;
+--cafe: #FFE15C;
+      --chapter: #5df7ff;
+      --mutedcolor: #aaa;
 
   /* GitHub dark syntax + codebox */
   --syntax-bg: #161b22;

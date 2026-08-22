@@ -11,15 +11,12 @@
 
   .post-card {
     flex: 1 1 20%;
-    box-shadow: 0px 0px 10px 0px var(--prebgcolor);
-    border-radius: 16px;
     transition: transform .2s;
 
     img {
       width: 100%;
       aspect-ratio: 16 / 9;
       object-fit: cover;
-      border-radius: 16px 16px 0px 0px;
     }
 
     .post-meta {
@@ -35,14 +32,13 @@
       .post-card-text {
         font-size: 12px;
         margin-top: 12px;
-        color: grey;
+        color: var(--mutedcolor);
       }
     }
   }
 
   .post-card:hover {
     cursor: pointer;
-    box-shadow: 0px 0px 4px 0px var(--prebgcolor);
     transform: scale(1.01);
   }
 

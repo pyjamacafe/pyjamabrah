@@ -1,5 +1,6 @@
-{{ with . }}
-<link rel="stylesheet" href="{{ "css/pitch/pitch.css" | relURL}}">
+{{ $theme := partial "theme-name.html" .page }}
+{{ with .data }}
+<link rel="stylesheet" href="{{ printf "css/%s/pitch/pitch.css" $theme | relURL}}">
 <div class="pitch-container">
   {{ range .sections }}
     {{ range . }}

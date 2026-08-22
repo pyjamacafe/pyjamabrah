@@ -1,0 +1,112 @@
+html {
+  overflow-y: scroll
+}
+:root {
+  /* ---- ANSI terminal palette (white / red / blue / green / yellow) ---- */
+  --bgcolor: #000000;
+  --dimcolor: #111111;
+  --fontcolor: #ffffff;
+  --linkcolor: #5599ff;
+  --visitedcolor: #77aaff;
+  --precolor: #ffffff;
+  --prebgcolor: #050505;
+  --theme-primary: #ffe600;
+  --showcase-background: rgba(0, 255, 0, 0.05);
+  --linecolor: #4a4a4a;
+  --btn-border: #00ff00;
+  --tick-green: #00ff00;
+  --shadow: rgba(0, 255, 0, 0.20);
+  --shadowDard: rgba(0, 255, 0, 0.35);
+  --section-title: #000000;
+  --section-title-background: #00ff00;
+  --cafe: #ff0000;
+  --chapter: #5599ff;
+  --mutedcolor: #aaaaaa;
+
+  /* ANSI syntax highlighting */
+  --syntax-bg: #000000;
+  --syntax-header-bg: #0a0a0a;
+  --syntax-inline-bg: rgba(255, 255, 255, 0.10);
+  --syntax-border: #2a2a2a;
+  --syntax-gutter: #888888;
+  --syntax-foreground: #ffffff;
+  --syntax-comment: #7f7f7f;
+  --syntax-keyword: #ff5555;
+  --syntax-string: #55ff55;
+  --syntax-number: #ffff55;
+  --syntax-function: #66aaff;
+  --syntax-variable: #dddddd;
+  --syntax-operator: #66aaff;
+  --syntax-punctuation: #ffffff;
+  --syntax-constant: #ffff55;
+
+  /* Terminal callouts (admonitions) */
+  --admonition-note: #66aaff;
+  --admonition-note-bg: rgba(102, 170, 255, 0.12);
+  --admonition-tip: #55ff55;
+  --admonition-tip-bg: rgba(85, 255, 85, 0.10);
+  --admonition-important: #ffffff;
+  --admonition-important-bg: rgba(255, 255, 255, 0.08);
+  --admonition-warning: #ffff55;
+  --admonition-warning-bg: rgba(255, 255, 55, 0.10);
+  --admonition-caution: #ff5555;
+  --admonition-caution-bg: rgba(255, 85, 85, 0.12);
+}
+
+body {
+  color: var(--fontcolor);
+  background: var(--bgcolor);
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:link {
+  color: var(--linkcolor);
+}
+a:visited {
+  color: var(--visitedcolor);
+}
+a:active {
+  color: var(--visitedcolor);
+}
+h1,h2,h3 {
+  margin-top: 30px;
+  line-height: 1.2;
+}
+
+li > code, p > code, div > code {
+  color: var(--syntax-string);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+pre {
+  overflow-x: auto;
+  background-color: transparent !important;
+}
+article {
+  padding: 5px 0;
+}
+.center  {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+figcaption {
+  color: var(--mutedcolor);
+  font: 12px/1.5 monospace;
+  text-align: center;
+}
+figure {
+  margin: auto;
+}

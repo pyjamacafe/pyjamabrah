@@ -1,0 +1,867 @@
+#brand {
+  flex-direction: row;
+}
+
+#brand .icon {
+  max-height: 150px;
+}
+
+#brand .text {
+  margin-left: 10px;
+}
+
+#root {
+  font-family: "Zed Mono Nerd Font", "Iosevka", monospace;
+  font-weight: 400;
+  max-width: 1366px !important;
+}
+
+#newsletter {
+  border-top-style: solid;
+  border-width: 2px;
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 10px !important;
+}
+
+button {
+  background-color: var(--theme-primary);
+  opacity: 1;
+  border: solid 1px var(--btn-border);
+  border-radius: 2px;
+  color: var(--fontcolor);
+  padding: 8px 10px;
+  text-decoration: none;
+  margin: 10px 2px;
+  cursor: pointer;
+  /* font-size: 1.1em; */
+  font-family: "Zed Mono Nerd Font", "Iosevka", monospace;
+  font-weight: 600;
+  /* width: 95%; */
+}
+
+.align-in-center {
+  text-align: center;
+}
+
+.btn {
+  text-decoration: none !important;
+}
+
+button:hover {
+  background-color: var(--tick-green);
+  color: var(--bgcolor);
+}
+
+.btn-disabled {
+  /* Custom styles for a disabled button */
+  opacity: 0.6; /* Makes it look faded */
+  cursor: not-allowed; /* Changes the cursor on hover */
+  background-color: #cccccc; /* Custom background color */
+  color: #666666; /* Custom text color */
+  border: 1px solid #999999;
+}
+
+input {
+  padding: 5px;
+  margin: 5px;
+  font-size: 1em;
+  border: 1px solid var(--linecolor);
+  font-family: monospace;
+}
+
+#owner {
+  font-size: 1em;
+  color: cadetblue;
+}
+
+.navbar {
+  margin: 0px !important;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu-special {
+  margin-right: 10px;
+}
+
+.sidebar {
+  border: 1px solid var(--linecolor);
+  padding: 10px;
+  height: fit-content;
+  font-size: 0.85em;
+}
+
+.cover-image:hover {
+  box-shadow: 0px 0px 10px 1px var(--prebgcolor);
+}
+
+#content {
+  margin-bottom: 10px !important;
+}
+
+.product-image {
+  cursor: pointer;
+  border-bottom: solid var(--linecolor) 1px;
+}
+
+.sidebar-product {
+  display: none;
+}
+
+summary {
+  cursor: pointer;
+}
+
+.course-name {
+  font-size: xx-large;
+  top: 0px;
+  background-color: var(--bgcolor);
+  text-align: center;
+  padding: 10px;
+  border-bottom: solid var(--linecolor) 1px;
+  z-index: 1000;
+}
+
+.details-body {
+  padding: 0px;
+}
+
+.dropdown-container {
+}
+
+.dropdown-listing {
+  border: solid 1px var(--linecolor);
+}
+
+.dropdown-summary {
+  padding: 10px;
+  font-weight: bold;
+  background-color: var(--theme-primary);
+  position: sticky;
+  top: 0px;
+}
+
+.section-name {
+  min-width: 66%;
+  display: inline-block;
+}
+
+.section-meta {
+  display: inline-block;
+}
+
+.section-description {
+  margin: 20px;
+}
+
+.section-title {
+  font-weight: bold;
+  color: var(--section-title);
+  background-color: var(--section-title-background);
+  margin-top: 10px;
+  padding: 1px 5px 1px 5px;
+}
+
+.chapter-details {
+  display: inline-block;
+}
+
+.chapter-icon {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.chapter-names {
+  padding-left: 20px;
+  color: var(--linkcolor);
+  word-wrap: break-word;
+  margin-bottom: 5px;
+  display: flex;
+  min-width: 85%;
+  max-width: 85%;
+}
+
+.course-title {
+  margin: 0px;
+  font-size: larger;
+}
+
+.course-subtitle {
+  margin-top: 5px;
+  color: var(--fontcolor);
+  font-size: 1rem;
+}
+
+.chapter-preview {
+  /* padding: 10px; */
+  margin: 20px;
+  margin-top: 5px;
+}
+
+.blog-card {
+  max-width: 100%;
+  text-decoration: none;
+  color: var(--fontcolor) !important;
+}
+
+.blog-card {
+  border: solid var(--linecolor) 1px;
+  margin: 5px 0 5px 0;
+  max-width: 100% !important;
+  text-decoration: none !important;
+  cursor: pointer;
+  color: var(--fontcolor) !important;
+}
+
+.course-card {
+  border: solid var(--linecolor) 1px;
+  max-width: 100% !important;
+  margin: 15px;
+  text-decoration: none !important;
+  cursor: pointer;
+  color: var(--fontcolor) !important;
+  height: fit-content;
+}
+
+.post-title {
+  margin: 0px !important;
+  padding: 10px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+.post-card-content {
+  padding: 0px;
+  font-size: 0.9em;
+
+  p {
+    padding: 0 10px 0 10px;
+  }
+}
+
+.course-card-content {
+  padding: 0 20px 0px 20px;
+  font-size: 0.9em;
+
+  p {
+    padding: 0 10px 0 10px;
+  }
+}
+
+.clear {
+  clear: both;
+}
+
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left
+}
+
+iframe {
+  border: none;
+}
+
+.product-bestseller, .product-beginner, .product-intermediate, .product-free  {
+  border: solid var(--linecolor) 1px;
+  padding: 0px 5px 0px 5px;
+  background-color: var(--theme-primary);
+  border-radius: 3px;
+}
+
+.product-beginner, .product-intermediate, .product-free {
+  background-color: greenyellow;
+  color: black;
+}
+.prod-description {
+  /* background-color: rgb(255, 255, 182); */
+  text-align: center;
+}
+
+.prod-what-u-learn {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid 1px var(--linecolor);
+  padding: 10px;
+  margin: 0px 0px 20px 0px;
+}
+
+.requirements-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 0px;
+}
+
+.prod-what-u-learn-tick {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.prod-what-u-learn-point {
+  min-width: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.prod-content-summary {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.prod-content-summary-tick {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.bullet-point {
+  min-width: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.card-collection {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  min-width: 96%;
+  max-width: 96%;
+  word-wrap: break-word;
+  /* border: solid var(--linecolor) 1px; */
+  margin: 1%;
+  padding: 1%;
+}
+
+.reviewer-meta {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.reviewer-photo {
+  min-width: 75px;
+  max-height: 75px;
+  border-radius: 50%;
+  border: solid var(--linecolor) 1px;
+}
+
+.rating-star {
+  /* TODO: change this */
+  color: red;
+}
+
+.reviewer-data {
+  margin: 5px;
+  padding: 5px;
+}
+
+.reviewer-name {
+  min-width: 100%;
+  font-weight: 600;
+}
+
+.review-date {
+  width: 100%;
+}
+
+.review-text {
+  padding: 5px;
+}
+
+.review-summary {
+  text-align: center;
+  font-size: large;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+details[open] > summary {
+  border-bottom: solid var(--linecolor) 1px;
+}
+
+.certificate {
+  border: solid var(--linecolor) 1px;
+  background-color: var(--theme-primary);
+  text-align: center;
+}
+
+.tracks {
+  border: solid var(--linecolor) 1px;
+  text-align: center;
+}
+
+.creators-card-collection {
+  min-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.creators-info-card {
+  word-wrap: break-word;
+  max-width: 96%;
+  padding: 1%;
+  margin: 1%;
+}
+
+.creators-meta {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.creators-photo {
+  min-width: 75px;
+  max-height: 75px;
+  border-radius: 50%;
+  border: solid var(--linecolor) 1px;
+}
+
+.creators-data {
+  margin: 10px;
+  padding: 10px;
+}
+
+.creators-name {
+  min-width: 100%;
+  font-weight: 600;
+}
+
+.creators-bio {
+  padding: 5px;
+}
+
+.creators-designation {
+  width: 100%;
+}
+
+table {
+  border: solid var(--linecolor) 1px;
+  max-width: 650px;
+}
+
+.compare-row-head {
+  text-align: center;
+  font-size: large;
+}
+
+.compare-row {
+  text-align: center;
+}
+
+.compare-row-data {
+  text-align: left;
+  min-width: 200px;
+}
+
+th, td {
+  padding: 10px;
+  word-wrap: break-word;
+  border: 0px;
+  margin: 0px;
+}
+
+.compare-tick {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.tick-green {
+  color: var(--tick-green);
+}
+
+.tick-red {
+  color: rgb(255, 36, 36);
+}
+
+.compare-pjbro {
+  /* min-width: 200px; */
+}
+
+.button-cta {
+  background-color: var(--bgcolor);
+  position: sticky;
+  bottom: 0px;
+  align-items: center;
+  z-index: 2;
+  margin-top: 10px;
+  border-top: solid var(--linecolor) 1px;
+}
+
+.cta-note {
+  margin: 0px;
+  color: grey;
+  font-size: smaller;
+  text-align: center;
+}
+
+/* Google Recaptcha */
+.google-recaptcha {
+  margin-top: 10px;
+  font-size: x-small;
+  color: var(--linecolor);
+}
+
+.grecaptcha-badge {
+  visibility: hidden !important;
+}
+
+.preview-video {
+  display: flex;
+  justify-content: center;
+  margin-top: 25%;
+}
+
+.view-preview {
+  padding: 1% 2% 2% 2%;
+}
+
+.bottom-banner {
+  /* align-items: center; */
+  /* display: flex; */
+  /* justify-content: center; */
+  text-align: center;
+  font-size: small;
+}
+
+.copyright {
+  display: inline-block;
+}
+
+.menu-special {
+  /* border: solid var(--shadowDard) 1px; */
+  box-shadow: 0px 0px 0px 1px var(--linecolor);
+  padding: 4px 8px 4px 8px;
+  background-color: var(--theme-primary);
+  border-radius: 0px;
+  color: var(--fontcolor);
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.menu-special:visited {
+  color: var(--fontcolor);
+  text-decoration: none;
+}
+
+.menu-special:active {
+  color: var(--fontcolor);
+  text-decoration: none;
+}
+
+.menu-special:link {
+  color: var(--fontcolor);
+  text-decoration: none;
+}
+
+.menu-special:hover {
+    text-decoration: none;
+    background-color: var(--tick-green);
+    color: var(--bgcolor);
+    box-shadow: 0px 0px 4px 1px var(--linecolor);
+}
+
+.razorpay-payment-button {
+  border: var(--btn-border) solid 1px;
+  background: #FFE15C;
+  margin: 5px 0px 0px 0px;
+  width: 95%;
+  transition-duration: 0.5s;
+  border-radius: 5px;
+}
+
+.razorpay-payment-button:hover {
+  box-shadow: 0px 0px 20px 0px var(--shadow);
+  text-decoration: none;
+}
+
+.PaymentButton-text {
+  font-size: 16px;
+  padding: 6px;
+}
+
+.PaymentButton-securedBy {
+  display: none;
+}
+
+form > span > a {
+  position: static !important;
+  font-style:normal !important;
+  font-family: monospace !important;
+}
+
+form > span > a > svg {
+  display: none !important;
+}
+
+.video-player {
+  margin: 10px;
+}
+
+video {
+  border: solid var(--linecolor) 1px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.post-card-content {
+   figure {
+    margin: 0px;
+    /* padding: 0px 5px; */
+
+    img {
+      display: block;
+      outline: none;
+      transition: transform .4s;
+      opacity: 0.9;
+      background-size:cover
+    }
+  }
+}
+
+.post-card-content:hover figure img {
+  /* TODO: fix this later */
+  /* transform: scale(1.1);
+  transform-origin: 50% 50%; */
+  opacity: 1;
+}
+
+figure {
+  margin: 0px 1px 0px 1px;
+}
+figure > img {
+  outline: solid var(--linecolor) 1px;
+  margin: auto;
+}
+
+blockquote {
+  margin: 16px 0;
+  padding: 8px 16px;
+  border-left: 4px solid var(--cafe);
+  border-radius: 0 6px 6px 0;
+  background-color: var(--dimcolor);
+  color: var(--fontcolor);
+}
+
+blockquote p {
+  margin: 0.5em 0;
+}
+
+blockquote p:first-child {
+  margin-top: 0;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.admonition {
+  margin: 16px 0;
+  padding: 12px 16px;
+  border-left: 4px solid var(--admonition-accent);
+  border-radius: 0 6px 6px 0;
+  background-color: var(--admonition-bg);
+  color: var(--fontcolor);
+}
+
+.admonition-title {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: var(--admonition-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+}
+
+.admonition-body p {
+  margin: 0.5em 0;
+}
+.admonition-body p:first-child {
+  margin-top: 0;
+}
+.admonition-body p:last-child {
+  margin-bottom: 0;
+}
+
+.admonition-note       { --admonition-accent: var(--admonition-note);       --admonition-bg: var(--admonition-note-bg); }
+.admonition-tip        { --admonition-accent: var(--admonition-tip);        --admonition-bg: var(--admonition-tip-bg); }
+.admonition-important  { --admonition-accent: var(--admonition-important);  --admonition-bg: var(--admonition-important-bg); }
+.admonition-warning    { --admonition-accent: var(--admonition-warning);    --admonition-bg: var(--admonition-warning-bg); }
+.admonition-caution    { --admonition-accent: var(--admonition-caution);    --admonition-bg: var(--admonition-caution-bg); }
+
+code {
+  line-height: 1.5rem;
+  font-family: "Zed Mono Nerd Font", monospace;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.post-card-content > figure {
+  display: none;
+}
+
+.post-card-image {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.audio-player {
+  text-align: center;
+}
+
+.highlight {
+  position: relative;
+  border: 1px solid var(--syntax-border);
+  border-radius: 6px;
+  background-color: var(--syntax-bg);
+  margin: 16px 0;
+  overflow: hidden;
+}
+
+.highlight pre {
+  margin: 0;
+  padding: 16px;
+  overflow: auto;
+  background-color: var(--syntax-bg) !important;
+  color: var(--syntax-foreground);
+  line-height: 1.45;
+  font-family: "Zed Mono Nerd Font", monospace;
+  font-size: 1em;
+  font-weight: normal;
+  tab-size: 4;
+  -moz-tab-size: 4;
+  white-space: pre;
+  word-break: normal;
+  word-wrap: normal;
+}
+
+.highlight code {
+  font-family: "Zed Mono Nerd Font", monospace;
+  font-size: 1em;
+  font-weight: normal;
+  background-color: transparent !important;
+  color: var(--syntax-foreground);
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  display: inline;
+  line-height: inherit;
+  overflow: visible;
+  word-break: normal;
+  word-wrap: normal;
+  overflow-wrap: normal;
+}
+
+/* Inline <code> should not inherit block styling (GitHub inline code) */
+.post-content,
+.post-content p,
+.post-content li,
+.post-content blockquote,
+.post-content .admonition-body,
+article {
+  line-height: 1.8;
+}
+
+p > code, li > code {
+  color: var(--fontcolor);
+  font-weight: 600;
+  font-size: 1em;
+  font-family: "Zed Mono Nerd Font", monospace;
+  line-height: inherit;
+  padding: 0.15em 0.4em;
+  border-radius: 6px;
+  background-color: var(--syntax-inline-bg);
+}
+
+/* Header / file label bar */
+.code-block-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  border-bottom: 1px solid var(--syntax-border);
+  background-color: var(--syntax-header-bg);
+  font-family: "Zed Mono Nerd Font", monospace;
+  font-size: 12px;
+  min-height: 32px;
+  color: var(--syntax-comment);
+}
+
+.code-block-lang {
+  text-transform: lowercase;
+  font-weight: 600;
+}
+
+.code-block-copy {
+  background: transparent;
+  border: 1px solid var(--syntax-border);
+  border-radius: 6px;
+  color: var(--syntax-comment);
+  font-family: "Zed Mono Nerd Font", monospace;
+  font-size: 12px;
+  padding: 2px 10px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.code-block-copy:hover {
+  background-color: var(--syntax-border);
+  color: var(--syntax-foreground);
+}
+
+.code-block-copy.copied {
+  color: var(--tick-green);
+}
+
+.btn-newsletter {
+ max-width: 200px;
+}
+
+.discount {
+  padding: 5px 20px 5px 20px;
+  color: var(--fontcolor);
+  text-align: center;
+  background-color: var(--bgcolor);
+}
+
+.discount-code {
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  padding: 0px 5px 0px 5px;
+}
+
+#brand {
+  h3 {
+    font-size: 1.1rem !important;
+  }
+}
+
+/* homepage post cards */
+.post-card {
+  box-shadow: 0px 0px 10px 0px var(--prebgcolor);
+  border-radius: 16px;
+
+  img {
+    border-radius: 16px 16px 0 0;
+  }
+}
+
+.post-card:hover {
+  box-shadow: 0px 0px 4px 0px var(--prebgcolor);
+}

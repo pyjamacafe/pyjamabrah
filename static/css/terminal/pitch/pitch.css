@@ -1,0 +1,448 @@
+:root {
+  --title-font-size: clamp(32px, 4cqi, 64px);
+  --subtitle-font-size: clamp(16px, 1.25cqi, 20px);
+  --text-font-size: clamp(12px, 2cqi, 16px);
+  --card-title-font-size: clamp(12px, 3cqi, 16px);
+  --section-margin: clamp(64px, 10cqi, 280px);
+}
+
+.pitch-container {
+  margin: 0px;
+  padding: 0px;
+
+  hr {
+    margin: 32px 0 32px 0;
+  }
+}
+
+.ptich-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: var(--section-margin) 0 var(--section-margin) 0;
+}
+
+.pitch-title {
+  flex: 1 1 100%;
+
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+
+  font-size: var(--title-font-size);
+  font-weight: bold;
+
+  color: var(--fontcolor);
+}
+
+.pitch-subtitle {
+  flex: 1 1 100%;
+  text-align: center;
+
+  font-size: var(--subtitle-font-size);
+
+  margin: 0 0 16px 0;
+  padding: 0px;
+
+  color: var(--fontcolor);
+}
+
+.pitch-break {
+  flex: 1 1 100%;
+  text-align: center;
+  padding: 24px;
+}
+
+.pitch-text {
+  flex: 1 1 100%;
+  margin: 0px;
+  padding: 8px 4vw;
+  text-align: center;
+
+  font-size: var(--text-font-size);
+  color: var(--fontcolor);
+
+  b {
+    color: var(--fontcolor);
+  }
+  code {
+    font-size: var(--text-font-size);
+  }
+}
+
+.pitch-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1 1 100%;
+  margin: 0px;
+}
+
+.pitch-card {
+  margin: 8px;
+  flex: 1 1 50%;
+  max-width: 20%;
+  background-color: var(--bgcolor);
+  box-shadow: 0 0 2px 0px var(--linecolor) ;
+  border-radius: 5px;
+}
+
+.pitch-feature {
+  margin: 20px;
+  flex: 1 1 50%;
+  max-width: 30%;
+  background-color: var(--bgcolor);
+  /* box-shadow: 0 0 2px 0px var(--linecolor) ; */
+  border-radius: 5px;
+}
+
+.pitch-feature-img {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  max-width: 40%;
+  margin: auto;
+  border: solid 1px var(--linecolor);
+}
+
+.pitch-feature-title {
+  text-align: center;
+  font-size: 20px;
+  margin: 8px;
+  font-weight: bold;
+}
+
+.pitch-feature-text {
+  text-align: center;
+  margin: 8px;
+  font-size: 16px;
+}
+
+.pitch-card-img {
+  border-radius: 5px 5px 0 0;
+}
+
+.pitch-card-img-badge {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background-color: rgb(255, 242, 0);
+    color: black;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 12px;
+    text-align: center;
+    border: 1px black solid;
+    font-weight: bold;
+}
+
+.pitch-card-title {
+  text-align: left;
+  font-size: var(--card-title-font-size);
+  margin: 8px;
+  font-weight: bold;
+}
+
+.pitch-card-text {
+  text-align: left;
+  margin: 8px;
+  font-size: 12px;
+}
+
+.pitch-people-wrapper {
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+}
+
+.pitch-people {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 40%;
+}
+
+.pitch-people-intro-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: baseline;
+  flex: 1 1 auto;
+  margin: 16px;
+}
+
+.pitch-people-pic {
+  flex: 1 1 auto;
+  max-width: 100px;
+  text-align: left;
+
+  img {
+    border-radius: 50%;
+    border: 1px solid var(--linecolor);
+  }
+}
+
+.pitch-people-intro {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  flex-direction: row;
+  flex: 1 1 auto;
+  max-width: 60%;
+  padding-left: 2%;
+}
+
+.pitch-people-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pitch-people-designation {
+  flex: 1 1 100%;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--fontcolor);
+}
+
+.pitch-people-orgs {
+  flex: 1 1 100%;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--fontcolor);
+}
+
+.pitch-people-links {
+  margin-right: 8px;
+}
+
+.pitch-people-text {
+  flex: 1 1 100%;
+  margin: 8px 0;
+  text-align: left;
+  font-size: var(--text-font-size);
+  color: var(--fontcolor);
+}
+
+.pitch-half {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  flex: 1 1 auto;
+
+  align-self: center;
+  align-items: center;
+
+  max-width: 50%;
+
+  img {
+    align-self: center;
+    margin: auto;
+    flex: 0 1 auto;
+    height: auto;
+    width: auto;
+    max-height: 400px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.pitch-video {
+  width: 99%;
+  height: auto;
+  border: var(--linecolor) 1px solid;
+}
+
+.pitch-ctas {
+  align-items: center;
+  margin: auto;
+  padding: 16px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.pitch-sticky {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--bgcolor);
+  position: sticky;
+  bottom: 0px;
+  align-items: center;
+  z-index: 2;
+  margin-top: 10px;
+  border-top: 1px solid var(--linecolor);
+  align-self: flex-start;
+  margin: 0px;
+}
+
+.pitch-sticky-ctas {
+  align-items: center;
+  margin: auto;
+  /* padding: 16px; */
+  a {
+    text-decoration: none;
+
+    button {
+      margin: 0 0 16px 0;
+    }
+  }
+}
+
+.pitch-cta-button {
+  height: 42px;
+  font-size: var(--text-font-size);
+  background-color: var(--bgcolor);
+  box-shadow: 0px 0px 1px 1px var(--linecolor);
+  border: none;
+  border-radius: 20px;
+  padding: 0px 30px;
+}
+
+.pitch-cta-button-primary {
+  background-color: var(--theme-primary);
+  /* border: var(--theme-primary); */
+}
+
+.pitch-full {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  flex: 1 1 auto;
+
+  align-self: center;
+  align-items: center;
+
+  /* background-color: rgb(194, 255, 255); */
+  min-width: 100%;
+  text-align: center;
+}
+
+.pitch-sequence {
+  flex: 1 1 100%;
+  list-style: none;
+  counter-reset: step-counter;
+}
+
+.pitch-sequence-item {
+  text-align: left;
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  max-width: 85%;
+  counter-increment: step-counter;
+  font-size: var(--text-font-size);
+  color: var(--fontcolor);
+}
+
+/* Custom numbers */
+.pitch-sequence li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: #ff0000;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: var(--text-font-size);
+  line-height: 20px;
+  z-index: 2;
+}
+
+/* Connecting Line */
+.pitch-sequence li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 20px;
+  width: 2px;
+  height: calc(100% + 20px);
+  background: var(--linecolor);
+  z-index: 1;
+}
+
+.pitch-full-img {
+  max-width: 80%;
+  border: 1px var(--fontcolor) solid;
+}
+
+.pitch-half-image-framed {
+  border: 1px solid var(--linecolor);
+}
+
+@media screen and (max-width: 771px) {
+  .pitch-half {
+    max-width: 100%;
+    margin: 10px 0px;
+  }
+
+  .pitch-card {
+    flex: 1 1 50%;
+    max-width: 45%;
+  }
+
+  .pitch-feature {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .pitch-people  {
+    min-width: 100%;
+    padding: 16px;
+    box-shadow: none;
+    min-height: auto;
+  }
+}
+
+/* ---------- terminal overrides ---------- */
+.pitch-card,
+.pitch-feature,
+.pitch-people {
+  box-shadow: none;
+}
+
+.pitch-card,
+.pitch-feature {
+  border: 1px solid var(--linecolor);
+}
+
+.pitch-cta-button,
+.pitch-cta-button-primary {
+  border-radius: 0;
+  background-color: transparent;
+  color: var(--syntax-comment);
+  border: 1px solid var(--syntax-border);
+  box-shadow: none;
+}
+
+.pitch-cta-button:hover,
+.pitch-cta-button-primary:hover {
+  background-color: var(--syntax-border);
+  color: var(--syntax-foreground);
+}
+
+.pitch-people-pic img,
+.pitch-feature-img {
+  border-radius: 0;
+}
+
+.pitch-card-img-badge {
+  background-color: transparent;
+  color: var(--theme-primary);
+  border: 1px solid var(--syntax-border);
+  border-radius: 0;
+}
+
+.pitch-sequence li::before {
+  border-radius: 0;
+  background: var(--cafe);
+  color: #000;
+}

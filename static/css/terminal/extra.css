@@ -1,0 +1,290 @@
+/* =====================================================================
+   Terminal / CRT theme overrides
+   Loaded last among the head stylesheets.
+   ===================================================================== */
+
+/* Terminals have sharp corners. Kill every rounding, even from
+   stylesheets loaded later in the page (bundle.css, pitch.css). */
+* {
+  border-radius: 0 !important;
+}
+
+/* Phosphor-green selection + cursor */
+::selection {
+  background-color: var(--tick-green);
+  color: #000;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+summary:focus-visible {
+  outline: 1px solid var(--btn-border);
+  outline-offset: 2px;
+}
+
+/* ---------- type ---------- */
+#root {
+  font-family: "Zed Mono Nerd Font", "Share Tech Mono", "Iosevka", monospace;
+}
+
+/* transparent parts of images inside content show white so they're visible */
+#content img {
+  background-color: #ffffff;
+}
+
+/* ---------- cards behave like ncurses panels ---------- */
+.blog-card,
+.course-card,
+.bundle-course-card,
+.bundle-course-card-showcase,
+.bundle-sidebar-card,
+.bundle-hw-card,
+.sidebar-product,
+.product-sidebar,
+.pitch-card,
+.pitch-feature {
+  box-shadow: none !important;
+  border: 1px solid var(--linecolor);
+}
+
+.blog-card:hover,
+.course-card:hover,
+.bundle-course-card:hover,
+.bundle-course-card-showcase:hover {
+  box-shadow: 0 0 8px rgba(0, 255, 0, 0.35) !important;
+}
+
+/* glowing focus for the product cover */
+.cover-image:hover {
+  box-shadow: 0 0 12px var(--tick-green) !important;
+}
+
+/* ---------- buttons (match the codeblock copy button) ---------- */
+button,
+.btn,
+.menu-special,
+.menu-special:link,
+.menu-special:visited,
+.menu-special:active,
+.razorpay-payment-button {
+  position: relative;
+  border-radius: 0;
+  letter-spacing: 0.4px;
+  color: var(--syntax-comment);
+  background-color: transparent;
+  border: 1px solid var(--syntax-border);
+  box-shadow: none;
+}
+
+button,
+.btn,
+.menu-special,
+.razorpay-payment-button,
+.pitch-cta-button {
+  box-shadow: none !important;
+}
+
+button:hover,
+.btn:hover,
+.menu-special:hover,
+.razorpay-payment-button:hover {
+  background-color: var(--syntax-border);
+  color: var(--syntax-foreground) !important;
+  border-color: var(--syntax-border);
+  box-shadow: none !important;
+}
+
+/* when a button is hovered every piece of text inside stays readable */
+button:hover *,
+.btn:hover *,
+.menu-special:hover * {
+  color: var(--syntax-foreground) !important;
+}
+
+/* dark text on amber primary backgrounds for contrast */
+.dropdown-summary,
+.product-bestseller {
+  color: #000;
+}
+
+/* product badges match the codeblock copy button */
+.product-bestseller,
+.product-beginner,
+.product-intermediate,
+.product-free {
+  background-color: transparent;
+  color: var(--syntax-comment);
+  border: 1px solid var(--syntax-border);
+  border-radius: 0;
+}
+
+.product-bestseller {
+  color: var(--theme-primary);
+}
+
+.product-beginner,
+.product-intermediate,
+.product-free {
+  color: #55ff55;
+}
+
+/* ---------- form fields ---------- */
+input,
+select,
+textarea {
+  background-color: var(--bgcolor);
+  color: var(--fontcolor);
+  border: 1px solid var(--btn-border);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 1px solid var(--tick-green);
+  border-color: var(--tick-green);
+  box-shadow: 0 0 4px var(--tick-green);
+}
+
+/* ---------- disabled & fine print ---------- */
+.btn-disabled {
+  background-color: transparent;
+  color: var(--mutedcolor);
+  border: 1px solid var(--syntax-border);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.google-recaptcha {
+  color: var(--mutedcolor);
+}
+
+#terms .term {
+  background-color: var(--dimcolor);
+  color: var(--fontcolor);
+  border: 1px solid var(--linecolor);
+  border-radius: 0;
+}
+
+.discount-code {
+  background-color: var(--cafe);
+  color: #000;
+}
+
+/* ---------- code windows ---------- */
+.highlight,
+.code-block-header,
+.code-block-copy,
+blockquote,
+.admonition {
+  border-radius: 0;
+}
+
+.code-block-lang {
+  font-weight: 600;
+}
+.code-block-lang::before {
+  content: "[";
+}
+.code-block-lang::after {
+  content: "]";
+}
+
+p > code,
+li > code {
+  border-radius: 0;
+  background-color: var(--syntax-inline-bg);
+  color: var(--fontcolor);
+}
+
+/* ---------- typed.js block cursor ---------- */
+.typed-cursor {
+  color: var(--tick-green);
+  animation: terminal-blink 1s step-end infinite;
+}
+
+@keyframes terminal-blink {
+  50% { opacity: 0; }
+  0%, 100% { opacity: 1; }
+}
+
+/* ---------- landing showcase ---------- */
+.showcase-3d {
+  background: radial-gradient(circle at 50% 40%, rgba(0, 255, 0, 0.12), transparent 70%);
+}
+
+/* ---------- CRT scrollbars ---------- */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--linecolor) var(--bgcolor);
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bgcolor);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--linecolor);
+  border: 2px solid var(--bgcolor);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--tick-green);
+}
+
+/* ---------- CRT refresh beam: one line sweeping top to bottom ---------- */
+body::after {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 2px;
+  pointer-events: none;
+  z-index: 2147483647;
+  background: linear-gradient(
+    to right,
+    rgba(0, 255, 0, 0) 0%,
+    rgba(0, 255, 0, 0.22) 15%,
+    rgba(0, 255, 0, 0.22) 85%,
+    rgba(0, 255, 0, 0) 100%
+  );
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.25);
+  animation: crt-sweep 2.5s linear infinite;
+}
+
+@keyframes crt-sweep {
+  from { transform: translateY(-2px); }
+  to   { transform: translateY(100vh); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::after {
+    animation: none;
+    visibility: hidden;
+  }
+}
+
+/* ---------- homepage post cards ---------- */
+.post-card {
+  border: 1px solid var(--linecolor);
+  box-shadow: none;
+  border-radius: 0;
+  background-color: var(--dimcolor);
+
+  img {
+    border-radius: 0;
+  }
+}
+
+.post-card:hover {
+  box-shadow: 0 0 8px rgba(0, 255, 0, 0.35);
+}
+
+/* brand icon as a circular white-framed chip */
+#brand .icon {
+  max-height: 150px;
+  border-radius: 50% !important;
+  border: 2px white solid;
+}

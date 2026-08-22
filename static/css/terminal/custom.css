@@ -74,7 +74,7 @@ input {
 
 #owner {
   font-size: 1em;
-  color: cadetblue;
+  color: var(--mutedcolor);
 }
 
 .navbar {
@@ -279,7 +279,7 @@ iframe {
 }
 
 .product-beginner, .product-intermediate, .product-free {
-  background-color: greenyellow;
+  background-color: #55ff55;
   color: black;
 }
 .prod-description {
@@ -504,7 +504,7 @@ th, td {
 
 .cta-note {
   margin: 0px;
-  color: grey;
+  color: var(--mutedcolor);
   font-size: smaller;
   text-align: center;
 }

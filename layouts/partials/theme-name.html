@@ -1,0 +1,3 @@
+{{- $theme := .Site.Params.theme | default "terminal" -}}
+{{- if not (or (eq $theme "terminal") (eq $theme "classic")) }}{{ $theme = "terminal" }}{{ end -}}
+{{- $theme -}}

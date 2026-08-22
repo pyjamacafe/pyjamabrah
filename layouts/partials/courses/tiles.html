@@ -7,7 +7,7 @@
   {{ end }}
 {{end}}
 
-<link rel="stylesheet" href="{{"css/bundle/bundle.css" | relURL }}">
+<link rel="stylesheet" href="{{ printf "css/%s/bundle/bundle.css" (partial "theme-name.html" .) | relURL }}">
 
 <main class="bundle-container">
 <div class="bundle-info-container">

@@ -1,3 +1,3 @@
 {{ define "main" }}
-  {{ partial "pitch/index.html" .Params }}
+  {{ partial "pitch/index.html" (dict "page" . "data" .Params) }}
 {{ end }}

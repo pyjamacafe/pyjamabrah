@@ -68,6 +68,7 @@ markup:
             - ["\\(", "\\)"]
 
 params:
+  theme: "terminal" # visual theme: "terminal" (default) or "classic"
   subtitle: "You are not late. You are loading!"
   description: "Lowering the Barrier to learning Embedded Systems!"
   thumbnail: "/opengraph.png"
@@ -77,12 +78,6 @@ params:
   address: "Keerthi Harmony, Ramamurthy Nagar, Bangalore 560016"
   brandIconFile: "/images/brah.png"
   dateFmt: "2 Jan, 2006"
-  customStylesheets: # Use to override theme styles, like logo size
-   - "css/custom.css"
-   - "css/desktop.css"
-   - "css/sidebar/sidebar.css"
-   - "css/landing/landingpage.css"
-   - "css/syntax.css"
   readingSpeed: 600 # Use to set custom reading speed
   readingSpeedMin: 25 # Use to set custom reading speed range
   readingSpeedMax: 175 # Use to set custom reading speed range

@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <link rel="stylesheet" href="{{"css/bundle/bundle.css" | relURL }}">
+  <link rel="stylesheet" href="{{ printf "css/%s/bundle/bundle.css" (partial "theme-name.html" .) | relURL }}">
   {{ $p := (index .Site.Data.courses .Params.product) }}
   <main>
     <article>
