@@ -14,10 +14,10 @@ ignoreFiles:
 
 menu:
   main: # Change menu as needed
-    # - identifier: posts
-    #   name: Blog
-    #   url: /posts
-    #   weight: 1
+    - identifier: posts
+      name: Blog
+      url: /posts
+      weight: 1
     - identifier: library
       name: Library
       url: /Library/
@@ -27,11 +27,11 @@ menu:
       name: Courses
       url: /courses
       weight: 3
-    - identifier: fpga
-      name: "Soan-Papdi"
-      url: /fpga/
-      pre: true
-      weight: 4
+    # - identifier: fpga
+    #   name: "Soan-Papdi"
+    #   url: /fpga/
+    #   pre: true
+    #   weight: 4
     # - identifier: buds
     #   pre: true
     #   name: Buds

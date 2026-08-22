@@ -20,6 +20,7 @@
     {{ end }}
   </nav>
   <hr id="nav-bottom-hr" />
+  {{ $navTheme := partial "theme-name.html" . }}
   <script>
     p = window.location.pathname.split("/").join("");
     if (p == "") {
@@ -28,8 +29,13 @@
 
     try {
       btn = document.getElementById(p);
+      {{ if eq $navTheme "terminal" }}
+      btn.style.backgroundColor = "var(--syntax-border)";
+      btn.style.color = "var(--syntax-foreground)";
+      {{ else }}
       btn.style.backgroundColor = "var(--cafe)";
       btn.style.color = "var(--bgcolor)";
+      {{ end }}
       btn.style.fontWeight = "bold";
     } catch (error) {
       //
