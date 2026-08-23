@@ -1,7 +1,7 @@
 id: classic-autosar-bsw-integration
 type: partner
 sell: true
-weight: '5'
+weight: '6'
 title: 'Classic AUTOSAR PART III: Basic Software (BSW) Integration.'
 cover: /images/courses/automotive/classic-autosar-bsw-integration.png
 subtitle: Communication, Memory, Diagnostics, Crypto and MCAL Stacks in Classic AUTOSAR

@@ -1,7 +1,7 @@
 id: can-protocol-101
 type: partner
 sell: true
-weight: '7'
+weight: '3'
 title: CAN Protocol 101.
 cover: /images/courses/automotive/CAN101_Thumbnail.png
 subtitle: Foundations of the Controller Area Network Protocol

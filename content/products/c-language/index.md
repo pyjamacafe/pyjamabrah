@@ -13,7 +13,7 @@ date: "2025-01-08T17:48:22+05:30"
 tags:
   - bundle
 description: "The language, the tools and the programming techniques."
-thumbnail: "/c/cover.png"
+thumbnail: "/c-old/cover.png"
 categories: courses
 product: "1-c"
 

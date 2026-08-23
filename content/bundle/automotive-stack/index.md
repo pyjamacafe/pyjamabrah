@@ -2,7 +2,7 @@
 type: bundle
 source: automotive-stack
 title: The Automotive Stack
-thumbnail: "/images/courses/automotive-stack.png"
+thumbnail: "/images/bundle/automotive-stack.jpg"
 description: "Every automotive partner course in one place: Automotive Electronics, Middleware, C++ and Classic AUTOSAR."
 
 url: /automotive-stack

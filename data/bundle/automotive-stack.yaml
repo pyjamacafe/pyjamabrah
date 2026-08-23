@@ -1,126 +1,110 @@
-title: "Automotive Embedded Stack"
-subtitle: "From Vehicle Electronics to AUTOSAR and Middleware Mastery."
-cover: "/images/bundle/automotive-stack.jpg"
-
-# default CTA
-default_cta: &defaults
-  - cta:
-    link: "https://courses.pyjamacafe.com/web/checkout/6a89ccfb2bc90123de388abf?purchaseNow=true&couponcode=AUTOSTACK"
-    text: "Join now | Yearly Pass!"
-    primary: true
-
+title: Automotive Embedded Stack
+subtitle: From Vehicle Electronics to AUTOSAR and Middleware Mastery.
+cover: /images/bundle/automotive-stack.jpg
+default_cta: &id001
+- cta: null
+  link: https://courses.pyjamacafe.com/web/checkout/6a89ccfb2bc90123de388abf?purchaseNow=true&couponcode=AUTOSTACK
+  text: Join now | Yearly Pass!
+  primary: true
 sticky:
-  text: "Early Bird Offer!"
+  text: Early Bird Offer!
   discount:
-    code: "AUTOSTACK"
+    code: AUTOSTACK
     percent: 70%
-  ctas: *defaults
-
+  ctas: *id001
 pricing:
-  - region: "IN"
-    symbol: "₹"
-    original: 14999
-  - region: "default"
-    symbol: "$"
-    original: 179
-
+- region: IN
+  symbol: ₹
+  original: 14999
+- region: default
+  symbol: $
+  original: 179
 introduction:
-  - "A structured, Learning path through the Automotive Embedded software stack — from vehicle electronics and middleware
-    concepts, through CAN and Classic AUTOSAR architecture, to Basic Software integration and the C++ internals that
-    power production middleware."
-  - "We have organized the content to go from system-level breadth to implementation-level depth, so you build the
-    mental models first and the hands-on configuration and coding skills next."
-
+- A structured, Learning path through the Automotive Embedded software stack — from vehicle electronics and middleware concepts,
+  through CAN and Classic AUTOSAR architecture, to Basic Software integration and the C++ internals that power production
+  middleware.
+- We have organized the content to go from system-level breadth to implementation-level depth, so you build the mental models
+  first and the hands-on configuration and coding skills next.
 badges:
-  - Bestseller
-  - Beginner
-  - Intermediate
-  - Advance
-
+- Bestseller
+- Beginner
+- Intermediate
+- Advance
 rating: 5
 enrolled: 10
-
-date: "20 August 2026"
+date: 20 August 2026
 language: English
 access: 365 Days
-
 highlights:
-  - courseCount: "7"
-  - duration: "~100+ hours"
-  - lessonCount: "340+"
-  - downloadableResources: "10+"
-  - cheatSheet: true
-  - caseStudy: true
-  - exerciseChallenge: true
-  - projectCount: "Several"
-  - freeUpdates: true
-  - certificate: true
-
-videoMessage: "https://vimeo.com/1220584081"
-
+- courseCount: '7'
+- duration: ~100+ hours
+- lessonCount: 340+
+- downloadableResources: 10+
+- cheatSheet: true
+- caseStudy: true
+- exerciseChallenge: true
+- projectCount: Several
+- freeUpdates: true
+- certificate: true
+videoMessage: https://vimeo.com/1220584081
 learnings:
-  - Understand the role of middleware in automotive embedded systems and how it differs from driver-level code.
-  - Understand vehicle E/E architecture, sensors, actuators, and powertrain systems at a system level.
-  - Master the CAN protocol - bit timing, framing, arbitration, error detection, and CAN FD.
-  - Understand the C memory model, startup sequence, and linker behavior as used in AUTOSAR Classic software.
-  - Apply AUTOSAR-specific C patterns - typedefs, storage classes, dispatch tables, and MemMap sections.
-  - Understand reentrancy, ISR handling, and MISRA-aligned defensive programming for AUTOSAR C code.
-  - Understand why AUTOSAR exists, its layered architecture, and its development methodology.
-  - Navigate the AUTOSAR metamodel, ARXML, and configuration workflows using real tooling.
-  - Understand VFB, ports, interfaces, SWC types, and connector patterns.
-  - Configure runnable entities, IRVs, Exclusive Areas, and Per-Instance Memory (PIM), and generate RTE.
-  - Understand the AUTOSAR OS, communication stack, and ECU state management (EcuM/BswM).
-  - Configure the AUTOSAR memory stack (NVM/MemIF/FEE/EA) end to end.
-  - Understand UDS-based diagnostics, DCM, and DEM architecture and configuration.
-  - Understand the AUTOSAR Crypto Stack, SecOC, and secure communication concepts.
-  - Get an overview of MCAL drivers and how they connect to the rest of the BSW stack.
-  - Understand the complete C++ compilation pipeline, memory layout, and symbol resolution.
-  - Inspect binaries using professional tools like nm, objdump, and readelf.
-  - Master object lifetime, RAII, move semantics, and RVO for efficient middleware code.
-  - Master virtual functions, vtables, templates, and function-pointer-based abstractions in C++.
-  - Translate high-level C++ constructs into assembly-level mental models for performance-critical automotive software.
-
+- Understand the role of middleware in automotive embedded systems and how it differs from driver-level code.
+- Understand vehicle E/E architecture, sensors, actuators, and powertrain systems at a system level.
+- Master the CAN protocol - bit timing, framing, arbitration, error detection, and CAN FD.
+- Understand the C memory model, startup sequence, and linker behavior as used in AUTOSAR Classic software.
+- Apply AUTOSAR-specific C patterns - typedefs, storage classes, dispatch tables, and MemMap sections.
+- Understand reentrancy, ISR handling, and MISRA-aligned defensive programming for AUTOSAR C code.
+- Understand why AUTOSAR exists, its layered architecture, and its development methodology.
+- Navigate the AUTOSAR metamodel, ARXML, and configuration workflows using real tooling.
+- Understand VFB, ports, interfaces, SWC types, and connector patterns.
+- Configure runnable entities, IRVs, Exclusive Areas, and Per-Instance Memory (PIM), and generate RTE.
+- Understand the AUTOSAR OS, communication stack, and ECU state management (EcuM/BswM).
+- Configure the AUTOSAR memory stack (NVM/MemIF/FEE/EA) end to end.
+- Understand UDS-based diagnostics, DCM, and DEM architecture and configuration.
+- Understand the AUTOSAR Crypto Stack, SecOC, and secure communication concepts.
+- Get an overview of MCAL drivers and how they connect to the rest of the BSW stack.
+- Understand the complete C++ compilation pipeline, memory layout, and symbol resolution.
+- Inspect binaries using professional tools like nm, objdump, and readelf.
+- Master object lifetime, RAII, move semantics, and RVO for efficient middleware code.
+- Master virtual functions, vtables, templates, and function-pointer-based abstractions in C++.
+- Translate high-level C++ constructs into assembly-level mental models for performance-critical automotive software.
 difference:
-  - Purpose-built path for the Automotive Embedded and AUTOSAR ecosystem, not a generic embedded curriculum.
-  - Goes from system-level vehicle electronics down to ARXML configuration and C/C++ binary internals.
-  - Real AUTOSAR methodology, metamodel, and RTE workflows, not just theory slides.
-  - Dedicated CAN protocol foundation before diving into the AUTOSAR communication stack.
-  - Covers the full BSW breadth - OS, ComStack, Memory, Diagnostics, Crypto/SecOC, and MCAL.
-  - C++ internals taught specifically through a middleware and embedded lens.
-  - Connects every concept to real automotive and middleware use cases.
-  - Learn at your own pace with lifetime-style access for the bundle duration.
-
+- Purpose-built path for the Automotive Embedded and AUTOSAR ecosystem, not a generic embedded curriculum.
+- Goes from system-level vehicle electronics down to ARXML configuration and C/C++ binary internals.
+- Real AUTOSAR methodology, metamodel, and RTE workflows, not just theory slides.
+- Dedicated CAN protocol foundation before diving into the AUTOSAR communication stack.
+- Covers the full BSW breadth - OS, ComStack, Memory, Diagnostics, Crypto/SecOC, and MCAL.
+- C++ internals taught specifically through a middleware and embedded lens.
+- Connects every concept to real automotive and middleware use cases.
+- Learn at your own pace with lifetime-style access for the bundle duration.
 hardware:
-  - title: "STM32VLDiscovery"
-    image: "/images/hw/stm32vldiscovery.png"
-    description: "This board has an ARM Cortex-M3 Core. It has a QEMU based target which makes it great for emulation as well as a good physical target to learn AUTOSAR/bare-metal firmware development on."
-  - title: "QEMU Emulator"
-    image: "/images/hw/qemu.png"
-    description: "A free, open-source machine emulator that lets you run and debug the AUTOSAR and embedded C/C++ course exercises entirely in software — no physical hardware required for the emulator-based experiments."
-
-sampleCertificate: "/images/courses/automotive-electronics-certificate.png"
-
+- title: STM32VLDiscovery
+  image: /images/hw/stm32vldiscovery.png
+  description: This board has an ARM Cortex-M3 Core. It has a QEMU based target which makes it great for emulation as well
+    as a good physical target to learn AUTOSAR/bare-metal firmware development on.
+- title: QEMU Emulator
+  image: /images/hw/qemu.png
+  description: A free, open-source machine emulator that lets you run and debug the AUTOSAR and embedded C/C++ course exercises
+    entirely in software — no physical hardware required for the emulator-based experiments.
+sampleCertificate: /images/courses/automotive-electronics-certificate.png
 instructors:
-  - "jegan"
-
+- jegan
 requirements:
-  - Basic understanding of C programming (pointers and structures).
-  - Interest in automotive electronics and embedded software.
-  - Some exposure to digital systems is good (but not strictly required).
-
+- Basic understanding of C programming (pointers and structures).
+- Interest in automotive electronics and embedded software.
+- Some exposure to digital systems is good (but not strictly required).
 audience:
-  - Embedded and Systems Engineers moving into the automotive domain.
-  - AUTOSAR SWC and BSW Developers who want a complete, structured path from architecture to implementation.
-  - Middleware and Platform Developers building communication stacks and infrastructure software.
-  - C/C++ Developers aiming for automotive and systems-level roles.
-  - Students from Electrical, Electronics, and Computer Science Engineering disciplines.
-
+- Embedded and Systems Engineers moving into the automotive domain.
+- AUTOSAR SWC and BSW Developers who want a complete, structured path from architecture to implementation.
+- Middleware and Platform Developers building communication stacks and infrastructure software.
+- C/C++ Developers aiming for automotive and systems-level roles.
+- Students from Electrical, Electronics, and Computer Science Engineering disciplines.
 courses:
-  - "automotive-middleware-101"
-  - "automotive-electronics"
-  - "classic-autosar-c-essentials"
-  - "classic-autosar-architecture-application"
-  - "classic-autosar-bsw-integration"
-  - "automotive-cpp-middleware"
-  - "can-protocol-101"
+- automotive-middleware-101
+- automotive-electronics
+- can-protocol-101
+- classic-autosar-c-essentials
+- classic-autosar-architecture-application
+- classic-autosar-bsw-integration
+- automotive-cpp-middleware
 faqs: automotive-stack

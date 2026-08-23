@@ -14,7 +14,7 @@
     {{ if or (in $value "youtube.com") (in $value "youtu.be") }}
       {{ $ytId := replaceRE `^.*(?:v=|embed/|youtu\.be/)([A-Za-z0-9_-]{11}).*$` `$1` $value }}
       {{ if ne $ytId $value }}
-        {{ $embed = printf "https://www.youtube.com/embed/%s?rel=0&autoplay=1&muted=1&playsinline=1" $ytId }}
+        {{ $embed = printf "https://www.youtube.com/embed/%s?rel=0&autoplay=1&muted=1&playsinline=1&cc_load_policy=1" $ytId }}
       {{ end }}
     {{ else if in $value "vimeo.com" }}
       {{ $vmId := replaceRE `^.*vimeo\.com/([0-9]+).*$` `$1` $value }}

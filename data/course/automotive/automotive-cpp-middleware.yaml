@@ -1,7 +1,7 @@
 id: automotive-cpp-middleware
 type: partner
 sell: true
-weight: '6'
+weight: '7'
 title: C++ for Middleware Engineers
 cover: /images/courses/auto-cpp-middleware.png
 subtitle: Object Oriented Programming - Under the Hood
@@ -22,7 +22,7 @@ sticky:
   text: Start the journey with C++ for Middleware Engineers.
   ctas:
   - link: https://courses.pyjamacafe.com/web/checkout/69887956b426c244c88e0c8a?purchaseNow=true&couponcode=AUTOMOTIVECPP
-    text: Join for Free
+    text: Start Learning
     primary: true
   discount:
     code: AUTOMOTIVECPP

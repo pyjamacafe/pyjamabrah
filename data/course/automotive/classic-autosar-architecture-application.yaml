@@ -1,7 +1,7 @@
 id: classic-autosar-architecture-application
 type: partner
 sell: true
-weight: '4'
+weight: '5'
 title: 'Classic AUTOSAR (Part II): Architecture and Application Development'
 cover: /images/courses/classic-autosar-architecture-application.png
 subtitle: Architecture, Methodology and MetaModels of Classic AUTOSAR.
