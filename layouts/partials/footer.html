@@ -34,6 +34,54 @@
 </footer>
 
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<!-- Lazy-load embeds: viewport-deferred images/iframes (data-src -> src),
+     and a click-to-play facade for YouTube previews. -->
+<script>
+  (function () {
+    function activate(el) {
+      var src = el.getAttribute("data-src");
+      if (!src) return;
+      el.removeAttribute("data-src");
+      el.src = src;
+      if (el.classList.contains("yt-preview-frame")) {
+        el.style.display = "block";
+        var ph = el.closest(".yt-preview-placeholder");
+        if (ph) {
+          var img = ph.querySelector(".yt-preview-thumb");
+          var btn = ph.querySelector(".yt-preview-play");
+          if (img) img.style.display = "none";
+          if (btn) btn.remove();
+        }
+      }
+    }
+
+    /* YouTube previews: strict click-to-play. Nothing loads until the user
+       actually taps the play button on the thumbnail facade. */
+    document.querySelectorAll(".yt-preview-placeholder").forEach(function (ph) {
+      ph.addEventListener("click", function () {
+        var frame = ph.querySelector(".yt-preview-frame");
+        if (frame) activate(frame);
+      });
+    });
+
+    /* Everything else (thumbnails, bare preview iframes): swapped in once
+       the element nears the viewport. */
+    var els = document.querySelectorAll("iframe[data-src]:not(.yt-preview-frame), img[data-src]");
+    if ("IntersectionObserver" in window && els.length) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            activate(entry.target);
+            io.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: "400px 0px", threshold: 0 });
+      els.forEach(function (el) { io.observe(el); });
+    } else {
+      els.forEach(activate);
+    }
+  })();
+</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TZHQ8TM7S2"></script>
 <script>

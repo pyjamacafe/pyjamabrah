@@ -45,7 +45,7 @@
 
     {{ if .preview }}
       <div class="view-preview">
-        <iframe loading="lazy" style="aspect-ratio: 16 / 9; width: 100%; border: 1px solid black" src="https://www.youtube.com/embed/{{.preview}}?rel=0">
+        <iframe loading="lazy" data-src="https://www.youtube.com/embed/{{.preview}}?rel=0" style="aspect-ratio: 16 / 9; width: 100%; border: 1px solid black">
         </iframe>
       </div>
     {{ end }}
