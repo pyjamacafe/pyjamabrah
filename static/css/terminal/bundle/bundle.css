@@ -1184,16 +1184,16 @@ div, p {
 
 .bundle-landing-toc-entry-title {
   border-radius: 0;
+  /* button hover state */
+  background-color: var(--syntax-border);
+  color: var(--syntax-foreground) !important;
 }
 
-/* text contrast fixes */
+/* button default state */
 .bundle-landing-toc-entry-details-title {
-  background-color: var(--section-title-background);
-  color: var(--section-title);
-}
-
-.bundle-landing-toc-entry-title {
-  color: #000 !important;
+  background-color: transparent;
+  color: var(--syntax-comment);
+  border: 1px solid var(--syntax-border);
 }
 
 /* sticky CTA buttons match the codeblock copy button style */

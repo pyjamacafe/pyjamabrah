@@ -122,6 +122,52 @@
       {{ partial "course/checklist.html" $bundle.learnings }}
       {{ end }}
 
+      <div class="bundle-landing-section-title">Table of Content</div>
+      {{ $counter := 0 }}
+      {{ range $bundle.courses }}
+        {{ $counter = (add $counter 1)}}
+        {{ $c := (index $courselist .) }}
+        <span id="{{$c.id}}"></span>
+        <div class="bundle-landing-course-details">
+          <a class="bundle-landing-toc-entry-title" href="#{{$c.id}}">#{{$counter}}: {{$c.title}}</a>
+          <div class="bundle-landing-course-details-container">
+            <div class="bundle-landing-course-details-cover">
+              <img loading="lazy" src="{{$c.cover}}"/>
+            </div>
+            <div class="bundle-landing-course-details-highlights">
+              {{range $c.introduction }}
+              <p>{{.}}</p>
+              {{ end }}
+              {{ partial "course/quality-meta.html" $c }}
+            </div>
+          </div>
+          <div class="bundle-landing-toc-entry">
+            <div class="bundle-landing-toc-content">
+              {{range $c.contents }}
+              <div class="bundle-landing-toc-entry-details-title">{{.section.title}}</div>
+              <ul class="bundle-landing-toc-entry-details-chapter-list">
+              <p>{{.section.description}}</p>
+              {{range .section.chapters}}
+                <div class="bundle-landing-course-details-dialog-section-chapter">
+                {{if eq .chapter.type "file"}}
+                <span class="bi bi-file-earmark bundle-landing-icon">&nbsp</span>
+                {{ else }}
+                <span class="bi bi-play-btn bundle-landing-icon">&nbsp</span>
+                {{end}}
+                {{.chapter.title}}
+                </div>
+                {{ if .chapter.preview }}
+                  {{ partial "course/yt-preview.html" .chapter.preview}}
+                {{ end }}
+              {{end}}
+              </ul>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      {{ end }}
+
+
       {{ if $bundle.sampleCertificate }}
       <div class="bundle-landing-section-title">Sample Certificate</div>
       <div class="bundle-course-sample-certificate">
