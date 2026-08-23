@@ -1,0 +1,186 @@
+id: can-protocol-101
+type: partner
+sell: true
+weight: '7'
+title: CAN Protocol 101.
+cover: /images/courses/automotive/CAN101_Thumbnail.png
+subtitle: Foundations of the Controller Area Network Protocol
+introduction:
+- '**Note:** This is a `Partner Course` and NOT included in the **[Library Access](/library)**!'
+- This course builds a ground-up understanding of the CAN protocol — from network topology and bit timing to framing, arbitration,
+  error handling, and CAN FD — the foundation every automotive and embedded communications engineer needs.
+- By connecting bus-level electrical behavior with frame structure, error detection, and protocol state machines, this course
+  prepares you to read CAN traces, debug bus issues, and reason confidently about CAN-based systems.
+badges:
+- Bestseller
+- Beginner
+rating: 5
+enrolled: 10+
+default_cta: &id001
+- cta: null
+  link: https://courses.pyjamacafe.com/web/checkout/6a89ccfb2bc90123de388abf?purchaseNow=true&couponcode=AUTOSTACK
+  text: Join now | Yearly Pass!
+  primary: true
+sticky:
+  text: Start the journey to Learning Automotive Embedded Stack!
+  discount:
+    code: AUTOSTACK
+    percent: 70%
+  ctas: *id001
+date: 20 August 2026
+language: English
+access: 365 days
+highlights:
+- duration: ~2+ Hrs
+- lessonCount: 25+
+- certificate: true
+- feature: Bus-Level Fundamentals
+- feature: Complete Frame Structure Coverage
+- feature: Error Detection and State Machine Deep Dive
+- feature: CAN FD Explained
+learnings:
+- Understand CAN network topology, including nodes, controllers, transceivers, and the bus.
+- Understand CAN bus voltage levels and dominant/recessive logic.
+- Understand the CAN communication principle end to end.
+- Understand bit segments, time quanta, and baud rate calculation.
+- Understand hard synchronization at Start of Frame (SOF) and resynchronization using the Synchronization Jump Width (SJW).
+- Understand CAN frame types and the structure of Standard and Extended Data Frames.
+- Understand addressing and acceptance filtering.
+- Understand bit stuffing and why it's needed.
+- Understand the Remote Frame, Error Frame, and Overload Frame.
+- Understand Positive and Negative Acknowledgement behavior.
+- Understand bitwise arbitration and how bus access is resolved.
+- Understand Bit Error detection, including CSMA/CD behavior.
+- Understand Stuff Error, CRC Error, Form Error, and ACK Error detection.
+- Understand NRZ coding and twisted-pair signaling for data protection.
+- Understand bus termination and its role in signal integrity.
+- Understand error handling, error tracking, and the CAN error state machine, including the Babbling Idiot scenario.
+- Understand why CAN FD exists and the problems it solves.
+- Understand the Bit Rate Switch (BRS) mechanism.
+- Understand the 64-byte payload and DLC encoding in CAN FD.
+- Understand CRC-17/21 and the Error State Indicator in CAN FD.
+sampleCertificate: /images/certificates/automotive/CAN101_Cert.png
+difference:
+- Bus-Level Fundamentals
+- Complete Frame Structure Coverage
+- Error Detection and State Machine Deep Dive
+- CAN FD Explained
+- Mental Model Development
+- Production-Oriented Problem Solving
+instructors:
+- jegan
+requirements:
+- Basic understanding of digital electronics and embedded systems concepts
+audience:
+- 'Embedded and Automotive Engineers: Developers working on ECUs, drivers, or communication stacks who need a solid grounding
+  in CAN protocol fundamentals.'
+- 'AUTOSAR and BSW Developers: Engineers configuring CAN Driver, CAN IF, or COM stack modules who want a stronger protocol-level
+  foundation.'
+- 'Students and Engineers New to Automotive Networking: Anyone starting out with in-vehicle networks and wanting a clear,
+  structured introduction to CAN.'
+- Students from Electrical, Electronics and Computer Science Engineering disciplines
+faqs: can-protocol-101
+contents:
+- section:
+    title: 'Module 1: CAN Communication'
+    description: ''
+    chapters:
+    - chapter:
+        title: Network, Node, Controller, Transceiver, Bus
+        type: video
+    - chapter:
+        title: CAN Bus Levels & Logic
+        type: video
+    - chapter:
+        title: Communication Principle
+        type: video
+- section:
+    title: 'Module 2: Bit Timing & Synchronization'
+    description: ''
+    chapters:
+    - chapter:
+        title: Bit Segments, Time Quanta & Baud Rate
+        type: video
+    - chapter:
+        title: Hard Sync at SOF & Resync (SJW)
+        type: video
+- section:
+    title: 'Module 3: CAN Framing'
+    description: ''
+    chapters:
+    - chapter:
+        title: Frame Types & Data Frame (Standard / Extended)
+        type: video
+    - chapter:
+        title: Addressing & Acceptance Filters
+        type: video
+    - chapter:
+        title: Bit Stuffing
+        type: video
+    - chapter:
+        title: Remote Frame
+        type: video
+    - chapter:
+        title: Error Frame
+        type: video
+    - chapter:
+        title: Overload Frame
+        type: video
+    - chapter:
+        title: Acknowledgement (Positive / Negative)
+        type: video
+- section:
+    title: 'Module 4: CAN Bus Access'
+    description: ''
+    chapters:
+    - chapter:
+        title: Bitwise Arbitration
+        type: video
+- section:
+    title: 'Module 5: CAN Error Detection'
+    description: ''
+    chapters:
+    - chapter:
+        title: Bit Error (Including CSMA/CD)
+        type: video
+    - chapter:
+        title: Stuff Error
+        type: video
+    - chapter:
+        title: CRC Error
+        type: video
+    - chapter:
+        title: Form Error
+        type: video
+    - chapter:
+        title: ACK Error
+        type: video
+- section:
+    title: 'Module 6: CAN Data Protection'
+    description: ''
+    chapters:
+    - chapter:
+        title: NRZ Coding & Twisted Pair
+        type: video
+    - chapter:
+        title: Bus Termination
+        type: video
+    - chapter:
+        title: Error Handling, Tracking & State Machine (Including the Babbling Idiot Scenario)
+        type: video
+- section:
+    title: 'Module 7: CAN FD'
+    description: ''
+    chapters:
+    - chapter:
+        title: Why CAN FD Exists
+        type: video
+    - chapter:
+        title: Bit Rate Switch (BRS)
+        type: video
+    - chapter:
+        title: 64-Byte Payload & DLC Encoding
+        type: video
+    - chapter:
+        title: CRC-17/21 & Error State Indicator
+        type: video

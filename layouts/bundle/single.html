@@ -59,8 +59,16 @@
       {{ $total := len $bundle.courses }}
       {{ $rowCount := div $total $perRow }}
       {{ if ne (mod $total $perRow) 0 }}{{ $rowCount = add $rowCount 1 }}{{ end }}
+      {{ $remainder := mod $total $perRow }}
+      {{ if and (gt $rowCount 1) (gt $remainder 0) (lt $remainder 3) }}{{ $rowCount = sub $rowCount 1 }}{{ end }}
       {{ range $n := (seq $rowCount) }}
-        {{ $chunk := first $perRow (after (mul (sub $n 1) $perRow) $bundle.courses) }}
+        {{ $start := mul (sub $n 1) $perRow }}
+        {{ $chunk := $bundle.courses }}
+        {{ if lt $n $rowCount }}
+          {{ $chunk = first $perRow (after $start $bundle.courses) }}
+        {{ else }}
+          {{ $chunk = after $start $bundle.courses }}
+        {{ end }}
       <div class="bundle-course-collection-container">
         <div class="bundle-course-row-track">
           <div class="bundle-course-row-inner {{ if eq (mod $n 2) 0 }}bundle-course-row-inner-alt{{ end }}">
@@ -144,6 +152,7 @@
           <div class="bundle-landing-toc-entry">
             <div class="bundle-landing-toc-content">
               {{range $c.contents }}
+              <div class="bundle-landing-toc-entry-section">
               <div class="bundle-landing-toc-entry-details-title">{{.section.title}}</div>
               <ul class="bundle-landing-toc-entry-details-chapter-list">
               <p>{{.section.description}}</p>
@@ -161,6 +170,7 @@
                 {{ end }}
               {{end}}
               </ul>
+              </div>
               {{ end }}
             </div>
           </div>
@@ -312,7 +322,7 @@ updateTimer();
 setInterval(updateTimer, 1000);
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-const fadeSections = document.querySelectorAll('.bundle-info-container > :not(.bundle-landing-footer-sticky), .bundle-sidebar-card');
+const fadeSections = document.querySelectorAll('.bundle-info-container > :not(.bundle-landing-footer-sticky), .bundle-landing-course-details-dialog-section-container, .bundle-landing-toc-entry-section, .bundle-sidebar-card');
 
 if (prefersReducedMotion || !('IntersectionObserver' in window)) {
   fadeSections.forEach(section => {
@@ -325,7 +335,7 @@ if (prefersReducedMotion || !('IntersectionObserver' in window)) {
     entries.forEach(entry => {
       entry.target.classList.toggle('fade-in', entry.isIntersecting);
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -10% 0px' });
+  }, { threshold: 0, rootMargin: '0px 0px -10% 0px' });
   fadeSections.forEach(section => fadeObserver.observe(section));
 }
 

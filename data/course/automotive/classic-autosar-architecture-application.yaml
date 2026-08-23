@@ -1,0 +1,300 @@
+id: classic-autosar-architecture-application
+type: partner
+sell: true
+weight: '4'
+title: 'Classic AUTOSAR (Part II): Architecture and Application Development'
+cover: /images/courses/classic-autosar-architecture-application.png
+subtitle: Architecture, Methodology and MetaModels of Classic AUTOSAR.
+introduction:
+- This course builds a ground-up understanding of Classic AUTOSAR — why it exists, how the ecosystem and documentation are
+  organized, how the development methodology actually works, and how the metamodel and ARXML underpin every tool and workflow
+  you'll use.
+- By walking through layered architecture, VFB, ports and interfaces, SWC types, and runnable/RTE internals with demos and
+  case studies, this course prepares you to read, configure, and reason about AUTOSAR-based software with confidence.
+badges:
+- Bestseller
+- Beginner
+- Intermediate
+rating: 5
+enrolled: 10+
+default_cta: &id001
+- cta: null
+  link: https://courses.pyjamacafe.com/web/checkout/6a89ccfb2bc90123de388abf?purchaseNow=true&couponcode=AUTOSTACK
+  text: Join now | Yearly Pass!
+  primary: true
+sticky:
+  text: Start the journey to Learning Automotive Embedded Stack!
+  discount:
+    code: AUTOSTACK
+    percent: 70%
+  ctas: *id001
+date: 20 August 2026
+language: English
+access: 365 days
+highlights:
+- duration: ~15+ Hrs
+- lessonCount: 62+
+- projectCount: ~20+
+- certificate: true
+- feature: Architecture-First Learning
+- feature: Real ARXML and Metamodel Walkthroughs
+- feature: RTE and Runnable Internals
+- feature: Demo-Driven, Tool-Based Approach
+learnings:
+- Understand why AUTOSAR exists and what legacy development problems it solves.
+- Trace the evolution from OSEK/VDX to Classic AUTOSAR and map the inherited concepts.
+- Understand the AUTOSAR Consortium's role and the layered AUTOSAR architecture.
+- Understand BSW structure at a high level and trace a CAN dataflow example end to end.
+- Navigate AUTOSAR documentation and the AUTOSAR data-exchange format.
+- Understand the practical workflow of NVM within the AUTOSAR ecosystem.
+- Understand the AUTOSAR development flow and configuration classes.
+- Understand RTE generation and top-down, bottom-up, and round-trip workflows.
+- Differentiate the AUTOSAR tool chain landscape, authoring tools vs BSW tools, and static vs generated code.
+- Set up an AUTOSAR metamodel environment and use autosarfactory for hands-on modelling.
+- Understand AUTOSAR application datatype categories and configurations.
+- Understand implementation datatypes, base types, and data prototypes with hands-on data type modelling.
+- Understand AUTOSAR metamodel fundamentals and ARXML design principles/model hierarchy.
+- Understand the Virtual Functional Bus (VFB), ports, and component prototypes.
+- Master AUTOSAR interface types - Sender-Receiver, Client-Server, Parameter, NV, Mode-Switch, and Trigger.
+- Work through complete interface integration examples and interface design demos.
+- Understand SWC types, including Complex Device Drivers (CDD), and port modelling.
+- Understand connector types and best practices, including assembly and delegation connectors.
+- Understand runnable entities and internal behavior, including their C implementation.
+- Master Inter-Runnable Variables (IRV), Exclusive Areas, and Per-Instance Memory (PIM).
+- Work through a speed-controller case study covering runnable/event relationships and all RTE event types.
+- Understand DRE, Error Events, OIE, Init Events, Mode-Switch Events, Internal Trigger Events, and Background Events.
+- Understand event scheduling, event type selection, and the asynchronous client-server pattern.
+- Apply the RTE API for interfacing and defensive error-handling patterns.
+- Generate RTE and inspect the resulting C code skeleton through hands-on demos.
+difference:
+- Architecture-First Learning
+- Real ARXML and Metamodel Walkthroughs
+- RTE and Runnable Internals
+- Demo-Driven, Tool-Based Approach
+- Case-Study Based Teaching
+- Production-Oriented Problem Solving
+- Mental Model Development
+instructors:
+- jegan
+requirements:
+- Basic understanding of C-Programming (with understanding of pointers, structures)
+audience:
+- 'AUTOSAR SWC and BSW Developers: Engineers who need a solid grounding in AUTOSAR architecture, methodology, and metamodels
+  before diving into component and RTE development.'
+- 'Embedded and Systems Engineers: Developers moving from general embedded/firmware work into the AUTOSAR ecosystem.'
+- 'Tool and Integration Engineers: Engineers working with ARXML, authoring tools, and RTE generation who need a strong conceptual
+  foundation.'
+- Students from Electrical, Electronics and Computer Science Engineering disciplines
+sampleCertificate: /images/certificates/automotive/AR2_Cert.png
+faqs: classic-autosar-architecture-application
+contents:
+- section:
+    title: 'Birth and Objectives of AUTOSAR: Understanding Why AUTOSAR Exists and What Problems It Solves'
+    description: ''
+    chapters:
+    - chapter:
+        title: Introduction to the Course
+        type: video
+    - chapter:
+        title: SW Evolution in Automotive
+        type: video
+    - chapter:
+        title: AUTOSAR - Successor of OSEK/VDX
+        type: video
+    - chapter:
+        title: Legacy Development Problems
+        type: video
+    - chapter:
+        title: AUTOSAR Solution for Legacy Challenges
+        type: video
+    - chapter:
+        title: OSEK OS Features
+        type: video
+    - chapter:
+        title: OSEK Vs Classic AUTOSAR - Inheritance Map
+        type: video
+    - chapter:
+        title: AR Consortium Roles
+        type: video
+    - chapter:
+        title: AUTOSAR Layered Architecture
+        type: video
+    - chapter:
+        title: BSW Structure - Function at High Level
+        type: video
+    - chapter:
+        title: CAN Dataflow - Example
+        type: video
+    - chapter:
+        title: AR Layers Stripped - Animation Video
+        type: video
+    - chapter:
+        title: Expected Outcomes from Classic AR
+        type: video
+- section:
+    title: 'Overview of AUTOSAR Org: Navigating the AUTOSAR Ecosystem and Understanding Document Organization'
+    description: ''
+    chapters:
+    - chapter:
+        title: AR Documentation
+        type: video
+    - chapter:
+        title: Practical Workflow of NVM
+        type: video
+    - chapter:
+        title: AR Data Exchange Format
+        type: video
+- section:
+    title: 'AUTOSAR Methodology: Understanding How AUTOSAR-Based Development Actually Works'
+    description: ''
+    chapters:
+    - chapter:
+        title: AR Development Flow Based on Methodology
+        type: video
+    - chapter:
+        title: AR Configuration Classes
+        type: video
+    - chapter:
+        title: RTE Generation
+        type: video
+    - chapter:
+        title: Top-Down, Bottom-Up and Round-Trip Workflows
+        type: video
+    - chapter:
+        title: AR Tool Chain Landscape
+        type: video
+    - chapter:
+        title: Authoring Tools Vs BSW Tools
+        type: video
+    - chapter:
+        title: Static and Generated Code
+        type: video
+    - chapter:
+        title: Real World Application Integration & Summary
+        type: video
+- section:
+    title: 'AUTOSAR MetaModels: Understanding the Foundation That Makes Everything Work'
+    description: ''
+    chapters:
+    - chapter:
+        title: 'Demo: Environment Setup & autosarfactory Intro'
+        type: video
+    - chapter:
+        title: 'Demo: Autosar Factory - Usage'
+        type: video
+    - chapter:
+        title: AR Application Datatypes - Categories
+        type: video
+    - chapter:
+        title: AR Application Datatypes - Configurations
+        type: video
+    - chapter:
+        title: Implementation Datatype / Base Types / Data Prototypes
+        type: video
+    - chapter:
+        title: 'Demo: Data Type Modelling'
+        type: video
+    - chapter:
+        title: AR MetaModel - Fundamentals
+        type: video
+    - chapter:
+        title: ARXML Design Principles - Model Hierarchy
+        type: video
+    - chapter:
+        title: AR Metamodel Documentation
+        type: video
+- section:
+    title: 'Building Blocks of AUTOSAR SWC: The Fundamental Elements of Application Architecture'
+    description: ''
+    chapters:
+    - chapter:
+        title: Introduction to VFB
+        type: video
+    - chapter:
+        title: Ports & Component Prototype
+        type: video
+    - chapter:
+        title: Interface Type (SR, CS, Param, NV, MS, Trigger)
+        type: video
+    - chapter:
+        title: Complete Integration Example
+        type: video
+    - chapter:
+        title: AR Interfaces Example I (SR)
+        type: video
+    - chapter:
+        title: AR Interfaces Example II (CS)
+        type: video
+    - chapter:
+        title: AR Interfaces Example III (MS)
+        type: video
+    - chapter:
+        title: AR Interfaces Example III (Other Interfaces, Best Practices)
+        type: video
+    - chapter:
+        title: 'Demo: Interface Design'
+        type: video
+    - chapter:
+        title: SWC Types I
+        type: video
+    - chapter:
+        title: SWC Types II (CDD and Others)
+        type: video
+    - chapter:
+        title: 'Demo: SWC Types & Port Modelling'
+        type: video
+    - chapter:
+        title: Connector Types / Best Practices
+        type: video
+    - chapter:
+        title: 'Demo: Assembly & Delegation Connectors'
+        type: video
+- section:
+    title: 'Software Component Internals: From Architecture to Behavior and Code'
+    description: ''
+    chapters:
+    - chapter:
+        title: AR Runnable Entities - Internal Behaviour
+        type: video
+    - chapter:
+        title: AR Runnables C Implementation
+        type: video
+    - chapter:
+        title: IRV, Exclusive Area and PIM
+        type: video
+    - chapter:
+        title: Speed Controller - Case Study
+        type: video
+    - chapter:
+        title: Relationship Between Runnable/Events - All Possible RTE Events
+        type: video
+    - chapter:
+        title: DRE / Error Event / OIE
+        type: video
+    - chapter:
+        title: Init Event / Mode Switch Event / Internal Trigger Event / BG Event
+        type: video
+    - chapter:
+        title: Event Scheduling, Event Type Selection, Async Client Server Pattern / Event Summary
+        type: video
+    - chapter:
+        title: 'Demo: Internal Behaviour - Runnables'
+        type: video
+    - chapter:
+        title: 'Demo: Inter-Runnable Variables (IRV)'
+        type: video
+    - chapter:
+        title: 'Demo: Exclusive Areas'
+        type: video
+    - chapter:
+        title: 'Demo: Per-Instance Memory (PIM)'
+        type: video
+    - chapter:
+        title: RTE API for Interfacing
+        type: video
+    - chapter:
+        title: Defensive Error Handling Pattern
+        type: video
+    - chapter:
+        title: 'Demo: RTE Generation & C Code Skeleton'
+        type: video

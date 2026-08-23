@@ -1,0 +1,323 @@
+id: classic-autosar-c-essentials
+type: partner
+sell: true
+weight: '3'
+title: 'Classic AUTOSAR (Part I): C Essentials'
+cover: /images/courses/classic-autosar-c-essentials.png
+subtitle: C Essentials for AUTOSAR
+introduction:
+- This course builds the C-language foundation every AUTOSAR Classic engineer needs — memory model, linker behavior, startup
+  sequence, pointers, type systems, and preprocessor patterns — all grounded in real AUTOSAR conventions and code you'll actually
+  encounter in production stacks.
+- By connecting core C fundamentals with AUTOSAR-specific practices like MemMap sections, reentrancy, ISR handling, and MISRA-aligned
+  defensive programming, this course prepares you to read, debug, and write AUTOSAR-compliant C code with confidence.
+badges:
+- Bestseller
+- Beginner
+- Intermediate
+rating: 5
+enrolled: 10+
+default_cta: &id001
+- cta: null
+  link: https://courses.pyjamacafe.com/web/checkout/6a89ccfb2bc90123de388abf?purchaseNow=true&couponcode=AUTOSTACK
+  text: Join now | Yearly Pass!
+  primary: true
+sticky:
+  text: Start the journey to Learning Automotive Embedded Stack!
+  discount:
+    code: AUTOSTACK
+    percent: 70%
+  ctas: *id001
+date: 20 August 2026
+language: English
+access: 365 days
+highlights:
+- duration: ~19 Hrs
+- lessonCount: 73+
+- projectCount: ~20+
+- certificate: true
+- feature: AUTOSAR-Focused C Fundamentals
+- feature: Real Startup and Linker Analysis
+- feature: Reentrancy and ISR Deep Dive
+- feature: MISRA-Aligned Defensive Programming
+- feature: AUTOSAR MemMap Mechanism Example
+learnings:
+- Understand the C memory model and how it underpins AUTOSAR software design.
+- Trace the booting sequence and the role of the startup file in embedded systems.
+- Analyze memory segments and control layout through the linker.
+- Understand stack memory behavior and how to analyze it in practice.
+- Master pointer fundamentals, pointer arithmetic, and arrays of pointers.
+- Apply AUTOSAR-specific pointer and type-system conventions, including typedefs for abstraction.
+- Use storage classes and type qualifiers the way AUTOSAR code expects.
+- Master preprocessor directives, conditional compilation, and AUTOSAR versioning schemes.
+- Design structs for AUTOSAR configuration, including padding, alignment, and bitfields.
+- Understand unions and iterate safely over arrays of structures.
+- Understand translation units, linkage basics, and header file practices.
+- Manage circular dependencies and structure AUTOSAR modules correctly.
+- Differentiate external and internal linkage in multi-module AUTOSAR projects.
+- Build function-pointer-based abstractions - dispatch tables, jump tables, strategy and factory patterns.
+- Implement multiple callbacks per event using observer-style callback arrays.
+- Master single and multi-level pointer indirection, including const double pointers.
+- Understand AUTOSAR MemMap mechanisms and code/var/const/config sections.
+- Apply compiler-specific pragmas and attributes correctly.
+- Handle multicore scenarios and reentrant function design.
+- Detect non-reentrant patterns and apply reentrancy guards and critical sections.
+- Understand ISR categories, ISR vs normal function behavior, and safe early returns from ISRs.
+- Work with MMIO - volatile usage, typecasting, and bitwise operations for hardware registers.
+- Pack and unpack signals for protocol data, including AUTOSAR signal protection and endianness handling.
+- Apply defensive programming and MISRA-C practices - null pointer validation, array bounds, and return value checks.
+difference:
+- AUTOSAR-Focused C Fundamentals
+- Real Startup and Linker Analysis
+- Memory-Centric Teaching
+- Reentrancy and ISR Deep Dive
+- MISRA-Aligned Defensive Programming
+- Tool-Driven Engineering Approach
+- Production-Oriented Problem Solving
+- Mental Model Development
+instructors:
+- jegan
+requirements:
+- Basic understanding of C-Programming (with understanding of pointers, structures)
+audience:
+- 'Embedded and Systems Engineers: Developers working on firmware, RTOS, drivers, and low-level software who want a strong
+  C foundation aligned with AUTOSAR Classic conventions.'
+- 'AUTOSAR SWC and BSW Developers: Engineers building software components and basic software modules who need to read and
+  write AUTOSAR-compliant C code confidently.'
+- 'C Developers Aiming for Automotive Roles: Programmers who know core C and want to transition into automotive and AUTOSAR-based
+  embedded development.'
+- Students from Electrical, Electronics and Computer Science Engineering disciplines
+sampleCertificate: /images/certificates/automotive/AR1_Cert.png
+faqs: classic-autosar-c-essentials
+contents:
+- section:
+    title: 'Part I: C Language Foundations'
+    description: ''
+    chapters:
+    - chapter:
+        title: Introduction to Course
+        type: video
+    - chapter:
+        title: Cautionary Note - Why this Course Exists?
+        type: video
+    - chapter:
+        title: C Memory Model
+        type: video
+    - chapter:
+        title: Tools Setup and Project Folder Structure
+        type: video
+    - chapter:
+        title: Booting Sequence and Role of Startup File
+        type: video
+    - chapter:
+        title: Memory Segment Analysis
+        type: video
+    - chapter:
+        title: Linker Control
+        type: video
+    - chapter:
+        title: Stack Memory Analysis
+        type: video
+    - chapter:
+        title: Pointer Intro
+        type: video
+    - chapter:
+        title: Pointer Arithmetic and Array of Pointers Usage
+        type: video
+    - chapter:
+        title: AUTOSAR Pointers
+        type: video
+    - chapter:
+        title: AUTOSAR Type System
+        type: video
+    - chapter:
+        title: typedef for Abstraction
+        type: video
+    - chapter:
+        title: AUTOSAR Types
+        type: video
+    - chapter:
+        title: Storage Classes Uses in AUTOSAR
+        type: video
+    - chapter:
+        title: Type Qualifiers
+        type: video
+    - chapter:
+        title: C Type Qualifiers
+        type: video
+    - chapter:
+        title: Preprocessor Basics
+        type: video
+    - chapter:
+        title: '#ifdef, #ifndef, #if-else'
+        type: video
+    - chapter:
+        title: Conditional Compilation
+        type: video
+    - chapter:
+        title: Preprocessor
+        type: video
+    - chapter:
+        title: AUTOSAR Version Schemes
+        type: video
+    - chapter:
+        title: Struct Usage for AUTOSAR Config
+        type: video
+    - chapter:
+        title: Memory Alignment and Struct Padding
+        type: video
+    - chapter:
+        title: Need for Padding Control in AUTOSAR
+        type: video
+    - chapter:
+        title: Use of Bitfields
+        type: video
+    - chapter:
+        title: Unions Usage
+        type: video
+    - chapter:
+        title: Iterating Over Array of Structures
+        type: video
+    - chapter:
+        title: Struct Memory Alignment, Padding, Bitfields
+        type: video
+    - chapter:
+        title: Function Usage
+        type: video
+- section:
+    title: 'Part II: Advanced C Patterns'
+    description: ''
+    chapters:
+    - chapter:
+        title: Translation Unit in Compilation
+        type: video
+    - chapter:
+        title: Linkage Basics
+        type: video
+    - chapter:
+        title: Header File Practices
+        type: video
+    - chapter:
+        title: Circular Dependency and AUTOSAR Module Arrangement
+        type: video
+    - chapter:
+        title: External/Internal Linkage
+        type: video
+    - chapter:
+        title: Function Pointer Basics
+        type: video
+    - chapter:
+        title: Function Pointers
+        type: video
+    - chapter:
+        title: Passing Function as Argument - Strategy, Factory Pattern
+        type: video
+    - chapter:
+        title: Dispatch Table and Jump Table
+        type: video
+    - chapter:
+        title: FnPtr Structure and Virtual Tables
+        type: video
+    - chapter:
+        title: Multiple Callbacks for Same Event
+        type: video
+    - chapter:
+        title: Observer Patterns - Callback Arrays
+        type: video
+    - chapter:
+        title: Single Indirection Recap
+        type: video
+    - chapter:
+        title: Multi Indirection with Examples
+        type: video
+    - chapter:
+        title: Const Double Pointer
+        type: video
+    - chapter:
+        title: Null Handling and Reordering Pattern
+        type: video
+    - chapter:
+        title: Multilevel Indirection
+        type: video
+- section:
+    title: 'Part III: AUTOSAR-Specific Patterns'
+    description: ''
+    chapters:
+    - chapter:
+        title: AUTOSAR MemMap Mechanism
+        type: video
+    - chapter:
+        title: Code, Var, Const and Config Sections
+        type: video
+    - chapter:
+        title: Compiler Specific Pragmas and Attributes
+        type: video
+    - chapter:
+        title: Multicore Scenarios
+        type: video
+    - chapter:
+        title: AUTOSAR MemMap
+        type: video
+    - chapter:
+        title: Reentrant Functions Properties
+        type: video
+    - chapter:
+        title: Non-Reentrant Vs Reentrant Functions
+        type: video
+    - chapter:
+        title: Concept of Critical Section
+        type: video
+    - chapter:
+        title: Detecting Non-Reentrant Patterns
+        type: video
+    - chapter:
+        title: Reentrancy Guard
+        type: video
+    - chapter:
+        title: Interrupt Service Routine Basics
+        type: video
+    - chapter:
+        title: ISR Categories in AUTOSAR
+        type: video
+    - chapter:
+        title: ISR Vs Normal Function
+        type: video
+    - chapter:
+        title: Exit Interrupt and Early Return from ISR
+        type: video
+    - chapter:
+        title: Critical Section
+        type: video
+    - chapter:
+        title: MMIO Basics
+        type: video
+    - chapter:
+        title: Use of 'volatile' for Accessing HW Register
+        type: video
+    - chapter:
+        title: Typecasting for MMIO
+        type: video
+    - chapter:
+        title: Bitwise Operations for HW Registers
+        type: video
+    - chapter:
+        title: Signal Packing and Unpacking for Protocol Data
+        type: video
+    - chapter:
+        title: AUTOSAR Signal Protection Mechanism
+        type: video
+    - chapter:
+        title: GPIO Endianness Demo
+        type: video
+    - chapter:
+        title: Defensive Programming - Null Ptr Validation
+        type: video
+    - chapter:
+        title: Defensive Programming - Array Bound Violation
+        type: video
+    - chapter:
+        title: Defensive Programming - Problem with Ignoring Return Value
+        type: video
+    - chapter:
+        title: MISRA C / Defensive Programming
+        type: video

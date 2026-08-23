@@ -23,10 +23,15 @@ menu:
       url: /Library/
       pre: true
       weight: 2
+    - identifier: automotive
+      name: Automotive
+      url: /automotive-stack/
+      pre: true
+      weight: 3
     - identifier: courses
       name: Courses
       url: /courses
-      weight: 3
+      weight: 4
     # - identifier: fpga
     #   name: "Soan-Papdi"
     #   url: /fpga/

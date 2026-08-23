@@ -1,7 +1,7 @@
 id: automotive-cpp-middleware
 type: partner
 sell: true
-weight: '1'
+weight: '6'
 title: C++ for Middleware Engineers
 cover: /images/courses/auto-cpp-middleware.png
 subtitle: Object Oriented Programming - Under the Hood

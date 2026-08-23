@@ -1,0 +1,249 @@
+id: classic-autosar-bsw-integration
+type: partner
+sell: true
+weight: '5'
+title: 'Classic AUTOSAR PART III: Basic Software (BSW) Integration.'
+cover: /images/courses/automotive/classic-autosar-bsw-integration.png
+subtitle: Communication, Memory, Diagnostics, Crypto and MCAL Stacks in Classic AUTOSAR
+introduction:
+- This course takes you through the Basic Software layer of Classic AUTOSAR end to end — OS services, the communication stack,
+  ECU state management, the memory stack, diagnostics, the crypto stack with SecOC, and MCAL — connecting architecture to
+  real ARXML configuration at every stage.
+- By working through module interactions, configuration workflows, and real-world data flows across BSW, this course prepares
+  you to integrate, configure, and debug AUTOSAR Basic Software with confidence.
+badges:
+- Bestseller
+- Intermediate
+- Advanced
+rating: 5
+enrolled: 10+
+default_cta: &id001
+- cta: null
+  link: https://courses.pyjamacafe.com/web/checkout/6a89ccfb2bc90123de388abf?purchaseNow=true&couponcode=AUTOSTACK
+  text: Join now | Yearly Pass!
+  primary: true
+sticky:
+  text: Early Bird Offer!
+  discount:
+    code: AUTOSTACK
+    percent: 70%
+  ctas: *id001
+date: 20 August 2026
+language: English
+access: 365 days
+highlights:
+- duration: ~19 Hrs
+- lessonCount: 40+
+- projectCount: ~20+
+- certificate: true
+- feature: Full BSW Stack Coverage
+- feature: Real ARXML Configuration Walkthroughs
+- feature: Diagnostics and Cryptography Deep Dive
+- feature: MCAL and Driver-Level Grounding
+learnings:
+- Understand AUTOSAR architecture from an ICC and configuration-class perspective.
+- Classify BSW modules and apply BSW interaction rules correctly.
+- Understand AUTOSAR OS alarms, schedule tables, event mechanisms, timing, memory protection, and multicore OS features.
+- Understand the AUTOSAR ComStack architecture, PDU terminology, and CAN frame structure.
+- Work through CAN Driver, CAN Interface, and CAN Transport Protocol (ISO 15765-2) behavior in detail.
+- Trace PDU routing paths and configure the COM module and COM stack via ARXML.
+- Understand signal packing, endianness, COM transfer properties, update bits, and COM filtering.
+- Understand IPDU groups, IPDU multiplexing, and signal gateway concepts.
+- Understand COMM and Network Management (NM) basics, and LIN/Ethernet stack architecture.
+- Understand EcuM and BswM, and the EcuM state machine.
+- Trace EcuM startup/shutdown sequences, wakeup sources, and sleep modes.
+- Configure BswM completely and compare BswM vs EcuM mode management.
+- Understand the memory stack architecture and the EEPROM path.
+- Understand NVM block types, basic storage objects, and the NVM API.
+- Configure NVM job processing, callbacks, and ARXML settings.
+- Understand MemIF, FEE, EA, and memory driver relationships.
+- Trace a full memory stack read/write flow with ARXML configuration.
+- Understand diagnostics architecture - UDS over CAN and ISO 14229 services.
+- Understand session management, security access, and other diagnostic services.
+- Understand DCM internal architecture, buffer handling, multi-request protocol, and timing parameters.
+- Configure DCM and trace diagnostic flow and integration scenarios.
+- Understand DEM architecture, core functionality, and DTC examples.
+- Understand event debouncing, event reporting, event memory, aging, freeze frames, and extended data records.
+- Understand DEM interfaces, OBD in DEM, and FIM.
+- Understand UDS flash programming and the flashing workflow.
+- Understand the Crypto Stack architecture, automotive use cases, and the CSM lifecycle.
+- Understand AES, hash functions, and MAC generation and verification.
+- Understand RSA (asymmetric) key management.
+- Configure CryIF and Crypto Driver, and get introduced to SecOC.
+- Understand why SecOC is needed and its architecture.
+- Understand SecOC TX and RX flows.
+- Understand the Freshness Value Manager (FVM) strategy.
+- Configure secure IPDU layout and SecOC-COM integration via ARXML.
+- Get an overview of MCAL - drivers, standards, architecture, and the Port/DIO driver.
+- Understand the ADC driver and other MCAL modules.
+- Consolidate the full BSW picture and plan a learning roadmap forward.
+sampleCertificate: /images/certificates/automotive/AR3_Cert.png
+difference:
+- Full BSW Stack Coverage
+- Real Configuration Walkthroughs
+- Diagnostics and Cryptography Deep Dive
+- MCAL and Driver-Level Grounding
+- Case-Study Based Teaching
+- Production-Oriented Problem Solving
+- Mental Model Development
+instructors:
+- jegan
+requirements:
+- Basic understanding of C-Programming (with understanding of pointers, structures)
+- Familiarity with Classic AUTOSAR architecture and methodology (Part I and Part II recommended)
+audience:
+- 'BSW Developers and Integrators: Engineers configuring and integrating AUTOSAR Basic Software modules across communication,
+  memory, diagnostics, and crypto stacks.'
+- 'Diagnostics and Security Engineers: Engineers working on UDS, DEM/DCM, or SecOC/crypto stack implementations.'
+- 'Embedded and Systems Engineers: Developers moving from application-level AUTOSAR work into BSW configuration and integration.'
+- Students from Electrical, Electronics and Computer Science Engineering disciplines
+faqs: classic-autosar-part3-bsw-integration
+contents:
+- section:
+    title: AUTOSAR OS and BSW Architecture
+    description: ''
+    chapters:
+    - chapter:
+        title: AR Architecture - ICC, Configuration Classes
+        type: video
+    - chapter:
+        title: BSW Module Classification, BSW Interaction Rules
+        type: video
+    - chapter:
+        title: AR OS - Alarm / Schedule Tables
+        type: video
+    - chapter:
+        title: AR OS - Event Mechanism, Timing, Memory Protection, Multicore OS Features
+        type: video
+- section:
+    title: Communication Stack
+    description: ''
+    chapters:
+    - chapter:
+        title: AR ComStack Architecture, PDU Terminology, CAN Frame Walkthrough
+        type: video
+    - chapter:
+        title: CAN Driver, CAN IF and CAN TP Overview
+        type: video
+    - chapter:
+        title: CAN TP in Detail (ISO 15765-2)
+        type: video
+    - chapter:
+        title: PDU Routing Path, COM Module, COM Stack - ARXML Config
+        type: video
+    - chapter:
+        title: Signal Packing and Endianness
+        type: video
+    - chapter:
+        title: COM Transfer Properties, Update Bits and COM Filtering
+        type: video
+    - chapter:
+        title: IPDU Groups / IPDUM / Signal Gateway
+        type: video
+    - chapter:
+        title: COMM and NM Basics
+        type: video
+    - chapter:
+        title: LIN/Ethernet Stack Architecture
+        type: video
+- section:
+    title: ECU State Management
+    description: ''
+    chapters:
+    - chapter:
+        title: EcuM, BswM and EcuM State Machine - Overview
+        type: video
+    - chapter:
+        title: EcuM Startup/Shutdown Sequence - Wakeup Source, Sleep Modes
+        type: video
+    - chapter:
+        title: BswM Complete, BswM Vs EcuM Mode Management Config - Summary
+        type: video
+- section:
+    title: Memory Stack
+    description: ''
+    chapters:
+    - chapter:
+        title: MemStack Architecture - EEPROM Path
+        type: video
+    - chapter:
+        title: NVM Block Types / Basic Storage Object / NVM API
+        type: video
+    - chapter:
+        title: NVM Job Processing / Callback / ARXML Configuration
+        type: video
+    - chapter:
+        title: MemIF / FEE / EA / Memory Drivers
+        type: video
+    - chapter:
+        title: Full Memory Stack RW Flow / ARXML Config
+        type: video
+- section:
+    title: Diagnostics (UDS, DCM, DEM)
+    description: ''
+    chapters:
+    - chapter:
+        title: Diagnostics Architecture - UDS over CAN, ISO 14229 Services
+        type: video
+    - chapter:
+        title: Session Management, Security Access and Other Diag Services
+        type: video
+    - chapter:
+        title: DCM Internal Architecture, DCM Buffer Handling, DCM Multireq Protocol, DCM Timing Params
+        type: video
+    - chapter:
+        title: Configure DCM
+        type: video
+    - chapter:
+        title: DEM Architecture, Core Functionality, DTC Examples
+        type: video
+    - chapter:
+        title: Event Debouncing, Event Reporting, Event Memory, Aging, Freeze Frame and Extended Data Records
+        type: video
+    - chapter:
+        title: DEM Interfaces, OBD in DEM, FIM
+        type: video
+    - chapter:
+        title: UDS Flash Programming, ARXML Config and Workflow
+        type: video
+- section:
+    title: Crypto Stack and SecOC
+    description: ''
+    chapters:
+    - chapter:
+        title: Cryptostack Architecture, Automotive Use Cases, CSM Lifecycle
+        type: video
+    - chapter:
+        title: AES Explained, Hash Function, MAC Generation and Verification
+        type: video
+    - chapter:
+        title: RSA (Asymmetric) Key Management
+        type: video
+    - chapter:
+        title: CryIF Config, Crypto Driver Config / SecOC Intro (Optional)
+        type: video
+    - chapter:
+        title: Why SecOC, SecOC Architecture
+        type: video
+    - chapter:
+        title: SecOC - TX, RX
+        type: video
+    - chapter:
+        title: FVM (Freshness Value Manager) Strategy
+        type: video
+    - chapter:
+        title: Secure IPDU Layout, SecOC COM Integration, ARXML Config
+        type: video
+- section:
+    title: MCAL and Wrap-Up
+    description: ''
+    chapters:
+    - chapter:
+        title: MCAL Overview - Drivers, Standards, Architecture, Port/DIO Driver
+        type: video
+    - chapter:
+        title: ADC Driver - Other MCAL Modules
+        type: video
+    - chapter:
+        title: Summary and Road Map
+        type: video

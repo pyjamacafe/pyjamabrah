@@ -1,7 +1,7 @@
 <script>
 (function() {
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const fadeSections = document.querySelectorAll('.bundle-info-container > :not(.bundle-landing-footer-sticky), .post-content > *, .bundle-sidebar-card');
+  const fadeSections = document.querySelectorAll('.bundle-info-container > :not(.bundle-landing-footer-sticky), .post-content > *, .bundle-landing-course-details-dialog-section-container, .bundle-landing-toc-entry-section, .bundle-sidebar-card');
 
   if (prefersReducedMotion || !('IntersectionObserver' in window)) {
     fadeSections.forEach(section => {
@@ -14,7 +14,7 @@
       entries.forEach(entry => {
         entry.target.classList.toggle('fade-in', entry.isIntersecting);
       });
-    }, { threshold: 0.1, rootMargin: '0px 0px -10% 0px' });
+    }, { threshold: 0, rootMargin: '0px 0px -10% 0px' });
     fadeSections.forEach(section => fadeObserver.observe(section));
   }
 })();
