@@ -1,8 +1,27 @@
 {{ with . }}
 <div class="bundle-landing-section-title">Why we made this</div>
 <div class="bundle-landing-videomessage-container">
-<video width="100%" autoplay muted controls>
-<source src="https://raw.githubusercontent.com/pyjamacafe/cache/main/course-intro/{{.}}.webm" type="video/webm">
-</video>
+  {{ $embed := "" }}
+  {{ if or (hasPrefix . "http://") (hasPrefix . "https://") }}
+    {{ if or (in . "youtube.com") (in . "youtu.be") }}
+      {{ $ytId := replaceRE `^.*(?:v=|embed/|youtu\.be/)([A-Za-z0-9_-]{11}).*$` `$1` . }}
+      {{ if ne $ytId . }}
+        {{ $embed = printf "https://www.youtube.com/embed/%s?rel=0&autoplay=1&muted=1&playsinline=1" $ytId }}
+      {{ end }}
+    {{ else if in . "vimeo.com" }}
+      {{ $vmId := replaceRE `^.*vimeo\.com/([0-9]+).*$` `$1` . }}
+      {{ if ne $vmId . }}
+        {{ $embed = printf "https://player.vimeo.com/video/%s?autoplay=1&muted=1" $vmId }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $embed }}
+  <iframe data-src="{{ $embed }}" loading="lazy" title="Why we made this" style="width: 100%; aspect-ratio: 16 / 9; border: 0;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  {{ else }}
+  <video width="100%" autoplay muted controls>
+    <source src="https://raw.githubusercontent.com/pyjamacafe/cache/main/course-intro/{{.}}.webm" type="video/webm">
+  </video>
+  {{ end }}
 </div>
 {{ end }}
