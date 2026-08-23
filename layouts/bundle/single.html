@@ -81,9 +81,9 @@
                 <img loading="lazy" src="{{$c.cover}}"/>
               </div>
               <div class="bundle-course-card-title">{{$c.title}}</div>
-              <div class="bundle-course-card-description">{{$c.subtitle}}</div>
+              <div class="bundle-course-card-description">{{$c.subtitle | markdownify}}</div>
               {{ with $desc }}
-              <div class="bundle-course-card-long-description">{{.}}</div>
+              <div class="bundle-course-card-long-description">{{. | markdownify}}</div>
               {{ end }}
             </div>
           {{ end }}
@@ -96,9 +96,9 @@
                 <img loading="lazy" src="{{$c.cover}}"/>
               </div>
               <div class="bundle-course-card-title">{{$c.title}}</div>
-              <div class="bundle-course-card-description">{{$c.subtitle}}</div>
+              <div class="bundle-course-card-description">{{$c.subtitle | markdownify}}</div>
               {{ with $desc }}
-              <div class="bundle-course-card-long-description">{{.}}</div>
+              <div class="bundle-course-card-long-description">{{. | markdownify}}</div>
               {{ end }}
             </div>
           {{ end }}

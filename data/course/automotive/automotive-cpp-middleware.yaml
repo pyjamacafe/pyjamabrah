@@ -6,7 +6,6 @@ title: C++ for Middleware Engineers
 cover: /images/courses/auto-cpp-middleware.png
 subtitle: Object Oriented Programming - Under the Hood
 introduction:
-- '**Note:** This is a `Partner Course` and NOT included in the **[Library Access](/library)**!'
 - This course unpacks the complete compilation pipeline, memory layout, symbol resolution, object lifetime, abstraction mechanisms,
   and performance behavior. You will analyze real binaries, inspect assembly output, and use professional tools like nm, objdump,
   and profilers to understand how design choices affect execution.

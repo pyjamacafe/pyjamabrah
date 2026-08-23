@@ -6,7 +6,6 @@ title: Automotive Electronics
 cover: /images/courses/automotive-electronics.png
 subtitle: Understanding the modern vehicle electronics
 introduction:
-- '**Note:** This is a `Partner Course` and NOT included in the **[Library Access](/library)**!'
 - This course provides a structured, end-to-end understanding of modern vehicle electronics — from foundational E/E architecture
   and sensors to advanced vehicle diagnostics, software stacks, and the latest automotive trends. The curriculum blends theory,
   systems engineering, and hands-on demos to provide a broader perspective on roles in automotive embedded systems, diagnostics,

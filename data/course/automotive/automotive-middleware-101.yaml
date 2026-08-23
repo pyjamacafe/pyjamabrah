@@ -6,7 +6,6 @@ title: Automotive Middleware 101
 cover: /images/courses/auto-middleware.png
 subtitle: Understanding the modern vehicle electronics
 introduction:
-- '**Note:** This is a `Partner Course` and NOT included in the **[Library Access](/library)**!'
 - This course introduces the role of middleware in modern automotive embedded systems, covering architectures, real-world
   examples, and controller vs processor-based designs. Learn driver vs middleware code level differences, Covering the middleware
   example with a SOME/IP case study, OS essentials required for middleware development, why C++ dominates middleware development,

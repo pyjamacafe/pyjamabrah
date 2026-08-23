@@ -66,14 +66,52 @@ div[onclick]:focus:not(:focus-visible) {
 .bundle-course-card-showcase:hover {
   box-shadow: none !important;
   background-color: var(--syntax-border);
-  color: var(--syntax-foreground) !important;
 }
 
-.blog-card:hover *,
-.course-card:hover *,
-.bundle-course-card:hover *,
-.bundle-course-card-showcase:hover * {
-  color: var(--syntax-foreground) !important;
+/* on card hover, badges keep their accent background so they read as chips */
+.blog-card:hover [class*="bestseller"],
+.course-card:hover [class*="bestseller"],
+.bundle-course-card:hover [class*="bestseller"],
+.bundle-course-card-showcase:hover [class*="bestseller"],
+.post-card:hover [class*="bestseller"] {
+  background-color: var(--theme-primary);
+  color: #000;
+  border-color: #000;
+}
+
+.blog-card:hover [class*="beginner"],
+.blog-card:hover [class*="intermediate"],
+.blog-card:hover [class*="enrolled"],
+.course-card:hover [class*="beginner"],
+.course-card:hover [class*="intermediate"],
+.course-card:hover [class*="enrolled"],
+.bundle-course-card:hover [class*="beginner"],
+.bundle-course-card:hover [class*="intermediate"],
+.bundle-course-card:hover [class*="enrolled"],
+.bundle-course-card-showcase:hover [class*="beginner"],
+.bundle-course-card-showcase:hover [class*="intermediate"],
+.bundle-course-card-showcase:hover [class*="enrolled"],
+.post-card:hover [class*="beginner"],
+.post-card:hover [class*="intermediate"],
+.post-card:hover [class*="enrolled"] {
+  background-color: #55ff55;
+  color: #000;
+  border-color: #000;
+}
+
+.blog-card:hover [class*="advance"],
+.course-card:hover [class*="advance"],
+.bundle-course-card:hover [class*="advance"],
+.bundle-course-card-showcase:hover [class*="advance"],
+.post-card:hover [class*="advance"] {
+  background-color: var(--cafe);
+  color: #000;
+  border-color: #000;
+}
+
+/* fade the badge fill at the same rate as the card background */
+.bundle-landing-badge {
+  transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
 }
 
 /* product cover has no hover glow/shadows */
@@ -303,10 +341,6 @@ body::after {
   box-shadow: none;
   background-color: var(--syntax-border);
   transform: none;
-}
-
-.post-card:hover * {
-  color: var(--syntax-foreground) !important;
 }
 
 /* brand icon as a circular white-framed chip */

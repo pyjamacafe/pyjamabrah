@@ -6,7 +6,6 @@ title: CAN Protocol 101.
 cover: /images/courses/automotive/CAN101_Thumbnail.png
 subtitle: Foundations of the Controller Area Network Protocol
 introduction:
-- '**Note:** This is a `Partner Course` and NOT included in the **[Library Access](/library)**!'
 - This course builds a ground-up understanding of the CAN protocol — from network topology and bit timing to framing, arbitration,
   error handling, and CAN FD — the foundation every automotive and embedded communications engineer needs.
 - By connecting bus-level electrical behavior with frame structure, error detection, and protocol state machines, this course

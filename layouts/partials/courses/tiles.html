@@ -25,11 +25,11 @@
           <img loading="lazy" src="{{.cover}}"/>
         </div>
         <div class="bundle-course-card-title">{{.title | markdownify}}</div>
-        <div class="bundle-course-card-description">{{.subtitle}}</div>
+        <div class="bundle-course-card-description">{{.subtitle | markdownify}}</div>
         {{ with .introduction }}
         {{ $d := delimit . " " }}
         {{ if gt (len $d) 150 }}{{ $d = printf "%s..." ((slicestr $d 0 150) | strings.TrimRight " ") }}{{ end }}
-        <div class="bundle-course-card-long-description">{{ $d }}</div>
+        <div class="bundle-course-card-long-description">{{ $d | markdownify }}</div>
         {{ end }}
         {{ partial "course/badges.html" .badges }}
         <div class="bundle-landing-rating-student-count-container">
@@ -119,11 +119,11 @@
           <img loading="lazy" src="{{.cover}}"/>
         </div>
         <div class="bundle-course-card-title">{{.title | markdownify}}</div>
-        <div class="bundle-course-card-description">{{.subtitle}}</div>
+        <div class="bundle-course-card-description">{{.subtitle | markdownify}}</div>
         {{ with .introduction }}
         {{ $d := delimit . " " }}
         {{ if gt (len $d) 150 }}{{ $d = printf "%s..." ((slicestr $d 0 150) | strings.TrimRight " ") }}{{ end }}
-        <div class="bundle-course-card-long-description">{{ $d }}</div>
+        <div class="bundle-course-card-long-description">{{ $d | markdownify }}</div>
         {{ end }}
         {{ partial "course/badges.html" .badges }}
         <div class="bundle-landing-rating-student-count-container">
