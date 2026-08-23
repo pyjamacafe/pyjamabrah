@@ -1,27 +1,34 @@
-{{ with . }}
-<div class="bundle-landing-section-title">Why we made this</div>
+{{ $value := . }}
+{{ $withTitle := true }}
+{{ if reflect.IsMap $value }}
+  {{ $withTitle = default true $value.withTitle }}
+  {{ $value = $value.value }}
+{{ end }}
+
+{{ if $withTitle }}
+<div class="bundle-landing-section-title">Hey there 👋</div>
+{{ end }}
 <div class="bundle-landing-videomessage-container">
   {{ $embed := "" }}
-  {{ if or (hasPrefix . "http://") (hasPrefix . "https://") }}
-    {{ if or (in . "youtube.com") (in . "youtu.be") }}
-      {{ $ytId := replaceRE `^.*(?:v=|embed/|youtu\.be/)([A-Za-z0-9_-]{11}).*$` `$1` . }}
-      {{ if ne $ytId . }}
+  {{ if or (hasPrefix $value "http://") (hasPrefix $value "https://") }}
+    {{ if or (in $value "youtube.com") (in $value "youtu.be") }}
+      {{ $ytId := replaceRE `^.*(?:v=|embed/|youtu\.be/)([A-Za-z0-9_-]{11}).*$` `$1` $value }}
+      {{ if ne $ytId $value }}
         {{ $embed = printf "https://www.youtube.com/embed/%s?rel=0&autoplay=1&muted=1&playsinline=1" $ytId }}
       {{ end }}
-    {{ else if in . "vimeo.com" }}
-      {{ $vmId := replaceRE `^.*vimeo\.com/([0-9]+).*$` `$1` . }}
-      {{ if ne $vmId . }}
+    {{ else if in $value "vimeo.com" }}
+      {{ $vmId := replaceRE `^.*vimeo\.com/([0-9]+).*$` `$1` $value }}
+      {{ if ne $vmId $value }}
         {{ $embed = printf "https://player.vimeo.com/video/%s?autoplay=1&muted=1" $vmId }}
       {{ end }}
     {{ end }}
   {{ end }}
 
   {{ if $embed }}
-  <iframe data-src="{{ $embed }}" loading="lazy" title="Why we made this" style="width: 100%; aspect-ratio: 16 / 9; border: 0;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe data-src="{{ $embed }}" loading="lazy" title="Hey there 👋" style="width: 100%; aspect-ratio: 16 / 9; border: 0;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   {{ else }}
   <video width="100%" autoplay muted controls>
-    <source src="https://raw.githubusercontent.com/pyjamacafe/cache/main/course-intro/{{.}}.webm" type="video/webm">
+    <source src="https://raw.githubusercontent.com/pyjamacafe/cache/main/course-intro/{{$value}}.webm" type="video/webm">
   </video>
   {{ end }}
 </div>
-{{ end }}

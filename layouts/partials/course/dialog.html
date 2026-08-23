@@ -29,6 +29,11 @@
         {{ end }}
       </div>
       {{ end }}
+      {{ if .videoMessage }}
+      <div class="bundle-landing-course-details-dialog-section-container">
+        {{ partial "course/videoMessage.html" (dict "value" .videoMessage "withTitle" false) }}
+      </div>
+      {{ end }}
       {{ range .contents }}
         <div class="bundle-landing-course-details-dialog-section-container">
         <div class="bundle-landing-course-details-dialog-section-title">
