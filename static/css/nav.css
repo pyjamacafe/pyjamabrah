@@ -1,0 +1,132 @@
+/* ---------- responsive nav: burger icon + slide-out drawer ---------- */
+.nav-row {
+  display: flex;
+  align-items: center;
+}
+
+.nav-row .navbar {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.nav-burger {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 28px;
+  padding: 0 10px;
+  background: transparent;
+  border: 1px solid var(--syntax-border);
+  cursor: pointer;
+}
+
+.nav-burger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: currentColor;
+}
+
+.nav-burger:hover {
+  background: var(--syntax-border);
+  color: var(--syntax-foreground);
+}
+
+.nav-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 10001;
+}
+
+.nav-backdrop.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+#nav-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: min(320px, 82vw);
+  display: flex;
+  flex-direction: column;
+  background: var(--dimcolor);
+  border-left: 1px solid var(--linecolor);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  visibility: hidden;
+  overflow-y: auto;
+  z-index: 10002;
+}
+
+#nav-drawer.open {
+  transform: none;
+  visibility: visible;
+}
+
+.nav-drawer-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--linecolor);
+}
+
+.nav-drawer-title {
+  font-weight: bold;
+}
+
+.nav-drawer-close {
+  border: 1px solid var(--syntax-border);
+  background: transparent;
+  color: var(--fontcolor);
+  font-size: 22px;
+  line-height: 1;
+  padding: 4px 10px;
+}
+
+.nav-drawer-close:hover {
+  background: var(--syntax-border);
+  color: #000;
+}
+
+.nav-drawer-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  margin: 0;
+}
+
+.nav-drawer-menu .menu-special {
+  display: block;
+  width: 100%;
+  margin: 4px 0;
+  text-align: left;
+}
+
+@media all and (width <= 768px) {
+  /* keep the first three nav buttons inline, tuck the rest behind the burger */
+  .navbar .menu-special:nth-child(n+4) {
+    display: none;
+  }
+  .nav-burger {
+    display: flex;
+  }
+}
+
+@media all and (width > 768px) {
+  .nav-burger {
+    display: none;
+  }
+  #nav-drawer,
+  .nav-backdrop {
+    display: none;
+  }
+}
