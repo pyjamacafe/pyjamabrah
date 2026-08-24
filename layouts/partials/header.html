@@ -11,24 +11,19 @@
       <h3 class="site-subtitle">{{ default "Description about Blog Author" .Site.Params.subtitle }}</h3>
     </div>
   </div>
-  <hr id="nav-top-hr" />
-  <div class="nav-row">
-    <nav class="navbar">
+  <nav class="navbar">
       {{ with .Site.Menus.main }}
         {{ range $index, $value := . }}
           <a class="menu-special" id="{{.Identifier}}" href="{{ .URL | relURL }}">{{ .Name }}</a>
         {{ end }}
       {{ end }}
+      <a class="nav-burger" href="#" aria-label="Open menu" aria-expanded="false" onclick="event.preventDefault(); toggleNavDrawer()">
+        <span></span><span></span><span></span>
+      </a>
     </nav>
-    <button class="nav-burger" aria-label="Open menu" aria-expanded="false" onclick="toggleNavDrawer()">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-  <hr id="nav-bottom-hr" />
   <div class="nav-backdrop" id="nav-backdrop" onclick="toggleNavDrawer()"></div>
   <aside id="nav-drawer" aria-hidden="true">
     <div class="nav-drawer-head">
-      <div class="nav-drawer-title">{{ .Site.Title }}</div>
       <button class="nav-drawer-close" aria-label="Close menu" onclick="toggleNavDrawer()">&times;</button>
     </div>
     <nav class="nav-drawer-menu">

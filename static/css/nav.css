@@ -1,14 +1,4 @@
 /* ---------- responsive nav: burger icon + slide-out drawer ---------- */
-.nav-row {
-  display: flex;
-  align-items: center;
-}
-
-.nav-row .navbar {
-  flex: 1 1 auto;
-  min-width: 0;
-}
-
 .nav-burger {
   display: none;
   flex-direction: column;
@@ -19,7 +9,16 @@
   padding: 0 10px;
   background: transparent;
   border: 1px solid var(--syntax-border);
+  color: var(--fontcolor);
+  text-decoration: none;
   cursor: pointer;
+}
+
+.nav-burger:link,
+.nav-burger:visited,
+.nav-burger:hover {
+  color: var(--fontcolor);
+  text-decoration: none;
 }
 
 .nav-burger span {
@@ -74,7 +73,7 @@
 .nav-drawer-head {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 14px 16px;
   border-bottom: 1px solid var(--linecolor);
 }
@@ -106,7 +105,6 @@
 
 .nav-drawer-menu .menu-special {
   display: block;
-  width: 100%;
   margin: 4px 0;
   text-align: left;
 }
@@ -118,6 +116,31 @@
   }
   .nav-burger {
     display: flex;
+    margin-left: auto;
+  }
+
+  /* smaller brand icon and scaled-down headings for small screens */
+  #brand .icon {
+    width: 50px;
+    max-height: 50px;
+  }
+  #brand h1 {
+    font-size: 24px;
+  }
+  #brand h3 {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 26px;
+  }
+  h2 {
+    font-size: 21px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 16px;
   }
 }
 

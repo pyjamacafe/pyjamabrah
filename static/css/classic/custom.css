@@ -78,9 +78,12 @@ input {
 }
 
 .navbar {
-  margin: 0px !important;
-  display: flex;
-  justify-content: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    padding: 4px 0px;
+    border-top: 1px solid var(--linecolor);
+    border-bottom: 1px solid var(--linecolor);
+    margin: 8px 0px;
 }
 
 .menu-special {
