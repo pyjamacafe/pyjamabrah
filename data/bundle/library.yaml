@@ -16,13 +16,13 @@ sticky:
     percent: 33.34%
   ctas: *defaults
 
-pricing:
-  - region: "IN"
-    symbol: "₹"
-    original: 14999
-  - region: "default"
-    symbol: "$"
-    original: 179
+# pricing:
+#   - region: "IN"
+#     symbol: "₹"
+#     original: 14999
+#   - region: "default"
+#     symbol: "$"
+#     original: 179
 
 # infographic: "/images/bundle/library/hero.png"
 introduction:

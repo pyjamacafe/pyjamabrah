@@ -1,0 +1,54 @@
+{{ $card := . }}
+{{ $explore := "" }}
+{{ if reflect.IsMap . }}
+  {{ $card = default . .card }}
+  {{ $explore = default "" .explore }}
+{{ end }}
+{{ with $card }}
+<div class="bundle-sidebar-card">
+  <img loading="lazy" src="{{.cover}}">
+  <div class="bundle-sidebar-card-title">{{.title | markdownify}}</div>
+  <div class="bundle-sidebar-card-subtitle">{{.subtitle | markdownify}}</div>
+  {{ with .introduction }}
+  {{ $desc := delimit . " " }}
+  {{ if gt (len $desc) 150 }}{{ $desc = printf "%s..." ((slicestr $desc 0 150) | strings.TrimRight " ") }}{{ end }}
+  <div class="bundle-sidebar-card-description">{{ $desc }}</div>
+  {{ end }}
+  {{ with .badges }}{{ partial "course/badges.html" . }}{{ end }}
+  <div class="bundle-landing-rating-student-count-container">
+    {{ with .rating }}{{ partial "course/ratingStars.html" . }}{{ end }}
+  </div>
+  {{ if .highlights }}
+  <div class="bundle-sidebar-highlights-container">
+    {{ partial "course/highlights.html" .highlights}}
+  </div>
+  {{ end }}
+
+  <hr class="bundle-landing-sidebar-cta-hr">
+  <div class="bundle-landing-sidebar-cta">
+    {{ if .sticky.ctas }}
+    <div class="bundle-cta-footer">
+      {{ if .pricing }}
+      <span class="bundle-cta-price">
+        <s class="bundle-cta-original"></s>
+        <b class="bundle-cta-discounted"></b>
+      </span>
+      {{ end }}
+    </div>
+    {{ end }}
+    <div class="bundle-landing-footer-sticky-ctas">
+      {{ if $explore }}
+        <a href="{{ $explore }}">
+          <button class="bundle-landing-footer-sticky-cta-button bundle-landing-footer-sticky-cta-button-primary">Learn more</button>
+        </a>
+      {{ else }}
+        {{ range .sticky.ctas }}
+          <a href="{{ .link }}" target="_blank">
+            <button class="bundle-landing-footer-sticky-cta-button {{if .primary}}bundle-landing-footer-sticky-cta-button-primary{{end}}">{{ .text }}</button>
+          </a>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}

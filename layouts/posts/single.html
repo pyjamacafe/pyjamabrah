@@ -1,23 +1,32 @@
 {{ define "main" }}
+  {{ $sidebarKey := or .Params.sidebar "library" }}
+  {{ $card := index .Site.Data.bundle $sidebarKey }}
+  {{ if not $card }}{{ $card = index (partial "course/course-map.html" .) $sidebarKey }}{{ end }}
+  {{ if not $card }}{{ $card = index .Site.Data.bundle "library" }}{{ end }}
+  {{ $explore := "" }}
+  {{ with .Site.GetPage (printf "/bundle/%s" $sidebarKey) }}{{ $explore = .RelPermalink }}{{ end }}
+  {{ if not $explore }}{{ with .Site.GetPage (printf "/course/%s" $sidebarKey) }}{{ $explore = .RelPermalink }}{{ end }}{{ end }}
   <link rel="stylesheet" href="{{ printf "css/%s/bundle/bundle.css" (partial "theme-name.html" .) | relURL }}">
   <main>
     <article>
-      <h1 class="title">{{ .Title }}</h1>
-      {{ with .Params.subtitle }}<h3 class="subtitle">{{ . }}</h3>{{ end }}
-      {{ partial "postMetaDetailed.html" . }}
       <div class="content post-container">
+        {{ if .TableOfContents }}
+        <aside class="toc-sidebar">
+          {{ .TableOfContents }}
+        </aside>
+        {{ end }}
         <div class="post-content">
+          <h1 class="title">{{ .Title }}</h1>
+          {{ with .Params.subtitle }}<h3 class="subtitle">{{ . }}</h3>{{ end }}
+          {{ partial "postMetaDetailed.html" . }}
           {{ .Content }}
           {{ partial "comments.html" }}
         </div>
-        {{ if .Params.product }}
-          {{ partial "products/bundle-sidebar.html" (dict "data" (index .Site.Data.courses .Params.product) "showDescription" true) }}
-        {{ else }}
-          {{ partial "products/bundle-sidebar.html" (dict "data" (index .Site.Data.courses "embedded-engineering") "showDescription" true) }}
-        {{end}}
+        {{ partial "course/sidebar-card.html" (dict "card" $card "explore" $explore) }}
       </div>
     </article>
   </main>
+  {{ if $card.pricing }}{{ partial "bundle-pricing-js.html" $card }}{{ end }}
   {{ partial "code-block.html" . }}
   {{ partial "callouts.html" . }}
   <script>

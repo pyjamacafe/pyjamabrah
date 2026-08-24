@@ -240,18 +240,18 @@
             {{ end }}
             {{ if $bundle.sticky.ctas }}
             <div class="bundle-cta-footer">
-              {{ range $bundle.sticky.ctas }}{{ .text }}{{ end }}
+              {{ if $bundle.pricing }}
+              <span class="bundle-cta-price">
+                <s class="bundle-cta-original"></s>
+                <b class="bundle-cta-discounted"></b>
+              </span>
+              {{ end }}
             </div>
             {{ end }}
             <div class="bundle-landing-footer-sticky-ctas">
               {{ range $bundle.sticky.ctas }}
                 <a href="{{ .link }}" target="_blank">
-                  <button class="bundle-landing-footer-sticky-cta-button {{if .primary}}bundle-landing-footer-sticky-cta-button-primary{{end}}">
-                    <span class="bundle-cta-price">
-                      <s class="bundle-cta-original"></s>
-                      <b class="bundle-cta-discounted"></b>
-                    </span>
-                  </button>
+                  <button class="bundle-landing-footer-sticky-cta-button {{if .primary}}bundle-landing-footer-sticky-cta-button-primary{{end}}">{{ .text }}</button>
                 </a>
               {{ end }}
             </div>
@@ -259,38 +259,7 @@
       </div>
       {{ end }}
     </div>
-    <div class="bundle-sidebar-card">
-      <img loading="lazy" src="{{$bundle.cover}}">
-      <div class="bundle-sidebar-card-title">{{$bundle.title | markdownify}}</div>
-      <div class="bundle-sidebar-card-subtitle">{{$bundle.subtitle | markdownify}}</div>
-      {{ partial "course/badges.html" $bundle.badges }}
-      <div class="bundle-landing-rating-student-count-container">
-      {{ partial "course/ratingStars.html" $bundle.rating }}
-      </div>
-      <div class="bundle-sidebar-highlights-container">
-      {{ partial "course/highlights.html" $bundle.highlights}}
-      </div>
-
-      <div class="bundle-landing-sidebar-cta">
-        {{ if $bundle.sticky.ctas }}
-        <div class="bundle-cta-footer">
-          {{ range $bundle.sticky.ctas }}{{ .text }}{{ end }}
-        </div>
-        {{ end }}
-        <div class="bundle-landing-footer-sticky-ctas">
-          {{ range $bundle.sticky.ctas }}
-            <a href="{{ .link }}" target="_blank">
-              <button class="bundle-landing-footer-sticky-cta-button {{if .primary}}bundle-landing-footer-sticky-cta-button-primary{{end}}">
-                <span class="bundle-cta-price">
-                  <s class="bundle-cta-original"></s>
-                  <b class="bundle-cta-discounted"></b>
-                </span>
-              </button>
-            </a>
-          {{ end }}
-        </div>
-      </div>
-    </div>
+    {{ partial "course/sidebar-card.html" $bundle }}
   </main>
 <script>
 function updateTimer() {
@@ -364,39 +333,6 @@ if (courseRows.length && !prefersReducedMotion) {
   window.addEventListener('resize', onScroll, { passive: true });
   applyParallax();
 }
-
-const libraryPricing = JSON.parse({{ $bundle.pricing | jsonify }});
-const libraryDiscountPercent = {{ $bundle.sticky.discount.percent | strings.TrimSuffix "%" }};
-
-async function getCountryCode() {
-  try {
-    const response = await fetch('https://ipapi.co/json/');
-    const data = await response.json();
-    return data.country_code || 'default';
-  } catch (error) {
-    return 'default';
-  }
-}
-
-function formatPrice(symbol, value) {
-  return symbol + Number(value).toLocaleString('en-IN', {
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 2
-  });
-}
-
-async function updateLibraryPrices() {
-  const country = await getCountryCode();
-  const price = libraryPricing.find(p => p.region === country) || libraryPricing.find(p => p.region === 'default');
-  const discounted = price.original * (1 - libraryDiscountPercent / 100);
-  document.querySelectorAll('.bundle-cta-original').forEach(el => {
-    el.textContent = formatPrice(price.symbol, price.original);
-  });
-  document.querySelectorAll('.bundle-cta-discounted').forEach(el => {
-    el.textContent = formatPrice(price.symbol, discounted);
-  });
-}
-
-updateLibraryPrices();
 </script>
+{{ partial "bundle-pricing-js.html" $bundle }}
 {{ end }}

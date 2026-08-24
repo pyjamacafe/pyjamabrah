@@ -635,16 +635,17 @@ div, p {
   border-top: 1px solid var(--linecolor);
   align-self: flex-start;
   margin: 0px;
+  padding: 8px 0px 0px 0px;
   width: 100%;
 }
 
 .bundle-landing-footer-sticky-text {
   flex: 1 1 100%;
   margin: 0px;
-  padding: 8px 4vw 0px 4vw;
+  padding: 4px 4vw 4px 4vw;
   text-align: center;
 
-  font-size: var(--fNormal);
+  font-size: var(--fSmall);
   color: var(--fontcolor);
 
   b {
@@ -681,8 +682,6 @@ div, p {
   justify-content: center;
   align-items: center;
   margin: auto;
-  gap: 4px;
-  padding: 8px 0px;
   max-width: 100%;
   box-sizing: border-box;
   a {
@@ -741,7 +740,7 @@ div, p {
   flex: 1 1 100%;
   min-width: 100%;
   text-align: center;
-  padding: 0px 0px 8px 0px;
+  padding: 0px;
   font-size: var(--fSmall);
   font-weight: bold;
   color: var(--fontcolor);
@@ -1196,11 +1195,11 @@ div, p {
   border: 1px solid var(--syntax-border);
 }
 
-/* sticky CTA buttons match the codeblock copy button style */
+/* sticky CTA buttons: white label at rest */
 .bundle-landing-footer-sticky-cta-button,
 .bundle-landing-footer-sticky-cta-button-primary {
   background-color: transparent;
-  color: var(--syntax-comment);
+  color: var(--syntax-foreground);
   border: 1px solid var(--syntax-border);
   animation: none;
 }

@@ -23,7 +23,7 @@ default_cta: &id001
   text: Join now | Yearly Pass!
   primary: true
 sticky:
-  text: Early Bird Offer!
+  text:
   discount:
     code: AUTOSTACK
     percent: 70%

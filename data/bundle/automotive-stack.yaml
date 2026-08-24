@@ -7,18 +7,18 @@ default_cta: &id001
   text: Join now | Yearly Pass!
   primary: true
 sticky:
-  text: Early Bird Offer!
+  text:
   discount:
     code: AUTOSTACK
     percent: 70%
   ctas: *id001
-pricing:
-- region: IN
-  symbol: ₹
-  original: 14999
-- region: default
-  symbol: $
-  original: 179
+# pricing:
+# - region: IN
+#   symbol: ₹
+#   original: 14999
+# - region: default
+#   symbol: $
+#   original: 179
 introduction:
 - A structured, Learning path through the Automotive Embedded software stack — from vehicle electronics and middleware concepts,
   through CAN and Classic AUTOSAR architecture, to Basic Software integration and the C++ internals that power production
