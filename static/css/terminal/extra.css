@@ -347,7 +347,7 @@ body::after {
 #brand .icon {
   max-height: 150px;
   border-radius: 50% !important;
-  border: 2px white solid;
+  border: 1px white solid;
 }
 
 /* ---------- dropdown lists (match the codeblock copy button) ---------- */
