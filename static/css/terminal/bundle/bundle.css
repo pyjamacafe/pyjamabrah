@@ -992,6 +992,7 @@ div, p {
   top: 0px;
   padding: 8px;
   border-bottom: 1px solid var(--linecolor);
+  z-index: 100;
 }
 
 .bundle-landing-toc-entry-title:visited {
