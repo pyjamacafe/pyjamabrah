@@ -310,7 +310,7 @@ body::after {
     rgba(0, 255, 0, 0) 100%
   );
   box-shadow: 0 0 10px rgba(0, 255, 0, 0.25);
-  animation: crt-sweep 2.5s linear infinite;
+  animation: crt-sweep 2.5s linear 1;
 }
 
 @keyframes crt-sweep {
