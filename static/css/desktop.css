@@ -3,6 +3,11 @@ h1.title {
   margin: 0;
 }
 
+/* border around the page-level videoMessage frame (bundle/course pages) */
+.bundle-info-container > .bundle-landing-videomessage-container {
+  border: 1px solid var(--linecolor);
+}
+
 /* post meta gets a quote-style left line on the single post page */
 .post-container .post-meta {
   border-left: 4px solid var(--cafe);

@@ -50,7 +50,7 @@
       </div>
 
       {{ if $bundle.videoMessage }}
-      {{ partial "course/videoMessage.html" $bundle.videoMessage}}
+      {{ partial "course/videoMessage.html" (dict "value" $bundle.videoMessage "title" $bundle.videoMessageTitle) }}
       {{ end }}
 
       {{ if $bundle.courses }}

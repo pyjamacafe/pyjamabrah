@@ -1,12 +1,14 @@
 {{ $value := . }}
 {{ $withTitle := true }}
+{{ $title := "Hey there 👋" }}
 {{ if reflect.IsMap $value }}
   {{ $withTitle = default true $value.withTitle }}
+  {{ $title = default "Hey there 👋" $value.title }}
   {{ $value = $value.value }}
 {{ end }}
 
 {{ if $withTitle }}
-<div class="bundle-landing-section-title">Hey there 👋</div>
+<div class="bundle-landing-section-title">{{ $title }}</div>
 {{ end }}
 <div class="bundle-landing-videomessage-container">
   {{ $embed := "" }}
@@ -25,7 +27,7 @@
   {{ end }}
 
   {{ if $embed }}
-  <iframe data-src="{{ $embed }}" loading="lazy" title="Hey there 👋" style="width: 100%; aspect-ratio: 16 / 9; border: 0;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe data-src="{{ $embed }}" loading="lazy" title="{{ $title }}" style="width: 100%; aspect-ratio: 16 / 9; border: 0;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   {{ else }}
   <video width="100%" autoplay muted controls>
     <source src="https://raw.githubusercontent.com/pyjamacafe/cache/main/course-intro/{{$value}}.webm" type="video/webm">
