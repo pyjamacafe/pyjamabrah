@@ -43,6 +43,12 @@ div[onclick]:focus:not(:focus-visible) {
 /* transparent parts of images inside content show white so they're visible */
 #content img {
   background-color: #ffffff;
+  filter: brightness(0.7) contrast(1.2);
+}
+
+/* visible border around the page-level videoMessage frame */
+.bundle-info-container > .bundle-landing-videomessage-container {
+  border-color: #4a4a4a;
 }
 
 /* ---------- cards behave like ncurses panels ---------- */
