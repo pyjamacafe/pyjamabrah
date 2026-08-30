@@ -2,8 +2,19 @@
   <strong>
     {{ if .Params.author }}
       <div id="{{.Params.author}}">
-        By: <a href="https://github.com/{{.Params.author}}" target="_blank">{{.Params.author}}</a>
+        By: <a href="https://github.com/{{.Params.author}}" target="_blank" data-author="{{.Params.author}}">{{.Params.author}}</a>
       </div>
+      <script>
+        (function () {
+          var handle = "{{.Params.author}}";
+          var link = document.querySelector('[data-author="' + handle + '"]');
+          if (!link) return;
+          fetch("https://api.github.com/users/" + handle)
+            .then(function (r) { if (!r.ok) throw new Error("github"); return r.json(); })
+            .then(function (u) { if (u && u.name) link.textContent = u.name; })
+            .catch(function () {});
+        })();
+      </script>
     {{ end }}
     <span>Posted on</span>
     <time>{{ .Date.Format (default "2006-01-02 15:04:05" .Site.Params.dateFmt) }}</time>

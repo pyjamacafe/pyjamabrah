@@ -34,6 +34,27 @@
 </footer>
 
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<!-- Image loading shimmer: show a shine on the image placeholder while the
+     image is still downloading, remove it once loaded -->
+<script>
+  (function () {
+    function markImagesLoading() {
+      var imgs = document.querySelectorAll('img');
+      for (var i = 0; i < imgs.length; i++) {
+        var img = imgs[i];
+        if (img.complete && img.naturalWidth > 0) continue;
+        img.classList.add('img-loading');
+        img.addEventListener('load', function () { this.classList.remove('img-loading'); });
+        img.addEventListener('error', function () { this.classList.remove('img-loading'); });
+      }
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', markImagesLoading);
+    } else {
+      markImagesLoading();
+    }
+  })();
+</script>
 <!-- Lazy-load embeds: viewport-deferred images/iframes (data-src -> src),
      and a click-to-play facade for YouTube previews. -->
 <script>

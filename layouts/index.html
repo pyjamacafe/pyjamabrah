@@ -3,14 +3,14 @@
 	{{/* code below is borrowed from layouts/posts/list.html  */}}
 	<style>
   .posts-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 32px;
     margin: 32px 0px;
   }
 
   .post-card {
-    flex: 1 1 20%;
+    min-width: 0;
     transition: transform .2s;
 
     img {
@@ -37,27 +37,32 @@
     }
   }
 
+  .post-card-pending {
+    display: none;
+  }
+
   .post-card:hover {
     cursor: pointer;
   }
 
 @media all and (width <= 1200px) {
-  .post-card { flex: 1 1 30%; }
+  .posts-container { grid-template-columns: repeat(3, 1fr); }
 }
 
 @media all and (width <= 960px) {
-  .post-card { flex: 1 1 45%; }
+  .posts-container { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media all and (width <= 600px) {
-  .post-card { flex: 1 1 50%; }
+  .posts-container { grid-template-columns: repeat(2, 1fr); }
 }
 </style>
 
 <div class="posts-container">
-		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-		{{ range $paginator.Pages }}
-		<div class="post-card" onClick="location.href='{{ .RelPermalink }}';">
+		{{ $allPosts := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+		{{ $batch := 10 }}
+		{{ range $i, $p := $allPosts }}
+		<div class="post-card{{ if ge $i (int $batch) }} post-card-pending{{ end }}" onClick="location.href='{{ .RelPermalink }}';">
 		    <img src="{{.Params.thumbnail}}"></img>
 		    <div class="post-meta">
 		      <div class="post-card-title">{{ .Title }}</div>
@@ -66,5 +71,28 @@
 		  </div>
 		{{ end }}
 	</div>
+	<div id="posts-sentinel"></div>
+	<script>
+	  (function () {
+	    var BATCH = {{ $batch }};
+	    var cards = Array.prototype.slice.call(document.querySelectorAll('.post-card'));
+	    var pending = cards.filter(function (c) { return c.classList.contains('post-card-pending'); });
+	    var sentinel = document.getElementById('posts-sentinel');
+	    var io = null;
+	    function revealBatch() {
+	      pending.splice(0, BATCH).forEach(function (c) { c.classList.remove('post-card-pending'); });
+	      if (!pending.length) { if (io) io.disconnect(); return; }
+	      if (io) io.observe(sentinel);
+	    }
+	    if ('IntersectionObserver' in window && pending.length) {
+	      io = new IntersectionObserver(function (entries) {
+	        entries.forEach(function (entry) { if (entry.isIntersecting) revealBatch(); });
+	      }, { rootMargin: '200px 0px', threshold: 0 });
+	      io.observe(sentinel);
+	    } else {
+	      pending.forEach(function (c) { c.classList.remove('post-card-pending'); });
+	    }
+	  })();
+	</script>
 </main>
 {{ end }}

@@ -3,6 +3,19 @@ h1.title {
   margin: 0;
 }
 
+/* image loading shimmer (like YouTube) - class added/removed by JS */
+.img-loading {
+  background-color: #e2e2e2;
+  background-image: linear-gradient(100deg, rgba(255, 255, 255, 0) 40%, rgba(160, 160, 160, 0.45) 50%, rgba(255, 255, 255, 0) 60%);
+  background-size: 200% 100%;
+  animation: img-shimmer 1.2s ease-in-out infinite;
+}
+
+@keyframes img-shimmer {
+  0% { background-position: 120% 0; }
+  100% { background-position: -20% 0; }
+}
+
 /* border around the page-level videoMessage frame (bundle/course pages) */
 .bundle-info-container > .bundle-landing-videomessage-container {
   border: 1px solid var(--linecolor);
