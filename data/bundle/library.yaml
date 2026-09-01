@@ -135,6 +135,7 @@ courses:
   - "podcast"
   - "tech-discussions"
   - "tech-syncs"
+  - "linux-command-line-tools"
 
 
 sampleCertificate: "/images/courses/library-certificate.png"

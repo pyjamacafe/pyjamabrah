@@ -1,0 +1,120 @@
+id: linux-command-line-tools
+type: pjcafe
+sell: true
+weight: '1'
+title: Linux Command-line & Tools
+cover: /images/courses/linux-command-line-tools.png
+subtitle: An introductory course on the Linux command line and shell scripting.
+introduction:
+- An introductory course on Linux command-line and shell scripting. This is intended for total beginners and is meant to make
+  you comfortable working with the shell/terminal.
+badges:
+- Beginner
+rating: 5
+sticky:
+  text: Start the journey with the Linux Command-line & Tools.
+  ctas:
+  - link: /library/#linux-command-line-tools
+    text: Start Learning
+    primary: true
+date: ''
+language: English
+access: 365 days
+highlights:
+- duration: 3 hr 47 mins
+- lessonCount: '14'
+- certificate: true
+- feature: Shell essentials for total beginners
+- feature: Practical shell scripting examples
+learnings:
+- Get comfortable working with the Linux/Unix shell and terminal.
+- 'Essential commands: navigation, files, searching, editors and compression.'
+- Use the VI editor for basic editing.
+- Write shell scripts with variables, conditionals, loops and functions.
+- Use regular expressions and get an LLM to write scripts for you.
+difference:
+- Built for total beginners.
+- Covers the command line end to end.
+- Practical, example-driven shell scripting.
+instructors:
+- piyush
+requirements:
+- A computer to follow along.
+- No prior command-line experience needed.
+audience:
+- Total beginners to the Linux command line.
+- Students and freshers getting into embedded and systems work.
+faqs: pyjamacafe
+contents:
+- section:
+    title: Introduction and Setup
+    description: What to expect from the course and how to set up your environment, locally or in the cloud.
+    chapters:
+    - chapter:
+        title: Introduction and Expectations
+        type: video
+        duration: 2min 11s
+    - chapter:
+        title: Environment Setup - Local and Cloud
+        type: video
+        duration: 24min 59s
+- section:
+    title: Essential commands
+    description: 'The everyday Linux commands: navigating, files, searching, editors, compression and regular expressions.'
+    chapters:
+    - chapter:
+        title: Navigation and Directory command -- ls, pwd, mkdir, clean, cd
+        type: video
+        duration: 41min 5s
+    - chapter:
+        title: Dial-Up Access by Using the Michigan Terminal System
+        type: file
+    - chapter:
+        title: File manipulation - touch, nano, cat, echo, rm
+        type: video
+        duration: 18min 39s
+    - chapter:
+        title: More file commands -- mv, cp, tree, head, tail and redirection
+        type: video
+        duration: 16min 27s
+    - chapter:
+        title: Searching files and text -- find and grep
+        type: video
+        duration: 19min 43s
+    - chapter:
+        title: Basics of using VI
+        type: video
+        duration: 17min 32s
+    - chapter:
+        title: Compressing, Decompressing files -- gzip, tar, zip
+        type: video
+        duration: 13min 28s
+    - chapter:
+        title: Useful regular expression
+        type: video
+        duration: 14min 57s
+- section:
+    title: Scripting
+    description: 'An introduction to shell scripting: variables, conditionals, loops, functions, and using an LLM to write
+      scripts.'
+    chapters:
+    - chapter:
+        title: The idea of script and variables
+        type: video
+        duration: 23min 18s
+    - chapter:
+        title: Conditionals, Loops and functions
+        type: video
+        duration: 22min 24s
+    - chapter:
+        title: Exploring examples and getting LLM to write one
+        type: video
+        duration: 11min 33s
+- section:
+    title: Conclusion
+    description: Final thoughts and where to go next.
+    chapters:
+    - chapter:
+        title: Final thoughts
+        type: video
+        duration: 1min 10s
