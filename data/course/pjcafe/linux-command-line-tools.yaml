@@ -20,6 +20,9 @@ sticky:
 date: ''
 language: English
 access: 365 days
+videoMessageTitle: "What to expect?"
+videoMessage: "https://vimeo.com/1223105046"
+
 highlights:
 - duration: 3 hr 47 mins
 - lessonCount: '14'
@@ -84,6 +87,7 @@ contents:
     - chapter:
         title: Basics of using VI
         type: video
+        preview: "KStxAdvgNVc"
         duration: 17min 32s
     - chapter:
         title: Compressing, Decompressing files -- gzip, tar, zip
