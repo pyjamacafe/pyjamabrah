@@ -1,7 +1,7 @@
 baseURL: https://pyjamacafe.com/
 languageCode: 'en-us'
 theme: smigle
-title: Pyjama Cafe!
+title: Pyjama Cafe -- Embedded Systems!
 pagination:
   pagerSize: 20
 
@@ -74,7 +74,7 @@ markup:
 
 params:
   theme: "terminal" # visual theme: "terminal" (default) or "classic"
-  subtitle: "You are not late. You are loading!"
+  subtitle: "Embedded Systems. From scratch. For beginners ❤️"
   description: "Lowering the Barrier to learning Embedded Systems!"
   thumbnail: "/opengraph.png"
   math: true

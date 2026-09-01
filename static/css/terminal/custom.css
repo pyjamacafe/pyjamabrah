@@ -854,3 +854,7 @@ p > code, li > code {
     font-size: 1.1rem !important;
   }
 }
+
+.site-subtitle {
+  text-align: left;
+}
