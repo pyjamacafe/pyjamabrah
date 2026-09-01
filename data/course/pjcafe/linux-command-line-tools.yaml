@@ -63,7 +63,7 @@ contents:
     description: 'The everyday Linux commands: navigating, files, searching, editors, compression and regular expressions.'
     chapters:
     - chapter:
-        title: Navigation and Directory command -- ls, pwd, mkdir, clean, cd
+        title: Navigation and Directory command -- ls, pwd, mkdir, clear, cd
         type: video
         duration: 41min 5s
     - chapter:

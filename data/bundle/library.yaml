@@ -126,6 +126,7 @@ courses:
   - "a101"
   - "a102"
   - "smmu"
+  - "linux-command-line-tools"
   - "ldd-scratch"
   - "ldd-101"
   - "ldd-102"
@@ -135,7 +136,6 @@ courses:
   - "podcast"
   - "tech-discussions"
   - "tech-syncs"
-  - "linux-command-line-tools"
 
 
 sampleCertificate: "/images/courses/library-certificate.png"
