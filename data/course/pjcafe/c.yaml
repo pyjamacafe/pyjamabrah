@@ -57,7 +57,8 @@ highlights:
   - exerciseChallenge: true
   - projectCount: "Several"
   - freeUpdates: true
-videoMessage: "c"
+videoMessageTitle: "Here is - How to C!"
+videoMessage: "https://vimeo.com/1223288542"
 learnings:
   - Mental models to use when coding in C.
   - What is machine code.
