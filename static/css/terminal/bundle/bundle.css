@@ -448,6 +448,10 @@ div, p {
   figure {
     flex: 1 1 100%;
     min-width: 100%;
+
+    img {
+      filter: brightness(1) contrast(1) !important;
+    }
   }
 }
 

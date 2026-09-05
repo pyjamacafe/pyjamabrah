@@ -35,6 +35,7 @@ learnings:
 - Use the VI editor for basic editing.
 - Write shell scripts with variables, conditionals, loops and functions.
 - Use regular expressions and get an LLM to write scripts for you.
+sampleCertificate: "/images/courses/es001.png"
 difference:
 - Built for total beginners.
 - Covers the command line end to end.
