@@ -3,7 +3,7 @@ id: "riscv-101"
 type: "pjcafe"
 sell: true
 
-weight: "19"
+weight: 20
 
 # mandatory title, cover and subtitle
 title: "RISC-V (101)"

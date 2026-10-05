@@ -1,6 +1,7 @@
 # mandatory ID for the course
 id: "m101"
 type: "pjcafe"
+weight: 10
 
 # mandatory title, cover and subtitle
 title: "ARM Cortex M (101)"

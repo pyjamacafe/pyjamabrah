@@ -3,7 +3,7 @@ id: "m102"
 type: "pjcafe"
 sell: true
 
-weight: "10"
+weight: 11
 
 # mandatory title, cover and subtitle
 title: "ARM Cortex-M (102)"

@@ -1,6 +1,7 @@
 # mandatory ID for the course
 id: "walkthrough"
 type: "pjcafe"
+weight: 27
 
 # mandatory title, cover and subtitle
 title: "Source Code Walkthrough"

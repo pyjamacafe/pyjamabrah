@@ -3,7 +3,7 @@ id: "missing-mentor"
 type: "pjcafe"
 sell: false
 
-weight: "1"
+weight: 2
 
 # mandatory title, cover and subtitle
 title: "The Missing Mentor"

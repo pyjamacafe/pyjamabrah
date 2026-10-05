@@ -1,6 +1,7 @@
 # mandatory ID for the course
 id: "tech-discussions"
 type: "pjcafe"
+weight: 30
 
 # mandatory title, cover and subtitle
 title: "The ART of Technical Discussions"

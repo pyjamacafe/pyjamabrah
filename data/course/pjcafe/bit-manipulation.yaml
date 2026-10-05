@@ -1,6 +1,7 @@
 # mandatory ID for the course
 id: "bit-manipulation"
 type: "pjcafe"
+weight: 7
 
 # mandatory title, cover and subtitle
 title: "Bit Manipulation in C"

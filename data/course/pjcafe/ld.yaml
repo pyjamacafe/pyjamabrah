@@ -1,6 +1,7 @@
 # mandatory ID for the course
 id: "ld"
 type: "pjcafe"
+weight: 13
 
 # mandatory title, cover and subtitle
 title: "GNU Linker Scripts"

@@ -1,6 +1,7 @@
 # mandatory ID for the course
 id: "book"
 type: "pjcafe"
+weight: 3
 
 # mandatory title, cover and subtitle
 title: "C Language @ Pyjama Cafe! (Book)"

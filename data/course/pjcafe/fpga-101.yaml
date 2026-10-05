@@ -1,6 +1,7 @@
 # mandatory ID for the course
 id: "fpga-101"
 type: "pjcafe"
+weight: 28
 
 # mandatory title, cover and subtitle
 title: "FPGA based Hardware Design (101)"

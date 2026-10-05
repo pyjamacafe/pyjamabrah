@@ -1,6 +1,7 @@
 # mandatory ID for the course
 id: "zephyr101"
 type: "pjcafe"
+weight: 16
 
 # mandatory title, cover and subtitle
 title: "Zephyr 101"

@@ -3,7 +3,7 @@ id: "roadmap"
 type: "pjcafe"
 sell: true
 
-weight: "1"
+weight: 1
 
 # mandatory title, cover and subtitle
 title: "Roadmap - Embedded Systems"

@@ -3,7 +3,7 @@ id: "a102"
 type: "pjcafe"
 sell: true
 
-weight: "18"
+weight: 19
 
 # mandatory title, cover and subtitle
 title: "Aarch64 (102)"

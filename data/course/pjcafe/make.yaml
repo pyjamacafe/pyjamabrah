@@ -1,6 +1,7 @@
 # mandatory ID for the course
 id: "make"
 type: "pjcafe"
+weight: 12
 
 # mandatory title, cover and subtitle
 title: "GNU Make and Automation"

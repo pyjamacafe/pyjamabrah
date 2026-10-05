@@ -1,7 +1,7 @@
 id: linux-command-line-tools
 type: pjcafe
 sell: true
-weight: '1'
+weight: 22
 title: Linux Command-line & Tools
 cover: /images/courses/linux-command-line-tools.png
 subtitle: An introductory course on the Linux command line and shell scripting.
