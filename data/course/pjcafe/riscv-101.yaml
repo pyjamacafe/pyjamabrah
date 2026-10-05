@@ -1,0 +1,176 @@
+# mandatory ID for the course
+id: "riscv-101"
+type: "pjcafe"
+sell: true
+
+weight: "19"
+
+# mandatory title, cover and subtitle
+title: "RISC-V (101)"
+subtitle: "The essentials of Embedded Systems and the RISC-V architecture."
+cover: "/images/courses/es002.png"
+
+# mandatory introduction
+introduction:
+  - "Learning the absolute essentials of embedded systems, the RISC-V architecture and reasoning about the lower level details like the programmer's model, Assembly and C programming."
+  - "This course introduces you to the underlying mechanics of how the CPU boots up, the role of the ISA and the ABI in all of this."
+
+# mandatory badges
+badges:
+  - Bestseller
+  - Beginner
+  - Intermediate
+  # - Advance
+
+# Mandatory Rating
+rating: 5
+
+# Optional, number of students
+enrolled: 3000+
+
+default_cta: &defaults
+  - cta:
+    link: "https://courses.pyjamacafe.com/web/checkout/6ac1e8cf807125b2b7d1b141"
+    text: "Join for Free!"
+    primary: true
+sticky:
+  text: "Master the essentials of Embedded Systems with RISC-V!"
+#   discount:
+#     code:
+#     percent:
+  ctas: *defaults
+
+date: 5 Oct 2026
+language: "English"
+access: "365 day"
+highlights:
+  - courseCount:
+  - duration: "~5 hours 15 mins"
+  - lessonCount: "23"
+  - emulator:
+  - hardware:
+  - downloadableResources:
+  - workshops:
+  - cheatSheet:
+  - caseStudy:
+  - exerciseChallenge:
+  - projectCount:
+  - freeUpdates:
+  - certificate: true
+  - feature: "RISC-V Architecture"
+  - feature: "Programmer's Model"
+  - feature: "HDL Design & Simulation"
+  - feature: "Boot and Debugging"
+
+videoMessage: "https://vimeo.com/1224534120"
+learnings:
+  - "Build mental models of the CPU and memory."
+  - "Reason about the system as a set of CPU and memory interactions."
+  - "Understand the RISC-V backstory and why it matters."
+  - "Explore the RISC-V Unprivileged and Privileged Specifications."
+  - "Understand ISA extensions and the Application Binary Interface (ABI)."
+  - "Design and implement a single-cycle CPU in an HDL."
+  - "Run simulations and read the waveforms."
+  - "Understand Makefiles and the details of simulation."
+  - "Understand the ways in which CPUs boot."
+  - "Use the assembler (as) and linker (ld) compilation flow."
+  - "Learn the basics of assembly language."
+  - "Use GDB to debug and confirm code execution."
+  - "Understand the idea of a System on Chip (SoC)."
+  - "Understand memory mapped IO and the address space."
+
+sampleCertificate: "/images/certificates/es002.png"
+difference:
+  - "Assumes no background and builds from first principles."
+  - "Covers both the software view (ISA, ABI, Assembly) and the hardware view (HDL, simulation)."
+  - "RISC-V focus with reference to the actual specifications."
+  - "Hands-on single-cycle CPU implementation and simulation."
+  - "Explains the compilation flow (as, ld) and debugging with GDB."
+  - "Connects the lower level details to the bigger picture (SoC, MMIO)."
+
+instructors:
+  - "piyush"
+requirements:
+  - "GitHub account to access the repository."
+  - "Interest in the lower level working of the system."
+  - "Some exposure to Digital systems is good (but not strictly required)."
+audience:
+  - Students with interest in learning lower level programming and hardware.
+  - Firmware and System Software Engineers looking to understand the RISC-V architecture.
+  - Electrical/Electronics Engineers working on hardware programming and design.
+  - Those curious to understand how a CPU boots and executes code.
+faqs: pyjamacafe
+
+# mandatory, content
+contents:
+  - section:
+      title: "Mental Models"
+      description: "Build the mental models of the CPU and memory that let you reason about the lower level details of a system."
+      chapters:
+        - chapter:
+            title: "Repository and Code"
+            type: "file"
+        - chapter:
+            title: "Introduction and Expectations"
+        - chapter:
+            title: "System as a CPU and Memory Interactions"
+        - chapter:
+            title: "The model of the CPU"
+        - chapter:
+            title: "The model of the memory"
+        - chapter:
+            title: "Putting it all together"
+
+  - section:
+      title: "The Instruction Set Architecture"
+      description: "Understand the RISC-V instruction set architecture, its specifications, extensions and the ABI."
+      chapters:
+        - chapter:
+            title: "The RISC-V backstory"
+        - chapter:
+            title: "Exploring the RISC-V Unprivileged Spec"
+        - chapter:
+            title: "Extensions and the ABI"
+        - chapter:
+            title: "The Privileged Specification"
+
+  - section:
+      title: "Hardware Design & Simulation"
+      description: "Design a single-cycle CPU in an HDL, run simulations and explore the waveforms."
+      chapters:
+        - chapter:
+            title: "Motivation to Hardware Design"
+        - chapter:
+            title: "What is HDL - Hardware Description Language"
+        - chapter:
+            title: "Single Cycle CPU implementation"
+        - chapter:
+            title: "Simulation run and Test-bench walkthrough"
+        - chapter:
+            title: "Exploring the Waveforms"
+        - chapter:
+            title: "Makefiles and Details of Simulation"
+
+  - section:
+      title: "Boot code and debugging"
+      description: "Understand how CPUs boot, the compilation flow and how to debug and confirm code execution."
+      chapters:
+        - chapter:
+            title: "Ways in which CPUs boot"
+        - chapter:
+            title: "The Compilation flow - as, ld"
+        - chapter:
+            title: "Basics of assembly language (assembler)"
+        - chapter:
+            title: "Using GDB to debug and confirm code execution"
+
+  - section:
+      title: "Conclusion and Next"
+      description: "Connect the concepts to the bigger picture of a System on Chip and where to go next."
+      chapters:
+        - chapter:
+            title: "The idea of SoC"
+        - chapter:
+            title: "Memory mapped IO and Address Space"
+        - chapter:
+            title: "Where to next"

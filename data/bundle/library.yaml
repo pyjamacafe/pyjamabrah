@@ -125,6 +125,7 @@ courses:
   - "git-gerrit"
   - "a101"
   - "a102"
+  - "riscv-101"
   - "smmu"
   - "linux-command-line-tools"
   - "ldd-scratch"
