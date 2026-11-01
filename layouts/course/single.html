@@ -151,7 +151,7 @@
                 {{$bundle.sticky.text | markdownify}}
               </div>
             {{ end }}
-            {{ if $bundle.sticky.discount }}
+            {{ if and $bundle.sticky.discount $bundle.sticky.discount.code $bundle.sticky.discount.percent }}
               <div class="bundle-landing-footer-sticky-text">
                 Use code <b class="bundle-landing-discount-text">{{$bundle.sticky.discount.code}}</b> to get a <b class="bundle-landing-discount-text">{{$bundle.sticky.discount.percent}} discount</b> on the Yearly Access.
               </div>

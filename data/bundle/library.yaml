@@ -5,15 +5,15 @@ cover: "/images/courses/library.png"
 # default CTA
 default_cta: &defaults
   - cta:
-    link: "https://courses.pyjamacafe.com/web/checkout/68200b15f391a0bf84933bc7?purchaseNow=true&couponcode=ILOVEEMBEDDED"
-    text: "Join now | Yearly Pass!"
+    link: "mailto:support@pyjamacafe.com"
+    text: "Invite Only | Apply!"
     primary: true
 
 sticky:
   text: ""
   discount:
-    code: "ILOVEEMBEDDED"
-    percent: 33.34%
+    code: ""
+    percent:
   ctas: *defaults
 
 # pricing:

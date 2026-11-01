@@ -234,7 +234,7 @@
                 {{$bundle.sticky.text}}
               </div>
             {{ end }}
-            {{ if $bundle.sticky.discount }}
+            {{ if and $bundle.sticky.discount $bundle.sticky.discount.percent }}
               <div class="bundle-landing-footer-sticky-text">
                 <b class="bundle-landing-discount-text">{{$bundle.sticky.discount.percent}} OFF!</b>Expires in <b id="timer"></b></div>
             {{ end }}
@@ -264,6 +264,7 @@
 <script>
 function updateTimer() {
     const timerElement = document.getElementById('timer');
+    if (!timerElement) return;
     const now = new Date();
     const targetIST = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }));
 
