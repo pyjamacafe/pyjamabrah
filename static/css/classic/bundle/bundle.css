@@ -239,6 +239,30 @@ div, p {
   flex: 1 1 100%;
 }
 
+.bundle-landing-carousel {
+  flex: 0 0 auto;
+  display: grid;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--linecolor);
+  border-radius: 6px;
+  margin-top: 24px;
+}
+
+.bundle-landing-carousel-slide {
+  grid-area: 1 / 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.bundle-landing-carousel-slide.is-active {
+  opacity: 1;
+}
+
 .bundle-landing-icon {
   display: inline-flex;
   padding-top: 2px;
@@ -1008,6 +1032,25 @@ div, p {
 
 .bundle-landing-toc-entry-title:visited {
   color: var(--c100);
+}
+
+.bundle-landing-toc-entry-number {
+  color: inherit;
+  text-decoration: none;
+}
+
+.bundle-landing-toc-entry-number:hover {
+  text-decoration: underline;
+}
+
+.bundle-landing-toc-entry-name,
+.bundle-landing-toc-entry-title {
+  cursor: pointer;
+}
+
+.bundle-landing-course-details:not(.is-open) .bundle-landing-course-details-container,
+.bundle-landing-course-details:not(.is-open) .bundle-landing-toc-entry {
+  display: none;
 }
 
 @media screen and (max-width: 771px) {

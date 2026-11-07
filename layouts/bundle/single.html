@@ -16,12 +16,6 @@
       {{ end }}
       <hr class="bundle-divider-line"/>
 
-      {{ if $bundle.infographic }}
-      <div class="bundle-landing-introduction">
-        <img loading="lazy" src="{{$bundle.infographic}}"/>
-      </div>
-      {{ end }}
-
       {{ if $bundle.introduction }}
       <div class="bundle-landing-introduction">
         {{ range $bundle.introduction }}
@@ -49,11 +43,27 @@
       <span class="bi bi bi-clock"></span><span><b>{{ $bundle.access }}</b></span> Access.
       </div>
 
+      {{ if $bundle.carousel }}
+      {{ with .Resources.Match "carousel/*" }}
+      <div class="bundle-landing-carousel" data-carousel>
+        {{ range $i, $img := . }}
+        <img loading="lazy" class="bundle-landing-carousel-slide{{ if eq $i 0 }} is-active{{ end }}" src="{{ $img.RelPermalink }}" alt="{{ $img.Name }}"/>
+        {{ end }}
+      </div>
+      {{ end }}
+      {{ end }}
+
+      {{ if $bundle.infographic }}
+      <div class="bundle-landing-introduction">
+        <img loading="lazy" src="{{$bundle.infographic}}"/>
+      </div>
+      {{ end }}
+
       {{ if $bundle.videoMessage }}
       {{ partial "course/videoMessage.html" (dict "value" $bundle.videoMessage "title" $bundle.videoMessageTitle) }}
       {{ end }}
 
-      {{ if $bundle.courses }}
+      {{ if and $bundle.courses (ne $bundle.learningTracks false) }}
       <div class="bundle-landing-section-title" id="courses-included">Learning Tracks</div>
       {{ $perRow := 6 }}
       {{ $total := len $bundle.courses }}
@@ -114,12 +124,6 @@
       {{partial "course/dialog-js.html"}}
       {{ end }}
 
-      {{ if $bundle.hardware }}
-      <div class="bundle-landing-section-title">Hardware used</div>
-      <p>Experiments are performed on one of the following Hardware (or the Emulator option available on QEMU). The hardware is not included and needs to be bought separately.</p>
-      {{ partial "course/hw.html" $bundle.hardware}}
-      {{ end }}
-
       {{ if $bundle.highlights }}
       <div class="bundle-landing-section-title">Includes</div>
       {{ partial "course/highlights.html" $bundle.highlights}}
@@ -130,14 +134,26 @@
       {{ partial "course/checklist.html" $bundle.learnings }}
       {{ end }}
 
+      {{ if $bundle.hardware }}
+      <div class="bundle-landing-section-title">Hardware used</div>
+      <p>Experiments are performed on one of the following Hardware (or the Emulator option available on QEMU). The hardware is not included and needs to be bought separately.</p>
+      {{ partial "course/hw.html" $bundle.hardware}}
+      {{ end }}
+
+      {{ if ne $bundle.tableOfContents false }}
       <div class="bundle-landing-section-title">Table of Content</div>
+      {{ end }}
       {{ $counter := 0 }}
       {{ range $bundle.courses }}
         {{ $counter = (add $counter 1)}}
         {{ $c := (index $courselist .) }}
         <span id="{{$c.id}}"></span>
+        {{ if ne $bundle.tableOfContents false }}
         <div class="bundle-landing-course-details">
-          <a class="bundle-landing-toc-entry-title" href="#{{$c.id}}">#{{$counter}}: {{$c.title}}</a>
+          <div class="bundle-landing-toc-entry-title" onclick="this.closest('.bundle-landing-course-details').classList.toggle('is-open')">
+            <a class="bundle-landing-toc-entry-number" href="#{{$c.id}}" onclick="event.stopPropagation()">#{{$counter}}</a>
+            <span class="bundle-landing-toc-entry-name">{{$c.title}}</span>
+          </div>
           <div class="bundle-landing-course-details-container">
             <div class="bundle-landing-course-details-cover">
               <img loading="lazy" src="{{$c.cover}}"/>
@@ -175,6 +191,7 @@
             </div>
           </div>
         </div>
+        {{ end }}
       {{ end }}
 
 
@@ -263,6 +280,33 @@
   </main>
 <script>
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+document.querySelectorAll('[data-carousel]').forEach(function (carousel) {
+  const slides = carousel.querySelectorAll('.bundle-landing-carousel-slide');
+  if (slides.length < 2 || prefersReducedMotion) return;
+  let current = 0;
+  setInterval(function () {
+    slides[current].classList.remove('is-active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('is-active');
+  }, 4000);
+});
+
+function openTocFromHash() {
+  const hash = window.location.hash;
+  if (!hash || hash.length < 2) return;
+  const anchor = document.getElementById(decodeURIComponent(hash.slice(1)));
+  if (!anchor) return;
+  const details = anchor.nextElementSibling;
+  if (details && details.classList && details.classList.contains('bundle-landing-course-details')) {
+    details.classList.add('is-open');
+  }
+}
+
+openTocFromHash();
+window.addEventListener('hashchange', openTocFromHash);
+window.addEventListener('DOMContentLoaded', openTocFromHash);
+
 const fadeSections = document.querySelectorAll('.bundle-info-container > :not(.bundle-landing-footer-sticky), .bundle-landing-course-details-dialog-section-container, .bundle-landing-toc-entry-section, .bundle-sidebar-card');
 
 if (prefersReducedMotion || !('IntersectionObserver' in window)) {

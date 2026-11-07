@@ -18,4 +18,4 @@ aliases:
 
 Members get access to exclusive feed and chat space. You can chat with each other and us.
 
-![](/library/community.png "A community to support your learning journey")
+![](/master-embedded/community.png "A community to support your learning journey")

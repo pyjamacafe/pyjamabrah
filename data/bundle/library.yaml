@@ -25,6 +25,9 @@ sticky:
 #     original: 179
 
 # infographic: "/images/bundle/library/hero.png"
+carousel: true
+tableOfContents: true
+learningTracks: false
 introduction:
   - "A collection of courses to learn Embedded Systems Programming with focus on learning by `Hands-On Experiments`."
   - "We have done all the research, organized and structured the content with focus on reasoning from first principles, becoming productive fast, and insights."
@@ -57,8 +60,8 @@ highlights:
   - freeUpdates: true
   - certificate: true
 
-videoMessageTitle: "🎯 Roadmap for Embedded System Mastery!"
-videoMessage: "https://vimeo.com/1221488225"
+# videoMessageTitle: "🎯 Roadmap for Embedded System Mastery!"
+# videoMessage: "https://vimeo.com/1221488225"
 
 learnings:
   - C programming, converting to Assembly and machine code.
@@ -105,6 +108,7 @@ hardware:
   - title: "QEMU Emulator"
     image: "/images/hw/qemu.png"
     description: "A free, open-source machine emulator that lets you run and debug the ARM Cortex-M, ARM Cortex-A and RISC-V based course targets entirely in software — no physical hardware required for the emulator-based experiments."
+
 courses:
   - "roadmap"
   - "missing-mentor"
@@ -138,8 +142,7 @@ courses:
   - "tech-discussions"
   - "tech-syncs"
 
-
-sampleCertificate: "/images/courses/library-certificate.png"
+sampleCertificate: "/master-embedded/certificate.png"
 
 difference:
   - C language and pointers with focus on machine behavior
