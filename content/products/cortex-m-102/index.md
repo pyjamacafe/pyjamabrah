@@ -27,7 +27,7 @@ param:
   bundle:
     - course: *course-name
       subtitle: "`Learn arm cortex-m controller assembly programming`"
-      description: "**Note: This course is already included in the [Library Access](/library)!**\n\nLearn the assembly programming for ARM Cortex-M CPUs by writing a scheduler from scratch, without using any IDE, SDK or boiler plate code. A scheduler is at the heart of every operating system.\n\n By writing one from scratch, not only will you learn how to write assembly code, but also how the CPU works and, how a single CPU can run more than one process. As part of this course, the goal is to make a single CPU run three infinite `while(1){}` loops!"
+      description: "**Note: This course is already included in the [Master Embedded Systems](/master-embedded)!**\n\nLearn the assembly programming for ARM Cortex-M CPUs by writing a scheduler from scratch, without using any IDE, SDK or boiler plate code. A scheduler is at the heart of every operating system.\n\n By writing one from scratch, not only will you learn how to write assembly code, but also how the CPU works and, how a single CPU can run more than one process. As part of this course, the goal is to make a single CPU run three infinite `while(1){}` loops!"
       previewCover: *cover-art
       bestSeller: "yes"
       beginner: "yes"

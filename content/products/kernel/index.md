@@ -170,8 +170,8 @@ param:
         - q: "Can I follow the steps on my own PC?"
           a: "Yes for the most part. Better yet would be if you have a linux machine."
           open: "open"
-        - q: "Is this course part of the `Library Access?`"
-          a: "Yes. If you are subscribed to the Library Access, this course should already be available to you."
+        - q: "Is this course part of Master Embedded Systems?"
+          a: "Yes. If you are subscribed to Master Embedded Systems, this course should already be available to you."
           open: "open"
 ---
 

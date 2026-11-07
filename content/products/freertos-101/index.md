@@ -28,7 +28,7 @@ param:
   bundle:
     - course: *course-name
       subtitle: *oneliner
-      description: "**Note: This course is already included in the [Library Access](/library)!**\n\nLearn FreeRTOS kernel by tearing it down to it's bare minimum and doing a port for a new target from scratch. This includes booting the CPU from scratch and placing the code in memory manually. Along the way, learn the internals of how the OS is structured and how it works."
+      description: "**Note: This course is already included in the [Master Embedded Systems](/master-embedded)!**\n\nLearn FreeRTOS kernel by tearing it down to it's bare minimum and doing a port for a new target from scratch. This includes booting the CPU from scratch and placing the code in memory manually. Along the way, learn the internals of how the OS is structured and how it works."
       previewCover: *cover-art
       bestSeller: "yes"
       beginner: "yes"

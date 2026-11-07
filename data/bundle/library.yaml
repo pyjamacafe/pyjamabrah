@@ -1,19 +1,19 @@
-title: "The Library Access"
-subtitle: "Mastering Embedded Systems, the finer details!"
-cover: "/images/courses/library.png"
+title: "Master Embedded Systems"
+subtitle: "From Zero to Hero. Hands On!"
+cover: "/images/courses/master-es.png"
 
 # default CTA
 default_cta: &defaults
   - cta:
-    link: "mailto:support@pyjamacafe.com"
-    text: "Invite Only | Apply!"
+    link: "https://courses.pyjamacafe.com/web/checkout/68200b15f391a0bf84933bc7?purchaseNow=true&couponcode=LETSGO"
+    text: "Master Embedded Systems!"
     primary: true
 
 sticky:
   text: ""
   discount:
-    code: ""
-    percent:
+    code: "LETSGO"
+    percent: "33%"
   ctas: *defaults
 
 # pricing:

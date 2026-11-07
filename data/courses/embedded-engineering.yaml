@@ -1,9 +1,9 @@
 # Essentials
-title: "The LIBRARY!"
-subtitle: "Master Embedded Software Engineering."
-poster: "/images/courses/library.png"
+title: "Master Embedded Systems"
+subtitle: "From Zero to Hero. Hands On!"
+poster: "/images/courses/master-es.png"
 teaser: "library.webm"
-description: "Collection of all courses Pyjamacafe team made (and will make) that will guide you from a beginner to expert level Embedded Systems Programming. Covers topics from Firmware and Systems Engineering."
+description: "Collection of courses to guide you from a beginner to expert level Embedded Systems Programming. Covers topics from Firmware and Systems Engineering."
 preview: ""
 
 # course stats
@@ -25,8 +25,8 @@ content:
   - enrolled: "**3000+**"
 
 # Link and Payment options
-more: "/library"
-ctaText: "Join the Library!"
+more: "/master-embedded"
+ctaText: "Master Embedded Systems!"
 enroll:
   - plan: "Yearly (One Time)"
     link: "/offer"

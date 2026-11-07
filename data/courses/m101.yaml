@@ -32,7 +32,7 @@ more: "https://courses.pyjamacafe.com/web/checkout/68de9d603b5ae5948b46c4f7"
 ctaText:
 enroll:
   - plan: "explore more"
-    link: "/library/#m-101"
+    link: "/master-embedded/#m-101"
 
 #
 # Details below this line are for the landing Page.

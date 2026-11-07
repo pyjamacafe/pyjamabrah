@@ -14,7 +14,7 @@ rating: 5
 sticky:
   text: Start the journey with the Linux Command-line & Tools.
   ctas:
-  - link: /library/#linux-command-line-tools
+  - link: /master-embedded/#linux-command-line-tools
     text: Start Learning
     primary: true
 date: 5 September 2026

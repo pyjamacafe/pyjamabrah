@@ -14,10 +14,10 @@ aliases:
 default_cta: &defaults
   - cta:
     link: "https://courses.pyjamacafe.com/web/checkout/68200b15f391a0bf84933bc7?purchaseNow=true&couponcode=ILOVEEMBEDDED"
-    text: "Get Library (Yearly Access)"
+    text: "Master Embedded Systems"
     primary: true
   - cta:
-    link: "/library"
+    link: "/master-embedded"
     text: "learn more"
 
 # Add a Sticky Footer
@@ -78,7 +78,7 @@ sections:
         texts:
         - "You only need to master the CPU. The mental model - often referred to as the `Programmer's model!`"
         - "Historically, it has been very difficult and time consuming to learn low level details of how Computers really work. We are on a mission `to lowering the barrier to learning Embedded systems Software and Hardware`."
-        - "We have organised the basics as organised learning tracks in the **Embedded Systems Library**."
+        - "We have organised the basics as organised learning tracks in the **Master Embedded Systems**."
         img: ""
         video: ""
   - section:
@@ -185,7 +185,7 @@ sections:
   - section:
     - details:
         type: "full"
-        title: "The Library Access"
+        title: "Master Embedded Systems"
         subtitle: "a collection of structured learning tracks with focus on delivering insights with hands on experiments."
         cards:
           - card:

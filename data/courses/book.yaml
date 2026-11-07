@@ -7,7 +7,7 @@ type: "free"
 
 enroll:
   - plan: "explore more"
-    link: "/library/#book"
+    link: "/master-embedded/#book"
 
 badges:
   - beginner: true

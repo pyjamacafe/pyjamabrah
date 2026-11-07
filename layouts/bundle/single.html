@@ -236,7 +236,7 @@
             {{ end }}
             {{ if and $bundle.sticky.discount $bundle.sticky.discount.percent }}
               <div class="bundle-landing-footer-sticky-text">
-                <b class="bundle-landing-discount-text">{{$bundle.sticky.discount.percent}} OFF!</b>Expires in <b id="timer"></b></div>
+                <b class="bundle-landing-discount-text">{{$bundle.sticky.discount.percent}}</b>Discount applied at the checkout!</div>
             {{ end }}
             {{ if $bundle.sticky.ctas }}
             <div class="bundle-cta-footer">
@@ -262,35 +262,6 @@
     {{ partial "course/sidebar-card.html" $bundle }}
   </main>
 <script>
-function updateTimer() {
-    const timerElement = document.getElementById('timer');
-    if (!timerElement) return;
-    const now = new Date();
-    const targetIST = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }));
-
-    targetIST.setHours(24, 0, 0, 0);
-
-    const currentIST = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }));
-
-    if (currentIST >= targetIST) {
-        targetIST.setDate(targetIST.getDate() + 1);
-    }
-
-    const timeDifference = targetIST.getTime() - currentIST.getTime();
-    const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-    const displayHours = String(hours).padStart(2, '0');
-    const displayMinutes = String(minutes).padStart(2, '0');
-    const displaySeconds = String(seconds).padStart(2, '0');
-
-    timerElement.innerHTML = `${displayHours}h:${displayMinutes}m:${displaySeconds}s`;
-}
-
-// Run the timer immediately on load, then update every second
-updateTimer();
-setInterval(updateTimer, 1000);
-
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const fadeSections = document.querySelectorAll('.bundle-info-container > :not(.bundle-landing-footer-sticky), .bundle-landing-course-details-dialog-section-container, .bundle-landing-toc-entry-section, .bundle-sidebar-card');
 

@@ -25,7 +25,7 @@ param:
   bundle:
     - course: "Pointers (in C)"
       subtitle: "`significance, mechanics and use in design.`"
-      description: "**NOTE: This course is already included in the Library Access!**\n\nIn one intense, code-first course you’ll build rock-solid mental models, wield multi-level pointers, function callbacks, void*, and heap safely, then read real kernel source like a pro.\n\nFrom “&” vs “*” to dodging leaks and dangling pointers, leave with the exact pointer super-powers that separate junior coders from firmware ninjas.\n\n`Zero fluff, 100 % hands-on`."
+      description: "**NOTE: This course is already included in `Master Embedded Systems`!**\n\nIn one intense, code-first course you’ll build rock-solid mental models, wield multi-level pointers, function callbacks, void*, and heap safely, then read real kernel source like a pro.\n\nFrom “&” vs “*” to dodging leaks and dangling pointers, leave with the exact pointer super-powers that separate junior coders from firmware ninjas.\n\n`Zero fluff, 100 % hands-on`."
       previewCover: "/images/courses/pointers.png"
       bestSeller: "yes"
       beginner: "yes"

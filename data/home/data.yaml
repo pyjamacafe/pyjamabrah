@@ -2,11 +2,11 @@
 default_cta: &def
   - cta:
     link: "https://courses.pyjamacafe.com/web/checkout/68200b15f391a0bf84933bc7?purchaseNow=true&couponcode=ILOVEEMBEDDED"
-    text: "Join the Library (Yearly Access)"
+    text: "Master Embedded Systems (Yearly Access)"
     primary: true
   - cta:
-    link: "/library"
-    text: "Explore the Library"
+    link: "/master-embedded"
+    text: "Explore Collection"
 
 sections:
   - section:
@@ -63,7 +63,7 @@ sections:
   - section:
     - details:
         type: "full"
-        title: "The Library Access!"
+        title: "Master Embedded Systems"
         subtitle: "We have done all the research, organized and structured the content with focus on reasoning from first principles, becoming productive fast, and insights."
     - details:
         type: "break"
@@ -87,7 +87,7 @@ sections:
     - details:
         type: "half"
         video: "https://raw.githubusercontent.com/pyjamacafe/cache/master/course-intro/library.webm"
-        caption: "a quick overview of what library access is"
+        caption: "a quick overview of what Master Embedded Systems is"
     - details:
         type: "full"
         ctas: *def

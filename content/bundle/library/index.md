@@ -1,13 +1,14 @@
 ---
 type: bundle
 source: library
-title: Embedded Systems Library Access
-thumbnail: "/images/courses/library.png"
-description: "A collection of structured courses to master Embedded Systems Software Programming."
+title: Master Embedded Systems
+thumbnail: "/images/courses/master-es.png"
+description: "Collection of structured hands-on courses to master Embedded Systems Programming."
 
-url: /library
+url: /master-embedded
 
 aliases:
+- /library
 - /library/
 - /lib/
 - /bundle/library/

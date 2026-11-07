@@ -12,7 +12,7 @@
   {{/*  Right side content  */}}
   <div class="equal">
     <h2 class="landing-subsection-title">
-      The Library Access!
+      Master Embedded Systems
     </h2>
     <span class="product-bestseller">Bestseller</span>
     {{ if .rating }}
@@ -26,7 +26,7 @@
     <p>{{ .description | markdownify }}</p>
     {{ partial "courses/feature-list.html" .content }}
     <div class="product-cta-button">
-      <a class="btn" href="{{.more}}" target="_blank"><button>explore Library</button></a>
+      <a class="btn" href="{{.more}}" target="_blank"><button>Explore Courses</button></a>
     </div>
     {{ end }}
   {{ end }}
@@ -34,10 +34,10 @@
 </div>
 
 <hr/>
-{{/*  Individual Courses, included as part of the Library Access  */}}
+{{/*  Individual Courses, included as part of "Master Embedded Systems"  */}}
 <div class="landingpage-hero">
   <h1>individual learning tracks</h1>
-  <p>Included in The Library Access, also available as a single offering.</p>
+  <p>Included in `Master Embedded Systems`, also available as a single offering.</p>
 </div>
 <div class="course-list">
   {{ range .Site.Data.courses }} {{ if eq .type "single"}}
@@ -89,7 +89,7 @@
 {{/*  Individual Courses, Offered for Free */}}
 <div class="landingpage-hero">
   <h1>FREE learning tracks</h1>
-  <p>If you are a student of a beginner, you can try the following courses for <b>free for a month</b> and choose to buy individual courses or the Library access post that.</p>
+  <p>If you are a student of a beginner, you can try the following courses for <b>free for a month</b> and choose to buy individual courses or `Master Embedded Systems` post that.</p>
 </div>
 
 {{/*  Free Courses  */}}
@@ -137,7 +137,7 @@
 {{/*  Individual Courses, Offered for Free */}}
 <div class="landingpage-hero" id="partner">
   <h1>Partner Courses</h1>
-  <p>Courses listed below were developed by Industry Experts and professionals who we trust and recommend. These courses are <b>NOT</b> included in the Library Access</p>
+  <p>Courses listed below were developed by Industry Experts and professionals who we trust and recommend. These courses are <b>NOT</b> included in "Master Embedded Systems"</p>
 </div>
 
 {{/*  Partner Courses */}}
