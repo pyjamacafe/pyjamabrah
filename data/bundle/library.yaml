@@ -6,7 +6,7 @@ cover: "/images/courses/master-es.png"
 default_cta: &defaults
   - cta:
     link: "https://courses.pyjamacafe.com/web/checkout/68200b15f391a0bf84933bc7?purchaseNow=true&couponcode=LETSGO"
-    text: "Master Embedded Systems!"
+    text: "Register Now!"
     primary: true
 
 sticky:
@@ -110,44 +110,64 @@ hardware:
     description: "A free, open-source machine emulator that lets you run and debug the ARM Cortex-M, ARM Cortex-A and RISC-V based course targets entirely in software — no physical hardware required for the emulator-based experiments."
 
 courses:
-  - "roadmap"
-  - "missing-mentor"
-  - "book"
-  - "c-hurry"
-  - "c"
-  - "pointers"
-  - "bit-manipulation"
-  - "gdb"
-  - "dsa"
-  - "m101"
-  - "m102"
-  - "make"
-  - "ld"
-  - "rust"
-  - "freertos101"
-  - "zephyr101"
-  - "git-gerrit"
-  - "a101"
-  - "a102"
-  - "riscv-101"
-  - "smmu"
-  - "linux-command-line-tools"
-  - "ldd-scratch"
-  - "ldd-101"
-  - "ldd-102"
-  - "ldd-103"
-  - "walkthroughs"
-  - "fpga-101"
-  - "podcast"
-  - "tech-discussions"
-  - "tech-syncs"
+  - title: "Warmup and Orientation"
+    id: "orientation"
+    description: "Resources to orient you to the field of Embedded Systems Programming."
+    courses:
+      - "roadmap"
+      - "missing-mentor"
+      - "book"
+      - "linux-command-line-tools"
+      - "riscv-101"
+      - "git-gerrit"
+  - title: "Essentials"
+    id: "essentials"
+    description: "Courses that are common to both firmware and system software engineering."
+    courses:
+      - "c-hurry"
+      - "c"
+      - "pointers"
+      - "bit-manipulation"
+      - "dsa"
+      - "gdb"
+      - "make"
+      - "ld"
+  - title: "Firmware Engineering"
+    id: "firmware"
+    description: "Learning tracks focused on Firmware Engineering."
+    courses:
+      - "m101"
+      - "m102"
+      - "freertos101"
+      - "zephyr101"
+      - "rust"
+  - title: "System Software"
+    id: "systems"
+    description: "Learning tracks focused on Systems Software."
+    courses:
+      - "a101"
+      - "a102"
+      - "smmu"
+      - "ldd-scratch"
+      - "ldd-101"
+      - "ldd-102"
+      - "ldd-103"
+  - title: "General"
+    id: "general"
+    description: "General resources"
+    courses:
+      - "walkthroughs"
+      - "fpga-101"
+      - "podcast"
+      - "tech-discussions"
+      - "tech-syncs"
 
 sampleCertificate: "/master-embedded/certificate.png"
 
 difference:
   - C language and pointers with focus on machine behavior
   - Detailed analysis of data types and significance.
-  - Assembly and C Coding without IDE
+  - Assembly and C Coding without IDE.
   - Detailed explanation and view of Programmer's model of CPU.
   - Mental models of various components in the System to reason based off.
   - A Bottom-Up Approach with the tinge of answering the Whys.

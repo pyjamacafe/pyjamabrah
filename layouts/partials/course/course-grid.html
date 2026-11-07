@@ -1,0 +1,57 @@
+{{- /* Renders the paged course-card grid for a list of course ids.
+   Params: ids (slice of course ids), courselist (course map). */ -}}
+{{- $ids := .ids -}}
+{{- $courselist := .courselist -}}
+{{- with $ids -}}
+{{- $perRow := 6 -}}
+{{- $total := len $ids -}}
+{{- $rowCount := div $total $perRow -}}
+{{- if ne (mod $total $perRow) 0 }}{{ $rowCount = add $rowCount 1 }}{{ end -}}
+{{- $remainder := mod $total $perRow -}}
+{{- if and (gt $rowCount 1) (gt $remainder 0) (lt $remainder 3) }}{{ $rowCount = sub $rowCount 1 }}{{ end -}}
+{{- range $n := (seq $rowCount) -}}
+  {{- $start := mul (sub $n 1) $perRow -}}
+  {{- $chunk := $ids -}}
+  {{- if lt $n $rowCount -}}
+    {{- $chunk = first $perRow (after $start $ids) -}}
+  {{- else -}}
+    {{- $chunk = after $start $ids -}}
+  {{- end -}}
+<div class="bundle-course-collection-container">
+  <div class="bundle-course-row-track">
+    <div class="bundle-course-row-inner {{ if eq (mod $n 2) 0 }}bundle-course-row-inner-alt{{ end }}">
+    {{- range $chunk -}}
+      {{- $c := (index $courselist .) -}}
+      {{- $desc := delimit $c.introduction " " -}}
+      {{- if gt (len $desc) 150 }}{{ $desc = printf "%s..." ((slicestr $desc 0 150) | strings.TrimRight " ") }}{{ end -}}
+      <div onclick="openDialog('{{ $c.id }}')" class="bundle-course-card">
+        <div class="bundle-course-card-cover">
+          <img loading="lazy" src="{{ $c.cover }}"/>
+        </div>
+        <div class="bundle-course-card-title">{{ $c.title }}</div>
+        <div class="bundle-course-card-description">{{ $c.subtitle | markdownify }}</div>
+        {{- with $desc }}
+        <div class="bundle-course-card-long-description">{{ . | markdownify }}</div>
+        {{- end }}
+      </div>
+    {{- end -}}
+    {{- range $chunk -}}
+      {{- $c := (index $courselist .) -}}
+      {{- $desc := delimit $c.introduction " " -}}
+      {{- if gt (len $desc) 150 }}{{ $desc = printf "%s..." ((slicestr $desc 0 150) | strings.TrimRight " ") }}{{ end -}}
+      <div onclick="openDialog('{{ $c.id }}')" class="bundle-course-card">
+        <div class="bundle-course-card-cover">
+          <img loading="lazy" src="{{ $c.cover }}"/>
+        </div>
+        <div class="bundle-course-card-title">{{ $c.title }}</div>
+        <div class="bundle-course-card-description">{{ $c.subtitle | markdownify }}</div>
+        {{- with $desc }}
+        <div class="bundle-course-card-long-description">{{ . | markdownify }}</div>
+        {{- end }}
+      </div>
+    {{- end -}}
+    </div>
+  </div>
+</div>
+{{- end -}}
+{{- end -}}

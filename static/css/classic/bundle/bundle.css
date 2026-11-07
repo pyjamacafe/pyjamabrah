@@ -140,6 +140,10 @@ div, p {
   color: var(--c50);
 }
 
+.bundle-landing-track-description {
+  text-align: left;
+}
+
 .bundle-divider-line {
   flex: 1 1 100%;
   width: 100%;
@@ -209,6 +213,23 @@ div, p {
   font: var(--subsection-title);
   text-align: left;
   color: var(--c100);
+}
+
+.bundle-landing-subsection-title {
+  margin: 24px 0px 4px;
+  font: bold 1.5rem/1.4 var(--ff);
+  text-align: left;
+  color: var(--c100);
+}
+
+.bundle-landing-track-title-link:link,
+.bundle-landing-track-title-link:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.bundle-landing-track-title-link:hover {
+  text-decoration: underline;
 }
 
 .bundle-landing-highlights-container,
@@ -1020,7 +1041,9 @@ div, p {
 .bundle-landing-toc-entry-title {
   flex: 1 1 100%;
   background-color: var(--theme-primary);
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font: var(--toc-title-size);
   color: var(--c100) !important;
   text-decoration: none;
@@ -1046,6 +1069,16 @@ div, p {
 .bundle-landing-toc-entry-name,
 .bundle-landing-toc-entry-title {
   cursor: pointer;
+}
+
+.bundle-landing-toc-entry-toggle {
+  margin-left: auto;
+  font-size: 0.9em;
+  transition: transform 0.2s ease;
+}
+
+.bundle-landing-course-details.is-open .bundle-landing-toc-entry-toggle {
+  transform: rotate(180deg);
 }
 
 .bundle-landing-course-details:not(.is-open) .bundle-landing-course-details-container,

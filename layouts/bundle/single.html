@@ -3,6 +3,19 @@
   {{/*  Filter the Data source  */}}
   {{$bundle := (index .Site.Data.bundle .Params.source) }}
   {{$courselist := partial "course/course-map.html" . }}
+  {{/* Normalize "courses": a flat list of ids OR a list of tracks ({title, description, id, courses}). */}}
+  {{ $isFlat := false }}
+  {{ $tracks := slice }}
+  {{ with $bundle.courses }}
+    {{ if reflect.IsMap (index . 0) }}
+      {{ $tracks = . }}
+    {{ else }}
+      {{ $isFlat = true }}
+      {{ $tracks = slice (dict "title" "" "description" "" "id" "" "courses" .) }}
+    {{ end }}
+  {{ end }}
+  {{ $allCourses := slice }}
+  {{ range $tracks }}{{ range .courses }}{{ $allCourses = $allCourses | append . }}{{ end }}{{ end }}
   {{$faqs := (index .Site.Data.faqs $bundle.faqs) }}
 
   <main class="bundle-container">
@@ -63,60 +76,19 @@
       {{ partial "course/videoMessage.html" (dict "value" $bundle.videoMessage "title" $bundle.videoMessageTitle) }}
       {{ end }}
 
-      {{ if and $bundle.courses (ne $bundle.learningTracks false) }}
+      {{ if and $tracks (ne $bundle.learningTracks false) }}
       <div class="bundle-landing-section-title" id="courses-included">Learning Tracks</div>
-      {{ $perRow := 6 }}
-      {{ $total := len $bundle.courses }}
-      {{ $rowCount := div $total $perRow }}
-      {{ if ne (mod $total $perRow) 0 }}{{ $rowCount = add $rowCount 1 }}{{ end }}
-      {{ $remainder := mod $total $perRow }}
-      {{ if and (gt $rowCount 1) (gt $remainder 0) (lt $remainder 3) }}{{ $rowCount = sub $rowCount 1 }}{{ end }}
-      {{ range $n := (seq $rowCount) }}
-        {{ $start := mul (sub $n 1) $perRow }}
-        {{ $chunk := $bundle.courses }}
-        {{ if lt $n $rowCount }}
-          {{ $chunk = first $perRow (after $start $bundle.courses) }}
-        {{ else }}
-          {{ $chunk = after $start $bundle.courses }}
-        {{ end }}
-      <div class="bundle-course-collection-container">
-        <div class="bundle-course-row-track">
-          <div class="bundle-course-row-inner {{ if eq (mod $n 2) 0 }}bundle-course-row-inner-alt{{ end }}">
-          {{ range $chunk }}
-            {{$c := (index $courselist .) }}
-            {{$desc := delimit $c.introduction " " }}
-            {{ if gt (len $desc) 150 }}{{ $desc = printf "%s..." ((slicestr $desc 0 150) | strings.TrimRight " ") }}{{ end }}
-            <div onclick="openDialog('{{$c.id}}')" class="bundle-course-card">
-              <div class="bundle-course-card-cover">
-                <img loading="lazy" src="{{$c.cover}}"/>
-              </div>
-              <div class="bundle-course-card-title">{{$c.title}}</div>
-              <div class="bundle-course-card-description">{{$c.subtitle | markdownify}}</div>
-              {{ with $desc }}
-              <div class="bundle-course-card-long-description">{{. | markdownify}}</div>
-              {{ end }}
-            </div>
-          {{ end }}
-          {{ range $chunk }}
-            {{$c := (index $courselist .) }}
-            {{$desc := delimit $c.introduction " " }}
-            {{ if gt (len $desc) 150 }}{{ $desc = printf "%s..." ((slicestr $desc 0 150) | strings.TrimRight " ") }}{{ end }}
-            <div onclick="openDialog('{{$c.id}}')" class="bundle-course-card">
-              <div class="bundle-course-card-cover">
-                <img loading="lazy" src="{{$c.cover}}"/>
-              </div>
-              <div class="bundle-course-card-title">{{$c.title}}</div>
-              <div class="bundle-course-card-description">{{$c.subtitle | markdownify}}</div>
-              {{ with $desc }}
-              <div class="bundle-course-card-long-description">{{. | markdownify}}</div>
-              {{ end }}
-            </div>
-          {{ end }}
-          </div>
-        </div>
-      </div>
+      {{ range $tracks }}
+      {{ if .title }}
+      {{ $trackTitle := .title }}
+      <div class="bundle-landing-section-title"{{ with .id }} id="{{ . }}"{{ end }}>{{ with .id }}<a class="bundle-landing-track-title-link" href="#{{ . }}">{{ $trackTitle }}</a>{{ else }}{{ $trackTitle }}{{ end }}</div>
       {{ end }}
-      {{ range $bundle.courses }}
+      {{ if .description }}
+      <div class="bundle-landing-subtitle bundle-landing-track-description">{{ .description | markdownify }}</div>
+      {{ end }}
+      {{ partial "course/course-grid.html" (dict "ids" .courses "courselist" $courselist) }}
+      {{ end }}
+      {{ range $allCourses }}
         {{$c := (index $courselist .) }}
         {{$d := merge $c $bundle.sticky }}
         {{partial "course/dialog.html" $d}}
@@ -129,6 +101,77 @@
       {{ partial "course/highlights.html" $bundle.highlights}}
       {{ end }}
 
+      {{ if ne $bundle.tableOfContents false }}
+      {{ if $isFlat }}
+      <div class="bundle-landing-section-title">Courses Included</div>
+      {{ else }}
+      <div class="bundle-landing-section-title">Tracks Included</div>
+      {{ end }}
+      {{ end }}
+      {{ $counter := 0 }}
+      {{ range $tracks }}
+        {{ if ne $bundle.tableOfContents false }}
+          {{ if .title }}
+          {{ $trackTitle := .title }}
+          <div class="bundle-landing-subsection-title"{{ if eq $bundle.learningTracks false }}{{ with .id }} id="{{ . }}"{{ end }}{{ end }}>{{ with .id }}<a class="bundle-landing-track-title-link" href="#{{ . }}">{{ $trackTitle }}</a>{{ else }}{{ $trackTitle }}{{ end }}</div>
+          {{ end }}
+          {{ if .description }}
+          <div class="bundle-landing-subtitle bundle-landing-track-description">{{ .description | markdownify }}</div>
+          {{ end }}
+        {{ end }}
+        {{ range .courses }}
+          {{ $counter = (add $counter 1)}}
+          {{ $c := (index $courselist .) }}
+          <span id="{{$c.id}}"></span>
+          {{ if ne $bundle.tableOfContents false }}
+          <div class="bundle-landing-course-details">
+            <div class="bundle-landing-toc-entry-title" onclick="this.closest('.bundle-landing-course-details').classList.toggle('is-open')">
+              <a class="bundle-landing-toc-entry-number" href="#{{$c.id}}" onclick="event.stopPropagation()">#{{$counter}}</a>
+              <span class="bundle-landing-toc-entry-name">{{$c.title}}</span>
+              <span class="bi bi-chevron-down bundle-landing-toc-entry-toggle" aria-hidden="true"></span>
+            </div>
+            <div class="bundle-landing-course-details-container">
+              <div class="bundle-landing-course-details-cover">
+                <img loading="lazy" src="{{$c.cover}}"/>
+              </div>
+              <div class="bundle-landing-course-details-highlights">
+                {{range $c.introduction }}
+                <p>{{.}}</p>
+                {{ end }}
+                {{ partial "course/quality-meta.html" $c }}
+              </div>
+            </div>
+            <div class="bundle-landing-toc-entry">
+              <div class="bundle-landing-toc-content">
+                {{range $c.contents }}
+                <div class="bundle-landing-toc-entry-section">
+                <div class="bundle-landing-toc-entry-details-title">{{.section.title}}</div>
+                <ul class="bundle-landing-toc-entry-details-chapter-list">
+                <p>{{.section.description}}</p>
+                {{range .section.chapters}}
+                  <div class="bundle-landing-course-details-dialog-section-chapter">
+                  {{if eq .chapter.type "file"}}
+                  <span class="bi bi-file-earmark bundle-landing-icon">&nbsp</span>
+                  {{ else }}
+                  <span class="bi bi-play-btn bundle-landing-icon">&nbsp</span>
+                  {{end}}
+                  {{.chapter.title}}
+                  </div>
+                  {{ if .chapter.preview }}
+                    {{ partial "course/yt-preview.html" .chapter.preview}}
+                  {{ end }}
+                {{end}}
+                </ul>
+                </div>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+
+
       {{ if $bundle.learnings }}
       <div class="bundle-landing-section-title">What you will learn</div>
       {{ partial "course/checklist.html" $bundle.learnings }}
@@ -139,61 +182,6 @@
       <p>Experiments are performed on one of the following Hardware (or the Emulator option available on QEMU). The hardware is not included and needs to be bought separately.</p>
       {{ partial "course/hw.html" $bundle.hardware}}
       {{ end }}
-
-      {{ if ne $bundle.tableOfContents false }}
-      <div class="bundle-landing-section-title">Table of Content</div>
-      {{ end }}
-      {{ $counter := 0 }}
-      {{ range $bundle.courses }}
-        {{ $counter = (add $counter 1)}}
-        {{ $c := (index $courselist .) }}
-        <span id="{{$c.id}}"></span>
-        {{ if ne $bundle.tableOfContents false }}
-        <div class="bundle-landing-course-details">
-          <div class="bundle-landing-toc-entry-title" onclick="this.closest('.bundle-landing-course-details').classList.toggle('is-open')">
-            <a class="bundle-landing-toc-entry-number" href="#{{$c.id}}" onclick="event.stopPropagation()">#{{$counter}}</a>
-            <span class="bundle-landing-toc-entry-name">{{$c.title}}</span>
-          </div>
-          <div class="bundle-landing-course-details-container">
-            <div class="bundle-landing-course-details-cover">
-              <img loading="lazy" src="{{$c.cover}}"/>
-            </div>
-            <div class="bundle-landing-course-details-highlights">
-              {{range $c.introduction }}
-              <p>{{.}}</p>
-              {{ end }}
-              {{ partial "course/quality-meta.html" $c }}
-            </div>
-          </div>
-          <div class="bundle-landing-toc-entry">
-            <div class="bundle-landing-toc-content">
-              {{range $c.contents }}
-              <div class="bundle-landing-toc-entry-section">
-              <div class="bundle-landing-toc-entry-details-title">{{.section.title}}</div>
-              <ul class="bundle-landing-toc-entry-details-chapter-list">
-              <p>{{.section.description}}</p>
-              {{range .section.chapters}}
-                <div class="bundle-landing-course-details-dialog-section-chapter">
-                {{if eq .chapter.type "file"}}
-                <span class="bi bi-file-earmark bundle-landing-icon">&nbsp</span>
-                {{ else }}
-                <span class="bi bi-play-btn bundle-landing-icon">&nbsp</span>
-                {{end}}
-                {{.chapter.title}}
-                </div>
-                {{ if .chapter.preview }}
-                  {{ partial "course/yt-preview.html" .chapter.preview}}
-                {{ end }}
-              {{end}}
-              </ul>
-              </div>
-              {{ end }}
-            </div>
-          </div>
-        </div>
-        {{ end }}
-      {{ end }}
-
 
       {{ if $bundle.sampleCertificate }}
       <div class="bundle-landing-section-title">Sample Certificate</div>
